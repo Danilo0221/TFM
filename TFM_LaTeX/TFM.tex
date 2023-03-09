@@ -1,0 +1,249 @@
+\documentclass[12pt, twoside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usepackage{slashbox}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{vmargin}
+\usepackage{multirow, array} % para las tablas
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{cite} % para contraer referencias
+\parindent 0pt
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%%%%%%%% Coloca una imagen como encabezado %%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[L]{\includegraphics[width=.2\textwidth]{Logo3}}
+%\fancyhead[R]{\rightmark}
+\lhead{\includegraphics[width=.2\textwidth]{Logo3}}
+\rhead{\rightmark}
+
+\renewcommand{\sectionmark}[1]{\markright{\textit{\arabic{section}.\ #1}}}
+%\renewcommand{\headrulewidth}{0.5pt}
+\newlength\FHoffset
+\setlength\FHoffset{1cm}
+\addtolength\headwidth{2\FHoffset}
+\fancyheadoffset{\FHoffset}
+
+\fancyfoot{}
+%\fancyfoot[RO, LE]{\thepage}
+%\fancyfoot[LO,CE]{From: K. Grant}
+%\fancyfoot[CO,RE]{To: Dean A. Smith}
+\lfoot[\thepage]{Trabajo Fin de Máster}
+\rfoot[Máster en Big Data y Data Science $\mid$ Edición abril 2022]{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{0.2cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{23cm}                    % altura del texto
+{8pt}                           % altura de los encabezados
+{2cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{1.5cm}                           % espacio entre el texto y el pie de página
+
+%\renewcommand{\listtablename}{Índice de tablasggg} 
+\begin{document}
+
+%\pagestyle{fancy}
+%\lhead{\includegraphics[width=.2\textwidth]{Logo3}}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{-0.5in}
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{Logo_VIU}
+	\end{center}
+\end{figure}
+\vspace*{0.6 in}
+\begin{Large}
+\textbf{ANÁLISIS PREDICTIVO DE CASOS DE COVID-19 BASADO EN CONDICIONES CLIMÁTICAS} \\
+\end{Large}
+\vspace*{2.51 in}
+
+
+\begin{large}
+DANILO PLAZAS IRREÑO\\
+\end{large}
+\vspace*{2.51 in}
+\begin{large}
+
+UNIVERSIDAD INTERNACIONAL DE VALENCIA\\
+FACULTAD DE MAESTRÍAS\\
+MÁSTER EN BIG DATA Y DATA SCIENCE \\
+BOGOTÁ D.C.\\
+2022\\
+\end{large}
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\begin{titlepage}
+\begin{center}
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{Logo_VIU}
+	\end{center}
+\end{figure}
+\vspace*{0.6in}
+\begin{Large}
+\textbf{ANÁLISIS PREDICTIVO DE CASOS DE COVID-19 BASADO EN CONDICIONES CLIMÁTICAS} \\
+\end{Large}
+\vspace*{0.86 in}
+
+\begin{large}
+DANILO PLAZAS IRREÑO\\
+viudanilo0221p@gmail.com\\
+\end{large}
+\vspace*{0.86 in}
+Trabajo de grado para optar al titulo de:\\ 
+Magister en Big Data y Data Science\\
+\vspace*{0.86 in}
+\begin{large}
+DIRECTOR:\\
+MSc. BENJAMÍN ARROQUIA CUADROS\\
+Docente Universidad Internacional de Valencia\\
+\end{large}
+\vspace*{0.87 in}
+\begin{large}
+UNIVERSIDAD INTERNACIONAL DE VALENCIA\\
+FACULTAD DE MAESTRÍAS\\
+MÁSTER EN BIG DATA Y DATA SCIENCE \\
+BOGOTÁ D.C.\\
+2022\\
+\end{large}
+\end{center}
+\end{titlepage}
+
+%\newpage
+%\begin{titlepage}
+%\bigskip
+%\vspace*{2.8 in}
+%\begin{flushright}
+%``Nunca consideres el estudio como una\\
+%obligación sino como una oportunidad\\
+%para penetrar en el bello y maravilloso\\
+%mundo del saber''.
+%\\
+%\bigskip
+%Albert Einstein
+%\end{flushright}
+%\end{titlepage}
+
+%\newpage
+%\begin{titlepage}
+%\begin{center}
+%\textbf{\begin{Large}
+%AGRADECIMIENTOS
+%\end{Large}}
+%\end{center}
+%\bigskip
+%Agradecemos de manera especial a nuestros padres, hermanos y hermanas ya que ellos fueron el principal cimiento para nuestra formación profesional sentando nuestras bases de responsabilidad y deseos de superación.
+%\\\\
+%También de manera fundamental agradecemos sinceramente a nuestro director Juan Carlos Gómez Paredes por sus conocimientos, su manera de trabajar, su persistencia, su paciencia y su motivación.
+%Así como también agradecemos a nuestro revisor el Dr. Gustavo Adolfo Puerto Leguizamon por su conocimiento y el apoyo durante el desarrollo de este trabajo.
+%\end{titlepage}
+
+\newpage
+\begin{titlepage}
+\renewcommand{\contentsname}{\centering TABLA DE CONTENIDO}
+\tableofcontents
+\thispagestyle{empty}
+\end{titlepage}
+
+%\newpage
+%\begin{titlepage}
+%\renewcommand{\listfigurename}{\centering ÍNDICE DE FIGURAS}
+%\listoffigures
+%\end{titlepage}
+
+%\newpage
+%\begin{titlepage}
+%\renewcommand{\listtablename}{\centering ÍNDICE DE TABLAS} 
+%\listoftables
+%\end{titlepage}
+
+\newpage
+\pagenumbering{arabic}
+\begin{center}
+\section{INTRODUCCIÓN}
+\end{center}
+\bigskip
+El COVID-19 es una enfermedad respiratoria causada por el virus SARS-CoV-2. Desde su aparición en Wuhan, China a finales de 2019, ha afectado a millones de personas en todo el mundo. Los gobiernos de todo el mundo han implementado diversas medidas para prevenir la propagación del virus y proteger la salud pública.
+\\\\
+Algunas de las medidas más comunes fueron: cierre de fronteras, distanciamiento social (como el cierre de escuelas, lugares de trabajo y eventos públicos), uso de mascarillas, pruebas y rastreo de contactos (para identificar a las personas infectadas y rastrear a aquellos con los que han tenido contacto cercano), cierre de empresas y restricciones de actividades no esenciales (para reducir la cantidad de personas que se congregan en lugares públicos), campañas de concientización y educación pública. Todas estás medidas ayudan a mitigar la propagación del virus y aunque la transmisión del virus se produce principalmente por contacto cercano con personas infectadas, se ha investigado sobre la posible influencia de las condiciones climáticas en la propagación del virus. 
+\\\\
+En general, se cree que el clima cálido y húmedo puede reducir la propagación del virus, ya que el calor y la humedad pueden debilitar la capacidad del virus para sobrevivir en el aire y en las superficies. Sin embargo, los expertos señalan que no hay suficiente evidencia científica para afirmar que las altas temperaturas y la humedad reducen significativamente la transmisión del virus.
+Por otro lado, el invierno y el clima frío pueden aumentar la transmisión del virus, ya que las personas tienden a pasar más tiempo en espacios cerrados y con poca ventilación, lo que facilita la propagación del virus de persona a persona. [1][2]
+\\\\
+En este proyecto se desarrollará un estudio y análisis sobre el impacto de las condiciones climáticas en la propagación del virus covid-19 en España y determinar si existe algún factor relacionado con la transmisión.
+
+
+\newpage
+\begin{center}
+\section{PLANTEAMIENTO DEL PROBLEMA}
+\end{center}
+\bigskip
+X
+
+\newpage
+\begin{center}
+\section{OBJETIVOS}
+\end{center} 
+\bigskip
+\subsection{OBJETIVO GENERAL}
+\bigskip
+\begin{itemize}
+\item Identificar las características principales que afectan e influyen el aumento de personas contagiadas del virus de COVID-19 en España.
+\end{itemize}
+\medskip
+\subsection{OBJETIVOS ESPECÍFICOS}
+\bigskip
+\begin{itemize}
+\item Extraer, transformar y obtener conocimiento de las diferentes fuentes de información o bases de datos de COVID-19 en España, centrándonos en características climáticas.
+\item Crear, comparar y contrastar los diferentes modelos de predicción y/o clustering sobre el COVID-19.
+\item Seleccionar el modelo que predice o explica lo más exacto posible la influencia de las características climáticas en los casos de virus de COVID-19.
+\item Precisar los efectos de otro tipo de características o variables en los modelos utilizados y evaluar sus desempeños.
+
+\end{itemize}
+
+\newpage
+\begin{thebibliography}{90}
+
+\bibitem[1]{constrainedClimate}
+
+Araujo, M. B., \& Naimi, B. (2020). Spread of SARS-CoV-2 Coronavirus likely to be constrained by climate. MedRxiv, 2020.03.12.20034728. URL: https://doi.org/10.1101/2020.03.12.20034728
+
+
+\bibitem[2]{HighTemperatue}
+Wang, J., Tang, K., Feng, K., \& Lv, W. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. Available at SSRN 3551767. URL: https://ssrn.com/abstract=3551767
+
+
+\end{thebibliography}
+\newpage
+
+\end{document} 
+
+\ifpdf
+    \graphicspath{{1_introduction/figures/PNG/}{1_introduction/figures/PDF/}{1_introduction/figures/}}
+\else
+    \graphicspath{{1_introduction/figures/EPS/}{1_introduction/figures/}}
+\fi
