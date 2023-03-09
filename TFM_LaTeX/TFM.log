@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  8 MAR 2023 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  8 MAR 2023 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,7 +481,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<Logo_VIU.png, id=23, 87.6876pt x 36.8577pt>
+<Logo_VIU.png, id=27, 87.6876pt x 36.8577pt>
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
 Package pdftex.def Info: Logo_VIU.png  used on input line 72.
@@ -537,7 +537,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--198
 
  []
 
-<Logo3.png, id=45, 341.47575pt x 142.131pt>
+<Logo3.png, id=50, 341.47575pt x 142.131pt>
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
 Package pdftex.def Info: Logo3.png  used on input line 200.
@@ -559,13 +559,21 @@ been already used, duplicate ignored
                    \relax 
 l.200 \newpage
                [1 <./Logo3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 205--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--209
+
+ []
+
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 207.
+Package pdftex.def Info: Logo3.png  used on input line 221.
 (pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 207.
-LaTeX Info: Redefining \% on input line 207.
-
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
 
 Package fancyhdr Warning: \headheight is too small (8.0pt): 
 (fancyhdr)                Make it at least 43.43074pt, for example:
@@ -577,10 +585,10 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 [2]
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 228.
+Package pdftex.def Info: Logo3.png  used on input line 243.
 (pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 228.
-LaTeX Info: Redefining \% on input line 228.
+LaTeX Info: Redefining \. on input line 243.
+LaTeX Info: Redefining \% on input line 243.
 
 
 Package fancyhdr Warning: \headheight is too small (8.0pt): 
@@ -591,23 +599,13 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
 
 [3]
-Underfull \hbox (badness 5316) in paragraph at lines 233--234
-[]\OT1/cmr/m/n/12 Araujo, M. B., & Nai-mi, B. (2020). Spread of SARS-CoV-2 Co-r
-o-na-vi-rus
- []
-
-
-Underfull \hbox (badness 7981) in paragraph at lines 233--234
-\OT1/cmr/m/n/12 li-kely to be cons-trai-ned by cli-ma-te. MedRxiv, 2020.03.12.2
-0034728. URL:
- []
-
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 241.
+Package pdftex.def Info: Logo3.png  used on input line 250.
 (pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+
 
 Package fancyhdr Warning: \headheight is too small (8.0pt): 
 (fancyhdr)                Make it at least 43.43074pt, for example:
@@ -616,29 +614,55 @@ Package fancyhdr Warning: \headheight is too small (8.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
 
-[4] (TFM.aux
+[4]
+Underfull \hbox (badness 5316) in paragraph at lines 255--256
+[]\OT1/cmr/m/n/12 Araujo, M. B., & Nai-mi, B. (2020). Spread of SARS-CoV-2 Co-r
+o-na-vi-rus
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 255--256
+\OT1/cmr/m/n/12 li-kely to be cons-trai-ned by cli-ma-te. MedRxiv, 2020.03.12.2
+0034728. URL:
+ []
+
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 263.
+(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+
+Package fancyhdr Warning: \headheight is too small (8.0pt): 
+(fancyhdr)                Make it at least 43.43074pt, for example:
+(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+
+[5] (TFM.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 Package rerunfilecheck Info: File `TFM.out' has not changed.
-(rerunfilecheck)             Checksum: 43BB5A7133490B54D5C8CD6B16BA139C;681.
+(rerunfilecheck)             Checksum: BAEBB9EB7D9BE2B23BABA65950BB36BC;795.
  ) 
 Here is how much of TeX's memory you used:
- 11728 strings out of 475385
- 187004 string characters out of 2777378
- 536403 words of memory out of 3000000
- 32910 multiletter control sequences out of 15000+600000
+ 11732 strings out of 475385
+ 187038 string characters out of 2777378
+ 540403 words of memory out of 3000000
+ 32912 multiletter control sequences out of 15000+600000
  475769 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,77p,798b,505s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,15n,77p,857b,505s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb>
-Output written on TFM.pdf (7 pages, 143803 bytes).
+Output written on TFM.pdf (8 pages, 149437 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 
