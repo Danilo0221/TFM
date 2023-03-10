@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  8 MAR 2023 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  9 MAR 2023 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28>
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -161,7 +161,14 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+))
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
 
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
@@ -182,11 +189,8 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
-) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
-y
+)
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinek
@@ -416,7 +420,7 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
 \FHoffset=\skip67
 
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
@@ -430,27 +434,27 @@ LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `TFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+Package hyperref Info: Link coloring ON on input line 62.
  (TFM.out) (TFM.out)
 \@outlinefile=\write3
 \openout3 = `TFM.out'.
@@ -481,34 +485,34 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<Logo_VIU.png, id=27, 87.6876pt x 36.8577pt>
+<Logo_VIU.png, id=31, 87.6876pt x 36.8577pt>
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 72.
-(pdftex.def)             Requested size: 234.73523pt x 98.68301pt.
+Package pdftex.def Info: Logo_VIU.png  used on input line 73.
+(pdftex.def)             Requested size: 213.39566pt x 89.71214pt.
  [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_VIU.pn
 g>]
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 103.
-(pdftex.def)             Requested size: 234.73523pt x 98.68301pt.
+Package pdftex.def Info: Logo_VIU.png  used on input line 104.
+(pdftex.def)             Requested size: 213.39566pt x 89.71214pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 \end{titlepage}
+l.135 \end{titlepage}
                       [1] (TFM.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -521,148 +525,166 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \end{titlepage}
+l.171 \end{titlepage}
                       [1]
-Underfull \hbox (badness 10000) in paragraph at lines 190--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--198
-
- []
-
-<Logo3.png, id=50, 341.47575pt x 142.131pt>
+<Logo3.png, id=57, 341.47575pt x 142.131pt>
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 200.
-(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 200.
-LaTeX Info: Redefining \% on input line 200.
+Package pdftex.def Info: Logo3.png  used on input line 189.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
 
-Package fancyhdr Warning: \headheight is too small (8.0pt): 
-(fancyhdr)                Make it at least 43.43074pt, for example:
-(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[2 <./Logo3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
+
+ []
+
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 205.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.200 \newpage
-               [1 <./Logo3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--209
+l.205 \newpage
+               [1]
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--209
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 221.
-(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
+Package pdftex.def Info: Logo3.png  used on input line 224.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
 
-Package fancyhdr Warning: \headheight is too small (8.0pt): 
-(fancyhdr)                Make it at least 43.43074pt, for example:
-(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
-[2]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \newpage
+               [2]
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 243.
-(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 243.
-LaTeX Info: Redefining \% on input line 243.
+Package pdftex.def Info: Logo3.png  used on input line 246.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 246.
+LaTeX Info: Redefining \% on input line 246.
 
 
-Package fancyhdr Warning: \headheight is too small (8.0pt): 
-(fancyhdr)                Make it at least 43.43074pt, for example:
-(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [3]
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 250.
-(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
+Package pdftex.def Info: Logo3.png  used on input line 253.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
 
 
-Package fancyhdr Warning: \headheight is too small (8.0pt): 
-(fancyhdr)                Make it at least 43.43074pt, for example:
-(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [4]
-Underfull \hbox (badness 5316) in paragraph at lines 255--256
-[]\OT1/cmr/m/n/12 Araujo, M. B., & Nai-mi, B. (2020). Spread of SARS-CoV-2 Co-r
-o-na-vi-rus
- []
-
-
-Underfull \hbox (badness 7981) in paragraph at lines 255--256
-\OT1/cmr/m/n/12 li-kely to be cons-trai-ned by cli-ma-te. MedRxiv, 2020.03.12.2
-0034728. URL:
+Underfull \hbox (badness 5359) in paragraph at lines 258--259
+[]\OT1/cmr/m/n/10.95 Araujo, M. B., & Nai-mi, B. (2020). Spread of SARS-CoV-2 C
+o-ro-na-vi-
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 263.
-(pdftex.def)             Requested size: 93.89265pt x 39.0807pt.
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
+Package pdftex.def Info: Logo3.png  used on input line 266.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
 
-Package fancyhdr Warning: \headheight is too small (8.0pt): 
-(fancyhdr)                Make it at least 43.43074pt, for example:
-(fancyhdr)                \setlength{\headheight}{43.43074pt}.
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-35.43074pt}.
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [5] (TFM.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 Package rerunfilecheck Info: File `TFM.out' has not changed.
-(rerunfilecheck)             Checksum: BAEBB9EB7D9BE2B23BABA65950BB36BC;795.
+(rerunfilecheck)             Checksum: 63A1CCC9B027119C250ED6F9AE5648C3;873.
  ) 
 Here is how much of TeX's memory you used:
- 11732 strings out of 475385
- 187038 string characters out of 2777378
- 540403 words of memory out of 3000000
- 32912 multiletter control sequences out of 15000+600000
- 475769 words of font info for 52 fonts, out of 8000000 for 9000
+ 11761 strings out of 475385
+ 187842 string characters out of 2777378
+ 540604 words of memory out of 3000000
+ 32937 multiletter control sequences out of 15000+600000
+ 475771 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,77p,857b,505s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,15n,77p,857b,506s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb>
-Output written on TFM.pdf (8 pages, 149437 bytes).
+mbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on TFM.pdf (9 pages, 187518 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

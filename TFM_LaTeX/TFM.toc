@@ -1,7 +1,8 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}INTRODUCCI\'ON}{1}{section.1}%
-\contentsline {section}{\numberline {2}PLANTEAMIENTO DEL PROBLEMA}{2}{section.2}%
-\contentsline {section}{\numberline {3}OBJETIVOS}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}OBJETIVO GENERAL}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}OBJETIVOS ESPEC\'IFICOS}{3}{subsection.3.2}%
-\contentsline {section}{\numberline {4}MARCO TE\'ORICO}{4}{section.4}%
+\contentsline {section}{\numberline {1}RESUMEN}{2}{section.1}%
+\contentsline {section}{\numberline {2}INTRODUCCI\'ON}{1}{section.2}%
+\contentsline {section}{\numberline {3}PLANTEAMIENTO DEL PROBLEMA}{2}{section.3}%
+\contentsline {section}{\numberline {4}OBJETIVOS}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}OBJETIVO GENERAL}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}OBJETIVOS ESPEC\'IFICOS}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}MARCO TE\'ORICO}{4}{section.5}%
