@@ -50,6 +50,10 @@ result["RACHA"] = result["RACHA"].str.replace(",",".").astype(float)
 result["SOL"] = result["SOL"].str.replace(",",".").astype(float)
 result["PRES_MAX"] = result["PRES_MAX"].str.replace(",",".").astype(float)
 result["PRES_MIN"] = result["PRES_MIN"].str.replace(",",".").astype(float)
-result = result.drop(columns=['unidad_generadora', 'periodicidad', 'descripcion', 'formato', 'copyright', 'notaLegal', 'campos'])
 result = result.drop(columns=['INDICATIVO', 'NOMBRE'])
 
+'''
+Union de los dos dataframes
+'''
+
+df_total = df.merge(result, how='inner', on='FECHA')
