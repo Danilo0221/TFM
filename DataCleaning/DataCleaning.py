@@ -6,10 +6,11 @@ Limpieza base de datos de covid-19 en España por provincia
 '''
 path = os.getcwd()
 path = path.replace("\\", "\\\\")
-path = path.replace("\\\\", "/")
-path = "/".join(path.split("/")[:-1]) + "/Data/Data_Covid/"
-df_mayor60 = pd.read_csv(path + "casos_hosp_uci_def_sexo_edad_provres_60_mas.csv")
-df_todaedad = pd.read_csv(path + "casos_hosp_uci_def_sexo_edad_provres.csv")
+path = path.replace("\\\\", "/") + "/"
+path_data = path + "Data/"
+path_covid = path_data + "Data_Covid/"
+df_mayor60 = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres_60_mas.csv")
+df_todaedad = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres.csv")
 df = pd.concat([df_mayor60,df_todaedad]).drop_duplicates().reset_index(drop=True)
 df = df[df["provincia_iso"].notna()]
 df.columns = ["PROVINCIA_ISO", "SEXO", "GRUPO_EDAD", "FECHA", "NUM_CASOS", "NUM_HOSP", "NUM_UCI", "NUM_DEFU"]
@@ -18,15 +19,15 @@ col_str = ["PROVINCIA_ISO", "SEXO", "GRUPO_EDAD"]
 for x in col_str:
   df[x] = df[x].str.upper()
   df[x] = df[x].str.strip()
+df['PROVINCIA_ISO'] = df['PROVINCIA_ISO'].replace(['NC'], 'NA')
   
-
+print(df.shape)
+print(df["PROVINCIA_ISO"].unique())
 '''
 Limpieza base de datos climatologica de España por provincia
 '''
-path_cli = os.getcwd()
-path_cli = path_cli.replace("\\", "\\\\")
-path_cli = path_cli.replace("\\\\", "/")
-path_cli = "/".join(path_cli.split("/")[:-1]) + "/Data/Data_Climatologica/Diaria/"
+path_cli = path_data + "Data_Climatologica/Diaria/"
+path_est = path_data + "Estandarizada/"
 
 dir_list = os.listdir(path_cli)
 result = pd.DataFrame()
@@ -51,9 +52,12 @@ result["SOL"] = result["SOL"].str.replace(",",".").astype(float)
 result["PRES_MAX"] = result["PRES_MAX"].str.replace(",",".").astype(float)
 result["PRES_MIN"] = result["PRES_MIN"].str.replace(",",".").astype(float)
 result = result.drop(columns=['INDICATIVO', 'NOMBRE'])
+print(result.shape)
 
 '''
 Union de los dos dataframes
 '''
 
-df_total = df.merge(result, how='inner', on='FECHA')
+#df_total = df.merge(result, how='inner', on='FECHA')
+#print(df_total.shape)
+#df_total.to_csv(path_est + 'data_total.csv', index=False)
