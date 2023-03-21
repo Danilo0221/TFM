@@ -62,7 +62,8 @@ Union de los dos dataframes
 
 df_total = df.merge(result_iso, how='inner', on=['FECHA', 'PROVINCIA_ISO'])
 print(df_total.shape)
-df_total.to_csv(path_est + 'data_total.csv', index=False)
+#df_total.to_csv(path_est + 'data_total.csv', index=False)
+df_total.to_parquet(path = path_est + 'data_total', engine = 'auto', compression ='snappy', index=None)
 
 # Para saber cual información no cruza entre los megre anteriores.
 #df_no=pd.merge(df,result_iso,on=['FECHA', 'PROVINCIA_ISO'],how="outer",indicator=True)
