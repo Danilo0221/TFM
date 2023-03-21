@@ -9,10 +9,9 @@ path = path.replace("\\", "\\\\")
 path = path.replace("\\\\", "/") + "/"
 path_data = path + "Data/"
 path_covid = path_data + "Data_Covid/"
-df_mayor60 = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres_60_mas.csv")
-df_todaedad = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres.csv")
+df_mayor60 = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres_60_mas.csv", keep_default_na=False, na_values="")
+df_todaedad = pd.read_csv(path_covid + "casos_hosp_uci_def_sexo_edad_provres.csv", keep_default_na=False, na_values="")
 df = pd.concat([df_mayor60,df_todaedad]).drop_duplicates().reset_index(drop=True)
-df = df[df["provincia_iso"].notna()]
 df.columns = ["PROVINCIA_ISO", "SEXO", "GRUPO_EDAD", "FECHA", "NUM_CASOS", "NUM_HOSP", "NUM_UCI", "NUM_DEFU"]
 df["FECHA"] = pd.to_datetime(df["FECHA"])
 col_str = ["PROVINCIA_ISO", "SEXO", "GRUPO_EDAD"]
@@ -22,11 +21,11 @@ for x in col_str:
 df['PROVINCIA_ISO'] = df['PROVINCIA_ISO'].replace(['NC'], 'NA')
   
 print(df.shape)
-print(df["PROVINCIA_ISO"].unique())
 '''
 Limpieza base de datos climatologica de España por provincia
 '''
 path_cli = path_data + "Data_Climatologica/Diaria/"
+path_ref = path_data + "Data_Referencia/"
 path_est = path_data + "Estandarizada/"
 
 dir_list = os.listdir(path_cli)
@@ -52,12 +51,20 @@ result["SOL"] = result["SOL"].str.replace(",",".").astype(float)
 result["PRES_MAX"] = result["PRES_MAX"].str.replace(",",".").astype(float)
 result["PRES_MIN"] = result["PRES_MIN"].str.replace(",",".").astype(float)
 result = result.drop(columns=['INDICATIVO', 'NOMBRE'])
-print(result.shape)
+df_iso = pd.read_csv(path_ref + 'cod_iso_provincias.csv', encoding="utf-8", keep_default_na=False)
+result_iso = result.merge(df_iso, how='inner', on='PROVINCIA')
+
+print(result_iso.shape)
 
 '''
 Union de los dos dataframes
 '''
 
-#df_total = df.merge(result, how='inner', on='FECHA')
-#print(df_total.shape)
-#df_total.to_csv(path_est + 'data_total.csv', index=False)
+df_total = df.merge(result_iso, how='inner', on=['FECHA', 'PROVINCIA_ISO'])
+print(df_total.shape)
+df_total.to_csv(path_est + 'data_total.csv', index=False)
+
+# Para saber cual información no cruza entre los megre anteriores.
+#df_no=pd.merge(df,result_iso,on=['FECHA', 'PROVINCIA_ISO'],how="outer",indicator=True)
+#df_no=df_no[df_no['_merge']=='left_only']
+#df_no.to_csv(path_est + 'data_no_cruce.csv', index=False)
