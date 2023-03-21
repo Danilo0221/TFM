@@ -1,0 +1,8 @@
+seaborn==0.12.2
+matplotlib==3.7.1
+pandas-profiling==3.6.5
+scikit-learn==1.2.2
+pandas==1.4.2
+numpy==1.22.3
+pyarrow==11.0.0
+
