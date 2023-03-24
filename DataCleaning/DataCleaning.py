@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import numpy as np
 
 '''
 Limpieza base de datos de covid-19 en España por provincia
@@ -58,6 +59,14 @@ result["HORA_PRES_MAX"] = result["HORA_PRES_MAX"].str.split(":", expand=True)[0]
 result['HORA_PRES_MAX'] = result['HORA_PRES_MAX'].replace(['24'], '00')
 result["HORA_PRES_MIN"] = result["HORA_PRES_MIN"].str.split(":", expand=True)[0]
 result['HORA_PRES_MIN'] = result['HORA_PRES_MIN'].replace(['24'], '00')
+result["HORA_RACHA"] = result["HORA_RACHA"].str.split(":", expand=True)[0]
+result['HORA_RACHA'] = result['HORA_RACHA'].replace(['24'], '00')
+result['HORA_RACHA'] = result['HORA_RACHA'].replace(['79'], result[result["PROVINCIA_ISO"] == list(result[result["HORA_RACHA"] == "79"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
+result['HORA_RACHA'] = result['HORA_RACHA'].replace(['72'], result[result["PROVINCIA_ISO"] == list(result[result["HORA_RACHA"] == "72"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
+result['HORA_RACHA'] = result['HORA_RACHA'].replace(['80'], result[result["PROVINCIA_ISO"] == list(result[result["HORA_RACHA"] == "80"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
+iso_list = list(result[result["HORA_RACHA"] == "75"]["PROVINCIA_ISO"].unique())
+result["HORA_RACHA"] = np.where((result["PROVINCIA_ISO"] == iso_list[0]) & (result["HORA_RACHA"] == "75"), result[result["PROVINCIA_ISO"] == iso_list[0]]["HORA_RACHA"].mode(), result["HORA_RACHA"])
+result["HORA_RACHA"] = np.where((result["PROVINCIA_ISO"] == iso_list[1]) & (result["HORA_RACHA"] == "75"), result[result["PROVINCIA_ISO"] == iso_list[1]]["HORA_RACHA"].mode(), result["HORA_RACHA"])
 result = result.drop(columns=['INDICATIVO', 'NOMBRE'])
 df_iso = pd.read_csv(path_ref + 'cod_iso_provincias.csv', encoding="utf-8", keep_default_na=False)
 result_iso = result.merge(df_iso, how='inner', on='PROVINCIA')
