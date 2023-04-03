@@ -51,7 +51,7 @@ result["RACHA"] = result["RACHA"].str.replace(",",".").astype(float)
 result["SOL"] = result["SOL"].str.replace(",",".").astype(float)
 result["PRES_MAX"] = result["PRES_MAX"].str.replace(",",".").astype(float)
 result["PRES_MIN"] = result["PRES_MIN"].str.replace(",",".").astype(float)
-result["HORA_TEMP_MAX"] = result["HORA_TEMP_MAX"].str.split(":", expand=True)[0]
+result["HORA_TEMP_MAX"] = result["HORA_TEMP_MAX"].str.split(":", expand=True)[0] # Validar el replace 24 a 00
 result['HORA_TEMP_MAX'] = result['HORA_TEMP_MAX'].replace(['24'], '00')
 result["HORA_TEMP_MIN"] = result["HORA_TEMP_MIN"].str.split(":", expand=True)[0]
 result['HORA_TEMP_MIN'] = result['HORA_TEMP_MIN'].replace(['24'], '00')
