@@ -170,24 +170,27 @@ BOGOTÁ D.C.\\
 \thispagestyle{empty}
 \end{titlepage}
 
-%\newpage
-%\begin{titlepage}
-%\renewcommand{\listfigurename}{\centering ÍNDICE DE FIGURAS}
-%\listoffigures
-%\end{titlepage}
-
-%\newpage
-%\begin{titlepage}
-%\renewcommand{\listtablename}{\centering ÍNDICE DE TABLAS} 
-%\listoftables
-%\end{titlepage}
 \newpage
-\begin{center}
-\section{RESUMEN}
-\end{center}
+\begin{titlepage}
+\renewcommand{\listfigurename}{\centering ÍNDICE DE FIGURAS}
+\listoffigures
+\end{titlepage}
+
+\newpage
+\begin{titlepage}
+\renewcommand{\listtablename}{\centering ÍNDICE DE TABLAS} 
+\listoftables
+\end{titlepage}
 
 \newpage
 \pagenumbering{arabic}
+\begin{center}
+\section*{RESUMEN}
+\addcontentsline{toc}{section}{\protect\numberline{}RESUMEN}
+\end{center}
+
+\newpage
+
 \begin{center}
 \section{INTRODUCCIÓN}
 \end{center}
@@ -201,25 +204,6 @@ Por otro lado, el invierno y el clima frío pueden aumentar la transmisión del vi
 \\\\
 En este proyecto se desarrollará un estudio y análisis sobre el impacto de las condiciones climáticas en la propagación del virus covid-19 en España y determinar si existe algún factor relacionado con la transmisión.
 
-
-\newpage
-\begin{center}
-\section{PLANTEAMIENTO DEL PROBLEMA}
-\end{center}
-\bigskip
-El COVID-19 es una enfermedad infecciosa altamente contagiosa que ha afectado a millones de personas en todo el mundo y ha causado la muerte de cientos de miles de personas. Si bien se sabe que la propagación del virus se produce principalmente por contacto cercano con personas infectadas, también hay evidencia emergente que sugiere que las condiciones climáticas como la temperatura, la humedad y la luz solar, pueden influir en la propagación del virus.  Un modelo de machine learning puede ser una herramienta útil para evaluar la relación entre las condiciones climáticas y la propagación del COVID-19. El objetivo de este planteamiento del problema es desarrollar un modelo de machine learning que pueda predecir la propagación del virus en función de factores climáticos como la temperatura, la humedad y la luz solar.
-\\
-El modelo podría utilizar datos históricos sobre la propagación del virus y las condiciones climáticas para predecir la propagación futura del virus en diferentes condiciones climáticas o más específicamente dependiendo del modelo utilizado a groso modo se podrían utilizar de la siguiente forma:
-\\\\
-\begin{itemize}
-\item \textbf{Modelo de regresión:} Utilizando datos históricos de propagación del virus y condiciones climáticas para predecir la propagación futura del virus. El modelo puede incluir variables relacionadas con la propagación del virus, como el número de casos confirmados y la tasa de reproducción.
-\item  \textbf{Redes neuronales:} Se podría utilizar para analizar grandes conjuntos de datos de propagación del virus y condiciones climáticas. El modelo puede aprender patrones y relaciones entre las variables para predecir la propagación futura del virus en diferentes condiciones climáticas.
-\item  \textbf{Análisis de series de tiempo:} Si contamos con datos históricos para identificar patrones y tendencias en la propagación del virus y las condiciones climáticas. El modelo puede predecir la propagación futura del virus en función de los patrones identificados.
-\item  \textbf{Modelos de aprendizaje profundo:} Si tenemos datos de satélite y mapas climáticos para predecir la propagación del virus. Estos modelos pueden integrar datos climáticos con información sobre la densidad de población y la movilidad humana para predecir cómo se propagará el virus en diferentes áreas geográficas.
-\end{itemize}
-\bigskip
-Lo anterior es solo un bosquejo de un posible uso de cada tipo de modelo, conforme vayamos avanzando en nuestra investigación determinaremos cuál es el modelo que más se ajusta a nuestro requerimiento o que obtenga mejores resultados basado en sus métricas, el resultado de esto podría ayudar a informar la toma de decisiones sobre políticas de salud pública y permitir a las autoridades sanitarias tomar medidas preventivas antes de que se produzca un aumento en los casos de COVID-19.
-Al responder a esta pregunta, se pueden desarrollar mejores estrategias de prevención y mitigación para el COVID-19, y se pueden aplicar los hallazgos a futuras pandemias y enfermedades infecciosas.
 
 \newpage
 \begin{center}
@@ -245,9 +229,226 @@ Al responder a esta pregunta, se pueden desarrollar mejores estrategias de preve
 
 \newpage
 \begin{center}
-\section{MARCO TEÓRICO}
+\section{MACHINE LEARNING Y ESTADO DEL ARTE}
 \end{center} 
 \bigskip
+El Machine Learning es una técnica de Inteligencia Artificial que permite a los sistemas informáticos aprender de manera automática a partir de datos y experiencias previas, sin ser programados explícitamente para cada tarea. En lugar de seguir un conjunto fijo de instrucciones, los sistemas de Machine Learning pueden aprender a partir de datos, identificando patrones y tendencias, y utilizando esta información para realizar predicciones o tomar decisiones.\\\\
+El aprendizaje automático se basa en la idea de que los sistemas informáticos pueden aprender de manera similar a como lo hacen los seres humanos, mediante la identificación de patrones y la adaptación a nuevas situaciones. En lugar de requerir que se programen todas las posibles situaciones y resultados, también nos permite que los sistemas aprendan a partir de datos históricos y experiencias previas, y así puedan tomar decisiones informadas y precisas en tiempo real.
+Programar computadoras para aprender de la experiencia eventualmente debería eliminar la necesidad de gran parte de este esfuerzo de programación detallado. Conforme a la definición de ML de Tom M. Mitchell: ``Se dice que un programa de computadora aprende de la experiencia E con respeto a alguna clase de tareas T y medida de rendimiento P, si su rendimiento en tareas en T, medido por P, mejora con la experiencia E'' [3].
+Existen varios tipos de técnicas de Machine Learning, incluyendo el aprendizaje supervisado, el aprendizaje no supervisado y el aprendizaje por refuerzo. En el aprendizaje supervisado, el sistema aprende a partir de datos etiquetados previamente, mientras que, en el aprendizaje no supervisado, el sistema busca patrones y similitudes en los datos sin etiquetar. En el aprendizaje por refuerzo, el sistema aprende a partir de la retroalimentación del entorno.\\\\
+Se aplica en una variedad de campos, como la detección de fraudes, la clasificación de imágenes, el análisis de sentimientos y la predicción de ventas, entre otros. A medida que los datos se vuelven cada vez más importantes y abundantes, el Machine Learning se está convirtiendo en una herramienta esencial para empresas e investigadores que buscan automatizar tareas y mejorar la toma de decisiones.
+
+\bigskip
+\bigskip
+
+\subsection{APRENDIZAJE SUPERVISADO}
+\bigskip
+El aprendizaje supervisado es una técnica de ML que se basa en el uso de datos etiquetados previamente para entrenar un modelo de predicción o clasificación. En el aprendizaje supervisado, el modelo se entrena utilizando un conjunto de datos de entrenamiento que contiene ejemplos de entrada y salida esperada. El objetivo del modelo es aprender una función que pueda predecir la salida correcta para nuevas entradas nunca antes vistas.\\\\
+Por ejemplo, en la clasificación de correos electrónicos como spam o no spam, el modelo se entrena con una gran cantidad de correos electrónicos etiquetados previamente como spam o no spam. Utilizando esta información, el modelo aprende a identificar patrones en los correos electrónicos que le permiten clasificarlos correctamente. Una de las principales ventajas del aprendizaje supervisado es que puede proporcionar predicciones precisas y confiables en una variedad de tareas.
+Sin embargo, el aprendizaje supervisado también tiene algunas limitaciones. En particular, requiere grandes cantidades de datos etiquetados, lo que puede ser costoso y laborioso en algunos casos. Además, el modelo puede ser susceptible al sobreajuste si se entrena con demasiados datos, lo que significa que se adapta demasiado a los datos de entrenamiento y no generaliza bien a nuevos datos nunca antes vistos. Este a su vez se divide en problemas de regresión y clasificación.
+
+
+\subsubsection{REGRESIÓN}
+\medskip
+Los problemas de regresión en el aprendizaje supervisado son aquellos en los que se busca establecer una relación funcional entre una variable de entrada (también llamada variable independiente o predictor) y una variable de salida (también llamada variable dependiente o respuesta) que toma valores continuos en lugar de discretos. Es decir, se busca predecir un valor numérico continuo en lugar de una etiqueta o clase discreta.
+El objetivo de la regresión es encontrar una función que mejor se ajuste a los datos observados, de manera que pueda ser utilizada para predecir el valor de la variable de salida para nuevas observaciones de la variable de entrada.\\
+
+Sin embargo, los problemas de regresión pueden presentar algunos desafíos, como:
+\begin{itemize}
+\item La presencia de valores atípicos o datos faltantes, que pueden afectar negativamente el ajuste del modelo y la precisión de las predicciones.
+\item La elección de la función de regresión adecuada y de los parámetros del modelo, que pueden depender de la distribución de los datos y del objetivo de la predicción.
+\item La evaluación de la calidad del modelo, que puede requerir el uso de medidas de error y de rendimiento específicas para problemas de regresión.
+\end{itemize}
+
+Para superar estos desafíos, se pueden utilizar técnicas de preprocesamiento de datos, selección de características, validación cruzada y ajuste de hiperparámetros, entre otras.
+Estos modelos pueden ser lineales o no lineales. Los modelos lineales, como la regresión lineal simple o múltiple, buscan establecer una relación lineal entre las variables de entrada y la variable de salida [4]. Por otro lado, los modelos no lineales, como la regresión polinómica, la regresión logística, regresión de árbol de decisión, random forest o redes neuronales, permiten establecer relaciones no lineales entre las variables.
+
+\subsubsection{CLASIFICACIÓN}
+\medskip
+Los modelos de clasificación binaria son utilizados cuando se desea predecir una variable de salida que puede tomar únicamente dos valores posibles, como ``sí'' o ``no'', ``verdadero'' o ``falso'', etc. Ejemplos de modelos de clasificación binaria incluyen la regresión logística y la máquina de vectores de soporte.
+Por otro lado, los modelos de clasificación no binaria son utilizados cuando se desea predecir una variable de salida que puede tomar más de dos valores posibles, como la clasificación de imágenes en diferentes categorías o la predicción de resultados deportivos. Ejemplos de modelos de clasificación no binaria incluyen los árboles de decisión, los bosques aleatorios y las redes neuronales.\\\\
+Aunque los modelos de clasificación binaria y no binaria utilizan diferentes técnicas y algoritmos, el proceso general de construcción de modelos es el mismo. Se trata de identificar las variables de entrada más importantes, elegir un modelo adecuado, ajustar sus parámetros y evaluar su rendimiento utilizando medidas de evaluación adecuadas. binaria como no binaria. La elección del modelo adecuado dependerá del tipo de datos y del objetivo de la predicción. [5]
+
+\bigskip
+\bigskip
+
+\subsection{APRENDIZAJE NO SUPERVISADO}
+\bigskip
+El aprendizaje no supervisado es un tipo de aprendizaje automático en el que el algoritmo se entrena con datos no etiquetados, es decir, sin información previa sobre las categorías a las que pertenecen los datos. A diferencia del aprendizaje supervisado, donde los algoritmos aprenden a partir de datos etiquetados, en el aprendizaje no supervisado, los algoritmos buscan patrones y estructuras en los datos sin ninguna orientación sobre lo que se debe buscar.
+Se utiliza para descubrir patrones ocultos y estructuras en los datos, como grupos de datos similares, tendencias en los datos y relaciones entre variables. Algunos de los algoritmos de aprendizaje no supervisado más comunes incluyen la agrupación (clustering), la reducción de dimensionalidad y la asociación. 
+
+\subsubsection{CLUSTERING}
+\medskip
+El clustering, también conocido como agrupamiento, es una técnica de aprendizaje no supervisado en la que se agrupan datos similares en grupos o clústeres. El objetivo del clustering es dividir un conjunto de datos en grupos, donde los objetos en cada clúster son similares entre sí y diferentes de los objetos en otros clústeres. Esto se logra mediante el uso de medidas de similitud o distancia para medir la distancia entre objetos.
+Existen varios algoritmos de clustering, cada uno con sus propias fortalezas y debilidades. El algoritmo K-means es uno de los algoritmos más populares y ampliamente utilizados en el clustering. Funciona dividiendo el conjunto de datos en K clústeres y asignando cada objeto al clúster más cercano. Luego, se recalcula el centroide de cada clúster y se repite el proceso hasta que se alcanza una solución óptima.\\
+
+Otro algoritmo popular de clustering es el clustering jerárquico. Este algoritmo construye una jerarquía de clústeres mediante la combinación iterativa de clústeres en subgrupos más grandes. El resultado es un árbol jerárquico que representa la estructura de agrupamiento de los datos.
+El clustering se utiliza en muchas aplicaciones, como la segmentación de clientes, la clasificación de imágenes y la agrupación de documentos. Por ejemplo, en la segmentación de clientes, el clustering se puede utilizar para agrupar a los clientes en función de sus patrones de compra o preferencias. En la clasificación de imágenes, el clustering se puede utilizar para agrupar imágenes similares para su posterior análisis o clasificación.\\
+
+En la agrupación de documentos, el clustering se puede utilizar para agrupar documentos similares en temas específicos.Sin embargo, es importante tener en cuenta que el clustering no siempre es la mejor opción para todos los conjuntos de datos y situaciones. Algunas limitaciones del clustering incluyen la necesidad de definir el número de clústeres de antemano, la sensibilidad a los valores atípicos y la dificultad de evaluar los resultados. Es importante seleccionar el algoritmo y los parámetros adecuados para obtener resultados precisos y significativos. [6]
+
+\subsubsection{REDUCCIÓN DE LA DIMENSIONALIDAD}
+\medskip
+La reducción de la dimensionalidad es una técnica que se utiliza para reducir el número de variables o características en un conjunto de datos, mientras se mantiene la mayor cantidad posible de información útil. La reducción de la dimensionalidad es importante ya que a menudo los conjuntos de datos pueden contener muchas variables o características, lo que puede hacer que los modelos sean complejos y difíciles de interpretar. Además, muchos algoritmos de aprendizaje automático pueden tener dificultades para manejar conjuntos de datos con un gran número de variables.
+Existen varios algoritmos de reducción de dimensionalidad, pero uno de los más populares es el análisis de componentes principales (PCA). PCA es un método lineal que utiliza una transformación matemática para encontrar una nueva representación de los datos en un espacio de menor dimensión, mientras se mantiene la mayor cantidad posible de información. La idea detrás de PCA es encontrar una nueva combinación de las variables originales que explique la mayor cantidad posible de la varianza en los datos.
+\\\\
+Otro algoritmo popular de reducción de la dimensionalidad es el t-distributed stochastic neighbor embedding (t-SNE). t-SNE es una técnica no lineal que se utiliza para visualizar datos en un espacio de menor dimensión. t-SNE es especialmente útil para visualizar datos de alta dimensión en dos o tres dimensiones. La técnica funciona encontrando una representación de los datos en un espacio de menor dimensión que mantiene la estructura de similitud de los datos originales.
+La reducción de la dimensionalidad se utiliza en muchas aplicaciones, como la visualización de datos, la detección de anomalías y la clasificación de datos. Por ejemplo, en la visualización de datos, la reducción de la dimensionalidad se puede utilizar para visualizar datos de alta dimensión en dos o tres dimensiones. En la detección de anomalías, la reducción de la dimensionalidad se puede utilizar para identificar patrones o grupos de datos anómalos. En la clasificación de datos, la reducción de la dimensionalidad se puede utilizar para mejorar la precisión de los modelos al reducir la complejidad del conjunto de datos.
+\\\\
+Sin embargo, es importante tener en cuenta que la reducción de la dimensionalidad también puede tener algunas limitaciones. Por ejemplo, puede perder información importante durante el proceso de reducción de la dimensionalidad. Además, algunos algoritmos pueden ser sensibles a los valores atípicos o pueden ser difíciles de interpretar. [7]
+
+\subsubsection{ASOCIACIÓN}
+\medskip
+La asociación se utiliza para encontrar patrones interesantes en conjuntos de datos grandes y complejos, para descubrir relaciones entre variables en los datos y, a menudo, se utiliza en el análisis de transacciones, como el análisis de cestas de la compra, el análisis de clics de página web y el análisis de registros de transacciones financieras.
+La asociación se basa en el concepto de que los elementos en un conjunto de datos pueden estar relacionados de alguna manera. Por ejemplo, en el análisis de cestas de la compra, es posible que los clientes que compran leche también compren pan y huevos. La asociación se utiliza para encontrar patrones como este en los datos.
+\\\\
+Un algoritmo popular de asociación es el algoritmo Apriori. El algoritmo Apriori se utiliza para encontrar conjuntos de elementos frecuentes en un conjunto de datos. Un conjunto de elementos es frecuente si aparece con frecuencia en el conjunto de datos. El algoritmo Apriori utiliza la propiedad de que cualquier subconjunto de un conjunto frecuente también es frecuente. El algoritmo comienza encontrando los conjuntos de elementos de un solo elemento más frecuentes, luego encuentra los conjuntos de elementos de dos elementos más frecuentes, y así sucesivamente.
+Otro algoritmo popular de asociación es el algoritmo FP-Growth. El algoritmo FP-Growth utiliza una estructura de árbol llamada árbol FP para encontrar conjuntos de elementos frecuentes. El árbol FP almacena los conjuntos de elementos frecuentes y sus frecuencias de manera eficiente, lo que permite que el algoritmo sea mucho más rápido que el algoritmo Apriori para conjuntos de datos grandes.
+\\\\
+La asociación se utiliza en muchas aplicaciones, como la recomendación de productos, la segmentación de clientes y la detección de fraudes. Por ejemplo, en la recomendación de productos, la asociación se puede utilizar para recomendar productos relacionados con los que el cliente ya ha comprado. En la segmentación de clientes, la asociación se puede utilizar para identificar grupos de clientes que tienen patrones de compra similares. En la detección de fraudes, la asociación se puede utilizar para identificar patrones de transacciones sospechosos, como un cliente que compra varios artículos caros en un corto período de tiempo.
+
+\bigskip
+\subsection{APRENDIZAJE POR REFUERZO}
+\bigskip
+El aprendizaje por refuerzo es una técnica de aprendizaje automático que se basa en el concepto de que un agente debe aprender a tomar decisiones óptimas en un entorno determinado para maximizar una recompensa acumulativa. En el aprendizaje por refuerzo, el agente recibe información del entorno en forma de recompensas y castigos y debe aprender a seleccionar acciones que maximicen la recompensa a largo plazo.
+El agente toma una acción en un estado particular y el entorno responde con una recompensa. El objetivo del agente es aprender una política que le permita maximizar la recompensa acumulativa en el largo plazo. La política es una función que mapea estados a acciones y puede ser aprendida utilizando técnicas de aprendizaje por refuerzo.
+\\\\
+Un algoritmo popular de aprendizaje por refuerzo es el algoritmo Q-Learning. En Q-Learning, el agente aprende una función Q que le permite evaluar la calidad de una acción en un estado particular. La función Q se puede utilizar para seleccionar la mejor acción en un estado determinado y el algoritmo Q-Learning utiliza una técnica llamada exploración, explotación para equilibrar el aprendizaje de nuevas acciones y la selección de acciones que se sabe que son buenas.
+El aprendizaje por refuerzo se utiliza en muchas aplicaciones, como los juegos, la robótica y la optimización de procesos. Por ejemplo, en los juegos, el aprendizaje por refuerzo se puede utilizar para crear agentes que aprendan a jugar juegos complejos, como el ajedrez y el Go, en la robótica, el aprendizaje por refuerzo se puede utilizar para crear robots que aprendan a realizar tareas complejas, como caminar y manipular objetos y en la optimización de procesos, el aprendizaje por refuerzo se puede utilizar para crear sistemas que aprendan a optimizar procesos, como la producción de energía y la gestión de inventarios.
+
+\bigskip
+\subsection{REDES NEURONALES}
+\bigskip
+Las redes neuronales son un modelo computacional inspirado en la estructura y funcionamiento del cerebro humano, estas redes están compuestas por unidades de procesamiento llamadas neuronas artificiales, que se organizan en capas y se interconectan mediante conexiones ponderadas. La información se propaga a través de la red de neuronas a través de una función de activación no lineal, lo que permite que la red realice una amplia variedad de tareas de aprendizaje.
+\\
+El proceso de entrenamiento de una red neuronal implica ajustar los valores de los pesos de las conexiones para que la salida de la red se acerque a la salida deseada. Esto se logra mediante el uso de algoritmos de aprendizaje supervisado o no supervisado. En el aprendizaje supervisado, se proporciona a la red un conjunto de datos etiquetados de entrada y salida esperada, mientras que, en el aprendizaje no supervisado, la red debe descubrir patrones en los datos de entrada por sí misma.
+Las redes neuronales han demostrado ser muy efectivas en una amplia variedad de tareas de aprendizaje automático, como la clasificación de imágenes, el reconocimiento de voz, la traducción automática y la generación de texto y música, entre otras. Además, las redes neuronales profundas, que tienen muchas capas ocultas, han llevado a grandes avances en áreas como el procesamiento del lenguaje natural y la visión por computadora.
+\\\\
+Sin embargo, el entrenamiento de redes neuronales puede ser un proceso muy intensivo en términos de recursos computacionales y de tiempo, y la interpretación de los resultados obtenidos puede ser difícil debido a la naturaleza no lineal y altamente distribuida de las redes neuronales. Además, las redes neuronales pueden ser propensas a sobreajustarse a los datos de entrenamiento, lo que puede llevar a un rendimiento deficiente en datos nuevos.
+
+\subsubsection{CONVOLUCIONALES}
+\medskip
+Las redes neuronales convolucionales son un tipo de red neuronal que ha sido especialmente diseñada para procesar datos de tipo imagen y otros datos de alto dimensionalidad. Las CNN (Convolutional Neural Network) utilizan una técnica de procesamiento conocida como convolución, que implica desplazar un filtro sobre una imagen y realizar una operación de multiplicación punto a punto entre el filtro y la sección de la imagen correspondiente.
+\\\\
+Las CNN son especialmente útiles para tareas como la clasificación de imágenes y la detección de objetos, ya que son capaces de extraer características de las imágenes y otros datos de alto dimensionalidad con gran precisión, estas características se utilizan luego para realizar la clasificación o detección de objetos, según sea el caso. Las CNN son particularmente efectivas en la detección de patrones en datos de tipo imagen, ya que los filtros convolucionales permiten capturar características locales de la imagen, como bordes, texturas y patrones repetitivos, de manera eficiente. Además, las CNN pueden aprender automáticamente las características relevantes de los datos de entrenamiento, lo que las hace muy efectivas para tareas de clasificación y detección de objetos en las que las características relevantes no son conocidas de antemano.
+Aunque las CNN son particularmente útiles para tareas de procesamiento de imagen, también se han utilizado con éxito en tareas como el procesamiento del lenguaje natural, la clasificación de secuencias de tiempo y la detección de anomalías. Además, las redes neuronales convolucionales profundas, que contienen varias capas de convolución, han llevado a grandes avances en áreas como el procesamiento de imágenes médicas y la visión por computadora. [8]
+
+\subsubsection{RECURRENTES}
+\medskip
+Las redes neuronales recurrentes (RNN, recurrent neural network) son un tipo de red neuronal que se utiliza para procesar datos secuenciales, como el lenguaje natural y las series de tiempo. A diferencia de las redes neuronales convolucionales, que procesan los datos de manera independiente en cada posición, las RNN tienen memoria y son capaces de procesar secuencias de datos de longitud variable.
+En una red neuronal recurrente, cada neurona tiene una conexión consigo misma, lo que permite que la información fluya a través de la red en bucles. Esta arquitectura de bucle permite que la red neuronal recuerde información de los pasos anteriores y la utilice para procesar la entrada actual.
+La principal ventaja de las RNN es su capacidad para modelar la dependencia temporal de los datos. Esto significa que la red puede aprender patrones en secuencias de datos, como la estructura sintáctica del lenguaje natural o los patrones de fluctuación en una serie de tiempo. Además, las RNN son capaces de procesar secuencias de datos de longitud variable, lo que las hace muy útiles para tareas como la traducción automática, donde la longitud de la entrada y la salida puede variar.
+\\\\
+Una variante de las RNN son las redes neuronales LSTM (Long Short-Term Memory), que fueron diseñadas para evitar el problema del desvanecimiento del gradiente, que puede ocurrir cuando se entrena una red neuronal recurrente profunda. Las redes LSTM utilizan un mecanismo de compuertas para controlar el flujo de información a través de la red y evitar que la señal degradada afecte al entrenamiento de la red.
+Las redes neuronales recurrentes y las redes LSTM han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la generación de texto, la traducción automática, el reconocimiento de voz y la predicción de series de tiempo. Sin embargo, las redes neuronales recurrentes también tienen algunas limitaciones, como la dificultad para manejar dependencias a largo plazo y el costo computacional elevado de entrenar redes profundas. [9]
+
+\subsubsection{DE ATENCIÓN}
+\medskip
+Las redes neuronales de atención (attention-based neural networks) son un tipo de red neuronal que se utiliza para procesar datos secuenciales y modelar la dependencia temporal de los datos, al igual que las redes neuronales recurrentes. Sin embargo, a diferencia de las redes neuronales recurrentes, las redes neuronales de atención no procesan todos los datos secuenciales de manera uniforme, sino que prestan atención a partes específicas de la secuencia en cada paso de procesamiento.
+En una red neuronal de atención, cada paso de procesamiento se divide en dos partes: la codificación y la decodificación. Durante la codificación, la red procesa la entrada secuencial y la transforma en una serie de vectores de características. Durante la decodificación, la red genera la salida secuencial a partir de los vectores de características generados durante la codificación.
+\\
+La atención se utiliza para determinar qué vectores de características se deben utilizar en cada paso de decodificación. En lugar de procesar toda la secuencia de entrada en cada paso de decodificación, la red presta atención a las partes más relevantes de la entrada en cada paso, utilizando una función de atención para asignar pesos a cada vector de características de la secuencia de entrada.
+\\\\
+La principal ventaja de las redes neuronales de atención es su capacidad para enfocarse en las partes más importantes de la entrada secuencial en cada paso de procesamiento, lo que las hace muy útiles para tareas como la traducción automática, donde la atención se puede utilizar para identificar las partes más relevantes de la oración en la que se está trabajando en cada paso del proceso de traducción.
+Una variante de las redes neuronales de atención son las redes neuronales de atención múltiple (multi-head attention networks), que utilizan múltiples funciones de atención para procesar diferentes aspectos de la entrada secuencial de manera simultánea.
+\\\\
+Las redes neuronales de atención han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la traducción automática, el procesamiento del lenguaje natural y la generación de texto. Sin embargo, al igual que todas las redes neuronales, también tienen algunas limitaciones que deben ser consideradas, como la necesidad de grandes cantidades de datos de entrenamiento y el costo computacional elevado de entrenar redes profundas.
+
+\bigskip
+\subsection{ESTADO DEL ARTE}
+\bigskip
+El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina o la astronomía.
+\\\\
+A su vez el aprendizaje federado es una técnica de aprendizaje supervisado que ha ganado mucha atención en los últimos años debido a su capacidad para entrenar modelos de manera distribuida y colaborativa sin la necesidad de compartir los datos subyacentes. Esto lo hace especialmente útil en situaciones donde la privacidad y la seguridad son una preocupación importante, como en el análisis de datos médicos o financieros. Un ejemplo es el proyecto NVIDIA FLARE, un kit de desarrollo de software que ayuda a las partes distribuidas a colaborar para desarrollar modelos de IA más generalizables \textit{``El código abierto de NVIDIA FLARE para acelerar la investigación del aprendizaje federado es especialmente importante en el área de la salud, donde el acceso a conjuntos de datos multiinstitucionales es crucial, pero las preocupaciones sobre la privacidad del paciente pueden limitar la capacidad de compartir datos''}, Dr. Jayashree Kalapathy. [10]
+\\
+Para nuestro proyecto el aprendizaje federado no es el adecuado ya que no contamos con información sensible y la seguridad de esta información no es relevante, ya que son datos públicos suministrados por el gobierno y páginas oficiales.
+\\\\
+Sin duda el área en donde más se ha experimentado grandes avances ha sido las redes neuronales especialmente en áreas como las redes neuronales profundas, las arquitecturas de redes neuronales innovadoras (diversas arquitecturas que abordan problemas específicos), el aprendizaje por transferencia el cual implica reutilizar las capas ocultas de una red pre-entrenada en una tarea y adaptarla para una tarea nueva. Así como nuevas técnicas para mejorar los modelos como lo es la técnica de regularización que se utilizan para evitar el sobreajuste o el sobreentrenamiento de las redes neuronales, esto implica agregar términos de penalización a la función de costo de la red para evitar que los pesos de la red adquieran valores extremos. Algunos proyectos recientes en estas áreas son:
+
+\begin{itemize}
+
+\item \textbf{AlphaGo:} Es un programa de ordenador desarrollado por DeepMind que utiliza una combinación de redes neuronales y algoritmos de búsqueda para jugar al juego de mesa chino Go. En 2016, AlphaGo se convirtió en el primer programa de ordenador en derrotar a un campeón humano de Go, lo que fue considerado un hito importante en la inteligencia artificial. [11]
+
+\item \textbf{DALL-E:} Es un modelo de red neuronal desarrollado por OpenAI que genera imágenes a partir de descripciones de texto. El modelo utiliza una combinación de redes neuronales convolucionales y de atención para generar imágenes realistas y detalladas a partir de descripciones de texto. [12]
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.7\textwidth]{astronauta}
+		\textbf{\caption{{\small Astronauta sosteniendo una flor - DALL-E.}}}
+	{\scriptsize Fuente: [www.sciencefocus.com [12]]}
+	\end{center}
+\end{figure}
+\item \textbf{StyleGAN2:} Es un modelo de red neuronal que se utiliza para generar imágenes fotorrealistas de alta calidad. El modelo utiliza una técnica llamada "red neuronal generativa adversarial" para generar imágenes que son indistinguibles de las fotos reales. [13]
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{stylegan2}
+		\textbf{\caption{{\small Reconstrucción de imagen - StyleGAN2.}}}
+	{\scriptsize Fuente: [www.syncedreview.com/ [13]]}
+	\end{center}
+\end{figure}
+\item \textbf{BERT (Bidirectional Encoder Representations from Transformers):} Es un modelo de lenguaje natural basado en redes neuronales de atención que ha demostrado una gran precisión en una variedad de tareas de procesamiento de lenguaje natural, como la clasificación de texto y la respuesta a preguntas.
+
+\end{itemize}
+
+Estos avances muestran cómo las redes neuronales están transformando la forma en que las computadoras pueden aprender y procesar información, abriendo nuevas posibilidades en áreas como la generación de lenguaje natural, la visión por computadora y la toma de decisiones inteligente. Para nuestro caso puntual no se utilizarán estas técnicas recientes debido al alcance del proyecto, en donde se evaluará modelos tradicionales y la comparación entre estos.
+
+\newpage
+\begin{center}
+\section{DESARROLLO DEL PROYECTO Y RESULTADOS}
+\end{center}
+Para el desarrollo del proyecto se utilizó la metodología KDD (Knowledge Discovery in Databases) en los distintos orígenes de datos, el objetivo de es crear un set de datos refinado a partir de todos los orígenes y a partir de este extraer conocimiento a través de los modelos creados para darle una solución al planteamiento del problema. Se realizará un análisis sobre los resultados obtenidos y las posibles mejoras en trabajos futuros.
+
+\bigskip
+\subsection{METODOLOGÍA}
+\medskip
+KDD (Knowledge Discovery in Databases), o Descubrimiento de Conocimiento en Bases de Datos, es un proceso integral que implica la identificación, extracción y transformación de patrones y conocimientos valiosos a partir de grandes conjuntos de datos. Es una disciplina que combina el uso de técnicas de minería de datos, estadísticas, aprendizaje automático y bases de datos para descubrir información útil y conocimientos ocultos en datos no estructurados o estructurados.
+\\\\
+El proceso de KDD consta de varias etapas, que incluyen:
+\begin{itemize}
+
+\item \textbf{Selección de datos:} Consiste en la identificación y recopilación de los datos relevantes para el análisis. Esto puede involucrar la obtención de datos de diversas fuentes, la limpieza y preprocesamiento de los datos para asegurar su calidad y consistencia.
+\item \textbf{Preprocesamiento de datos:} Implica la transformación y limpieza de los datos para prepararlos para el análisis. Esto puede incluir la eliminación de datos duplicados o inconsistentes, la normalización de los datos, la imputación de valores faltantes y la selección de características relevantes.
+\item \textbf{Transformación de datos:} Involucra la conversión de los datos preprocesados en formatos adecuados para el análisis. Esto puede incluir la transformación de datos categóricos en datos numéricos, la discretización de datos continuos, la reducción de dimensionalidad, entre otros.
+\item \textbf{Minería de datos:} Es la etapa central de KDD, donde se aplican técnicas y algoritmos de minería de datos para descubrir patrones y conocimientos en los datos. Esto puede incluir técnicas de clasificación, regresión, agrupamiento, asociación, entre otras.
+\item \textbf{Interpretación y Evaluación de resultados:} Implica la interpretación y comunicación de los resultados obtenidos a través de técnicas de visualización y presentación de datos. Así como la utilización de métricas de evaluación y validación para medir la precisión, el rendimiento y la utilidad de los resultados obtenidos. Esto puede ayudar a comprender y utilizar los patrones y conocimientos descubiertos para tomar decisiones informadas y mejorar la toma de decisiones en diversas áreas de aplicación.
+
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{KDD2}
+		\textbf{\caption{{\small Descripción de los pasos que constituyen el proceso KDD}}}
+	{\scriptsize Fuente: [The KDD Process for Extracting Useful Knowledge from Volumes of Data]}
+	\end{center}
+\end{figure}
+
+\subsubsection{SELECCIÓN DE DATOS}
+xxxx
+
+\bigskip
+\subsection{PLANTEAMIENTO DEL PROBLEMA}
+\medskip
+El COVID-19 es una enfermedad infecciosa altamente contagiosa que ha afectado a millones de personas en todo el mundo y ha causado la muerte de cientos de miles de personas. Si bien se sabe que la propagación del virus se produce principalmente por contacto cercano con personas infectadas, también hay evidencia emergente que sugiere que las condiciones climáticas como la temperatura, la humedad y la luz solar, pueden influir en la propagación del virus.  Un modelo de machine learning puede ser una herramienta útil para evaluar la relación entre las condiciones climáticas y la propagación del COVID-19. El objetivo de este planteamiento del problema es desarrollar un modelo de machine learning que pueda predecir la propagación del virus en función de factores climáticos como la temperatura, la humedad y la luz solar.
+\\
+El modelo podría utilizar datos históricos sobre la propagación del virus y las condiciones climáticas para predecir la propagación futura del virus en diferentes condiciones climáticas o más específicamente dependiendo del modelo utilizado a groso modo se podrían utilizar de la siguiente forma:
+\\\\
+\begin{itemize}
+\item \textbf{Modelo de regresión:} Utilizando datos históricos de propagación del virus y condiciones climáticas para predecir la propagación futura del virus. El modelo puede incluir variables relacionadas con la propagación del virus, como el número de casos confirmados y la tasa de reproducción.
+\item  \textbf{Redes neuronales:} Se podría utilizar para analizar grandes conjuntos de datos de propagación del virus y condiciones climáticas. El modelo puede aprender patrones y relaciones entre las variables para predecir la propagación futura del virus en diferentes condiciones climáticas.
+\item  \textbf{Análisis de series de tiempo:} Si contamos con datos históricos para identificar patrones y tendencias en la propagación del virus y las condiciones climáticas. El modelo puede predecir la propagación futura del virus en función de los patrones identificados.
+\item  \textbf{Modelos de aprendizaje profundo:} Si tenemos datos de satélite y mapas climáticos para predecir la propagación del virus. Estos modelos pueden integrar datos climáticos con información sobre la densidad de población y la movilidad humana para predecir cómo se propagará el virus en diferentes áreas geográficas.
+\end{itemize}
+\bigskip
+Lo anterior es solo un bosquejo de un posible uso de cada tipo de modelo, conforme vayamos avanzando en nuestra investigación determinaremos cuál es el modelo que más se ajusta a nuestro requerimiento o que obtenga mejores resultados basado en sus métricas, el resultado de esto podría ayudar a informar la toma de decisiones sobre políticas de salud pública y permitir a las autoridades sanitarias tomar medidas preventivas antes de que se produzca un aumento en los casos de COVID-19.
+Al responder a esta pregunta, se pueden desarrollar mejores estrategias de prevención y mitigación para el COVID-19, y se pueden aplicar los hallazgos a futuras pandemias y enfermedades infecciosas.
+
+
+
+
+
+
+
 
 
 \newpage
@@ -260,6 +461,39 @@ Araujo, M. B., \& Naimi, B. (2020). Spread of SARS-CoV-2 Coronavirus likely to b
 
 \bibitem[2]{HighTemperatue}
 Wang, J., Tang, K., Feng, K., \& Lv, W. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. Available at SSRN 3551767. URL: https://ssrn.com/abstract=3551767
+
+\bibitem[3]{MachineLearning}
+URL: https://www.scribd.com/document/468808682/Libro-Machine-Learning-pdf
+
+\bibitem[4]{RevistaTIA}
+URL: https://revistas.udistrital.edu.co/index.php/tia/article/download/17325/17214/104552
+
+\bibitem[5]{Uma}
+URL: https://riuma.uma.es/xmlui/handle/10630/25147
+
+\bibitem[6]{Clustering}
+URL: https://www.perlego.com/book/2165268/machine-learning-y-deep-learning-pdf
+
+\bibitem[7]{PCA}
+URL: https://openaccess.uoc.edu/bitstream/10609/140427/8/Inteligencia%20artificial%20avanzada_M%C3%B3dulo%201_Inteligencia%20artificial%20avanzada.pdf
+
+\bibitem[8]{CNN}
+URL: $https://www.d2l.ai/chapter_convolutional-neural-networks/index.html$
+
+\bibitem[9]{RNN}
+URL: $https://www.buscalibre.com.co/libro-recurrent-neural-networks-with-python-quick-start-guide-sequential-learning-and-language-modeling-with-tensorflow-libro-en-ingles/9781789132335/p/54514893$
+
+\bibitem[10]{nvidia}
+URL: $https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/$
+
+\bibitem[11]{GO}
+URL: $https://www.bbc.com/mundo/noticias/2016/03/160312_alphago_inteigencia_artificial_go_victoria_humano_men$
+
+\bibitem[12]{DALL-E}
+URL: $https://www.sciencefocus.com/future-technology/dall-e-2-why-the-ai-image-generator-is-a-revolutionary-invention/$
+
+\bibitem[13]{StyleGAN2}
+URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-stylegan2-to-deliver-sota-image-reconstruction-results/$
 
 
 \end{thebibliography}
