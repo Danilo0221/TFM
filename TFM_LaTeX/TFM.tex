@@ -8,12 +8,17 @@
 \usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage{colortbl}
+\usepackage{array}
+\usepackage{tabularray}
+\usepackage{vcell}
 \usepackage{slashbox}
 \usepackage{graphicx}
 \usepackage{dcolumn}
 \usepackage{vmargin}
 \usepackage{multirow, array} % para las tablas
 \usepackage{float}
+%\usepackage[table]{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{fancyhdr}
 \usepackage{cite} % para contraer referencias
 \parindent 0pt
@@ -22,7 +27,7 @@
     citecolor=black,
     filecolor=black,
     linkcolor=black,
-    urlcolor=black
+    urlcolor=blue
 }
 %%%%%%%% Coloca una imagen como encabezado %%%%%%%%%%%%%%
 \pagestyle{fancy}
@@ -375,7 +380,7 @@ Sin duda el área en donde más se ha experimentado grandes avances ha sido las re
 	\begin{center}
 	\includegraphics[width=0.7\textwidth]{astronauta}
 		\textbf{\caption{{\small Astronauta sosteniendo una flor - DALL-E.}}}
-	{\scriptsize Fuente: [www.sciencefocus.com [12]]}
+	{\scriptsize Fuente: [Dall-E 2: Why the AI image generator is a revolutionary invention]}
 	\end{center}
 \end{figure}
 \item \textbf{StyleGAN2:} Es un modelo de red neuronal que se utiliza para generar imágenes fotorrealistas de alta calidad. El modelo utiliza una técnica llamada "red neuronal generativa adversarial" para generar imágenes que son indistinguibles de las fotos reales. [13]
@@ -384,7 +389,7 @@ Sin duda el área en donde más se ha experimentado grandes avances ha sido las re
 	\begin{center}
 	\includegraphics[width=0.5\textwidth]{stylegan2}
 		\textbf{\caption{{\small Reconstrucción de imagen - StyleGAN2.}}}
-	{\scriptsize Fuente: [www.syncedreview.com/ [13]]}
+	{\scriptsize Fuente: [MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results]}
 	\end{center}
 \end{figure}
 \item \textbf{BERT (Bidirectional Encoder Representations from Transformers):} Es un modelo de lenguaje natural basado en redes neuronales de atención que ha demostrado una gran precisión en una variedad de tareas de procesamiento de lenguaje natural, como la clasificación de texto y la respuesta a preguntas.
@@ -403,18 +408,7 @@ Para el desarrollo del proyecto se utilizó la metodología KDD (Knowledge Discove
 \subsection{METODOLOGÍA}
 \medskip
 KDD (Knowledge Discovery in Databases), o Descubrimiento de Conocimiento en Bases de Datos, es un proceso integral que implica la identificación, extracción y transformación de patrones y conocimientos valiosos a partir de grandes conjuntos de datos. Es una disciplina que combina el uso de técnicas de minería de datos, estadísticas, aprendizaje automático y bases de datos para descubrir información útil y conocimientos ocultos en datos no estructurados o estructurados.
-\\\\
-El proceso de KDD consta de varias etapas, que incluyen:
-\begin{itemize}
-
-\item \textbf{Selección de datos:} Consiste en la identificación y recopilación de los datos relevantes para el análisis. Esto puede involucrar la obtención de datos de diversas fuentes, la limpieza y preprocesamiento de los datos para asegurar su calidad y consistencia.
-\item \textbf{Preprocesamiento de datos:} Implica la transformación y limpieza de los datos para prepararlos para el análisis. Esto puede incluir la eliminación de datos duplicados o inconsistentes, la normalización de los datos, la imputación de valores faltantes y la selección de características relevantes.
-\item \textbf{Transformación de datos:} Involucra la conversión de los datos preprocesados en formatos adecuados para el análisis. Esto puede incluir la transformación de datos categóricos en datos numéricos, la discretización de datos continuos, la reducción de dimensionalidad, entre otros.
-\item \textbf{Minería de datos:} Es la etapa central de KDD, donde se aplican técnicas y algoritmos de minería de datos para descubrir patrones y conocimientos en los datos. Esto puede incluir técnicas de clasificación, regresión, agrupamiento, asociación, entre otras.
-\item \textbf{Interpretación y Evaluación de resultados:} Implica la interpretación y comunicación de los resultados obtenidos a través de técnicas de visualización y presentación de datos. Así como la utilización de métricas de evaluación y validación para medir la precisión, el rendimiento y la utilidad de los resultados obtenidos. Esto puede ayudar a comprender y utilizar los patrones y conocimientos descubiertos para tomar decisiones informadas y mejorar la toma de decisiones en diversas áreas de aplicación.
-
-\end{itemize}
-
+\\
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=1\textwidth]{KDD2}
@@ -423,8 +417,14 @@ El proceso de KDD consta de varias etapas, que incluyen:
 	\end{center}
 \end{figure}
 
-\subsubsection{SELECCIÓN DE DATOS}
-xxxx
+El proceso de KDD consta de varias etapas, que incluyen:
+\begin{itemize}
+\item \textbf{Selección de datos:} Consiste en la identificación y recopilación de los datos relevantes para el análisis. Esto puede involucrar la obtención de datos de diversas fuentes, la limpieza y preprocesamiento de los datos para asegurar su calidad y consistencia.
+\item \textbf{Preprocesamiento de datos:} Implica la transformación y limpieza de los datos para prepararlos para el análisis. Esto puede incluir la eliminación de datos duplicados o inconsistentes, la normalización de los datos, la imputación de valores faltantes y la selección de características relevantes.
+\item \textbf{Transformación de datos:} Involucra la conversión de los datos preprocesados en formatos adecuados para el análisis. Esto puede incluir la transformación de datos categóricos en datos numéricos, la discretización de datos continuos, la reducción de dimensionalidad, entre otros.
+\item \textbf{Minería de datos:} Es la etapa central de KDD, donde se aplican técnicas y algoritmos de minería de datos para descubrir patrones y conocimientos en los datos. Esto puede incluir técnicas de clasificación, regresión, agrupamiento, asociación, entre otras.
+\item \textbf{Interpretación y Evaluación de resultados:} Implica la interpretación y comunicación de los resultados obtenidos a través de técnicas de visualización y presentación de datos. Así como la utilización de métricas de evaluación y validación para medir la precisión, el rendimiento y la utilidad de los resultados obtenidos. Esto puede ayudar a comprender y utilizar los patrones y conocimientos descubiertos para tomar decisiones informadas y mejorar la toma de decisiones en diversas áreas de aplicación.
+\end{itemize}
 
 \bigskip
 \subsection{PLANTEAMIENTO DEL PROBLEMA}
@@ -432,7 +432,7 @@ xxxx
 El COVID-19 es una enfermedad infecciosa altamente contagiosa que ha afectado a millones de personas en todo el mundo y ha causado la muerte de cientos de miles de personas. Si bien se sabe que la propagación del virus se produce principalmente por contacto cercano con personas infectadas, también hay evidencia emergente que sugiere que las condiciones climáticas como la temperatura, la humedad y la luz solar, pueden influir en la propagación del virus.  Un modelo de machine learning puede ser una herramienta útil para evaluar la relación entre las condiciones climáticas y la propagación del COVID-19. El objetivo de este planteamiento del problema es desarrollar un modelo de machine learning que pueda predecir la propagación del virus en función de factores climáticos como la temperatura, la humedad y la luz solar.
 \\
 El modelo podría utilizar datos históricos sobre la propagación del virus y las condiciones climáticas para predecir la propagación futura del virus en diferentes condiciones climáticas o más específicamente dependiendo del modelo utilizado a groso modo se podrían utilizar de la siguiente forma:
-\\\\
+\\
 \begin{itemize}
 \item \textbf{Modelo de regresión:} Utilizando datos históricos de propagación del virus y condiciones climáticas para predecir la propagación futura del virus. El modelo puede incluir variables relacionadas con la propagación del virus, como el número de casos confirmados y la tasa de reproducción.
 \item  \textbf{Redes neuronales:} Se podría utilizar para analizar grandes conjuntos de datos de propagación del virus y condiciones climáticas. El modelo puede aprender patrones y relaciones entre las variables para predecir la propagación futura del virus en diferentes condiciones climáticas.
@@ -443,16 +443,159 @@ El modelo podría utilizar datos históricos sobre la propagación del virus y las 
 Lo anterior es solo un bosquejo de un posible uso de cada tipo de modelo, conforme vayamos avanzando en nuestra investigación determinaremos cuál es el modelo que más se ajusta a nuestro requerimiento o que obtenga mejores resultados basado en sus métricas, el resultado de esto podría ayudar a informar la toma de decisiones sobre políticas de salud pública y permitir a las autoridades sanitarias tomar medidas preventivas antes de que se produzca un aumento en los casos de COVID-19.
 Al responder a esta pregunta, se pueden desarrollar mejores estrategias de prevención y mitigación para el COVID-19, y se pueden aplicar los hallazgos a futuras pandemias y enfermedades infecciosas.
 
+\bigskip
+\subsection{DESARROLLO DEL PROYECTO}
+\medskip
+El proyecto se desarrollará siguiendo cada una de las etapas del KDD, ya que proporciona una estructura sistemática para la extracción de conocimiento a partir de los datos. Al seguir cada una de las etapas del KDD, se puede asegurar que el proceso es riguroso y que se obtienen resultados precisos y relevantes para el proyecto.
 
+\subsubsection{SELECCIÓN DE DATOS}
+Para la ejecución del proyecto se utilizaron distintas fuentes de datos las cuales se detallan a continuación:
+\\
+\begin{itemize}
+\item \textbf{Casos COVID-19 por provincias} 
+\\\\
+Los resultados que se presentan se obtienen a partir de la declaración de los casos de COVID-19 a la Red Nacional de Vigilancia Epidemiológica (RENAVE) a través de la plataforma informática vía Web SiViES (Sistema de Vigilancia de España) que gestiona el Centro Nacional de Epidemiología (CNE). Esta información procede de la encuesta epidemiológica de caso que cada Comunidad Autónoma cumplimenta ante la identificación de un caso de COVID-19. Datos oficiales disponibles en el sitio web: \url{https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos}
+\\\\
+Se utilizan los siguientes sets de datos:
+\\\\
+\textbf{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv:} Datos desde el inicio de la pandemia, para todas las edades, hasta el 28 de marzo de 2022.
+\\
+\textbf{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv:} Datos desde el inicio de la pandemia, para la población de 60 o más años.
+\\\\
+Para ambos casos cuentan con las mismas columnas, así como su descripción. Esta descripción se detalla en la tabla \textbf{\ref{tb:testTable}} del anexo I.
 
+\item \textbf{Datos códigos provincias} 
+\\\\
+Archivo de elaboración propia que contiene el nombre de la provincia y el correspondiente código ISO de la provincia. Esta fuente de datos es necesaria para el cruce de información o unión de los sets de datos, ya que algunas fuentes tienen el nombre de la provincia y otros tiene su correspondiente código ISO de cada provincia.
 
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Código ISO y nombre de provincia. \label{tb:Tablecodprov}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|p{8cm}|}
+    \hline
+    \rowcolor{Peach} Variable & Descripción \\
+	\hline    
+    PROVINCIA\_ISO & Código ISO correspondiente a la provincia \\
+    \hline
+    PROVINCIA & Nombre de la provincia \\
+    \hline
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
 
+\item \textbf{Datos climatológicos por provincia}
+\\\\
+Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la \href{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}{Ley 18/2015, de 9 de julio}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data en el siguiente sitio web: \url{https://opendata.aemet.es/centrodedescargas/productosAEMET}
 
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Variables climatológicas de provincia. \label{tb:Tableclimaprov}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|p{12cm}|}
+    \hline
+    \rowcolor{Peach} Variable & Descripción \\
+	\hline    
+    fecha & fecha del dia (AAAA-MM-DD) \\
+    \hline
+    indicativo & indicativo climatológico \\
+    \hline
+    nombre & nombre (ubicación) de la estación \\
+    \hline
+    provincia & provincia de la estación \\
+    \hline
+    altitud & altitud de la estación en m sobre el nivel del mar \\
+    \hline
+    tmed & Temperatura media diaria \\
+    \hline
+    prec & Precipitación diaria de 07 a 07 \\
+    \hline
+    tmin & Temperatura Mínima del día \\
+    \hline
+    horatmin & Hora y minuto de la temperatura mínima \\
+    \hline
+    tmax & Temperatura Máxima del día \\
+    \hline
+    horatmax & Hora y minuto de la temperatura máxima \\
+    \hline
+    dir & Dirección de la racha máxima \\
+    \hline
+    velmedia & Velocidad media del viento \\
+    \hline
+    racha & Racha máxima del viento \\
+    \hline
+    horaracha & Hora y minuto de la racha máxima \\
+    \hline
+    sol & Insolación \\
+    \hline
+    presmax & Presión máxima al nivel de referencia de la estación \\
+    \hline
+    horapresmax & Hora de la presión máxima (redondeada a la hora entera más próxima) \\
+    \hline
+    presmin & Presión mínima al nivel de referencia de la estación \\
+    \hline
+    horapresmin & Hora de la presión mínima (redondeada a la hora entera más próxima) \\
+    \hline
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
 
+\item \textbf{Datos población por provincia}
+\\\\
+Los datos anuales demográficos por provincia fueron extraídos desde el instituto nacional de estadística de España, mediante el sitio web: \url{https://www.ine.es/jaxi/Datos.htm?path=/t20/e245/p08/l0/&file=03003.px#!tabs-tabla}, esta fuente de datos es necesaria para realizar una normalización de los casos de covid-19 por provincia o lo que llamamos la tasa de incidencia.
 
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Población anual desde 1998 por provincia. \label{tb:Tablepoblaprov}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|p{8cm}|}
+    \hline
+    \rowcolor{Peach} Variable & Descripción \\
+	\hline    
+    Provincias & Nombre de la provincia \\
+    \hline
+    Sexo & H (hombre), M (mujer), Ambos sexos \\
+    \hline
+    Edad (año a año) & Rango de edad - total edades (contempla todas) \\
+    \hline
+    Españoles/Extranjeros & Origen de la persona - total (comtempla ambos) \\
+    \hline
+    Año & Año de recopilación de la información \\
+    \hline
+    Total & Cantidad de personas \\
+    \hline    
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+\end{itemize}
+
+\subsubsection{PREPROCESAMIENTO DE DATOS}
+XXXXX
 
 \newpage
+\begin{center}
+\section{CONCLUSIÓN Y TRABAJOS FUTUROS}
+\end{center}
+XXXXXX
+
+\newpage
+%\begin{center}
+%\section{REFERENCIAS}
+%\end{center}
+\clearpage
+\renewcommand{\refname}{}
 \begin{thebibliography}{90}
+\vspace{-\baselineskip}
+\vspace{-\baselineskip}
+\section{REFERENCIAS}
+%\addcontentsline{toc}{section}{REFERENCIAS}
 
 \bibitem[1]{constrainedClimate}
 
@@ -498,6 +641,52 @@ URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-s
 
 \end{thebibliography}
 \newpage
+\begin{center}
+\section*{APÉNDICE I}
+\addcontentsline{toc}{section}{\protect\numberline{}APÉNDICE I}
+\end{center}
+
+\newpage
+\begin{center}
+\section*{ANEXOS I}
+\addcontentsline{toc}{section}{\protect\numberline{}ANEXOS I}
+\end{center}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Variables y descripción del set de datos de COVID-19 por provincias. \label{tb:testTable}}}}
+       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|p{11cm}|}
+    \hline
+    \rowcolor{Peach} Variable & Descripción \\
+	\hline    
+    provincia\_iso & \href{https://es.wikipedia.org/wiki/ISO_3166-2:ES}{Código ISO} de la provincia de residencia. NC (no consta) \\
+    \hline
+    sexo & Sexo de los casos: H (hombre), M (mujer), NC (no consta) \\
+    \hline
+    \multirow{2.5}{*}{grupo\_edad} & Grupo de edad al que pertenece el caso: 0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, $\geq$ 80 años. NC: no consta. Después del 28 de Marzo solo grupos de más de 60 años. \\
+    \hline
+    \multirow{9}{*}{fecha} & \textbf{Casos:} En los casos anteriores al 11 de mayo, se utiliza la fecha de diagnóstico, en su ausencia la fecha de declaración a la comunidad y, en su ausencia, la fecha clave (fecha usada para estadística por las CCAA). En los casos posteriores al 10 de mayo, en ausencia de fecha de diagnóstico se utiliza la fecha clave1. \textbf{Hospitalizaciones, ingresos en UCI, defunciones:} los casos hospitalizados están representados por fecha de hospitalización (en su defecto, la fecha de diagnóstico, y en su defecto la fecha clave, los casos UCI por fecha de admisión en UCI  (en su defecto, la fecha de diagnóstico, y en su defecto la fecha clave) y las defunciones por fecha de defunción  (en su defecto, la fecha de diagnóstico, y en su defecto la fecha clave).  \\
+    \hline
+    \multirow{6}{*}{num\_casos} & Número de casos notificados confirmados con una prueba diagnóstica positiva de infección activa (PDIA) tal como se establece en la Estrategia de detección precoz, vigilancia y control de COVID-19 y además los casos notificados antes del 11 de mayo que requirieron hospitalización, ingreso en UCI o fallecieron con diagnóstico clínico de COVID19, de acuerdo a las definiciones de caso vigentes en cada momento. \\
+	\hline
+	num\_hosp & Número de casos hospitalizados  \\
+	\hline
+	num\_uci & Número de casos ingresados en UCI \\
+	\hline
+	num\_def & Número de defunciones \\
+	\hline
+    \end{tabular}
+  %\label{tab:addlabel}\\
+  {\scriptsize Fuente: \href{https://cnecovid.isciii.es/covid19/resources/metadata_casos_hosp_uci_def_sexo_edad_provres.pdf}{RNVD}}
+\end{table}
+
+
+
+
+
+
 
 \end{document} 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  5 APR 2023 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  11 APR 2023 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,15 +353,125 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \everycr=\toks26
 \minrowclearance=\skip55
 \rownum=\count289
-) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/slashbox\slashbox.sty
+)
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.st
+y (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-09-28 L3 programming layer (loader) 
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
+ex.def
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box55
+))
+Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count291
+\l__tblr_c_int=\count292
+\l__tblr_r_int=\count293
+\l__tblr_d_dim=\dimen170
+\l__tblr_h_dim=\dimen171
+\l__tblr_o_dim=\dimen172
+\l__tblr_p_dim=\dimen173
+\l__tblr_q_dim=\dimen174
+\l__tblr_r_dim=\dimen175
+\l__tblr_s_dim=\dimen176
+\l__tblr_t_dim=\dimen177
+\l__tblr_v_dim=\dimen178
+\l__tblr_w_dim=\dimen179
+\l__tblr_a_box=\box56
+\l__tblr_b_box=\box57
+\l__tblr_c_box=\box58
+\l__tblr_d_box=\box59
+\g__tblr_table_count_int=\count294
+\c@colnum=\count295
+\c@rowcount=\count296
+\c@colcount=\count297
+\abovesep=\dimen180
+\belowsep=\dimen181
+\leftsep=\dimen182
+\rightsep=\dimen183
+\g_tblr_level_int=\count298
+\g__tblr_data_row_key_count_int=\count299
+\g__tblr_data_column_key_count_int=\count300
+\g__tblr_data_cell_key_count_int=\count301
+\g__tblr_array_int=\count302
+\l__tblr_key_count_int=\count303
+\l__tblr_key_quotient_int=\count304
+\l__tblr_key_quotient_two_int=\count305
+\l__tblr_key_remainder_int=\count306
+\g__tblr_data_str_value_count_int=\count307
+\rulewidth=\dimen184
+\l__tblr_strut_dp_dim=\dimen185
+\l__tblr_strut_ht_dim=\dimen186
+\g__tblr_cell_wd_dim=\dimen187
+\g__tblr_cell_ht_dim=\dimen188
+\g__tblr_cell_head_dim=\dimen189
+\g__tblr_cell_foot_dim=\dimen190
+\l__column_target_dim=\dimen191
+\l__tblr_caption_box=\box60
+\l__tblr_caption_left_box=\box61
+\l__tblr_row_head_box=\box62
+\l__tblr_row_foot_box=\box63
+\l__tblr_row_head_foot_dim=\dimen192
+\tablewidth=\dimen193
+\l__tblr_table_firsthead_box=\box64
+\l__tblr_table_middlehead_box=\box65
+\l__tblr_table_lasthead_box=\box66
+\l__tblr_table_firstfoot_box=\box67
+\l__tblr_table_middlefoot_box=\box68
+\l__tblr_table_lastfoot_box=\box69
+\l__tblr_remain_height_dim=\dimen194
+\l__tblr_long_from_int=\count308
+\l__tblr_long_to_int=\count309
+\l__tblr_curr_i_int=\count310
+\l__tblr_prev_i_int=\count311
+\l__tblr_table_page_int=\count312
+\l__tblr_table_head_box=\box70
+\l__tblr_table_foot_box=\box71
+\l__tblr_table_head_foot_dim=\dimen195
+\l__tblr_table_head_body_foot_dim=\dimen196
+\l__tblr_table_box=\box72
+\l__tblr_table_hlines_box=\box73
+\l__tblr_hline_box=\box74
+\l__tblr_row_box=\box75
+\l__tblr_col_o_wd_dim=\dimen197
+\l__tblr_col_b_wd_dim=\dimen198
+\l__tblr_hline_leftskip_dim=\dimen199
+\l__tblr_hline_rightskip_dim=\dimen256
+\l__tblr_row_ht_dim=\dimen257
+\l__tblr_row_dp_dim=\dimen258
+\l__tblr_row_abovesep_dim=\dimen259
+\l__tblr_row_belowsep_dim=\dimen260
+\l__tblr_row_vlines_box=\box76
+\l__tblr_vline_box=\box77
+\l__tblr_cell_box=\box78
+\l__row_upper_dim=\dimen261
+\l__row_lower_dim=\dimen262
+\l__row_vpace_dim=\dimen263
+\l__tblr_vline_aboveskip_dim=\dimen264
+\l__tblr_vline_belowskip_dim=\dimen265
+\l__tblr_cell_wd_dim=\dimen266
+\l__tblr_cell_ht_dim=\dimen267
+\l__tblr_diag_box=\box79
+)
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/vcell\vcell.sty
+Package: vcell 2021/04/30 v1.0.2
+\rowheight=\dimen268
+\rowht=\dimen269
+\rowdp=\dimen270
+\@cellcount=\count313
+\@cellusecount=\count314
+\@celltemp=\box80
+)
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/slashbox\slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
-\@slashboxa=\box55
-\@slashboxb=\box56
-\@slashboxc=\box57
-\@slashboxwd=\count290
-\@slashboxht=\count291
-\@slashsepl=\dimen170
-\@slashsepr=\dimen171
+\@slashboxa=\box81
+\@slashboxb=\box82
+\@slashboxc=\box83
+\@slashboxwd=\count315
+\@slashboxht=\count316
+\@slashsepl=\dimen271
+\@slashsepr=\dimen272
 ) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -377,8 +487,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen172
-\Gin@req@width=\dimen173
+\Gin@req@height=\dimen273
+\Gin@req@width=\dimen274
 ) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 )
@@ -386,22 +496,45 @@ Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-\PaperWidth=\dimen174
-\PaperHeight=\dimen175
+\PaperWidth=\dimen275
+\PaperHeight=\dimen276
 ) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip56
-\multirow@cntb=\count292
+\multirow@cntb=\count317
 \multirow@dima=\skip57
-\bigstrutjot=\dimen176
+\bigstrutjot=\dimen277
 ) (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count293
+\c@float@type=\count318
 \float@exts=\toks27
-\float@box=\box58
+\float@box=\box84
 \@float@everytoks=\toks28
-\@floatcapt=\box59
+\@floatcapt=\box85
 )
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
@@ -420,41 +553,42 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 \FHoffset=\skip67
-
-(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
-ex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count294
-\l__pdf_internal_box=\box60
-) (TFM.aux
+ (TFM.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
 )
 \openout1 = `TFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
-Package hyperref Info: Link coloring ON on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+Package hyperref Info: Link coloring ON on input line 67.
  (TFM.out) (TFM.out)
 \@outlinefile=\write3
 \openout3 = `TFM.out'.
@@ -463,16 +597,16 @@ Package hyperref Info: Link coloring ON on input line 62.
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count295
-\scratchdimen=\dimen177
-\scratchbox=\box61
-\nofMPsegments=\count296
-\nofMParguments=\count297
+\scratchcounter=\count319
+\scratchdimen=\dimen278
+\scratchbox=\box86
+\nofMPsegments=\count320
+\nofMParguments=\count321
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count298
-\MPscratchDim=\dimen178
-\MPnumerator=\count299
-\makeMPintoPDFobject=\count300
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen279
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
 \everyMPtoPDFconversion=\toks30
 )
 (C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -485,10 +619,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<Logo_VIU.png, id=95, 87.6876pt x 36.8577pt>
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.st
+y
+Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
+
+
+(C:\Users\Asus\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+))
+<Logo_VIU.png, id=119, 87.6876pt x 36.8577pt>
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 73.
+Package pdftex.def Info: Logo_VIU.png  used on input line 78.
 (pdftex.def)             Requested size: 213.39566pt x 89.71214pt.
  [1
 
@@ -496,14 +639,14 @@ Package pdftex.def Info: Logo_VIU.png  used on input line 73.
 g>]
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 104.
+Package pdftex.def Info: Logo_VIU.png  used on input line 109.
 (pdftex.def)             Requested size: 213.39566pt x 89.71214pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \end{titlepage}
+l.140 \end{titlepage}
                       [1] (TFM.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -525,7 +668,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \end{titlepage}
+l.176 \end{titlepage}
                       [1] (TFM.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -538,7 +681,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 \end{titlepage}
+l.182 \end{titlepage}
                       [1] (TFM.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -551,15 +694,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183 \end{titlepage}
+l.188 \end{titlepage}
                       [1]
-<Logo3.png, id=151, 341.47575pt x 142.131pt>
+<Logo3.png, id=189, 341.47575pt x 142.131pt>
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 192.
+Package pdftex.def Info: Logo3.png  used on input line 197.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 192.
-LaTeX Info: Redefining \% on input line 192.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -574,28 +717,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.192 \newpage
+l.197 \newpage
                [1 <./Logo3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--206
+Underfull \hbox (badness 10000) in paragraph at lines 203--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--206
+Underfull \hbox (badness 10000) in paragraph at lines 203--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--206
+Underfull \hbox (badness 10000) in paragraph at lines 203--211
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 208.
+Package pdftex.def Info: Logo3.png  used on input line 213.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 208.
-LaTeX Info: Redefining \% on input line 208.
+LaTeX Info: Redefining \. on input line 213.
+LaTeX Info: Redefining \% on input line 213.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -607,10 +750,10 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 [2]
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 230.
+Package pdftex.def Info: Logo3.png  used on input line 235.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -621,26 +764,26 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 235--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--249
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 249.
+Package pdftex.def Info: Logo3.png  used on input line 254.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
+LaTeX Info: Redefining \. on input line 254.
+LaTeX Info: Redefining \% on input line 254.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -650,21 +793,21 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--271
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 279.
+Package pdftex.def Info: Logo3.png  used on input line 284.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 279.
-LaTeX Info: Redefining \% on input line 279.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -674,31 +817,31 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 282--284
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--299
+Underfull \hbox (badness 10000) in paragraph at lines 297--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--299
+Underfull \hbox (badness 10000) in paragraph at lines 297--304
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 299.
+Package pdftex.def Info: Logo3.png  used on input line 304.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -708,21 +851,21 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 302--309
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--309
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 309.
+Package pdftex.def Info: Logo3.png  used on input line 314.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 309.
-LaTeX Info: Redefining \% on input line 309.
+LaTeX Info: Redefining \. on input line 314.
+LaTeX Info: Redefining \% on input line 314.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -732,21 +875,21 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 313--318
+Underfull \hbox (badness 10000) in paragraph at lines 318--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--328
+Underfull \hbox (badness 10000) in paragraph at lines 327--333
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 328.
+Package pdftex.def Info: Logo3.png  used on input line 333.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -756,21 +899,21 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
+Underfull \hbox (badness 10000) in paragraph at lines 336--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 343--349
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 344.
+Package pdftex.def Info: Logo3.png  used on input line 349.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 344.
-LaTeX Info: Redefining \% on input line 344.
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -780,21 +923,21 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 347--356
+Underfull \hbox (badness 10000) in paragraph at lines 352--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--356
+Underfull \hbox (badness 10000) in paragraph at lines 352--361
 
  []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 356.
+Package pdftex.def Info: Logo3.png  used on input line 361.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 356.
-LaTeX Info: Redefining \% on input line 356.
+LaTeX Info: Redefining \. on input line 361.
+LaTeX Info: Redefining \% on input line 361.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -804,26 +947,26 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 360--367
+Underfull \hbox (badness 10000) in paragraph at lines 365--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--367
+Underfull \hbox (badness 10000) in paragraph at lines 365--372
 
  []
 
-<astronauta.png, id=195, 373.395pt x 222.8325pt>
+<astronauta.png, id=233, 373.395pt x 222.8325pt>
 File: astronauta.png Graphic file (type png)
 <use astronauta.png>
-Package pdftex.def Info: astronauta.png  used on input line 376.
+Package pdftex.def Info: astronauta.png  used on input line 381.
 (pdftex.def)             Requested size: 298.75262pt x 178.29684pt.
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 381.
+Package pdftex.def Info: Logo3.png  used on input line 386.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 381.
-LaTeX Info: Redefining \% on input line 381.
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -833,17 +976,17 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [11]
-<stylegan2.png, id=200, 134.904pt x 119.84775pt>
+<stylegan2.png, id=238, 134.904pt x 119.84775pt>
 File: stylegan2.png Graphic file (type png)
 <use stylegan2.png>
-Package pdftex.def Info: stylegan2.png  used on input line 385.
+Package pdftex.def Info: stylegan2.png  used on input line 390.
 (pdftex.def)             Requested size: 213.39566pt x 189.59691pt.
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 395.
+Package pdftex.def Info: Logo3.png  used on input line 400.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 395.
-LaTeX Info: Redefining \% on input line 395.
+LaTeX Info: Redefining \. on input line 400.
+LaTeX Info: Redefining \% on input line 400.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -858,20 +1001,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.395 
+l.400 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.395 
+l.400 
        <./astronauta.png> <./stylegan2.png>]
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 396.
+Package pdftex.def Info: Logo3.png  used on input line 401.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 396.
-LaTeX Info: Redefining \% on input line 396.
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -882,25 +1025,22 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 405--408
-
- []
-
-<KDD2.png, id=210, 398.6895pt x 82.50826pt>
+<KDD2.png, id=248, 398.6895pt x 82.50826pt>
 File: KDD2.png Graphic file (type png)
 <use KDD2.png>
-Package pdftex.def Info: KDD2.png  used on input line 420.
+Package pdftex.def Info: KDD2.png  used on input line 414.
 (pdftex.def)             Requested size: 426.79134pt x 88.32323pt.
 
-Underfull \vbox (badness 2941) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 410--418
+
+ []
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 425.
+Package pdftex.def Info: Logo3.png  used on input line 427.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 425.
-LaTeX Info: Redefining \% on input line 425.
-
+LaTeX Info: Redefining \. on input line 427.
+LaTeX Info: Redefining \% on input line 427.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -909,43 +1049,70 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 432--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 432--436
-
- []
-
-File: Logo3.png Graphic file (type png)
-<use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 441.
-(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 441.
-LaTeX Info: Redefining \% on input line 441.
-
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.60834pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.60834pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
-
-[15
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.441 \end{itemize}
+l.427 \end{itemize}
                     <./KDD2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 432--436
+
+ []
+
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 454.
+Package pdftex.def Info: Logo3.png  used on input line 445.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 454.
-LaTeX Info: Redefining \% on input line 454.
+LaTeX Info: Redefining \. on input line 445.
+LaTeX Info: Redefining \% on input line 445.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 452--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+
+ []
+
+
+Underfull \vbox (badness 1946) has occurred while \output is active []
+
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 488.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 488.
+LaTeX Info: Redefining \% on input line 488.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -956,25 +1123,104 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
 [16]
-Underfull \hbox (badness 5359) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
+
+ []
+
+
+Overfull \hbox (1.10097pt too wide) in paragraph at lines 498--543
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--550
+
+ []
+
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 550.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.550 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.550 
+      ]
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 582.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 582.
+LaTeX Info: Redefining \% on input line 582.
+
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.582 \newpage
+              ]
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 588.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 588.
+LaTeX Info: Redefining \% on input line 588.
+
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[19]
+Underfull \hbox (badness 5359) in paragraph at lines 602--603
 []\OT1/cmr/m/n/10.95 Araujo, M. B., & Nai-mi, B. (2020). Spread of SARS-CoV-2 C
 o-ro-na-vi-
  []
 
 
-Overfull \hbox (40.74388pt too wide) in paragraph at lines 469--470
+Overfull \hbox (40.74388pt too wide) in paragraph at lines 612--613
 []\OT1/cmr/m/n/10.95 URL: https://revistas.udistrital.edu.co/index.php/tia/arti
 cle/download/17325/17214/104552 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
+Underfull \hbox (badness 10000) in paragraph at lines 618--619
 []\OT1/cmr/m/n/10.95 URL: https://www.perlego.com/book/2165268/machine-learning
 -y-deep-learning-
  []
 
 
-Overfull \hbox (142.65393pt too wide) in paragraph at lines 490--491
+Overfull \hbox (142.65393pt too wide) in paragraph at lines 633--634
 []\OT1/cmr/m/n/10.95 URL: $\OML/cmm/m/it/10.95 https \OT1/cmr/m/n/10.95 : \OML/
 cmm/m/it/10.95 ==www:bbc:com=mundo=noticias=\OT1/cmr/m/n/10.95 2016\OML/cmm/m/i
 t/10.95 =\OT1/cmr/m/n/10.95 03\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 160312[]\
@@ -982,7 +1228,7 @@ OML/cmm/m/it/10.95 lphago[]nteigencia[]rtificial[]o[]ictoria[]umano[]en$
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 496--497
+Underfull \hbox (badness 1515) in paragraph at lines 639--640
 []\OT1/cmr/m/n/10.95 URL: $\OML/cmm/m/it/10.95 https \OT1/cmr/m/n/10.95 : \OML/
 cmm/m/it/10.95 ==syncedreview:com=\OT1/cmr/m/n/10.95 2020\OML/cmm/m/it/10.95 =\
 OT1/cmr/m/n/10.95 12\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 10\OML/cmm/m/it/10.
@@ -993,10 +1239,10 @@ MS/cmsy/m/n/10.95 ^^@
 
 File: Logo3.png Graphic file (type png)
 <use Logo3.png>
-Package pdftex.def Info: Logo3.png  used on input line 500.
+Package pdftex.def Info: Logo3.png  used on input line 643.
 (pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.60834pt, for example:
@@ -1005,21 +1251,68 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
 
-[17] (TFM.aux
+[20
+
+]
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 649.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 649.
+LaTeX Info: Redefining \% on input line 649.
+
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[21]
+Underfull \hbox (badness 2753) in paragraph at lines 672--673
+[]|\OT1/cmr/m/n/10.95 N^^Sume-ro de ca-sos no-ti-fi-ca-dos con-fir-ma-dos con u
+na prue-ba
+ []
+
+File: Logo3.png Graphic file (type png)
+<use Logo3.png>
+Package pdftex.def Info: Logo3.png  used on input line 691.
+(pdftex.def)             Requested size: 85.35696pt x 35.5283pt.
+LaTeX Info: Redefining \. on input line 691.
+LaTeX Info: Redefining \% on input line 691.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.60834pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.60834pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.60834pt}.
+
+[22
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.691 \end{document}
+                    ] (TFM.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `TFM.out' has not changed.
-(rerunfilecheck)             Checksum: 7C53485D1C929B261316252E921E9531;3474.
+(rerunfilecheck)             Checksum: 9DE2902341056A385E35DDFDF880043D;4341.
  ) 
 Here is how much of TeX's memory you used:
- 11892 strings out of 475385
- 189629 string characters out of 2777378
- 545939 words of memory out of 3000000
- 33018 multiletter control sequences out of 15000+600000
- 476079 words of font info for 53 fonts, out of 8000000 for 9000
+ 14678 strings out of 475385
+ 253880 string characters out of 2777378
+ 628256 words of memory out of 3000000
+ 35760 multiletter control sequences out of 15000+600000
+ 476247 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,77p,986b,535s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,15n,79p,986b,549s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1029,10 +1322,11 @@ onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Asus/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on TFM.pdf (22 pages, 845341 bytes).
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/
+Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on TFM.pdf (27 pages, 888280 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 210 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
