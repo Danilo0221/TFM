@@ -63,12 +63,12 @@ df_clima = df_clima.drop(columns=['INDICATIVO', 'NOMBRE'])
 
 df_clima["HORA_RACHA"] = df_clima["HORA_RACHA"].str.split(":", expand=True)[0]
 df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['24'], '00')
-df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['79'], df_clima[df_clima["PROVINCIA_ISO"] == list(df_clima[df_clima["HORA_RACHA"] == "79"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
-df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['72'], df_clima[df_clima["PROVINCIA_ISO"] == list(df_clima[df_clima["HORA_RACHA"] == "72"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
-df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['80'], df_clima[df_clima["PROVINCIA_ISO"] == list(df_clima[df_clima["HORA_RACHA"] == "80"]["PROVINCIA_ISO"])[0]]["HORA_RACHA"].mode())
-iso_list = list(df_clima[df_clima["HORA_RACHA"] == "75"]["PROVINCIA_ISO"].unique())
-df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA_ISO"] == iso_list[0]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA_ISO"] == iso_list[0]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
-df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA_ISO"] == iso_list[1]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA_ISO"] == iso_list[1]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
+df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['79'], df_clima[df_clima["PROVINCIA"] == list(df_clima[df_clima["HORA_RACHA"] == "79"]["PROVINCIA"])[0]]["HORA_RACHA"].mode())
+df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['72'], df_clima[df_clima["PROVINCIA"] == list(df_clima[df_clima["HORA_RACHA"] == "72"]["PROVINCIA"])[0]]["HORA_RACHA"].mode())
+df_clima['HORA_RACHA'] = df_clima['HORA_RACHA'].replace(['80'], df_clima[df_clima["PROVINCIA"] == list(df_clima[df_clima["HORA_RACHA"] == "80"]["PROVINCIA"])[0]]["HORA_RACHA"].mode())
+iso_list = list(df_clima[df_clima["HORA_RACHA"] == "75"]["PROVINCIA"].unique())
+df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA"] == iso_list[0]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA"] == iso_list[0]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
+df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA"] == iso_list[1]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA"] == iso_list[1]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
 
 df_iso = pd.read_csv(path_ref + 'cod_iso_provincias.csv', encoding="utf-8", keep_default_na=False)
 df_clima_iso = df_clima.merge(df_iso, how='inner', on='PROVINCIA')
