@@ -76,5 +76,5 @@ df = df.assign(TASA_INCIDENCIA = lambda x: (round((x["NUM_CASOS"] / x["POB_MEN"]
 df = df.drop(columns=['NUM_CASOS', 'POB_MEN'])
 
 df = df.drop(columns=["TEMP_MIN", "TEMP_MAX", "PRES_MAX"])
-df.to_csv(path_est + 'data_preprocess.csv', index=False)
+df.to_csv(path_est + 'data_refined.csv', index=False)
 
