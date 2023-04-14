@@ -70,12 +70,16 @@ iso_list = list(df_clima[df_clima["HORA_RACHA"] == "75"]["PROVINCIA"].unique())
 df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA"] == iso_list[0]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA"] == iso_list[0]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
 df_clima["HORA_RACHA"] = np.where((df_clima["PROVINCIA"] == iso_list[1]) & (df_clima["HORA_RACHA"] == "75"), df_clima[df_clima["PROVINCIA"] == iso_list[1]]["HORA_RACHA"].mode(), df_clima["HORA_RACHA"])
 
+'''
+Union dataframe clima y cod_iso_provincias
+'''
+
 df_iso = pd.read_csv(path_ref + 'cod_iso_provincias.csv', encoding="utf-8", keep_default_na=False)
 df_clima_iso = df_clima.merge(df_iso, how='inner', on='PROVINCIA')
 print(df_clima_iso.shape)
 
 '''
-Union de los dos dataframes
+Union de los dataframes clima_iso y covid
 '''
 
 df_total = df_covid.merge(df_clima_iso, how='inner', on=['FECHA', 'PROVINCIA_ISO'])

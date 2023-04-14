@@ -10,7 +10,7 @@ path_est = path_data + "Estandarizada/"
 path_ref = path_data + "Data_Referencia/"
 
 df = pd.read_parquet(path = path_est + 'data_total', engine = 'auto')
-df = df.drop(columns=['PROVINCIA_ISO','HORA_TEMP_MIN', 'HORA_TEMP_MAX', 'HORA_RACHA', 'HORA_PRES_MAX', 'HORA_PRES_MIN', 'NUM_HOSP', 'NUM_UCI', 'NUM_DEFU', 'GRUPO_EDAD', 'SEXO'])
+df = df.drop(columns=['PROVINCIA_ISO', "TEMP_MIN", "TEMP_MAX", "PRES_MAX", 'HORA_TEMP_MIN', 'HORA_TEMP_MAX', 'HORA_RACHA', 'HORA_PRES_MAX', 'HORA_PRES_MIN', 'NUM_HOSP', 'NUM_UCI', 'NUM_DEFU', 'GRUPO_EDAD', 'SEXO'])
 #df['MONTH'] = pd.DatetimeIndex(df['FECHA']).month
 #df['WEEK'] = df['FECHA'].dt.isocalendar().week.astype(int)
 df['FECHA'] = pd.to_datetime(df.FECHA).dt.to_period('m')
@@ -75,6 +75,5 @@ df = df.merge(DF_PROV, how='inner', on=["PROVINCIA", "FECHA"])
 df = df.assign(TASA_INCIDENCIA = lambda x: (round((x["NUM_CASOS"] / x["POB_MEN"]) * 100000,2)))
 df = df.drop(columns=['NUM_CASOS', 'POB_MEN'])
 
-df = df.drop(columns=["TEMP_MIN", "TEMP_MAX", "PRES_MAX"])
 df.to_csv(path_est + 'data_refined.csv', index=False)
 
