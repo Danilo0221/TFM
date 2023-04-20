@@ -29,6 +29,17 @@
     linkcolor=black,
     urlcolor=blue
 }
+\usepackage{listings}
+\lstdefinestyle{Python}{
+    language        = Python,
+    basicstyle      = \ttfamily\footnotesize,
+    keywordstyle    = \color{blue},
+    commentstyle    = \color{gray},
+    stringstyle     = \color{green},
+    showstringspaces= false,
+    breaklines      = true
+}
+
 %%%%%%%% Coloca una imagen como encabezado %%%%%%%%%%%%%%
 \pagestyle{fancy}
 \fancyhf{}
@@ -403,6 +414,10 @@ Estos avances muestran cómo las redes neuronales están transformando la forma en
 \section{DESARROLLO DEL PROYECTO Y RESULTADOS}
 \end{center}
 Para el desarrollo del proyecto se utilizó la metodología KDD (Knowledge Discovery in Databases) en los distintos orígenes de datos, el objetivo de es crear un set de datos refinado a partir de todos los orígenes y a partir de este extraer conocimiento a través de los modelos creados para darle una solución al planteamiento del problema. Se realizará un análisis sobre los resultados obtenidos y las posibles mejoras en trabajos futuros.
+\\\\
+Todo el desarrollo del proyecto se realizará en lenguaje Python, a partir de notebooks de Jupyter, en estos se encontrará el desarrollo de todas las etapas del proceso de KDD y el porque se toman ciertas decisiones. Basado en los resultados de los notebooks se crean archivos .py con algunas etapas para realizar una CI/CD. Las fuentes de datos, los notebooks con los análisis de cada etapa y los archivos .py para la automatización de todo el flujo se encuentra en el repositorio personal para este TFM, a su vez se encontrará el código fuente de LaTeX el cual se desarrolló el presente documento: 
+\href{https://github.com/Danilo0221/TFM}{REPOSITORIO TFM}
+
 
 \bigskip
 \subsection{METODOLOGÍA}
@@ -450,17 +465,16 @@ El proyecto se desarrollará siguiendo cada una de las etapas del KDD, ya que pro
 
 \subsubsection{SELECCIÓN DE DATOS}
 Para la ejecución del proyecto se utilizaron distintas fuentes de datos las cuales se detallan a continuación:
-\\
 \begin{itemize}
-\item \textbf{Casos COVID-19 por provincias} 
+\item \textbf{Datos casos COVID-19 por provincias} 
 \\\\
 Los resultados que se presentan se obtienen a partir de la declaración de los casos de COVID-19 a la Red Nacional de Vigilancia Epidemiológica (RENAVE) a través de la plataforma informática vía Web SiViES (Sistema de Vigilancia de España) que gestiona el Centro Nacional de Epidemiología (CNE). Esta información procede de la encuesta epidemiológica de caso que cada Comunidad Autónoma cumplimenta ante la identificación de un caso de COVID-19. Datos oficiales disponibles en el sitio web: \url{https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos}
 \\\\
 Se utilizan los siguientes sets de datos:
 \\\\
-\textbf{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv:} Datos desde el inicio de la pandemia, para todas las edades, hasta el 28 de marzo de 2022.
+\textbf{\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv:}} Datos desde el inicio de la pandemia, para todas las edades, hasta el 28 de marzo de 2022.
 \\
-\textbf{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv:} Datos desde el inicio de la pandemia, para la población de 60 o más años.
+\textbf{\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv:}} Datos desde el inicio de la pandemia, para la población de 60 o más años.
 \\\\
 Para ambos casos cuentan con las mismas columnas, así como su descripción. Esta descripción se detalla en la tabla \textbf{\ref{tb:testTable}} del anexo I.
 
@@ -488,7 +502,8 @@ Archivo de elaboración propia que contiene el nombre de la provincia y el corres
 
 \item \textbf{Datos climatológicos por provincia}
 \\\\
-Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la \href{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}{Ley 18/2015, de 9 de julio}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data en el siguiente sitio web: \url{https://opendata.aemet.es/centrodedescargas/productosAEMET}
+Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la \href{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}{Ley 18/2015, de 9 de julio}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data en el siguiente sitio web: \url{https://opendata.aemet.es/centrodedescargas/productosAEMET}. 
+%La información viene en un archivo .json por provincia, teniendo así 52 archivos .json con la información climatológica diaria correspondiente. 
 
 \begin{table}[H]
   \centering
@@ -547,7 +562,6 @@ Los datos climatológicos son diarios por provincia, estos datos oficiales fueron
 \item \textbf{Datos población por provincia}
 \\\\
 Los datos anuales demográficos por provincia fueron extraídos desde el instituto nacional de estadística de España, mediante el sitio web: \url{https://www.ine.es/jaxi/Datos.htm?path=/t20/e245/p08/l0/&file=03003.px#!tabs-tabla}, esta fuente de datos es necesaria para realizar una normalización de los casos de covid-19 por provincia o lo que llamamos la tasa de incidencia.
-
 \begin{table}[H]
   \centering
    \textbf{\caption{{\small Población anual desde 1998 por provincia. \label{tb:Tablepoblaprov}}}}       
@@ -577,7 +591,196 @@ Los datos anuales demográficos por provincia fueron extraídos desde el instituto
 \end{itemize}
 
 \subsubsection{PREPROCESAMIENTO DE DATOS}
-XXXXX
+Para cada una de las fuentes de datos se realiza el procesamiento de su información, así como el dataset total que esta compuesto de la unión de estás fuentes mencionados en el apartado anterior.
+\begin{itemize}
+\item \textbf{Datos casos COVID-19 por provincias}
+\\\\
+Ambos sets de datos de covid-19 por provincia cuenta con 8 columnas con los mismos nombres que fueron descritas en el apartado anterior. Se realiza la unión de ambos set de datos (\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv} y \\ \textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv}), ya que la única diferencia entre estos dos es el rango de edad que presenta en una de sus variables. Se realiza un perfilamiento de los datos mediante la librería de \href{https://pypi.org/project/pandas-profiling/}{pandas\_profiling} el cual a partir de un dataframe de pandas genera el perfilamiento de la data en el siguiente archivo \href{https://htmlpreview.github.io/?https://github.com/Danilo0221/TFM/blob/main/DataCleaning/df_covid_prof.html}{df\_covid\_prof.html}.\\
+Realizamos un análisis de la cantidad de nulos en todas sus variables mediante un heatmap.
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.37\textwidth]{heatmap_covid}
+		\textbf{\caption{{\small Headmap variables dataset covid-19.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Del gráfico anterior observamos que no se evidencian nulos, pero es una medida cualitativa ya que por la cantidad de datos pueda que haya muy pocos y no se evidencien, por lo que se procede a hacer una lista de porcentaje de valores nulos:
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.3\textwidth]{list_nulos_covid}
+		\textbf{\caption{{\small Porcentaje de nulos dataset covid-19.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+Los estadísticos obtenidos para el dataset se representan en la siguiente imagen:
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.4\textwidth]{describe_covid}
+		\textbf{\caption{{\small Estadísticos dataset covid-19.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+La media de \textit{num\_casos} es de 8.74 y la mediana es 0 ya que en muchas fechas diarias no se reportaron casos, la media de \textit{num\_hosp} es de 0.43 y la mediana 0, la media de \textit{num\_uci} es 0.04 y la mediana 0, por último, la media de \textit{num\_def} es de 0.08 y la mediana 0. Las variables parecen ser asimétricas a la derecha dado que su media es mayor a su mediana. 
+
+Las desviaciones típicas son bajas, la mayoría de las observaciones se encuentran dispersas a no más de una desviación estándar a cada lado.
+La imagen anterior también muestra los valores máximos y mínimos que toman cada variable objeto de estudio además de los cuartiles calculados. Los datos menores al cuartil 1 (Q1) representan el 25\% de los datos, los que están por debajo del cuartil 2 (Q2) representan el 50\% de los datos y los que están por debajo del cuartil 3 (Q3) representan el 75\% de los datos.
+
+Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{num\_hosp}, \textit{num\_uci} y \textit{num\_def} tiene una correlación positiva y fuerte entre ellas. Es de esperarse este resultado ya por lo general son consecuentes una con la otra, es decir, por ejemplo, si hubo una difusión por covid-19 es muy probable que haya estado en uci y hospitalización previamente.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.9\textwidth]{correla_covid}
+		\textbf{\caption{{\small Correlación variables dataset covid-19. \label{tb:correla_covid}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Se realizo un análisis de outliers para cada una de las variables, así como la distribución de los valores de las variables categóricas para identificar valores atípicos, para ningún caso se haya evidencia de alguno. Para evitar que existan palabras distintas y que simbolicen el mismo significado solo por el hecho de estar en minúscula o mayúsculas, para todas las variables tipo string las pasaremos a mayúscula, ya que por defecto todas viene así, también eliminaremos los espacios al principio y al final.
+
+\item \textbf{Datos códigos provincias}
+\\\\
+Esta fuente de datos fue de elaboración propia por lo cual se aseguro que no hubiera valores duplicado, valores nulos, valores atípicos, el nombre de las columnas está en mayúscula, los valores están en mayúscula sin ningún tipo de espacio por ende no necesita ningún tipo de transformación. Esta fuente cuenta con dos columnas y con 52 registros, el cual servirá para unir los datasets.
+
+\item \textbf{Datos climatológicos por provincia}
+\\\\
+Se realiza la concatenación de cada uno de los archivos con la información climatológica por provincia para poder obtener un dataset completo y su respectivo análisis, comenzando por la cantidad de nulos en todas sus variables mediante un heatmap.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{heatmap_clima}
+		\textbf{\caption{{\small Headmap variables dataset clima.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+El gráfico anterior muestra los patrones de datos que faltan de todas las columnas, el eje horizontal muestra el nombre del atributo de entrada; el eje vertical muestra el número de observaciones/filas; el color amarillo representa los datos que faltan, mientras que el color azul, en caso contrario. Detallamos que todas las características tienen muy pocos valores perdidos o inclusive no tienen, para tener un valor exacto hacemos una lista de porcentaje de valores nulos:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.25\textwidth]{list_nulos_clima}
+		\textbf{\caption{{\small Porcentaje de nulos dataset clima.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+La imputación de los valores faltantes de las variables se estableció mediante \href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html}{fillna} aplicado al dataframe por el método \textit{ffill} como primera opción, como segunda opción el método \textit{bfill}. El primer método usa la anterior observación válida para llenar el valor faltante y el segundo método usa la siguiente observación válida para llenar el valor faltante. La elección de estos métodos es debido a que son variables climatológicas, en donde el clima entre estaciones climáticas y periodos de tiempo corto son similares, la granularidad de este set de datos es diaria por lo que la imputación de valores faltantes se hará sobre el valor del día anterior o el más próximo.
+Se elimina las variables indicativo y nombre, ya que estás hacen referencia netamente a la información de la estación meteorológica en donde se obtuvieron los datos, esta información no aporta a nuestro estudio.
+
+Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{PREX\_MAX} y \textit{PREX\_MIN} tiene una correlación positiva y fuerte entre ellas; así como las variables \textit{TEMP\_MIN}, \textit{TEMP\_MAX} y \textit{TEMP\_MED} tienen una correlación positiva alta. 
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.85\textwidth]{correla_clima}
+		\textbf{\caption{{\small Correlación variables dataset clima. \label{tb:correla_clima}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+Se realizo un análisis de outliers por medio de boxplots para cada una de las variables, así como la distribución de los valores de las variables categóricas para identificar valores atípicos, se encontraron valores alejados de la media y poco comunes, pero son valores climatológicos posibles por esta razón para ningún caso se haya evidencia de outliers. Para evitar que existan palabras distintas y que simbolicen el mismo significado solo por el hecho de estar en minúscula o mayúsculas, para todas las variables tipo string las pasaremos a mayúscula, ya que por defecto todas viene así, también eliminaremos los espacios al principio y al final.
+\item \textbf{Datos población por provincia}
+\\\\
+Para este set de datos se eliminó las variables Sexo, Edad (año a año) y Españoles/Extranjeros, ya que solo nos interesa la población anual por provincia para poder generar la tasa de incidencia de covid-19 mensual. Como primer paso se crea una columna equivalente a la tasa de crecimiento mensual ya que tenemos la población anual, se utiliza una de las formulas más utilizadas para cálculos poblacionales como lo es el modelo geométrico [14]. A continuación, se describe la fórmula utilizada:
+\begin{equation}
+r = \left(\frac{P_f}{P_i}\right)^\frac{1}{t}-1
+\end{equation}
+donde:
+\\\\
+$r$ \hspace{1em} Tasa de crecimiento mensual\\
+$P_f$ \hspace{0.4em} Población final\\
+$P_i$ \hspace{0.52em} Población inicial\\
+$t$ \hspace{1em} Distancia en tiempo entre las dos poblaciones de referencia
+\\\\
+Tomaremos la población inicial del año 2019 y la población actual del año 2022, esto debido a que en los años anteriores en casi todos los casos aumento la población, pero en este periodo de tiempo el comportamiento fue diferente a razón del covid-19, el cálculo de la tasa de crecimiento mensual se utilizará para calcular el aproximado de la población mensual por provincia hasta el primer trimestre del 2023. Se realiza el calculo de la población mensual con proyección en un periodo t, mediante la siguiente ecuación:
+\begin{equation}
+P_f = P_i(1 + r)^t 
+\end{equation}
+donde:
+\\\\
+$P_f$ \hspace{0.4em} Población final en ese caso mes a mes\\
+$P_i$ \hspace{0.5em} Población Inicial en este caso del comienzo de cada año\\
+$r$ \hspace{0.8em} Tasa de crecimiento mensual calculada anteriormente\\
+$t$ \hspace{1.1em} La proyección en tiempo, en este caso el mes a calcular
+\\\\
+El valor de esta población mensual tomara el nombre de \textit{POB\_MEN}
+\item \textbf{Dataset total}
+\\\\
+Este dataset está conformado por el dataset climatológico unido a la fuente de datos cod\_iso\_provincias por medio del campo \textit{PROVINCIA} esto con el fin de añadir la columna \textit{PROVINCIA\_ISO}, a su vez este dataset se unirá a la fuente de datos de covid por medio de la columna \textit{PROVINCIA\_ISO} y la \textit{FECHA}, para generar el dataset total, este proceso se describe mediante los siguientes comandos en Python:
+\\
+\begin{lstlisting}[style=Python]
+df_clima_iso = df_clima.merge(df_iso, how="inner", on="PROVINCIA")
+df_total = df_covid.merge(df_clima_iso, how="inner", 
+			on=["FECHA", "PROVINCIA_ISO"])
+\end{lstlisting}
+
+A este dataset total se eliminaron las variables de Horas (\textit{HORA\_TEMP\_MIN, HORA\_TEMP\_MAX, HORA\_RACHA, HORA\_PRES\_MAX, HORA\_PRES\_MIN}) ya que no deseamos un nivel de granularidad tan bajo, por el contrario, se tomara en cuenta la demás variables climatológicas diarias; se elimina la variable \textit{PROVINCIA\_ISO} ya que tenemos la variable \textit{PROVINCIA} la cual hace referencia al mismo significado; se elimina las variables \textit{NUM\_HOSP, NUM\_UCI, NUM\_DEFU} esto debido a la explicación de la figura \textbf{\ref{tb:correla_covid}} y el objetivo principal del estudio es la propagación del virus covid-19 es decir el número de casos (\textit{NUM\_CASOS}) y no las defunciones y/o hospitalizaciones; se elimina las variables \textit{TEMP\_MIN, TEMP\_MAX} esto debido a la explicación de la figura \textbf{\ref{tb:correla_clima}} y se conserva la variable \textit{TEMP\_MED}; por el momento se eliminan las variables \textit{GRUPO\_EDAD, SEXO} para centrar el estudio en la propagación del virus entorno a las variables climatológicas. Tras esta serie de pasos se realiza una gráfica de tendencia de los casos de covid de todas las provincias para tener un panorama más amplio del caso de estudio.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.80\textwidth]{tendencia_casos_covid}
+		\textbf{\caption{{\small Tendencia de casos covid. \label{tb:tendencia_casos}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+Se crea la variable \textit{TASA\_INCIDENCIA} a partir de la normalización del número de casos, dada por la siguiente formula:
+\begin{equation}
+TASA\_INCIDENCIA = \left(\frac{NUM\_CASOS}{POB\_MEN}\right) \times 100000
+\end{equation}
+En donde \textit{POB\_MEN} (población mensual) se calculó en el ítem anterior para cada año desde el 2020 hasta el primer trimestre del 2023 por provincia. De igual forma se realiza una gráfica de tendencia de la tasa de incidencia de todas las provincias, como se puede observar en la siguiente figura la tasa de incidencia es una muy buena normalización con respecto a los casos covid de la figura \textbf{\ref{tb:tendencia_casos}}.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.80\textwidth]{tendencia_tasa_incidencia}
+		\textbf{\caption{{\small Tendencia tasa de incidencia. \label{tb:tendencia_tasa_incid}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+\end{itemize}
+
+\subsubsection{TRANSFORMACIÓN DE DATOS}
+Para cada una de las fuentes de datos descrita anteriormente se realiza la transformación de su información, así como el dataset total que esta compuesto de la unión de estás fuentes.
+\begin{itemize}
+\item \textbf{Datos casos COVID-19 por provincias}
+\\\\
+Se realizo la transformación del nombre de todas las columnas a mayúscula, de esta forma se trabajará en todos los dataset para manejar un estándar de nombramiento, se realiza conversión de la variable de tiempo \textit{fecha} a tipo ``datetime'', las variables que estén tipo float y no tengan ningún valor decimal se convertirán en enteros. Normalización y homologación de los valores en campos categóricos con el fin de agrupar y estandarizar, obteniendo así los siguientes tipos de datos:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.38\textwidth]{tipo_datos_covid}
+		\textbf{\caption{{\small Tipos de datos dataset covid-19.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+\item \textbf{Datos climatológicos por provincia}
+\\\\
+Se realizo la transformación del nombre de todas las columnas a mayúscula, la conversión de la variable de tiempo \textit{fecha} a tipo ``datetime'', las variables que estén tipo float y no tengan ningún valor decimal se convertirán en enteros, así como las variables que son de tipo string y que en realidad todos son datos son numéricos decimales se realizará su correspondiente transformación a tipo float. A la variable prec (Precipitación diaria de 07 a 07) se transformó el valor `Ip' (significa precipitación inapreciable, es decir, cantidad inferior a 0.1 mm) por 0,0.
+
+Para todas las variables de horas se transformo el valor ``24'' por ``00'' ya que hacen referencia a la misma hora, más adelante se explicará porque estas variables de horas no serán tomadas en cuenta para la etapa de minería de datos (creación de modelos). Inicialmente solo dos campos eran numéricos, tras realizar el proceso de transformación obtenemos los siguientes tipos de datos:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.38\textwidth]{tipo_datos_clima}
+		\textbf{\caption{{\small Tipos de datos dataset clima.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+\item \textbf{Datos población por provincia}
+\\\\
+Se transforma la variable \textit{Provincias} y se hace la homologación con los mismos nombres de las provincias como en los demás conjuntos de datos, es decir, se reemplazan algunos nombres; la variable \textit{Total} se transforma a entero ya que todos sus datos tienen decimales con ceros, además de que este debe ser un valor entero; una vez calculada la población mensual en el preprocesamiento se eliminan las variables intermedias y que no son de utilidad como \textit{YEAR, YEAR\_ACUM, TOTAL\_POB, TASA\_MENSUAL}
+
+\item \textbf{Dataset total}
+\\\\
+Se realiza la transformación de la variable \textit{FECHA} cambiando su granularidad de diaria a mensual, de esta forma se procede a hacer la agrupación de los datos por \textit{FECHA} y \textit{PROVINCIA} y todas las demás medidas se le hace un promedio excepto la variable \textit{NUM\_CASOS} que será la suma de todos los días para el mes correspondiente. Se eliminan las variables \textit{NUM\_CASOS, POB\_MEN} tras el calculo de la tasa de incidencia de covid-19 en el ítem anterior, obteniendo así el dataset final con los siguientes tipos de datos:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.38\textwidth]{tipo_datos_final}
+		\textbf{\caption{{\small Tipos de datos dataset total.}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+%Realizando un análisis descriptivo de nuestro dataset final, se observa que las desviaciones típicas son bajas a excepción de la \textit{ALTITUD} y \textit{TASA\_INCIDENCIA}
+Este dataset final será exportado como archivo data\_refined.csv y será tomado como partida de referencia para la construcción de los modelos en nuestra etapa de minería de datos.
+
+\end{itemize}
+
+
+
 
 \newpage
 \begin{center}
@@ -599,44 +802,50 @@ XXXXXX
 
 \bibitem[1]{constrainedClimate}
 
-Araujo, M. B., \& Naimi, B. (2020). Spread of SARS-CoV-2 Coronavirus likely to be constrained by climate. MedRxiv, 2020.03.12.20034728. URL: https://doi.org/10.1101/2020.03.12.20034728
-
+Araujo, M. B., \& Naimi, B. (2020). Spread of SARS-CoV-2 Coronavirus likely to be constrained by climate. MedRxiv, 2020.03.12.20034728. https://doi.org/10.1101/2020.03.12.20034728
 
 \bibitem[2]{HighTemperatue}
-Wang, J., Tang, K., Feng, K., \& Lv, W. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. Available at SSRN 3551767. URL: https://ssrn.com/abstract=3551767
+Wang, J., Tang, K., Feng, K., \& Lv, W. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. Available at SSRN 3551767. https://ssrn.com/abstract=3551767
 
 \bibitem[3]{MachineLearning}
-URL: https://www.scribd.com/document/468808682/Libro-Machine-Learning-pdf
+Mariette Award \& Rahul Khanna. (2015). Efficient Learning Machines, Theories, Concepts, and Applications for Engineers and System Hesigners. https://link.springer.com/book/10.1007/978-1-4302-5990-9
 
 \bibitem[4]{RevistaTIA}
-URL: https://revistas.udistrital.edu.co/index.php/tia/article/download/17325/17214/104552
+Ingry Nathaly Salamanca Rativa \& Edgar Junior Castro Escorcia. (2019). Técnicas de aprendizaje automático aplicadas en los sistemas de predicción. https://revistas.udistrital.edu.co/index.php/tia/article/download/17325/17214/104552
 
 \bibitem[5]{Uma}
-URL: https://riuma.uma.es/xmlui/handle/10630/25147
+Valenzuela González, Gema. (2022). Aprendizaje Supervisado: Métodos, Propiedades y Aplicaciones. https://riuma.uma.es/xmlui/handle/10630/25147
 
 \bibitem[6]{Clustering}
-URL: https://www.perlego.com/book/2165268/machine-learning-y-deep-learning-pdf
+Jesús Bobadilla Sancho. (2020). Machine Learning y Deep Learning Usando Python, Scikit y Keras. https://www.perlego.com/book/2165268/machine-learning-y-deep-learning-pdf
 
 \bibitem[7]{PCA}
-URL: https://openaccess.uoc.edu/bitstream/10609/140427/8/Inteligencia%20artificial%20avanzada_M%C3%B3dulo%201_Inteligencia%20artificial%20avanzada.pdf
+Raúl Benítez, Andrés Cencerrado Barraqué, Gerard Escudero \& Samir Kanaan. (2020). https://openaccess.uoc.edu/bitstream/10609/140427/8/Inteligencia%20artificial%20avanzada_M%C3%B3dulo%201_Inteligencia%20artificial%20avanzada.pdf
 
 \bibitem[8]{CNN}
-URL: $https://www.d2l.ai/chapter_convolutional-neural-networks/index.html$
+Aston Zhang, Zachary Lipton, Mu Li \& Alexander J. Smola. (2021). Dive into Deep Learning, Convolutional Neural Networks. https://www.d2l.ai/chapter\_convolutional-neural-networks/index.html
 
 \bibitem[9]{RNN}
-URL: $https://www.buscalibre.com.co/libro-recurrent-neural-networks-with-python-quick-start-guide-sequential-learning-and-language-modeling-with-tensorflow-libro-en-ingles/9781789132335/p/54514893$
+Simeon Kostadinov. (2020). Recurrent Neural Networks With Python Quick Start Guide: Sequential Learning and Lenguage modeling
+%URL: $https://www.buscalibre.com.co/libro-recurrent-neural-networks-with-python-quick-start-guide-sequential-learning-and-language-modeling-with-tensorflow-libro-en-ingles/9781789132335/p/54514893$
 
 \bibitem[10]{nvidia}
-URL: $https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/$
+Edgar Zepeda Urzua. (2021). Aprendizaje Federado con FLARE: NVIDIA Lleva la Inteligencia Artificial Colaborativa a el Área de la Salud y más allá. https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/
 
 \bibitem[11]{GO}
-URL: $https://www.bbc.com/mundo/noticias/2016/03/160312_alphago_inteigencia_artificial_go_victoria_humano_men$
+BBC Mundo. (2016). AlphaGo vs. Lee: la máquina venció al humano
+%URL: $https://www.bbc.com/mundo/noticias/2016/03/160312_alphago_inteigencia_artificial_go_victoria_humano_men$
 
 \bibitem[12]{DALL-E}
-URL: $https://www.sciencefocus.com/future-technology/dall-e-2-why-the-ai-image-generator-is-a-revolutionary-invention/$
+Alex Hughes. (2022). Dall-E 2: Why the AI image generator is a revolutionary invention
+%URL: $https://www.sciencefocus.com/future-technology/dall-e-2-why-the-ai-image-generator-is-a-revolutionary-invention/$
 
 \bibitem[13]{StyleGAN2}
-URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-stylegan2-to-deliver-sota-image-reconstruction-results/$
+SYNCED. (2020). MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results
+%URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-stylegan2-to-deliver-sota-image-reconstruction-results/$
+
+\bibitem[14]{ModeloGeometrico}
+Arnaldo Torres-Degró. (2011). Tasas de crecimiento poblacional (r): Una mirada desde el modelo matemático lineal, geométrico y exponencial. https://revistas.upr.edu/index.php/cidedigital/article/download/11774/9736/11342
 
 
 \end{thebibliography}
@@ -645,6 +854,8 @@ URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-s
 \section*{APÉNDICE I}
 \addcontentsline{toc}{section}{\protect\numberline{}APÉNDICE I}
 \end{center}
+
+
 
 \newpage
 \begin{center}
