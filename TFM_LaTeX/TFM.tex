@@ -617,13 +617,65 @@ Del gráfico anterior observamos que no se evidencian nulos, pero es una medida c
 \end{figure}
 Los estadísticos obtenidos para el dataset se representan en la siguiente imagen:
 
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.4\textwidth]{describe_covid}
-		\textbf{\caption{{\small Estadísticos dataset covid-19.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.4\textwidth]{describe_covid}
+%		\textbf{\caption{{\small Estadísticos dataset covid-19.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+
+%\begin{table}[H]
+%  \centering
+%   \textbf{\caption{{\small Estadísticos dataset covid-19. \label{tb:TableEstadCovid}}}}       
+%	\renewcommand{\arraystretch}{1.2}  
+%  %{\setlength{\arrayrulewidth}{0.3mm}
+%    \begin{tabular}{|c|c|c|c|c|}
+%    \hline
+%    \rowcolor{Peach}  & \textbf{num\_casos} & \textbf{num\_hosp} & \textbf{num\_uci} & \textbf{num\_def} \\
+%	\hline    
+%    \textbf{count} & 1461210.00 & 1461210.00 & 1461210.00 & 1461210.00\\
+%    \hline
+%    \textbf{mean} & 8.74 & 0.43 & 0.04 & 0.08\\
+%    \hline
+%    \textbf{std} & 48.38 & 2.49 & 0.30 & 0.77\\
+%    \hline
+%    \textbf{min} & 0.00 & 0.00 & 0.00 & 0.00\\
+%    \hline
+%    \textbf{25 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
+%    \hline 
+%    \textbf{50 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
+%    \hline 
+%    \textbf{75 \%} & 4.00 & 0.00 & 0.00 & 0.00\\
+%    \hline
+%    \textbf{max} & 3749.00 & 271.00 & 35.00 & 100.00\\
+%    \hline     
+%    \end{tabular}
+%    \label{tab:addlabel}\\
+%  {\scriptsize Fuente: Elaboración Propia}
+%\end{table}
+
+\begin{table}[H]
+  \centering
+  \textbf{\caption{{\small Estadísticos dataset covid-19.}}}
+    \begin{tabular}{c c c c c}
+    \midrule[0.7mm]
+     & \makebox[2.2cm][c]{\textbf{num\_casos}} & \makebox[2.2cm][c]{\textbf{num\_hosp}} & \makebox[3cm][c]{\textbf{num\_uci}} &  \makebox[2.2cm][c]{\textbf{num\_def}}\\
+    \midrule
+    \textbf{count} & $1461210.00$ & $1461210.00$     & $1461210.00$ & $1461210.00$\\
+    \textbf{mean} & $8.74$ &  $0.43$    & $0.04$ & $0.08$ \\
+    \textbf{std} & $48.38$ & $2.49$    &  $0.30$ & $0.77$\\
+    \textbf{min} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+    \textbf{25\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+    \textbf{50\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+    \textbf{75\%} & $4.00$ & $0.00$    &  $0.00$ & $0.00$\\
+    \textbf{max} & $3749.00$ & $271.00$    &  $35.00$ & $100.00$\\
+    \bottomrule[0.7mm]
+    \end{tabular}%
+  \label{tab:addlabel}\\
+  \medskip 
+{\scriptsize Fuente: Elaboración Propia}
+\end{table}%
 
 La media de \textit{num\_casos} es de 8.74 y la mediana es 0 ya que en muchas fechas diarias no se reportaron casos, la media de \textit{num\_hosp} es de 0.43 y la mediana 0, la media de \textit{num\_uci} es 0.04 y la mediana 0, por último, la media de \textit{num\_def} es de 0.08 y la mediana 0. Las variables parecen ser asimétricas a la derecha dado que su media es mayor a su mediana. 
 
@@ -778,6 +830,17 @@ Se realiza la transformación de la variable \textit{FECHA} cambiando su granular
 Este dataset final será exportado como archivo data\_refined.csv y será tomado como partida de referencia para la construcción de los modelos en nuestra etapa de minería de datos.
 
 \end{itemize}
+
+\subsubsection{MINERÍA DE DATOS}
+En esta etapa de nuestro proceso de KDD partiremos de nuestro dataset final (data\_refined.csv) en donde descubriremos patrones y conocimiento mediante técnicas y algoritmos de machine learning, a continuación, se describen algunos de estos y su proceso:
+\begin{itemize}
+\item \textbf{Modelo de regresión Random Forest}
+\\\\
+\end{itemize}
+
+
+
+
 
 
 
