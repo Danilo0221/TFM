@@ -39,6 +39,18 @@
     showstringspaces= false,
     breaklines      = true
 }
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 
 %%%%%%%% Coloca una imagen como encabezado %%%%%%%%%%%%%%
 \pagestyle{fancy}
@@ -279,6 +291,95 @@ Sin embargo, los problemas de regresión pueden presentar algunos desafíos, como:
 Para superar estos desafíos, se pueden utilizar técnicas de preprocesamiento de datos, selección de características, validación cruzada y ajuste de hiperparámetros, entre otras.
 Estos modelos pueden ser lineales o no lineales. Los modelos lineales, como la regresión lineal simple o múltiple, buscan establecer una relación lineal entre las variables de entrada y la variable de salida [4]. Por otro lado, los modelos no lineales, como la regresión polinómica, la regresión logística, regresión de árbol de decisión, random forest o redes neuronales, permiten establecer relaciones no lineales entre las variables.
 
+
+\subsubsubsection{REGRESIÓN LINEAL MÚLTIPLE}
+
+Un modelo de regresión lineal múltiple es una técnica estadística que se utiliza para predecir la variable de respuesta (o variable dependiente) en función de dos o más variables predictoras (o variables independientes). Es una extensión del modelo de regresión lineal simple, que solo utiliza una variable predictora. La ecuación para un modelo de regresión lineal múltiple se puede escribir como:
+\begin{equation}
+y = b_o + b_1x_1 + b_2x_2 + b_nx_n + e
+\end{equation}
+donde:
+\\\\
+$y:$ \hspace{1em} Variable de respuesta (o variable dependiente) que se quiere predecir.\\
+$x_1, x_2, ..., x_n:$ \hspace{0.3em} Variables predictoras (variables independientes) que se utilizan para predecir y.\\
+$b_0, b_1, b_2, ..., b_n:$ \hspace{0.52em} Coeficientes de regresión que representan la relación entre cada variable predictora y la variable de respuesta.\\
+$e:$ \hspace{1em} Error residual o término de error, que representa la variación de $y$ que no se puede explicar por las variables predictoras.
+\\\\
+El objetivo de un modelo de regresión lineal múltiple es estimar los coeficientes de regresión $(b_0, b_1, b_2, ..., b_n)$ de tal manera que la suma de los errores residuales sea lo más pequeña posible. Esto se logra mediante el método de mínimos cuadrados, que minimiza la suma de los cuadrados de los errores residuales. Para estimar los coeficientes de regresión, se utilizan técnicas como la matriz de diseño, el cálculo de la matriz inversa y la solución de sistemas de ecuaciones lineales. Una vez que se han estimado los coeficientes de regresión, se puede utilizar el modelo para hacer predicciones sobre la variable de respuesta para nuevos valores de las variables predictoras.[10][11]
+
+Al igual que en el modelo de regresión lineal simple, el modelo de regresión lineal múltiple asume que hay una relación lineal entre las variables predictoras y la variable de respuesta, si la relación no es lineal, puede ser necesario utilizar otro tipo de modelo, por tal motivo es importante evaluar la calidad del modelo mediante técnicas como la validación cruzada y la evaluación de métricas como: 
+\\
+\begin{itemize}
+\item \textbf{MAE (Error Absoluto Medio)}
+\\\\
+Es una métrica que calcula la media de los errores absolutos de las predicciones del modelo en relación con los valores reales de la variable dependiente. Es una medida de la magnitud promedio del error en las predicciones del modelo en términos absolutos. Un MAE bajo indica que las predicciones del modelo tienen un pequeño error promedio en relación con los valores reales de la variable dependiente, lo que indica que el modelo tiene un buen ajuste a los datos, el MAE se calcula mediante:\\
+\begin{equation}
+MAE = \frac{1}{n}\sum_{i=1}^{n} |y_i - \hat{y_i}|
+\end{equation}
+\\
+El MAE no considera la dirección del error, es decir, si el modelo está subestimando o sobrestimando los valores reales. Por lo tanto, el MAE debe interpretarse junto con otras métricas de evaluación del modelo, como el error cuadrático medio (MSE) y el coeficiente de determinación $(R^2)$, para obtener una imagen completa del rendimiento del modelo.
+
+\item \textbf{RMSE (Raiz del Error Cuadratico Medio)}
+\\\\
+Se calcula como la raíz cuadrada del promedio de los errores cuadráticos de las predicciones del modelo en relación con los valores reales de la variable dependiente. El RMSE es similar al MAE, pero penaliza más fuertemente las predicciones que tienen un error mayor, el RMSE es particularmente útil cuando los errores de predicción son importantes y se desea minimizar el error promedio de predicción al cuadrado y igual que el MAE, el RMSE no considera la dirección del error, es decir, si el modelo está subestimando o sobrestimando los valores reales, el MAE se calcula mediante:\\
+\begin{equation}
+RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y_i})^2}
+\end{equation}
+\\
+Sin embargo, el RMSE es más sensible a los valores atípicos que el MAE, lo que significa que puede ser más apropiado en situaciones en las que los valores atípicos tienen un gran impacto en la precisión del modelo.
+
+\item \textbf{$R^2$ (Coeficiente de Determinación)}
+\\\\
+Indica la proporción de la varianza total de la variable dependiente $(y)$ que es explicada por las variables independientes $(x_1, x_2, ..., x_n)$ incluidas en el modelo. En otras palabras, $R^2$ es una medida de qué tan bien las variables predictoras explican la variabilidad en la variable dependiente, se calcula mediante:\\
+\begin{equation}
+R^2 = \dfrac{\sum\limits_{i=1}^{n} (\hat{y_i} - \bar{y})^2}{\sum\limits_{i=1}^{n} (y_i - \bar{y})^2}
+\end{equation}
+\\
+El valor de $R^2$ varía entre 0 y 1, y se interpreta como sigue:\\\\
+$R^2 = 0:$ el modelo no explica ninguna variabilidad en la variable dependiente. 
+$R^2 = 1:$ el modelo explica toda la variabilidad en la variable dependiente.
+\\\\
+En la práctica, $R^2$ generalmente toma valores intermedios, lo que significa que el modelo explica parte, pero no toda la variabilidad en la variable dependiente.
+Un valor alto de $R^2$ indica que el modelo ajusta bien los datos y que las variables predictoras son buenas para predecir la variable dependiente. Sin embargo, un valor alto de $R^2$ no necesariamente significa que el modelo sea bueno. Puede haber otras variables que no se hayan incluido en el modelo que también puedan explicar la variabilidad en la variable dependiente, es por esto importante evaluar el modelo en función de otras métricas.
+\end{itemize}
+
+\subsubsubsection{RANDOM FOREST}
+
+El modelo de Random Forest es una extensión del modelo de Bagging (Bootstrap Aggregating) que utiliza múltiples árboles de decisión para mejorar la precisión de la predicción. Bagging es un enfoque de aprendizaje automático que implica la creación de múltiples muestras de entrenamiento a partir del conjunto de datos original, utilizando muestreo con reemplazo. Luego, se entrena un modelo separado para cada muestra y se promedian las predicciones de los modelos para obtener una predicción final, esto ayuda a reducir el sobreajuste y mejorar la precisión de la predicción.\\
+Random Forest utiliza múltiples árboles de decisión para hacer predicciones de valores numéricos, la principal diferencia es que en Random Forest, en cada nodo de decisión se selecciona un subconjunto aleatorio de características para realizar la división en lugar de considerar todas las características disponibles, al seleccionar un subconjunto aleatorio de características, el modelo de Random Forest puede reducir la correlación entre los árboles y aumentar la diversidad de los árboles en el modelo, esto puede mejorar la precisión del modelo y reducir el sobreajuste. [12]
+\\\\
+En Random Forest la idea es que cada árbol de decisión tenga una idea ligeramente diferente de cómo se relacionan las características con la variable objetivo.
+Para hacer una predicción se evalúa cada muestra en cada árbol de decisión en el modelo y se toma la media de las predicciones resultantes, se puede expresar matemáticamente como:
+\begin{equation}
+y = \dfrac{1}{N}\sum\limits_{i=1}^{n} y_i
+\end{equation}
+
+donde y es la predicción de la variable objetivo para una muestra dada, $y_i$ es la predicción de la variable objetivo para esa muestra en el i-ésimo árbol de decisión, y $N$ es el número total de árboles en el modelo. [13]\\
+Las predicciones que se apartan demasiado de la media no son deseables, ya que pueden estar basadas en un árbol de decisión que tiene una idea atípica de cómo se relacionan las características con la variable objetivo. A continuación, se muestra el modelo de un random forest:
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.7\textwidth]{random_forest}
+		\textbf{\caption{{\small Modelo de funcionamiento random forest.}}}
+	{\scriptsize Fuente: [cnvrg.io]}
+	\end{center}
+\end{figure}
+
+El modelo de Random Forest para regresión tiene varias ventajas sobre otros modelos de regresión, incluyendo:
+\begin{itemize}
+\item Es capaz de manejar tanto características numéricas como categóricas.
+\item Es resistente al sobreajuste, lo que significa que es menos probable que se sobreajuste en comparación con otros modelos de regresión.
+\item Es capaz de manejar conjuntos de datos grandes y complejos.
+\end{itemize}
+
+Sin embargo, el modelo de Random Forest para regresión también tiene algunas limitaciones, incluyendo:
+\begin{itemize}
+\item Es más difícil de interpretar que algunos otros modelos de regresión.
+\item Puede ser más computacionalmente costoso que algunos otros modelos de regresión.
+\item No proporciona información sobre la forma en que se relacionan las características con la variable objetivo.
+\end{itemize}
+Las métricas de evaluación comunes para un modelo de Random Forest de regresión son similares a las utilizadas en otros modelos de regresión, como los descritos en el modelo de regresión lineal múltiple.
+
 \subsubsection{CLASIFICACIÓN}
 \medskip
 Los modelos de clasificación binaria son utilizados cuando se desea predecir una variable de salida que puede tomar únicamente dos valores posibles, como ``sí'' o ``no'', ``verdadero'' o ``falso'', etc. Ejemplos de modelos de clasificación binaria incluyen la regresión logística y la máquina de vectores de soporte.
@@ -302,6 +403,32 @@ Otro algoritmo popular de clustering es el clustering jerárquico. Este algoritmo
 El clustering se utiliza en muchas aplicaciones, como la segmentación de clientes, la clasificación de imágenes y la agrupación de documentos. Por ejemplo, en la segmentación de clientes, el clustering se puede utilizar para agrupar a los clientes en función de sus patrones de compra o preferencias. En la clasificación de imágenes, el clustering se puede utilizar para agrupar imágenes similares para su posterior análisis o clasificación.\\
 
 En la agrupación de documentos, el clustering se puede utilizar para agrupar documentos similares en temas específicos.Sin embargo, es importante tener en cuenta que el clustering no siempre es la mejor opción para todos los conjuntos de datos y situaciones. Algunas limitaciones del clustering incluyen la necesidad de definir el número de clústeres de antemano, la sensibilidad a los valores atípicos y la dificultad de evaluar los resultados. Es importante seleccionar el algoritmo y los parámetros adecuados para obtener resultados precisos y significativos. [6]
+
+\subsubsubsection{K-MEANS}
+
+El algoritmo k-means busca un número predeterminado de grupos dentro de un conjunto de datos multidimensional sin etiquetar. Logra esto utilizando una concepción simple de cómo se ve el agrupamiento óptimo:
+\begin{itemize}
+\item El ``centro del grupo'' es la media aritmética de todos los puntos que pertenecen al grupo.
+\item Cada punto está más cerca de su propio centro de conglomerado que de otros centros de conglomerados.
+\end{itemize}
+Esas dos suposiciones son la base del modelo de k-medias que funciona mediante el algoritmo de maximización de expectativas (E - M), es un algoritmo poderoso que surge en una variedad de contextos dentro de la ciencia de datos. En resumen, el enfoque de maximización de expectativas aquí consiste en el siguiente procedimiento:
+\begin{itemize}
+\item Adivinar algunos centros de los clúster.
+\item Repetir hasta converger.
+\item E-Step: asigna puntos al centro del clúster más cercano.
+\item M-Step: establezca los centros de los clústers en la media.
+\end{itemize}
+Aquí, el ``paso E'' o ``paso de expectativa'' se llama así porque implica actualizar nuestra expectativa de a qué grupo pertenece cada punto. El ``paso M'' o ``paso de maximización'' se llama así porque implica maximizar alguna función de aptitud que define la ubicación de los centros del conglomerado; en este caso, esa maximización se logra tomando una media simple de los datos en cada conglomerado.\\
+La literatura sobre este algoritmo es amplia, pero se puede resumir de la siguiente manera: en circunstancias típicas, cada repetición del paso E y del paso M siempre dará como resultado una mejor estimación de las características del grupo.\\
+Se puede visualizar el algoritmo como se muestra en la siguiente figura; para la inicialización particular que se muestra aquí, los clústeres convergen en solo tres iteraciones. 
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.7\textwidth]{kmeans}
+		\textbf{\caption{{\small Visualización del algoritmo E-M en k-means.}}}
+	{\scriptsize Fuente: [Python Data Science Handbook]}
+	\end{center}
+\end{figure}
+El modelo K-means es un algoritmo de optimización y su objetivo es minimizar la suma de las distancias al cuadrado de cada punto de datos al centroide de su clúster. Esta métrica se llama ``inercia'' o ``suma de los cuadrados de las distancias'' y se utiliza para evaluar la calidad de los clústeres, así como Coeficiente de silueta que mide la similitud entre los puntos de datos dentro de su clúster en comparación con otros clústeres. Un coeficiente de silueta cercano a 1 indica que el punto de datos está correctamente asignado a su clúster, mientras que un coeficiente de silueta cercano a -1 indica que el punto de datos debería haber sido asignado a otro clúster.
 
 \subsubsection{REDUCCIÓN DE LA DIMENSIONALIDAD}
 \medskip
@@ -332,82 +459,125 @@ El agente toma una acción en un estado particular y el entorno responde con una 
 Un algoritmo popular de aprendizaje por refuerzo es el algoritmo Q-Learning. En Q-Learning, el agente aprende una función Q que le permite evaluar la calidad de una acción en un estado particular. La función Q se puede utilizar para seleccionar la mejor acción en un estado determinado y el algoritmo Q-Learning utiliza una técnica llamada exploración, explotación para equilibrar el aprendizaje de nuevas acciones y la selección de acciones que se sabe que son buenas.
 El aprendizaje por refuerzo se utiliza en muchas aplicaciones, como los juegos, la robótica y la optimización de procesos. Por ejemplo, en los juegos, el aprendizaje por refuerzo se puede utilizar para crear agentes que aprendan a jugar juegos complejos, como el ajedrez y el Go, en la robótica, el aprendizaje por refuerzo se puede utilizar para crear robots que aprendan a realizar tareas complejas, como caminar y manipular objetos y en la optimización de procesos, el aprendizaje por refuerzo se puede utilizar para crear sistemas que aprendan a optimizar procesos, como la producción de energía y la gestión de inventarios.
 
+%\bigskip
+%\subsection{REDES NEURONALES}
+%\bigskip
+%Las redes neuronales son un modelo computacional inspirado en la estructura y funcionamiento del cerebro humano, estas redes están compuestas por unidades de procesamiento llamadas neuronas artificiales, que se organizan en capas y se interconectan mediante conexiones ponderadas. La información se propaga a través de la red de neuronas a través de una función de activación no lineal, lo que permite que la red realice una amplia variedad de tareas de aprendizaje.
+%\\
+%El proceso de entrenamiento de una red neuronal implica ajustar los valores de los pesos de las conexiones para que la salida de la red se acerque a la salida deseada. Esto se logra mediante el uso de algoritmos de aprendizaje supervisado o no supervisado. En el aprendizaje supervisado, se proporciona a la red un conjunto de datos etiquetados de entrada y salida esperada, mientras que, en el aprendizaje no supervisado, la red debe descubrir patrones en los datos de entrada por sí misma.
+%Las redes neuronales han demostrado ser muy efectivas en una amplia variedad de tareas de aprendizaje automático, como la clasificación de imágenes, el reconocimiento de voz, la traducción automática y la generación de texto y música, entre otras. Además, las redes neuronales profundas, que tienen muchas capas ocultas, han llevado a grandes avances en áreas como el procesamiento del lenguaje natural y la visión por computadora.
+%\\\\
+%Sin embargo, el entrenamiento de redes neuronales puede ser un proceso muy intensivo en términos de recursos computacionales y de tiempo, y la interpretación de los resultados obtenidos puede ser difícil debido a la naturaleza no lineal y altamente distribuida de las redes neuronales. Además, las redes neuronales pueden ser propensas a sobreajustarse a los datos de entrenamiento, lo que puede llevar a un rendimiento deficiente en datos nuevos.
+%
+%\subsubsection{CONVOLUCIONALES}
+%\medskip
+%Las redes neuronales convolucionales son un tipo de red neuronal que ha sido especialmente diseñada para procesar datos de tipo imagen y otros datos de alto dimensionalidad. Las CNN (Convolutional Neural Network) utilizan una técnica de procesamiento conocida como convolución, que implica desplazar un filtro sobre una imagen y realizar una operación de multiplicación punto a punto entre el filtro y la sección de la imagen correspondiente.
+%\\\\
+%Las CNN son especialmente útiles para tareas como la clasificación de imágenes y la detección de objetos, ya que son capaces de extraer características de las imágenes y otros datos de alto dimensionalidad con gran precisión, estas características se utilizan luego para realizar la clasificación o detección de objetos, según sea el caso. Las CNN son particularmente efectivas en la detección de patrones en datos de tipo imagen, ya que los filtros convolucionales permiten capturar características locales de la imagen, como bordes, texturas y patrones repetitivos, de manera eficiente. Además, las CNN pueden aprender automáticamente las características relevantes de los datos de entrenamiento, lo que las hace muy efectivas para tareas de clasificación y detección de objetos en las que las características relevantes no son conocidas de antemano.
+%Aunque las CNN son particularmente útiles para tareas de procesamiento de imagen, también se han utilizado con éxito en tareas como el procesamiento del lenguaje natural, la clasificación de secuencias de tiempo y la detección de anomalías. Además, las redes neuronales convolucionales profundas, que contienen varias capas de convolución, han llevado a grandes avances en áreas como el procesamiento de imágenes médicas y la visión por computadora. [8]
+%
+%\subsubsection{RECURRENTES}
+%\medskip
+%Las redes neuronales recurrentes (RNN, recurrent neural network) son un tipo de red neuronal que se utiliza para procesar datos secuenciales, como el lenguaje natural y las series de tiempo. A diferencia de las redes neuronales convolucionales, que procesan los datos de manera independiente en cada posición, las RNN tienen memoria y son capaces de procesar secuencias de datos de longitud variable.
+%En una red neuronal recurrente, cada neurona tiene una conexión consigo misma, lo que permite que la información fluya a través de la red en bucles. Esta arquitectura de bucle permite que la red neuronal recuerde información de los pasos anteriores y la utilice para procesar la entrada actual.
+%La principal ventaja de las RNN es su capacidad para modelar la dependencia temporal de los datos. Esto significa que la red puede aprender patrones en secuencias de datos, como la estructura sintáctica del lenguaje natural o los patrones de fluctuación en una serie de tiempo. Además, las RNN son capaces de procesar secuencias de datos de longitud variable, lo que las hace muy útiles para tareas como la traducción automática, donde la longitud de la entrada y la salida puede variar.
+%\\\\
+%Una variante de las RNN son las redes neuronales LSTM (Long Short-Term Memory), que fueron diseñadas para evitar el problema del desvanecimiento del gradiente, que puede ocurrir cuando se entrena una red neuronal recurrente profunda. Las redes LSTM utilizan un mecanismo de compuertas para controlar el flujo de información a través de la red y evitar que la señal degradada afecte al entrenamiento de la red.
+%Las redes neuronales recurrentes y las redes LSTM han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la generación de texto, la traducción automática, el reconocimiento de voz y la predicción de series de tiempo. Sin embargo, las redes neuronales recurrentes también tienen algunas limitaciones, como la dificultad para manejar dependencias a largo plazo y el costo computacional elevado de entrenar redes profundas. [9]
+%
+%\subsubsection{DE ATENCIÓN}
+%\medskip
+%Las redes neuronales de atención (attention-based neural networks) son un tipo de red neuronal que se utiliza para procesar datos secuenciales y modelar la dependencia temporal de los datos, al igual que las redes neuronales recurrentes. Sin embargo, a diferencia de las redes neuronales recurrentes, las redes neuronales de atención no procesan todos los datos secuenciales de manera uniforme, sino que prestan atención a partes específicas de la secuencia en cada paso de procesamiento.
+%En una red neuronal de atención, cada paso de procesamiento se divide en dos partes: la codificación y la decodificación. Durante la codificación, la red procesa la entrada secuencial y la transforma en una serie de vectores de características. Durante la decodificación, la red genera la salida secuencial a partir de los vectores de características generados durante la codificación.
+%\\
+%La atención se utiliza para determinar qué vectores de características se deben utilizar en cada paso de decodificación. En lugar de procesar toda la secuencia de entrada en cada paso de decodificación, la red presta atención a las partes más relevantes de la entrada en cada paso, utilizando una función de atención para asignar pesos a cada vector de características de la secuencia de entrada.
+%\\\\
+%La principal ventaja de las redes neuronales de atención es su capacidad para enfocarse en las partes más importantes de la entrada secuencial en cada paso de procesamiento, lo que las hace muy útiles para tareas como la traducción automática, donde la atención se puede utilizar para identificar las partes más relevantes de la oración en la que se está trabajando en cada paso del proceso de traducción.
+%Una variante de las redes neuronales de atención son las redes neuronales de atención múltiple (multi-head attention networks), que utilizan múltiples funciones de atención para procesar diferentes aspectos de la entrada secuencial de manera simultánea.
+%\\\\
+%Las redes neuronales de atención han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la traducción automática, el procesamiento del lenguaje natural y la generación de texto. Sin embargo, al igual que todas las redes neuronales, también tienen algunas limitaciones que deben ser consideradas, como la necesidad de grandes cantidades de datos de entrenamiento y el costo computacional elevado de entrenar redes profundas.
+
 \bigskip
-\subsection{REDES NEURONALES}
+\subsection{SERIES TEMPORALES}
 \bigskip
-Las redes neuronales son un modelo computacional inspirado en la estructura y funcionamiento del cerebro humano, estas redes están compuestas por unidades de procesamiento llamadas neuronas artificiales, que se organizan en capas y se interconectan mediante conexiones ponderadas. La información se propaga a través de la red de neuronas a través de una función de activación no lineal, lo que permite que la red realice una amplia variedad de tareas de aprendizaje.
-\\
-El proceso de entrenamiento de una red neuronal implica ajustar los valores de los pesos de las conexiones para que la salida de la red se acerque a la salida deseada. Esto se logra mediante el uso de algoritmos de aprendizaje supervisado o no supervisado. En el aprendizaje supervisado, se proporciona a la red un conjunto de datos etiquetados de entrada y salida esperada, mientras que, en el aprendizaje no supervisado, la red debe descubrir patrones en los datos de entrada por sí misma.
-Las redes neuronales han demostrado ser muy efectivas en una amplia variedad de tareas de aprendizaje automático, como la clasificación de imágenes, el reconocimiento de voz, la traducción automática y la generación de texto y música, entre otras. Además, las redes neuronales profundas, que tienen muchas capas ocultas, han llevado a grandes avances en áreas como el procesamiento del lenguaje natural y la visión por computadora.
+Una serie temporal es una colección de datos de una variable recogidas secuencialmente en el tiempo, estos datos de series temporales siguen intervalos de tiempo periódicos que se midieron en intervalos de tiempo regulares o se recopilaron en intervalos de tiempo particulares. Estos datos se suelen recoger en instantes de tiempo equiespaciados, si los datos se recogen en instantes temporales de forma continua, se debe o bien digitalizar la serie, es decir, recoger sólo los valores en instantes de tiempo equiespaciados, o bien acumular los valores sobre intervalos de tiempo.\\ 
+Los datos de series temporales siguen intervalos de tiempo periódicos que se midieron en intervalos de tiempo regulares o se recopilaron en intervalos de tiempo particulares. En decir una serie temporal es simplemente una serie de puntos de datos ordenados en el tiempo, y el análisis de series temporales es el proceso de dar sentido a dichos datos. [16]
 \\\\
-Sin embargo, el entrenamiento de redes neuronales puede ser un proceso muy intensivo en términos de recursos computacionales y de tiempo, y la interpretación de los resultados obtenidos puede ser difícil debido a la naturaleza no lineal y altamente distribuida de las redes neuronales. Además, las redes neuronales pueden ser propensas a sobreajustarse a los datos de entrenamiento, lo que puede llevar a un rendimiento deficiente en datos nuevos.
+Las series temporales pueden ser descompuestas en varios componentes, que ayudan a entender mejor la estructura de los datos y a modelarlos de manera adecuada. Los componentes comunes de una serie temporal son los siguientes:
+\begin{itemize}
+\item \textbf{Tendencia:} Es la dirección general de los datos a largo plazo. Puede ser creciente, decreciente o constante. La tendencia indica la dirección en la que se mueven los datos en el largo plazo.
+\item \textbf{Estacionalidad:} Son patrones que se repiten en un intervalo de tiempo fijo, como las estaciones del año, días de la semana, horas del día, etc. La estacionalidad indica cómo los datos varían a corto plazo, en períodos fijos.
+\item \textbf{Cíclico:} Son patrones que se repiten en intervalos irregulares, generalmente más largos que los patrones estacionales. Los ciclos pueden ser causados por factores económicos, sociales o políticos.
+\item \textbf{Componente aleatorio:} Es la variación aleatoria en la serie temporal que no puede ser explicada por la tendencia, la estacionalidad o los ciclos. Este componente representa la variabilidad en la serie temporal que no puede ser explicada por otros factores.
+\end{itemize}
 
-\subsubsection{CONVOLUCIONALES}
-\medskip
-Las redes neuronales convolucionales son un tipo de red neuronal que ha sido especialmente diseñada para procesar datos de tipo imagen y otros datos de alto dimensionalidad. Las CNN (Convolutional Neural Network) utilizan una técnica de procesamiento conocida como convolución, que implica desplazar un filtro sobre una imagen y realizar una operación de multiplicación punto a punto entre el filtro y la sección de la imagen correspondiente.
-\\\\
-Las CNN son especialmente útiles para tareas como la clasificación de imágenes y la detección de objetos, ya que son capaces de extraer características de las imágenes y otros datos de alto dimensionalidad con gran precisión, estas características se utilizan luego para realizar la clasificación o detección de objetos, según sea el caso. Las CNN son particularmente efectivas en la detección de patrones en datos de tipo imagen, ya que los filtros convolucionales permiten capturar características locales de la imagen, como bordes, texturas y patrones repetitivos, de manera eficiente. Además, las CNN pueden aprender automáticamente las características relevantes de los datos de entrenamiento, lo que las hace muy efectivas para tareas de clasificación y detección de objetos en las que las características relevantes no son conocidas de antemano.
-Aunque las CNN son particularmente útiles para tareas de procesamiento de imagen, también se han utilizado con éxito en tareas como el procesamiento del lenguaje natural, la clasificación de secuencias de tiempo y la detección de anomalías. Además, las redes neuronales convolucionales profundas, que contienen varias capas de convolución, han llevado a grandes avances en áreas como el procesamiento de imágenes médicas y la visión por computadora. [8]
+La descomposición de una serie temporal en estos componentes se puede hacer utilizando técnicas estadísticas como el análisis de series de tiempo o métodos más avanzados como el análisis de componentes principales. La comprensión de estos componentes es importante para modelar adecuadamente la serie temporal y hacer predicciones precisas. Por ejemplo, si se espera que la tendencia y la estacionalidad se mantengan constantes, se puede utilizar un modelo ARIMA para modelar la serie temporal. Si los datos tienen ciclos irregulares, un modelo de regresión de series temporales puede ser más apropiado.
 
-\subsubsection{RECURRENTES}
+\subsubsection{FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}
 \medskip
-Las redes neuronales recurrentes (RNN, recurrent neural network) son un tipo de red neuronal que se utiliza para procesar datos secuenciales, como el lenguaje natural y las series de tiempo. A diferencia de las redes neuronales convolucionales, que procesan los datos de manera independiente en cada posición, las RNN tienen memoria y son capaces de procesar secuencias de datos de longitud variable.
-En una red neuronal recurrente, cada neurona tiene una conexión consigo misma, lo que permite que la información fluya a través de la red en bucles. Esta arquitectura de bucle permite que la red neuronal recuerde información de los pasos anteriores y la utilice para procesar la entrada actual.
-La principal ventaja de las RNN es su capacidad para modelar la dependencia temporal de los datos. Esto significa que la red puede aprender patrones en secuencias de datos, como la estructura sintáctica del lenguaje natural o los patrones de fluctuación en una serie de tiempo. Además, las RNN son capaces de procesar secuencias de datos de longitud variable, lo que las hace muy útiles para tareas como la traducción automática, donde la longitud de la entrada y la salida puede variar.
+Es un modelo de pronóstico de series temporales que utiliza un enfoque recursivo para predecir valores futuros, se basa en la idea de que los valores futuros de una serie temporal están altamente correlacionados con sus valores pasados, y se puede utilizar esta relación para predecir valores futuros de manera recursiva.
+El modelo RAF se compone de dos partes principales: la primera parte es un modelo autorregresivo (AR) que estima la relación entre los valores pasados de la serie temporal y su valor actual, mientras que la segunda parte es una función recursiva que utiliza el modelo AR para predecir valores futuros de manera recursiva. [18]\\ 
+El modelo AR se basa en la idea de que el valor actual de la serie temporal está relacionado linealmente con sus valores pasados, y se puede modelar mediante una ecuación matemática. La ecuación AR se puede escribir como:
+\begin{equation}
+y_t = c + \sum\limits_{i=1}^{n} \varphi_i \cdot y_{t-i} + e_t
+\end{equation}
+donde:
 \\\\
-Una variante de las RNN son las redes neuronales LSTM (Long Short-Term Memory), que fueron diseñadas para evitar el problema del desvanecimiento del gradiente, que puede ocurrir cuando se entrena una red neuronal recurrente profunda. Las redes LSTM utilizan un mecanismo de compuertas para controlar el flujo de información a través de la red y evitar que la señal degradada afecte al entrenamiento de la red.
-Las redes neuronales recurrentes y las redes LSTM han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la generación de texto, la traducción automática, el reconocimiento de voz y la predicción de series de tiempo. Sin embargo, las redes neuronales recurrentes también tienen algunas limitaciones, como la dificultad para manejar dependencias a largo plazo y el costo computacional elevado de entrenar redes profundas. [9]
-
-\subsubsection{DE ATENCIÓN}
-\medskip
-Las redes neuronales de atención (attention-based neural networks) son un tipo de red neuronal que se utiliza para procesar datos secuenciales y modelar la dependencia temporal de los datos, al igual que las redes neuronales recurrentes. Sin embargo, a diferencia de las redes neuronales recurrentes, las redes neuronales de atención no procesan todos los datos secuenciales de manera uniforme, sino que prestan atención a partes específicas de la secuencia en cada paso de procesamiento.
-En una red neuronal de atención, cada paso de procesamiento se divide en dos partes: la codificación y la decodificación. Durante la codificación, la red procesa la entrada secuencial y la transforma en una serie de vectores de características. Durante la decodificación, la red genera la salida secuencial a partir de los vectores de características generados durante la codificación.
-\\
-La atención se utiliza para determinar qué vectores de características se deben utilizar en cada paso de decodificación. En lugar de procesar toda la secuencia de entrada en cada paso de decodificación, la red presta atención a las partes más relevantes de la entrada en cada paso, utilizando una función de atención para asignar pesos a cada vector de características de la secuencia de entrada.
+$y_t$ \hspace{0.52em} es el valor actual de la serie temporal.\\
+$e_t$ \hspace{0.52em} es el término de error aleatorio.\\
+$c$ \hspace{1em} es una constante.\\
+$\varphi_i$ \hspace{0.4em} son los coeficientes de la ecuación AR que representan la relación entre los valores pasados y el valor actual.
 \\\\
-La principal ventaja de las redes neuronales de atención es su capacidad para enfocarse en las partes más importantes de la entrada secuencial en cada paso de procesamiento, lo que las hace muy útiles para tareas como la traducción automática, donde la atención se puede utilizar para identificar las partes más relevantes de la oración en la que se está trabajando en cada paso del proceso de traducción.
-Una variante de las redes neuronales de atención son las redes neuronales de atención múltiple (multi-head attention networks), que utilizan múltiples funciones de atención para procesar diferentes aspectos de la entrada secuencial de manera simultánea.
+Una vez que se ha ajustado el modelo AR a los datos de la serie temporal, se utiliza la función recursiva para predecir los valores futuros de la serie temporal. La función recursiva se define como:
+\begin{equation}
+y_{(t+h)} = c + \sum\limits_{i=1}^{n} \varphi_i \cdot y_{(t+h-i)}
+\end{equation}
+donde:
 \\\\
-Las redes neuronales de atención han tenido un gran éxito en una amplia variedad de aplicaciones, incluyendo la traducción automática, el procesamiento del lenguaje natural y la generación de texto. Sin embargo, al igual que todas las redes neuronales, también tienen algunas limitaciones que deben ser consideradas, como la necesidad de grandes cantidades de datos de entrenamiento y el costo computacional elevado de entrenar redes profundas.
+$y_{(t+h)}$ \hspace{0.6em} es el valor predicho de la serie temporal en el momento $t+h$.\\
+$y_{t-i}$ \hspace{1.35em} es el valor pasado de la serie temporal en el momento $t-i$.
+\\\\
+Esta función se utiliza para predecir los valores futuros de la serie temporal recursivamente, utilizando los valores pasados de la serie temporal.
+El modelo RAF se puede utilizar para pronosticar diferentes horizontes de pronóstico, es decir, el modelo puede utilizarse para pronosticar los valores futuros de la serie temporal a corto plazo, a medio plazo o a largo plazo. El modelo es especialmente útil para pronósticos de corto plazo, ya que se basa en la información disponible en el momento actual y utiliza una función recursiva para predecir valores futuros.
 
 \bigskip
 \subsection{ESTADO DEL ARTE}
 \bigskip
-El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina o la astronomía.
-\\\\
-A su vez el aprendizaje federado es una técnica de aprendizaje supervisado que ha ganado mucha atención en los últimos años debido a su capacidad para entrenar modelos de manera distribuida y colaborativa sin la necesidad de compartir los datos subyacentes. Esto lo hace especialmente útil en situaciones donde la privacidad y la seguridad son una preocupación importante, como en el análisis de datos médicos o financieros. Un ejemplo es el proyecto NVIDIA FLARE, un kit de desarrollo de software que ayuda a las partes distribuidas a colaborar para desarrollar modelos de IA más generalizables \textit{``El código abierto de NVIDIA FLARE para acelerar la investigación del aprendizaje federado es especialmente importante en el área de la salud, donde el acceso a conjuntos de datos multiinstitucionales es crucial, pero las preocupaciones sobre la privacidad del paciente pueden limitar la capacidad de compartir datos''}, Dr. Jayashree Kalapathy. [10]
-\\
-Para nuestro proyecto el aprendizaje federado no es el adecuado ya que no contamos con información sensible y la seguridad de esta información no es relevante, ya que son datos públicos suministrados por el gobierno y páginas oficiales.
-\\\\
-Sin duda el área en donde más se ha experimentado grandes avances ha sido las redes neuronales especialmente en áreas como las redes neuronales profundas, las arquitecturas de redes neuronales innovadoras (diversas arquitecturas que abordan problemas específicos), el aprendizaje por transferencia el cual implica reutilizar las capas ocultas de una red pre-entrenada en una tarea y adaptarla para una tarea nueva. Así como nuevas técnicas para mejorar los modelos como lo es la técnica de regularización que se utilizan para evitar el sobreajuste o el sobreentrenamiento de las redes neuronales, esto implica agregar términos de penalización a la función de costo de la red para evitar que los pesos de la red adquieran valores extremos. Algunos proyectos recientes en estas áreas son:
-
-\begin{itemize}
-
-\item \textbf{AlphaGo:} Es un programa de ordenador desarrollado por DeepMind que utiliza una combinación de redes neuronales y algoritmos de búsqueda para jugar al juego de mesa chino Go. En 2016, AlphaGo se convirtió en el primer programa de ordenador en derrotar a un campeón humano de Go, lo que fue considerado un hito importante en la inteligencia artificial. [11]
-
-\item \textbf{DALL-E:} Es un modelo de red neuronal desarrollado por OpenAI que genera imágenes a partir de descripciones de texto. El modelo utiliza una combinación de redes neuronales convolucionales y de atención para generar imágenes realistas y detalladas a partir de descripciones de texto. [12]
-
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.7\textwidth]{astronauta}
-		\textbf{\caption{{\small Astronauta sosteniendo una flor - DALL-E.}}}
-	{\scriptsize Fuente: [Dall-E 2: Why the AI image generator is a revolutionary invention]}
-	\end{center}
-\end{figure}
-\item \textbf{StyleGAN2:} Es un modelo de red neuronal que se utiliza para generar imágenes fotorrealistas de alta calidad. El modelo utiliza una técnica llamada "red neuronal generativa adversarial" para generar imágenes que son indistinguibles de las fotos reales. [13]
-
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.5\textwidth]{stylegan2}
-		\textbf{\caption{{\small Reconstrucción de imagen - StyleGAN2.}}}
-	{\scriptsize Fuente: [MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results]}
-	\end{center}
-\end{figure}
-\item \textbf{BERT (Bidirectional Encoder Representations from Transformers):} Es un modelo de lenguaje natural basado en redes neuronales de atención que ha demostrado una gran precisión en una variedad de tareas de procesamiento de lenguaje natural, como la clasificación de texto y la respuesta a preguntas.
-
-\end{itemize}
-
-Estos avances muestran cómo las redes neuronales están transformando la forma en que las computadoras pueden aprender y procesar información, abriendo nuevas posibilidades en áreas como la generación de lenguaje natural, la visión por computadora y la toma de decisiones inteligente. Para nuestro caso puntual no se utilizarán estas técnicas recientes debido al alcance del proyecto, en donde se evaluará modelos tradicionales y la comparación entre estos.
+%El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina o la astronomía.
+%\\\\
+%A su vez el aprendizaje federado es una técnica de aprendizaje supervisado que ha ganado mucha atención en los últimos años debido a su capacidad para entrenar modelos de manera distribuida y colaborativa sin la necesidad de compartir los datos subyacentes. Esto lo hace especialmente útil en situaciones donde la privacidad y la seguridad son una preocupación importante, como en el análisis de datos médicos o financieros. Un ejemplo es el proyecto NVIDIA FLARE, un kit de desarrollo de software que ayuda a las partes distribuidas a colaborar para desarrollar modelos de IA más generalizables \textit{``El código abierto de NVIDIA FLARE para acelerar la investigación del aprendizaje federado es especialmente importante en el área de la salud, donde el acceso a conjuntos de datos multiinstitucionales es crucial, pero las preocupaciones sobre la privacidad del paciente pueden limitar la capacidad de compartir datos''}, Dr. Jayashree Kalapathy. [10]
+%\\
+%Para nuestro proyecto el aprendizaje federado no es el adecuado ya que no contamos con información sensible y la seguridad de esta información no es relevante, ya que son datos públicos suministrados por el gobierno y páginas oficiales.
+%\\\\
+%Sin duda el área en donde más se ha experimentado grandes avances ha sido las redes neuronales especialmente en áreas como las redes neuronales profundas, las arquitecturas de redes neuronales innovadoras (diversas arquitecturas que abordan problemas específicos), el aprendizaje por transferencia el cual implica reutilizar las capas ocultas de una red pre-entrenada en una tarea y adaptarla para una tarea nueva. Así como nuevas técnicas para mejorar los modelos como lo es la técnica de regularización que se utilizan para evitar el sobreajuste o el sobreentrenamiento de las redes neuronales, esto implica agregar términos de penalización a la función de costo de la red para evitar que los pesos de la red adquieran valores extremos. Algunos proyectos recientes en estas áreas son:
+%
+%\begin{itemize}
+%
+%\item \textbf{AlphaGo:} Es un programa de ordenador desarrollado por DeepMind que utiliza una combinación de redes neuronales y algoritmos de búsqueda para jugar al juego de mesa chino Go. En 2016, AlphaGo se convirtió en el primer programa de ordenador en derrotar a un campeón humano de Go, lo que fue considerado un hito importante en la inteligencia artificial. [11]
+%
+%\item \textbf{DALL-E:} Es un modelo de red neuronal desarrollado por OpenAI que genera imágenes a partir de descripciones de texto. El modelo utiliza una combinación de redes neuronales convolucionales y de atención para generar imágenes realistas y detalladas a partir de descripciones de texto. [12]
+%
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.7\textwidth]{astronauta}
+%		\textbf{\caption{{\small Astronauta sosteniendo una flor - DALL-E.}}}
+%	{\scriptsize Fuente: [Dall-E 2: Why the AI image generator is a revolutionary invention]}
+%	\end{center}
+%\end{figure}
+%\item \textbf{StyleGAN2:} Es un modelo de red neuronal que se utiliza para generar imágenes fotorrealistas de alta calidad. El modelo utiliza una técnica llamada "red neuronal generativa adversarial" para generar imágenes que son indistinguibles de las fotos reales. [13]
+%
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.5\textwidth]{stylegan2}
+%		\textbf{\caption{{\small Reconstrucción de imagen - StyleGAN2.}}}
+%	{\scriptsize Fuente: [MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results]}
+%	\end{center}
+%\end{figure}
+%\item \textbf{BERT (Bidirectional Encoder Representations from Transformers):} Es un modelo de lenguaje natural basado en redes neuronales de atención que ha demostrado una gran precisión en una variedad de tareas de procesamiento de lenguaje natural, como la clasificación de texto y la respuesta a preguntas.
+%
+%\end{itemize}
+%
+%Estos avances muestran cómo las redes neuronales están transformando la forma en que las computadoras pueden aprender y procesar información, abriendo nuevas posibilidades en áreas como la generación de lenguaje natural, la visión por computadora y la toma de decisiones inteligente. Para nuestro caso puntual no se utilizarán estas técnicas recientes debido al alcance del proyecto, en donde se evaluará modelos tradicionales y la comparación entre estos.
 
 \newpage
 \begin{center}
@@ -892,31 +1062,56 @@ Aston Zhang, Zachary Lipton, Mu Li \& Alexander J. Smola. (2021). Dive into Deep
 Simeon Kostadinov. (2020). Recurrent Neural Networks With Python Quick Start Guide: Sequential Learning and Lenguage modeling
 %URL: $https://www.buscalibre.com.co/libro-recurrent-neural-networks-with-python-quick-start-guide-sequential-learning-and-language-modeling-with-tensorflow-libro-en-ingles/9781789132335/p/54514893$
 
-\bibitem[10]{nvidia}
-Edgar Zepeda Urzua. (2021). Aprendizaje Federado con FLARE: NVIDIA Lleva la Inteligencia Artificial Colaborativa a el Área de la Salud y más allá. https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/
+%\bibitem[10]{nvidia}
+%Edgar Zepeda Urzua. (2021). Aprendizaje Federado con FLARE: NVIDIA Lleva la Inteligencia Artificial Colaborativa a el Área de la Salud y más allá. https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/
 
-\bibitem[11]{GO}
-BBC Mundo. (2016). AlphaGo vs. Lee: la máquina venció al humano
-%URL: $https://www.bbc.com/mundo/noticias/2016/03/160312_alphago_inteigencia_artificial_go_victoria_humano_men$
+\bibitem[10]{regresion lineal}
+Aurélien Vannieuwenhuyze. (2020). Inteligencia Artificial Fácil - Machine Learning y Deep Learning Prácticos. https://www.buscalibre.com.co/libro-inteligencia-artificial-facil-machine-learning-y-deep-learning-practicos-libro-en-castilian-aurelien-vannieuwenhuyze-eni/9782409025327/p/52851824
 
-\bibitem[12]{DALL-E}
-Alex Hughes. (2022). Dall-E 2: Why the AI image generator is a revolutionary invention
+\bibitem[11]{regresion lineal 2}
+Joaquín Amat Rodrigo. (2016). Introducción a la Regresión Lineal Múltiple.
+URL: $https://www.cienciadedatos.net/documentos/25_regresion_lineal_multiple$
+
+%\bibitem[12]{DALL-E}
+%Alex Hughes. (2022). Dall-E 2: Why the AI image generator is a revolutionary invention
 %URL: $https://www.sciencefocus.com/future-technology/dall-e-2-why-the-ai-image-generator-is-a-revolutionary-invention/$
 
-\bibitem[13]{StyleGAN2}
-SYNCED. (2020). MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results
+%\bibitem[13]{StyleGAN2}
+%SYNCED. (2020). MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results
 %URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-stylegan2-to-deliver-sota-image-reconstruction-results/$
+
+\bibitem[12]{random forest}
+Sruthi E R. (2023). Understand Random Forest Algorithms With Examples (Updated 2023).
+URL: $https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/$
+
+\bibitem[13]{random forest 2}
+VLADIMIR LYASHENKO. (2020). How to use random forest for regression: notebook, examples and documentation.
+URL: $https://cnvrg.io/random-forest-regression/$
 
 \bibitem[14]{ModeloGeometrico}
 Arnaldo Torres-Degró. (2011). Tasas de crecimiento poblacional (r): Una mirada desde el modelo matemático lineal, geométrico y exponencial. https://revistas.upr.edu/index.php/cidedigital/article/download/11774/9736/11342
 
+\bibitem[15]{skcilearn}
+scikit-learn. (2023). scikit-learn Machine Learning in Python. https://scikit-learn.org/stable/index.html
+
+\bibitem[16]{series temporales}
+Santiago de la Fuente Fernández. (2020). series temporales. https://www.estadistica.net/PAU2/series-temporales.pdf
+
+\bibitem[17]{series temporales 2}
+José Alberto Mauricio. (2005). Introducción al análisis de series temporales. https://www.ucm.es/data/cont/docs/518-2013-11-11-JAM-IAST-Libro.pdf
+
+\bibitem[18]{forescasting}
+Joaquín Amat Rodrigo, Javier Escobar Ortiz. (2023). Skforecast: forecasting series temporales con Python y Scikit-learn. https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
+
+\bibitem[19]{series temp 3}
+Francisco Parra. (2019). Estadística y Machine Learning con R. https://bookdown.org/content/2274/series-temporales.html
 
 \end{thebibliography}
 \newpage
-\begin{center}
+%\begin{center}
 \section*{APÉNDICE I}
 \addcontentsline{toc}{section}{\protect\numberline{}APÉNDICE I}
-\end{center}
+%\end{center}
 
 
 

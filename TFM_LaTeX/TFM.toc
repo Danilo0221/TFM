@@ -1,5 +1,5 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {}RESUMEN}{1}{section*.4}%
+\contentsline {section}{\numberline {}RESUMEN}{1}{Doc-Start}%
 \contentsline {section}{\numberline {1}INTRODUCCI\'ON}{2}{section.1}%
 \contentsline {section}{\numberline {2}OBJETIVOS}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}OBJETIVO GENERAL}{3}{subsection.2.1}%
@@ -7,26 +7,27 @@
 \contentsline {section}{\numberline {3}MACHINE LEARNING Y ESTADO DEL ARTE}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}APRENDIZAJE SUPERVISADO}{4}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}REGRESI\'ON}{5}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}CLASIFICACI\'ON}{5}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}APRENDIZAJE NO SUPERVISADO}{6}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}CLUSTERING}{6}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}REDUCCI\'ON DE LA DIMENSIONALIDAD}{6}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}ASOCIACI\'ON}{7}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}APRENDIZAJE POR REFUERZO}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}REDES NEURONALES}{8}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}CONVOLUCIONALES}{9}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}RECURRENTES}{9}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}DE ATENCI\'ON}{10}{subsubsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.5}ESTADO DEL ARTE}{11}{subsection.3.5}%
-\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{14}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{15}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{16}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{16}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{18}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{25}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{27}{subsubsection.4.3.4}%
-\contentsline {section}{\numberline {5}CONCLUSI\'ON Y TRABAJOS FUTUROS}{28}{section.5}%
-\contentsline {section}{\numberline {6}REFERENCIAS}{29}{section.6}%
-\contentsline {section}{\numberline {}AP\'ENDICE I}{30}{section*.6}%
-\contentsline {section}{\numberline {}ANEXOS I}{31}{section*.7}%
+\contentsline {paragraph}{\numberline {3.1.1.1}REGRESI\'ON LINEAL M\'ULTIPLE}{5}{paragraph.3.1.1.1}%
+\contentsline {paragraph}{\numberline {3.1.1.2}RANDOM FOREST}{7}{paragraph.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}CLASIFICACI\'ON}{9}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}APRENDIZAJE NO SUPERVISADO}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}CLUSTERING}{9}{subsubsection.3.2.1}%
+\contentsline {paragraph}{\numberline {3.2.1.1}K-MEANS}{10}{paragraph.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}REDUCCI\'ON DE LA DIMENSIONALIDAD}{11}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}ASOCIACI\'ON}{12}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}APRENDIZAJE POR REFUERZO}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}SERIES TEMPORALES}{13}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}{14}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}ESTADO DEL ARTE}{15}{subsection.3.5}%
+\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{18}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{18}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{21}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{28}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{30}{subsubsection.4.3.4}%
+\contentsline {section}{\numberline {5}CONCLUSI\'ON Y TRABAJOS FUTUROS}{31}{section.5}%
+\contentsline {section}{\numberline {6}REFERENCIAS}{32}{section.6}%
+\contentsline {section}{\numberline {}AP\'ENDICE I}{34}{section.6}%
+\contentsline {section}{\numberline {}ANEXOS I}{35}{section.6}%
