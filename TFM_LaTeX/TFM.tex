@@ -541,7 +541,7 @@ Esta función se utiliza para predecir los valores futuros de la serie temporal r
 El modelo RAF se puede utilizar para pronosticar diferentes horizontes de pronóstico, es decir, el modelo puede utilizarse para pronosticar los valores futuros de la serie temporal a corto plazo, a medio plazo o a largo plazo. El modelo es especialmente útil para pronósticos de corto plazo, ya que se basa en la información disponible en el momento actual y utiliza una función recursiva para predecir valores futuros.
 
 \bigskip
-\subsection{ESTADO DEL ARTE}
+\subsection{ESTUDIOS Y MODELOS ACTUALES DE COVID-19}
 \bigskip
 %El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina o la astronomía.
 %\\\\
@@ -578,6 +578,19 @@ El modelo RAF se puede utilizar para pronosticar diferentes horizontes de pronós
 %\end{itemize}
 %
 %Estos avances muestran cómo las redes neuronales están transformando la forma en que las computadoras pueden aprender y procesar información, abriendo nuevas posibilidades en áreas como la generación de lenguaje natural, la visión por computadora y la toma de decisiones inteligente. Para nuestro caso puntual no se utilizarán estas técnicas recientes debido al alcance del proyecto, en donde se evaluará modelos tradicionales y la comparación entre estos.
+El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado, redes neuronales y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina (enfermedades, pandemias, etc.) o la astronomía.
+Desde que el COVID-19 comenzó a propagarse por todo el mundo, se han desarrollado una variedad de modelos de predicción para ayudar a los responsables de la toma de decisiones a entender mejor la propagación del virus y tomar decisiones informadas para proteger a la población. Estos estudios han surgido de diferentes áreas como lo son: Modelos epidemiológicos que se basan en la teoría de la propagación de enfermedades y utilizan datos de casos confirmados, fallecimientos, y otros factores como la edad, el género y las comorbilidades para predecir la propagación futura del virus, los modelos epidemiológicos más comunes son SIR (Susceptible-Infectado-Recuperado) y SEIR (Susceptible-Expuesto-Infectado-Recuperado); modelos de aprendizaje automático que utilizan algoritmos para analizar datos y hacer predicciones basadas en patrones; los modelos basados en la movilidad que utilizan datos de movilidad de los teléfonos móviles y otros dispositivos para predecir la propagación del COVID-19; entre otros. Haciendo un examen más profundo en el área de interés de este trabajo se encuentran investigaciones bastante interesantes detalladas a continuación: 
+\begin{itemize}
+\item \textbf{Modelos basados en series de tiempo:} Estos modelos utilizan datos históricos del COVID-19 para predecir la propagación futura de la enfermedad. Un ejemplo es el modelo ARIMA (Autoregressive Integrated Moving Average) que se ha utilizado para predecir la propagación del COVID-19 en varios países [20].
+\item \textbf{Modelos basados en redes neuronales:} Las redes neuronales son capaces de aprender patrones complejos en los datos y han sido utilizadas para predecir la propagación del COVID-19. Por ejemplo, el modelo LSTM (Long Short-Term Memory) ha sido utilizado para predecir el número de casos confirmados en Canada, Estados Unidos e Italia [21]. \href{https://doi.org/10.1016/j.chaos.2020.109864}{Time series forecasting of COVID-19 using LSTM networks}
+\item \textbf{Modelos basados en análisis de redes:} Estos modelos utilizan técnicas de análisis de redes para modelar la propagación del COVID-19. Un ejemplo es el modelo SEIR (Susceptible-Exposed-Infected-Recovered) que modela la propagación del virus como una red de interacciones entre individuos [22]. Los autores utilizaron datos públicos de COVID-19 en Jordania para calibrar y validar el modelo. Luego, el modelo se utilizó para predecir la propagación del virus bajo diferentes escenarios de intervención, como el cierre de escuelas, el cierre de negocios y la cuarentena de casos sospechosos y confirmados. Los resultados del estudio muestran que el modelo puede predecir con precisión la propagación del COVID-19 en Jordania bajo diferentes escenarios de intervención. Los autores también encontraron que el cierre de escuelas y negocios, junto con la cuarentena de casos sospechosos y confirmados, puede reducir significativamente la propagación del virus en Jordania.
+\item \textbf{Modelos basados en aprendizaje automático:} Los modelos de aprendizaje automático utilizan técnicas de machine learning para predecir la propagación del COVID-19. Un ejemplo es el modelo XGBoost que ha sido utilizado para predecir la propagación del virus en varios países [23]. Este propone un nuevo enfoque híbrido de aprendizaje profundo (DL) para estimar los patrones de transmisión de COVID-19 en Corea del Sur. El marco propuesto combina el aprendizaje profundo con el modelo de meta población susceptible-expuesto-infectado-recuperado (SEIR). Para mostrar su eficacia, el marco híbrido de aprendizaje profundo se comparó con el modelo de memoria a corto plazo (LSTM) y el modelo general de red neuronal profunda (DNN) para pronosticar patrones epidémicos en Corea del Sur en función del mismo conjunto de datos. El análisis numérico demostró que el marco híbrido de aprendizaje profundo que utiliza el modelo de meta población y el modelo LSTM exhibe el mejor rendimiento entre los métodos de prueba. 
+\end{itemize}
+Fuera de los ejemplos expuestos anteriormente sobresale el proyecto \textbf{COVID-19 Projections} de Estados Unidos, que utiliza técnicas de aprendizaje automático para predecir la propagación del COVID-19 en línea (\url{https://covid19-projections.com/}) y se actualiza regularmente con nuevos datos. Este proyecto está desarrollado un simulador basado en el modelo \href{https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model}{SEIR} para simular la epidemia de COVID-19 en cada región. Luego, los parámetros/entradas de este simulador se aprenden mediante técnicas de aprendizaje automático que intentan minimizar el error entre las salidas proyectadas y los resultados reales. Utiliza los datos diarios de muertes informados por cada región para pronosticar futuras muertes informadas. Después de algunas técnicas de validación adicionales (para minimizar un fenómeno llamado sobreajuste), se usa los parámetros aprendidos para simular el futuro y hacer proyecciones.
+\\\\
+Este modelo SEIR es de \href{https://github.com/youyanggu/yyg-seir-simulator}{código abierto} . Las proyecciones se cargan diariamente en \href{https://github.com/youyanggu/covid19_projections/tree/master/projections}{GitHub}. El objetivo de este proyecto es mostrar las fortalezas de la inteligencia artificial para abordar uno de los problemas más difíciles del mundo: predecir la trayectoria de una pandemia. En donde se utiliza un enfoque basado en datos puros al dejar que la máquina aprenda. Actualmente esta haciendo proyecciones para: Estados Unidos, los 50 estados de EE. UU. (más DC, PR, VI, GU, MP) y 70 países (incluidos los 27 países de la UE). Combinados, estos 71 países representan más del 95\% de todas las muertes globales por COVID-19.
+\\\\
+Sin duda hay una gran variedad de estudios, artículos y publicaciones que tratan los factores principales en la propagación del covid-19, pero se ha dejado de lado el estudio sobre otros factores que podrían influir en la propagación, como lo es el factor climático; centro de estudio de este trabajo. 
 
 \newpage
 \begin{center}
@@ -1004,8 +1017,118 @@ Este dataset final será exportado como archivo data\_refined.csv y será tomado c
 \subsubsection{MINERÍA DE DATOS}
 En esta etapa de nuestro proceso de KDD partiremos de nuestro dataset final (data\_refined.csv) en donde descubriremos patrones y conocimiento mediante técnicas y algoritmos de machine learning, a continuación, se describen algunos de estos y su proceso:
 \begin{itemize}
-\item \textbf{Modelo de regresión Random Forest}
+\item \textbf{Regresión Lineal Múltiple}
 \\\\
+Para este modelo la variable dependiente será la TASA\_INCIDENCIA que será la variable que queremos predecir las demás variables de nuestro dataset final serán las variables independientes. En este caso también tenemos una variable categórica \textit{PROVINCIA}. Esta variable es transformada mediante el método de codificación hash. Se realizaron pruebas con la codificación One-Hot encoding obteniendo resultados muy similares o un poco menores con respecto a las métricas de medida, esto debido a que la principal debilidad de One-Hot encoding es que las características que produce son equivalentes al cardinal categórico, lo que causa problemas de dimensionalidad cuando la cardinalidad es demasiado alta, por el contrario la codificación hash representa los datos categóricos en valor numérico mediante la función hash. \\\\
+La principal ventaja de usar Hash Encoding es que puede controlar la cantidad de columnas numéricas producidas por el proceso, debemos tener en cuenta que Hashing transforma los datos en dimensiones menores, puede provocar la pérdida de información y una gran cantidad de características que se representan en dimensiones menores pueden representar múltiples valores con el mismo valor hash, esto se conoce como colisión. Es por esto que se debe escoger un valor optimo de columnas numéricas que representaran la variable. En general es ideal cuando el conjunto de datos tiene características de alta cardinalidad, para nuestro caso la variable \textit{PROVINCIA} tiene 52 valores. A su vez se crea la variable \textit{MONTH} a partir de la fecha, se tendrán en cuenta todas las variables excepto la variable \textit{FECHA}.
+La ecuación del modelo quedaría de la siguiente forma:
+\begin{align*}
+TASA\_INCIDENCIA = b_o + b_1 MONTH + b_2 ALTITUD + b_3 TEMP_MED \\
++ b_4 PREC + b_5 DIR + b_6 VEL_MEDIA + b_7 RACHA + b_8 PRES_MIN + b_9 SOL \\
++ b_{10} HASH_0 + b_{11} HASH_1 + b_{12} HASH_2 + b_{13} HASH_3 + b_{14} HASH_4 + b_{15} HASH_5
+\end{align*}
+
+Dividimos nuestro dataset total en train y test en una relación de 70\% a 30\% respectivamente, esta división se realiza de forma aleatoria ya que existe un pico de casos en el mes de enero del 2021 y mediante pruebas se evidencia que al tomar el test a partir de una fecha fija el modelo no es tan preciso ya que se entrena con un comportamiento totalmente diferente (comienzos de covid) contra el test (finales de covid).  Creamos el modelo a partir de linear\_model.LinearRegression(), al realizar el entrenamiento, obtenemos los siguientes coeficientes y estadísticos para la ecuación del modelo:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{summary_RL}
+		\textbf{\caption{{\small Estadisticos modelo regresión lineal múltiple. \label{tb:summary_RL}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Tomando los coeficientes de cada una de las variables, nuestra ecuación final queda de la siguiente forma:
+\begin{align*}
+TASA\_INCIDENCIA = -102000 + 18.88 \cdot MONTH + 11.21 \cdot ALTITUD \\
+- 87.23 \cdot TEMP\_MED + 26.54 \cdot PREC + 0.18 \cdot DIR + 49.05 \cdot VEL\_MEDIA \\
+- 50.32 \cdot RACHA + 101.83 \cdot PRES\_MIN + 131.18 \cdot SOL - 2.16 \cdot HASH\_0 \\ 
++ 0.91 \cdot HASH\_1 + 6.95 \cdot HASH\_2 + 6.59 \cdot HASH\_3 + 10.94 \cdot HASH\_4 \\
+- 26.81 \cdot HASH\_5
+\end{align*}
+
+De la \textbf{figura \ref{tb:summary_RL}} concluimos que todas las variables introducidas como predictores tienen un $R^2$ bajo (0.152) es decir es capaz de explicar en un 15.2\% la variabilidad observada de la tasa de incidencia, acorde al p-value obtenido para el coeficiente parcial de regresión para algunas variables de HASH, VEL\_MEDIA, DIR y PREC, estas variables no contribuyen de forma significativa el modelo. Se realizo el entrenamiento sin estás variables y se obtuvieron resultados muy similares, se dejo este modelo para evidenciar el impacto de estas variables en los resultados.
+Los intervalos de confianza obtenidos son:
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Intervalos de confianza. \label{tb:TableintervaRL}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor{Peach}  & 2.5\% & 97.5\%\\
+	\hline    
+    CONST & -127300.37 & -76677.83 \\
+    \hline
+    MONTH & -5.179000 & 42.950290 \\
+    \hline 
+    ALTITUD & 8.417721 & 14.019315 \\
+	\hline
+    TEMP\_MED & -108.903632 & -65.569304 \\
+    \hline
+    PREC & -21.210277 & 74.293363 \\
+    \hline
+    DIR & -6.245870 & 6.607292 \\
+    \hline
+    VEL\_MEDIA & -83.375974 & 181.481665 \\
+	\hline
+	RACHA & -134.093622 & 33.440448 \\
+	\hline
+	PRES\_MIN & 77.195649 & 126.475020 \\
+	\hline
+	SOL & 82.268584 & 180.102275 \\
+	\hline
+	HASH\_0 & -101.736920 & 97.411155 \\
+	\hline
+	HASH\_1 & -128.324197 & 130.150506 \\
+	\hline
+	HASH\_2 & -79.407085 & 93.326155 \\
+	\hline
+	HASH\_3 & -42.361196 & 55.556558 \\
+	\hline
+	HASH\_4 & -39.404144 & 61.289839 \\
+	\hline
+	HASH\_5 & -127.819261 & 74.179561 \\
+	\hline   
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+Del grafico anterior observamos que los intervalos de confianza (en el cual se encuentra, con alta probabilidad, el valor real de una determinada variable) en su gran mayoría o casi todos son intervalos amplios, es decir los valores están dispersos. Los diagnósticos de los residuos fueron los siguientes:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{residuos_RL}
+		\textbf{\caption{{\small Diagnóstico residuos modelo regresión lineal múltiple. \label{tb:residuos_RL}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Para el test de normalidad se obtuvo:
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Intervalos de confianza. \label{tb:TableintervaRL}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \rowcolor{Peach} Test Estadístico & Estadístico & p-value\\
+	\hline    
+    Shapiro-Wilk & 0.7023 & 4.6242e-44 \\
+    \hline
+    D'Agostino's K-squared  & 1043.6025 & 2.4243e-227 \\
+    \hline       
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+Es decir, se comprueba si los residuos siguen una distribución normal empleando dos test estadísticos: Shapiro-Wilk test y D'Agostino's K-squared test. Este último es el que incluye el summary de statsmodels bajo el nombre de Omnibus de la gráfica summary.
+En ambos test, la hipótesis nula considera que los datos siguen una distribución normal, por lo tanto, si el p-value no es inferior al nivel de referencia alpha seleccionado, no hay evidencias para descartar que los datos se distribuyen de forma normal y Ambos test muestran claras evidencias para rechazar la hipótesis de que los datos se distribuyen de forma normal (p-value $\ll$ 0.01). Las métricas para la evaluación del modelo se mostrara en el apartado de resultados.
+\item \textbf{Random Forest Regresión}
+\\\\
+
+
+
+
 \end{itemize}
 
 
@@ -1105,6 +1228,18 @@ Joaquín Amat Rodrigo, Javier Escobar Ortiz. (2023). Skforecast: forecasting seri
 
 \bibitem[19]{series temp 3}
 Francisco Parra. (2019). Estadística y Machine Learning con R. https://bookdown.org/content/2274/series-temporales.html
+
+\bibitem[20]{series temp estado arte}
+Khasawneh, A. I., Humeidan, A. A., Alsulaiman, J. W., \& Bloukh, S. H. (2020). Modeling and prediction COVID-19 in Jordan under different intervention scenarios. Informatics in Medicine Unlocked, 19, 100345.
+
+\bibitem[21]{LSTM est arte}
+Chimmula, V. K. R., \& Zhang, L. (2020). Time series forecasting of COVID-19 transmission in Canada using LSTM networks. Chaos, Solitons \& Fractals, 135, 109864.
+
+\bibitem[22]{redes est arte}
+Chen, S., Yang, J., Yang, W., Wang, C., \& Bärnighausen, T. (2020). COVID-19 control in China during mass population movements at New Year. The Lancet, 395(10226), 764-766.
+
+\bibitem[23]{aprend auto est arte}
+Yoo, S., Lee, S., Lee, D., Lee, C. K., \& Kim, Y. K. (2020). Effective prediction of COVID-19 using deep learning models: A case study of South Korea. Chaos, Solitons \& Fractals, 140, 110153.
 
 \end{thebibliography}
 \newpage

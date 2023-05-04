@@ -18,16 +18,16 @@
 \contentsline {subsection}{\numberline {3.3}APRENDIZAJE POR REFUERZO}{12}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}SERIES TEMPORALES}{13}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}{14}{subsubsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.5}ESTADO DEL ARTE}{15}{subsection.3.5}%
-\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{16}{section.4}%
-\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{16}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{17}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{18}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{18}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{21}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{28}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{30}{subsubsection.4.3.4}%
-\contentsline {section}{\numberline {5}CONCLUSI\'ON Y TRABAJOS FUTUROS}{31}{section.5}%
-\contentsline {section}{\numberline {6}REFERENCIAS}{32}{section.6}%
-\contentsline {section}{\numberline {}AP\'ENDICE I}{34}{section.6}%
-\contentsline {section}{\numberline {}ANEXOS I}{35}{section.6}%
+\contentsline {subsection}{\numberline {3.5}ESTUDIOS Y MODELOS ACTUALES DE COVID-19}{15}{subsection.3.5}%
+\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{18}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{19}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{19}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{22}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{29}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{31}{subsubsection.4.3.4}%
+\contentsline {section}{\numberline {5}CONCLUSI\'ON Y TRABAJOS FUTUROS}{37}{section.5}%
+\contentsline {section}{\numberline {6}REFERENCIAS}{38}{section.6}%
+\contentsline {section}{\numberline {}AP\'ENDICE I}{40}{section.6}%
+\contentsline {section}{\numberline {}ANEXOS I}{41}{section.6}%
