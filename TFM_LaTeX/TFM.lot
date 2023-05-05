@@ -1,5 +1,10 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces {\small C\'odigo ISO y nombre de provincia. }}}{17}{table.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces {\small Variables climatol\'ogicas de provincia. }}}{17}{table.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces {\small Poblaci\'on anual desde 1998 por provincia. }}}{18}{table.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces {\small Variables y descripci\'on del set de datos de COVID-19 por provincias. }}}{31}{table.4}%
+\contentsline {table}{\numberline {1}{\ignorespaces {\small C\'odigo ISO y nombre de provincia. }}}{20}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces {\small Variables climatol\'ogicas de provincia. }}}{21}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces {\small Poblaci\'on anual desde 1998 por provincia. }}}{21}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces {\small Estad\IeC {\'\i }sticos dataset covid-19.}}}{23}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces {\small Intervalos de confianza. }}}{34}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces {\small Test estad\IeC {\'\i }sticos para normalidad. }}}{35}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces {\small Importancia de las variables en el modelo. }}}{44}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces {\small Importancia de las variables ForecasterAutoreg. }}}{45}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces {\small Variables y descripci\'on del set de datos de COVID-19 por provincias. }}}{52}{table.9}%
