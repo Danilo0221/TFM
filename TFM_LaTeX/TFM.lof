@@ -18,6 +18,9 @@
 \contentsline {figure}{\numberline {17}{\ignorespaces {\small MAE para cada estimador del modelo Random Forest Regresi\'on. }}}{37}{figure.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces {\small Divisi\'on train y test ForecasterAutoreg. }}}{38}{figure.18}%
 \contentsline {figure}{\numberline {19}{\ignorespaces {\small Descomposici\'on serie temporal ForecasterAutoreg. }}}{39}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces {\small Valor predicho vs Valor real Modelo Regresi\'on Lineal M\'ultiple. }}}{40}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces {\small Valor predicho vs Valor real Modelo Random Forest regresi\'on. }}}{41}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces {\small Valor predicho vs Valor real Modelo ForecasterAutoreg. }}}{43}{figure.22}%
+\contentsline {figure}{\numberline {20}{\ignorespaces {\small M\'etodo del codo K-means. }}}{41}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces {\small Valor predicho vs Valor real Modelo Regresi\'on Lineal M\'ultiple. }}}{42}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces {\small Valor predicho vs Valor real Modelo Random Forest regresi\'on. }}}{43}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces {\small Valor predicho vs Valor real Modelo ForecasterAutoreg. }}}{45}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces {\small Caracter\IeC {\'\i }sticas climatol\'ogicas por cl\'uster. }}}{46}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces {\small PCA K-means. }}}{47}{figure.25}%

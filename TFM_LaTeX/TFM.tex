@@ -110,6 +110,7 @@
 
 \begin{large}
 DANILO PLAZAS IRREÑO\\
+DNI: 1024538287
 \end{large}
 \vspace*{2.51 in}
 \begin{large}
@@ -141,6 +142,7 @@ BOGOTÁ D.C.\\
 \begin{large}
 DANILO PLAZAS IRREÑO\\
 viudanilo0221p@gmail.com\\
+DNI: 1024538287\\
 \end{large}
 \vspace*{0.86 in}
 Trabajo de grado para optar al titulo de:\\ 
@@ -216,9 +218,18 @@ BOGOTÁ D.C.\\
 \section*{RESUMEN}
 \addcontentsline{toc}{section}{\protect\numberline{}RESUMEN}
 \end{center}
+Tras la aparición del covid-19 a nivel mundial a comienzos del 2020, han surgido varios estudios para identificar los factores que influyen en la propagación del virus, en donde el contacto cercano con personas infectadas es el principal factor, esto se debe a temas sociales como la movilidad, eventos, recreación, deporte, entre otros. Desafortunadamente no existe muchos estudios acerca de los factores climáticos, para este proyecto de TFM se sigue como hipótesis que las condiciones climáticas influyen en menor medida en la propagación del virus Covid-19.  En este proyecto se seguirá una metodología KDD persiguiendo los pasos habituales para la obtención de conocimiento y entendimiento de los datos.
+\\\\ 
+Se lleva a cabo un análisis de las bases de datos disponibles, así como la preparación y compresión de los datos y limpieza de los mismos. Los datos utilizados para este TFM han sido recopilados del Centro Nacional de Epidemiología (CNE) para los casos de Covid-19 reportados, los datos climatológicos proporcionados por el portal datos abiertos AEMET, los datos de población proporcionados por el Instituto Nacional de Estadística (INE). Con estos datos se ha generado un único dataset para la realización de los modelos de machine learning (regresión lineal múltiple, RandomForest Regresión, series temporales y K-means) para predecir o encontrar patrones sobre la tasa de incidencia (normalización de los casos de Covid-19) por provincia con relación a los factores climáticos durante la pandemia.
+\\\\
+Los resultados obtenidos con los distintos modelos no fueron los óptimos basado en nuestras métricas definidas ($R^2$, MAE y RMSE), este resultado es el esperado, ya que las condiciones climáticas no son el factor principal en la propagación del virus, las variables no logran explicar nuestra variable a predecir. Sin embargo, el modelo de K-means evidencia una influencia de los factores climáticos sobre la tasa de incidencia, mediante una segmentación de los casos en 3 clusters, en donde los clúster con ciertas características climáticas presentara una tasa de incidencia diferente. Todos los códigos estarán compartidos públicamente en el \href{https://github.com/Danilo0221/TFM}{REPOSITORIO TFM} del autor.
+\\\\
+\\\\
+\textbf{Palabras clave:} KDD, clúster, $R^2$, MAE y RMSE.
+
+
 
 \newpage
-
 \begin{center}
 \section{INTRODUCCIÓN}
 \end{center}
@@ -1096,7 +1107,8 @@ Los intervalos de confianza obtenidos son:
   {\scriptsize Fuente: Elaboración Propia}
 \end{table}
 
-Del grafico anterior observamos que los intervalos de confianza (en el cual se encuentra, con alta probabilidad, el valor real de una determinada variable) en su gran mayoría o casi todos son intervalos amplios, es decir los valores están dispersos. Los diagnósticos de los residuos fueron los siguientes:
+Los residuos del modelo muestra que hay una alta acumulación sobre la línea recta del cero, es decir el promedio de los errores es cero; los residuos Q-Q con respecto se acerquen más los puntos a la recta mayor normalidad de los residuos, pero hay una gran cantidad de valores por debajo de -2, la pendiente de la recta está muy arriba y no logran estar todos los valores sobre la diagonal, porque hay unos datos que están por debajo de la distribución, esto se evidencia en el gráfico de distribución que esta sesgado a la derecha, el p-valor es menor al valor de significancia (5\%), por tanto no se satisface la hipótesis, es decir, los residuos no satisfacen una distribución normal. \\
+Los diagnósticos de los residuos fueron los siguientes:
 \newpage
 \begin{figure}[H]
 	\begin{center}
@@ -1192,16 +1204,43 @@ La descomposición de nuestra serie temporal nos muestra que a lo largo del tiemp
 
 \subsubsubsection{K-MEANS}
 \\
-XXX
+Este es un tipo de modelo no supervisado, es decir, no vamos a tener una etiqueta para predecir y aunque la tenemos no la vamos a utilizar, es decir, la tasa de incidencia no será una etiqueta a predecir, por el contrario, será una variable más en nuestro modelo, esto para generar clúster o una clasificación de los datos, con el fin de encontrar patrones de comportamiento. La variable \textit{FECHA} será eliminada ya que como patrón no nos interesa, y la variable \textit{PROVINCIA} será transformada como index en nuestro dataset.
+\\\\
+Para la creación de este modelo se utilizó KMeans de la librería sklearn clúster, los hiperparámetros por defecto son:
+
+\begin{itemize}
+\item \textbf{n\_clusters:} El número de clústeres a formar, así como el número de centroides a generar. Int, por defecto = 8.
+\item \textbf{init:} Método de inicialización, ``k-means++'': selecciona los centroides de clúster iniciales utilizando un muestreo basado en una distribución de probabilidad empírica de la contribución de los puntos a la inercia general. Esta técnica acelera la convergencia. El algoritmo implementado es ``greedy k-means++''. Se diferencia de k-means++ en que realiza varios ensayos en cada paso de muestreo y elige el mejor centroide entre ellos. Por defecto = ``k-means++''.
+\item \textbf{n\_init:} Número de veces que se ejecuta el algoritmo k-means con semillas de centroide diferentes. El resultado final es el mejor resultado de n\_init ejecuciones consecutivas en términos de inercia. Por defecto = 10.
+\item \textbf{max\_iter:}  Número máximo de iteraciones del algoritmo k-means para una sola ejecución. Int, por defecto = 300.
+\item \textbf{tol:} Tolerancia relativa respecto a la norma de Frobenius de la diferencia en los centros de los clusters de dos iteraciones consecutivas para declarar convergencia. Float, por defecto=1e-4.
+\item \textbf{verbose:} Modo de verbosidad. int, por defecto=0.
+\item \textbf{random\_state:} Determina la generación de números aleatorios para la inicialización del centroide. Use un int para hacer que la aleatoriedad sea determinista. Int, RandomState instance o None, por defecto = None.
+\item \textbf{copy\_x:} Cuando se calculan previamente las distancias, es más preciso desde el punto de vista numérico centrar los datos primero. Si copy\_x es True (predeterminado), los datos originales no se modifican. Si es Falso, los datos originales se modifican y se vuelven a colocar antes de que regrese la función, pero se pueden introducir pequeñas diferencias numéricas restando y luego sumando la media de los datos. Bool, default = True.
+\item \textbf{algorithm:} Algoritmo K-medias a utilizar. El algoritmo clásico de estilo EM es ``lloyd''. La ``elkan'' variación puede ser más eficiente en algunos conjuntos de datos con grupos bien definidos, mediante el uso de la desigualdad triangular. Sin embargo, requiere más memoria debido a la asignación de una matriz adicional de forma. {``lloyd'', ``elkan'', ``automático'', ``full''}, predeterminado = ``lloyd''.
+\end{itemize}
+El modelo creado utilizo los parámetros anteriores por defecto a excepción de n\_clusters y random\_state, para n\_cluster se utilizo un rango de valores de 1 a 10 para realizar la gráfica del codo y validar su inercia respecto al modelo, con respecto a random\_state se tomo un valor de 42, se utilizó un valor int para que la aleatoriedad sea determinista y evitar distintos valores en cada iteración de nuestro valor de n\_cluster. La representación de la gráfica del codo se muestra a continuación:
+\newpage
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{codo_kmeans}
+		\textbf{\caption{{\small Método del codo K-means. \label{tb:codo_kmeans}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Basado en la figura anterior, se debe tomar un n\_cluster igual a 3 o 4, que es donde comienza la curvatura del codo, se realizaron pruebas con 4 clúster y se evidencio que dos de estos clúster tenían características muy similares, por tal razón el valor optimo de n\_cluster será tomado como 3. Nuestro modelo se entrena y se ajusta bajo el parámetro anterior y se le asigna el clúster correspondiente a cada uno de los registros de nuestro dataset.
+
 \subsection{RESULTADOS}
 Para cada uno de los modelos descritos anteriormente se mostrará su gráfica de predicción versus los valores reales, así como las mismas métricas de evaluación ($R^2$, MAE y RMSE) para cada modelo y al final mediante un apartado de comparación y contraste se evaluará cual es el modelo que mejor se ajusta a nuestros datos y los beneficios que este aporta.
 \begin{itemize}
 \item \textbf{REGRESIÓN LINEAL MÚLTIPLE}
 \\\\
 Realizando una comparación de los valores reales con los predichos por nuestro modelo, notamos la recta que creo el modelo se encuentra desfasada y desajustada al valor real de los datos, por la naturaleza de los datos se puede crear una mejor recta que explique el comportamiento de nuestra variable dependiente (TASA\_INCIDENCIA) según la siguiente imagen, pero bajo nuestras variables de estudio (climáticas) no se puede generar una mejor recta que explique la TASA\_INCIDENCIA, se debería añadir más variables con una mayor importancia que aporten a nuestro modelo.
+\newpage
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.6\textwidth]{real_vs_pred_RL}
+	\includegraphics[width=0.9\textwidth]{real_vs_pred_RL}
 		\textbf{\caption{{\small Valor predicho vs Valor real Modelo Regresión Lineal Múltiple. \label{tb:real_vs_pred_RL}}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
@@ -1221,7 +1260,7 @@ Las predicciones del modelo se alejan en promedio $756.23$ unidades de nuestro v
 Realizando una comparación de los valores reales con los predichos por nuestro modelo de RandomForestRegressor, notamos que existen unos picos los cuales el modelo no puede predecir, esto es debido a la naturaleza de los datos ya que durante la pandemia hubo picos de infección los cuales hacen que sea distintos a sus homólogos en los mismos meses de diferente año. Estos picos se deben a factores sociales (eventos, movilidad, época decembrina, apertura de establecimientos, etc) los cuales tienen muy poca correlación con los factores climáticos. La comparación se muestra en el siguiente gráfico junto con el n\_estimators utilizado y el resultado del MAE al evaluar el modelo.
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.8\textwidth]{real_vs_pred_random_forest}
+	\includegraphics[width=0.9\textwidth]{real_vs_pred_random_forest}
 		\textbf{\caption{{\small Valor predicho vs Valor real Modelo Random Forest regresión. \label{tb:real_vs_pred_random_forest}}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
@@ -1238,6 +1277,7 @@ Se concluye que todas las variables introducidas como predictores tienen un $R^2
 Las predicciones del modelo se alejan en promedio $689.75$ unidades de nuestro valor real esto es explicado por el MAE ya que calcula el error en la misma escala de los datos. Por el contrario, el valor RMSE de $1169.12$.
 \\\\
 La importancia de las variables que utilizamos en nuestro modelo se muestra en la siguiente tabla:
+\newpage
 \begin{table}[H]
   \centering
    \textbf{\caption{{\small Importancia de las variables en el modelo. \label{tb:TableImportVarRF}}}}       
@@ -1341,8 +1381,36 @@ Mediante el método \textbf{get\_feature\_importances()} nos devuelve la importan
 \end{table}
 
 Se evidencian en la tabla 8 que los 10 lags que se utilizaron para entrenar el modelo en donde para cada lag devolvió la importancia de todas las características, para el lag\_3 tomo más importancia las características o variables para explicar nuestra variable dependiente, seguido por el lag\_6, lag\_1 y lag\_2 respectivamente; los lags que tomaron menor importancia fueron los lag\_9 y lag\_10.
+\\
+\item \textbf{K-MEANS}
+\\\\
+Luego de entrenar y ajustar nuestro modelo y de asignar el clúster correspondiente a cada data, se agrupa el datataset por medio del clúster y las demás variables como medida se tomo la media, el resultado fue el siguiente:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.9\textwidth]{cluster_df_kmeans}
+		\textbf{\caption{{\small Características climatológicas por clúster. \label{tb:cluster_df_kmeans}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+Se evidencia que el clúster 0 tiene una tasa de incidencia más baja, seguido por el clúster 2 y el clúster 1 que tiene una tasa de incidencia más alta. El clúster 0 tiene una temperatura media superior, seguido por el clúster 2 y con una temperatura más baja el clúster 3; de igual forma en el mismo orden tiene más horas de sol y una racha mayor el clúster 0; la altitud juega un papel importante en la determinación de factores climáticos de una región, ya que a menor altura es más probable que tenga una temperatura mayor, es por esta razón que el clúster 1 a pesar de tener un poco más horas de sol con respecto al clúster 2, tiene una temperatura menor, ya que está a una altitud mayor que el clúster 2. Estas son las variables que toman más importancia, por experiencia en los modelos anteriores y se evidencia un patrón claro en cada clúster creado. 
+\\\\
+Para evidenciar este fenómeno gráficamente, se realiza el análisis PCA para transformar nuestras variables y dejar dos componentes $(X, Y)$, estos dos componentes se transforman en un dataframe y se les asignan unas nuevas columnas para tener más información al momento de graficar $X$ y $Y$. Las columnas agregadas a nuestro PCA fueron el clúster correspondiente la temperatura promedio, la tasa de incidencia y un color correspondiente a cada clúster, esto para evidenciar mejor el fenómeno de segmentación. 
+\\\\
+La representación gráfica del PCA con los clúster se muestra a continuación, en donde se evidencia claramente la segmentación y separación de los tres clústers definidos, en donde nuestro clúster 0 (azul) tiene unas tasas de incidencia menor; el clúster 1 (amarillo) tiene unas tasas de incidencias más altas y el clúster 2 (verde) tiene unas tasas de incidencia intermedias, las características climatológicas de cada clúster se explicaron en la figura \textbf{\ref{tb:cluster_df_kmeans}}.
+\newpage
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{pca_kmeans}
+		\textbf{\caption{{\small PCA K-means. \label{tb:pca_kmeans}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+En la figura anterior se muestra en total 1976 puntos, que equivalen a los 38 meses de cada uno de las 52 provincias. Se realizó el estudio agrupando estos datos por clúster y por provincia, llegando a una cantidad de 144 registros, y aquí el fenómeno claro e interesante es que por lo general casi todas las provincias hacen parte de los tres clúster ya que sus condiciones climáticas varían a lo largo del año, pero por regla general cuando cada provincia perteneció al clúster 0 tenía menor tasa de incidencia, por el contrario, cuando estaba en el clúster 1 tenía mayor tasa de incidencia.	
 \end{itemize}
 
+\subsubsection{CONTRASTE ENTRE MODELOS}
 
 \newpage
 \begin{center}
