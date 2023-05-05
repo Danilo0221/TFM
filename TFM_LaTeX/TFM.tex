@@ -387,7 +387,6 @@ Por otro lado, los modelos de clasificación no binaria son utilizados cuando se 
 Aunque los modelos de clasificación binaria y no binaria utilizan diferentes técnicas y algoritmos, el proceso general de construcción de modelos es el mismo. Se trata de identificar las variables de entrada más importantes, elegir un modelo adecuado, ajustar sus parámetros y evaluar su rendimiento utilizando medidas de evaluación adecuadas. binaria como no binaria. La elección del modelo adecuado dependerá del tipo de datos y del objetivo de la predicción. [5]
 
 \bigskip
-\bigskip
 
 \subsection{APRENDIZAJE NO SUPERVISADO}
 \bigskip
@@ -420,10 +419,11 @@ Esas dos suposiciones son la base del modelo de k-medias que funciona mediante e
 \end{itemize}
 Aquí, el ``paso E'' o ``paso de expectativa'' se llama así porque implica actualizar nuestra expectativa de a qué grupo pertenece cada punto. El ``paso M'' o ``paso de maximización'' se llama así porque implica maximizar alguna función de aptitud que define la ubicación de los centros del conglomerado; en este caso, esa maximización se logra tomando una media simple de los datos en cada conglomerado.\\
 La literatura sobre este algoritmo es amplia, pero se puede resumir de la siguiente manera: en circunstancias típicas, cada repetición del paso E y del paso M siempre dará como resultado una mejor estimación de las características del grupo.\\
-Se puede visualizar el algoritmo como se muestra en la siguiente figura; para la inicialización particular que se muestra aquí, los clústeres convergen en solo tres iteraciones. 
+Se puede visualizar el algoritmo como se muestra en la siguiente figura; para la inicialización particular que se muestra aquí, los clústeres convergen en solo tres iteraciones.
+\newpage
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.7\textwidth]{kmeans}
+	\includegraphics[width=1\textwidth]{kmeans}
 		\textbf{\caption{{\small Visualización del algoritmo E-M en k-means.}}}
 	{\scriptsize Fuente: [Python Data Science Handbook]}
 	\end{center}
@@ -652,7 +652,7 @@ Para la ejecución del proyecto se utilizaron distintas fuentes de datos las cual
 \item \textbf{Datos casos COVID-19 por provincias} 
 \\\\
 Los resultados que se presentan se obtienen a partir de la declaración de los casos de COVID-19 a la Red Nacional de Vigilancia Epidemiológica (RENAVE) a través de la plataforma informática vía Web SiViES (Sistema de Vigilancia de España) que gestiona el Centro Nacional de Epidemiología (CNE). Esta información procede de la encuesta epidemiológica de caso que cada Comunidad Autónoma cumplimenta ante la identificación de un caso de COVID-19. Datos oficiales disponibles en el sitio web: \url{https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos}
-\\\\
+\\
 Se utilizan los siguientes sets de datos:
 \\\\
 \textbf{\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv:}} Datos desde el inicio de la pandemia, para todas las edades, hasta el 28 de marzo de 2022.
@@ -687,7 +687,7 @@ Archivo de elaboración propia que contiene el nombre de la provincia y el corres
 \\\\
 Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la \href{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}{Ley 18/2015, de 9 de julio}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data en el siguiente sitio web: \url{https://opendata.aemet.es/centrodedescargas/productosAEMET}. 
 %La información viene en un archivo .json por provincia, teniendo así 52 archivos .json con la información climatológica diaria correspondiente. 
-
+\newpage
 \begin{table}[H]
   \centering
    \textbf{\caption{{\small Variables climatológicas de provincia. \label{tb:Tableclimaprov}}}}       
@@ -783,7 +783,7 @@ Realizamos un análisis de la cantidad de nulos en todas sus variables mediante u
 
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.37\textwidth]{heatmap_covid}
+	\includegraphics[width=1\textwidth]{heatmap_covid}
 		\textbf{\caption{{\small Headmap variables dataset covid-19.}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
@@ -868,7 +868,7 @@ La imagen anterior también muestra los valores máximos y mínimos que toman cada 
 Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{num\_hosp}, \textit{num\_uci} y \textit{num\_def} tiene una correlación positiva y fuerte entre ellas. Es de esperarse este resultado ya por lo general son consecuentes una con la otra, es decir, por ejemplo, si hubo una difusión por covid-19 es muy probable que haya estado en uci y hospitalización previamente.
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.9\textwidth]{correla_covid}
+	\includegraphics[width=0.8\textwidth]{correla_covid}
 		\textbf{\caption{{\small Correlación variables dataset covid-19. \label{tb:correla_covid}}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
@@ -883,6 +883,7 @@ Esta fuente de datos fue de elaboración propia por lo cual se aseguro que no hub
 \item \textbf{Datos climatológicos por provincia}
 \\\\
 Se realiza la concatenación de cada uno de los archivos con la información climatológica por provincia para poder obtener un dataset completo y su respectivo análisis, comenzando por la cantidad de nulos en todas sus variables mediante un heatmap.
+\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.8\textwidth]{heatmap_clima}
@@ -1016,9 +1017,9 @@ Este dataset final será exportado como archivo data\_refined.csv y será tomado c
 
 \subsubsection{MINERÍA DE DATOS}
 En esta etapa de nuestro proceso de KDD partiremos de nuestro dataset final (data\_refined.csv) en donde descubriremos patrones y conocimiento mediante técnicas y algoritmos de machine learning, a continuación, se describen algunos de estos y su proceso:
-\begin{itemize}
-\item \textbf{Regresión Lineal Múltiple}
-\\\\
+
+\subsubsubsection{REGRESIÓN LINEAL MÚLTIPLE}
+\\
 Para este modelo la variable dependiente será la TASA\_INCIDENCIA que será la variable que queremos predecir las demás variables de nuestro dataset final serán las variables independientes. En este caso también tenemos una variable categórica \textit{PROVINCIA}. Esta variable es transformada mediante el método de codificación hash. Se realizaron pruebas con la codificación One-Hot encoding obteniendo resultados muy similares o un poco menores con respecto a las métricas de medida, esto debido a que la principal debilidad de One-Hot encoding es que las características que produce son equivalentes al cardinal categórico, lo que causa problemas de dimensionalidad cuando la cardinalidad es demasiado alta, por el contrario la codificación hash representa los datos categóricos en valor numérico mediante la función hash. \\\\
 La principal ventaja de usar Hash Encoding es que puede controlar la cantidad de columnas numéricas producidas por el proceso, debemos tener en cuenta que Hashing transforma los datos en dimensiones menores, puede provocar la pérdida de información y una gran cantidad de características que se representan en dimensiones menores pueden representar múltiples valores con el mismo valor hash, esto se conoce como colisión. Es por esto que se debe escoger un valor optimo de columnas numéricas que representaran la variable. En general es ideal cuando el conjunto de datos tiene características de alta cardinalidad, para nuestro caso la variable \textit{PROVINCIA} tiene 52 valores. A su vez se crea la variable \textit{MONTH} a partir de la fecha, se tendrán en cuenta todas las variables excepto la variable \textit{FECHA}.
 La ecuación del modelo quedaría de la siguiente forma:
@@ -1028,7 +1029,8 @@ TASA\_INCIDENCIA = b_o + b_1 MONTH + b_2 ALTITUD + b_3 TEMP_MED \\
 + b_{10} HASH_0 + b_{11} HASH_1 + b_{12} HASH_2 + b_{13} HASH_3 + b_{14} HASH_4 + b_{15} HASH_5
 \end{align*}
 
-Dividimos nuestro dataset total en train y test en una relación de 70\% a 30\% respectivamente, esta división se realiza de forma aleatoria ya que existe un pico de casos en el mes de enero del 2021 y mediante pruebas se evidencia que al tomar el test a partir de una fecha fija el modelo no es tan preciso ya que se entrena con un comportamiento totalmente diferente (comienzos de covid) contra el test (finales de covid).  Creamos el modelo a partir de linear\_model.LinearRegression(), al realizar el entrenamiento, obtenemos los siguientes coeficientes y estadísticos para la ecuación del modelo:
+Dividimos nuestro dataset total en train y test de forma aleatoria en una relación de 70\% a 30\% respectivamente, esta división se realiza de forma aleatoria ya que existe un pico de casos en el mes de enero del 2021 y mediante pruebas se evidencia que al tomar el test a partir de una fecha fija el modelo no es tan preciso ya que se entrena con un comportamiento totalmente diferente (comienzos de covid) contra el test (finales de covid).  Creamos el modelo a partir de linear\_model.LinearRegression(), al realizar el entrenamiento, obtenemos los siguientes coeficientes y estadísticos para la ecuación del modelo:
+\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=1\textwidth]{summary_RL}
@@ -1045,7 +1047,7 @@ TASA\_INCIDENCIA = -102000 + 18.88 \cdot MONTH + 11.21 \cdot ALTITUD \\
 + 0.91 \cdot HASH\_1 + 6.95 \cdot HASH\_2 + 6.59 \cdot HASH\_3 + 10.94 \cdot HASH\_4 \\
 - 26.81 \cdot HASH\_5
 \end{align*}
-
+La constante $b_o$ es -10200 es decir nuestra intercepción, los demás coeficientes $b_i$ son los valores numéricos que acompañan a cada una de las variables independientes de nuestro modelo, la interpretación del coeficiente $b_1$ es que por cada unidad que se incrementa el \textit{MES} el incremento de la tasa de incidencia será de $18.88$ unidades; el coeficiente $b_2$ por cada unidad que se incremente la \textit{ALTITUD} el incremento de la tasa de incidencia será de $11.21$ unidades; el coeficiente $b_3$ por cada unidad que se incremente la \textit{TEMP\_MED} hay un decrecimiento de la tasa de incidencia de $-87.23$ unidades; de igual forma sucesivamente es la interpretación de los demás coeficientes.\\\\
 De la \textbf{figura \ref{tb:summary_RL}} concluimos que todas las variables introducidas como predictores tienen un $R^2$ bajo (0.152) es decir es capaz de explicar en un 15.2\% la variabilidad observada de la tasa de incidencia, acorde al p-value obtenido para el coeficiente parcial de regresión para algunas variables de HASH, VEL\_MEDIA, DIR y PREC, estas variables no contribuyen de forma significativa el modelo. Se realizo el entrenamiento sin estás variables y se obtuvieron resultados muy similares, se dejo este modelo para evidenciar el impacto de estas variables en los resultados.
 Los intervalos de confianza obtenidos son:
 \begin{table}[H]
@@ -1095,6 +1097,7 @@ Los intervalos de confianza obtenidos son:
 \end{table}
 
 Del grafico anterior observamos que los intervalos de confianza (en el cual se encuentra, con alta probabilidad, el valor real de una determinada variable) en su gran mayoría o casi todos son intervalos amplios, es decir los valores están dispersos. Los diagnósticos de los residuos fueron los siguientes:
+\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=1\textwidth]{residuos_RL}
@@ -1106,7 +1109,7 @@ Del grafico anterior observamos que los intervalos de confianza (en el cual se e
 Para el test de normalidad se obtuvo:
 \begin{table}[H]
   \centering
-   \textbf{\caption{{\small Intervalos de confianza. \label{tb:TableintervaRL}}}}       
+   \textbf{\caption{{\small Test estadísticos para normalidad. \label{tb:TableintervaRL}}}}       
 	\renewcommand{\arraystretch}{1.2}  
   %{\setlength{\arrayrulewidth}{0.3mm}
     \begin{tabular}{|c|c|c|}
@@ -1123,19 +1126,222 @@ Para el test de normalidad se obtuvo:
 \end{table}
 Es decir, se comprueba si los residuos siguen una distribución normal empleando dos test estadísticos: Shapiro-Wilk test y D'Agostino's K-squared test. Este último es el que incluye el summary de statsmodels bajo el nombre de Omnibus de la gráfica summary.
 En ambos test, la hipótesis nula considera que los datos siguen una distribución normal, por lo tanto, si el p-value no es inferior al nivel de referencia alpha seleccionado, no hay evidencias para descartar que los datos se distribuyen de forma normal y Ambos test muestran claras evidencias para rechazar la hipótesis de que los datos se distribuyen de forma normal (p-value $\ll$ 0.01). Las métricas para la evaluación del modelo se mostrara en el apartado de resultados.
-\item \textbf{Random Forest Regresión}
+
+\subsubsubsection{RANDOM FOREST REGRESIÓN}
+\\
+De igual forma que en el modelo de regresión Lineal múltiple la variable dependiente será la \textit{TASA\_INCIDENCIA} que será la variable que queremos predecir las demás variables de nuestro dataset final serán las variables independientes. La variable categórica \textit{PROVINCIA}, fue transformada mediante el método de codificación hash. Se realizaron pruebas con la codificación One-Hot encoding obteniendo resultados muy similares o un poco menores con respecto a las métricas de medida. A su vez se crea la variable \textit{MONTH} a partir de la fecha, se tendrán en cuenta todas las variables excepto la variable \textit{FECHA}. Se divide el dataset total en train y test de forma aleatoria en una relación de 70\% a 30\% respectivamente, esta división se realiza de acuerdo a la explicación del modelo de regresión lineal.
 \\\\
-
-
-
-
+Para la creación de este modelo se utilizó RandomForestRegressor de la librería sklearn ensemble, los hiperparámetros por defecto son:
+\begin{itemize}
+\item \textbf{n\_estimadores:} El número de árboles en el bosque. Int, por defecto = 100.
+\item \textbf{criterion:}  La función para medir la calidad de una división. Los criterios admitidos son ``squared\_error'' para el error cuadrático medio, que es igual a la reducción de la varianza como criterio de selección de características y minimiza la pérdida de L2 utilizando la media de cada nodo terminal, ``friedman\_mse'', que utiliza el error cuadrático medio con la puntuación de mejora de Friedman para el potencial splits, ``absolute\_error'' para el error absoluto medio, que minimiza la pérdida L1 usando la mediana de cada nodo terminal, y ``poisson'' que usa la reducción en la desviación de Poisson para encontrar divisiones. El entrenamiento con ``absolute\_error'' es significativamente más lento que cuando se usa ``squared\_error'', default = ``squared\_error''.
+\item \textbf{max\_depth:} La profundidad máxima del árbol. Si es Ninguno, los nodos se expanden hasta que todas las hojas sean puras o hasta que todas las hojas contengan menos de min\_samples\_split samples. Int, por defecto = None.
+\item \textbf{min\_samples\_split:} El número mínimo de muestras requeridas para dividir un nodo interno. Int o float, por defecto = 2.
+\item \textbf{min\_samples\_leaf:} El número mínimo de muestras requeridas para estar en un nodo hoja. Un punto de división a cualquier profundidad solo se considerará si deja al menos min\_samples\_leaf muestras de entrenamiento en cada una de las ramas izquierda y derecha. Esto puede tener el efecto de suavizar el modelo, especialmente en regresión. Int o float, por defecto = 1.
+\item \textbf{min\_weight\_fraction\_leaf:} La fracción ponderada mínima de la suma total de pesos (de todas las muestras de entrada) requerida para estar en un nodo hoja. Las muestras tienen el mismo peso cuando no se proporciona sample\_weight. Float, por defecto=0.0
+\item \textbf{max\_features:} El número de características a considerar al buscar la mejor división. (``sqrt'', ``log2'', None), int o float, predeterminado=1.0
+\item \textbf{max\_leaf\_nodes:}  Cultiva árboles max\_leaf\_nodesde la mejor manera. Los mejores nodos se definen como una reducción relativa de la impureza. Si es Ninguno, entonces un número ilimitado de nodos hoja. Int, predeterminado = None.
+\item \textbf{min\_impurity\_decrease:} Un nodo se dividirá si esta división induce una disminución de la impureza mayor o igual a este valor. Float, predeterminado = 0.0
+\item \textbf{bootstrap:} Si se utilizan muestras de arranque al construir árboles. Si es False, se usa todo el conjunto de datos para construir cada árbol. Predeterminado = True.
+\item \textbf{n\_jobs:} El número de trabajos a ejecutar en paralelo. Int, predeterminado = None.
+\item \textbf{random\_state:} Controla tanto la aleatoriedad del arranque de las muestras utilizadas al construir árboles (si bootstrap = True) como el muestreo de las características a considerar cuando se busca la mejor división en cada nodo. Int, instancia de RandomState o None, predeterminado = None.
+\item \textbf{verbose:} Controla la verbosidad al ajustar y predecir. Int, predeterminado = 0.
+\item \textbf{warm\_start:} Cuando se establece en True, reutiliza la solución de la llamada anterior para ajustar y agregar más estimadores al conjunto; de lo contrario, solo ajusta un bosque completamente nuevo. Booleano, predeterminado = False.
+\item \textbf{ccp\_alpha:} Parámetro de complejidad utilizado para la poda de complejidad de costo mínimo. Float no negativo, por defecto = 0.0
+\item \textbf{max\_samples:} Si bootstrap es True, el número de muestras que se extraerán de X para entrenar cada estimador base. Int o float, predeterminado = None.
 \end{itemize}
 
+El modelo creado utilizo todos los parámetros anteriores por defecto a excepción de \textit{criterion}, \textit{n\_estimators} y \textit{random\_state}; los cuales se utilizaron los valores de absolute\_error para \textit{criterion}, un rango de números enteros (2, 4, 8, 16, 32, 64, 128, 256) para los \textit{n\_estimators} y 0 para \textit{random\_state}. No se realiza el gráfico del árbol de decisión ya que esta es una propiedad de los clasificadores y no para los regresores. A partir de nuestro dataset de train se evaluó el MAE para cada uno de los valores de los \textit{n\_estimators}, esta representación gráfica se muestra a continuación:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.6\textwidth]{mae_random_forest}
+		\textbf{\caption{{\small MAE para cada estimador del modelo Random Forest Regresión. \label{tb:mae_random_forest}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
 
+Se evidencia que el MAE decrece conforme avanza el valor de n\_estimators, pero a partir de 64 casi que el valor del MAE permanece constante, al realizar la búsqueda del mínimo MAE se encuentra con n\_estimators = 256, este valor será el utilizado para entrenar y ajustar el modelo.
 
+\subsubsubsection{SERIE TEMPORAL FORECASTERAUTOREG}
+\\
+Nuestra variable dependiente será la \textit{TASA\_INCIDENCIA} que será la variable que queremos predecir las demás variables de nuestro dataset final serán las variables independientes. En comparación a los dos modelos anteriores se divide nuestro dataset de train y test en un rango de fecha tomando el set de train desde 2020-01 hasta 2022-02-01, y el dataset de test será desde 2022-03 hasta 2023-02. Se creo un modelo de serie temporal a nivel nacional (España). Nuestra partición de datos tiene la siguiente forma como se muestra a continuación:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{train_test_series}
+		\textbf{\caption{{\small División train y test ForecasterAutoreg. \label{tb:train_test_series}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
 
+Para la creación de este modelo se utilizó ForecasterAutoreg de la librería skforecast, este modelo convierte cualquier regresor compatible con la API scikit-learn en un pronosticador recursivo autorregresivo (de varios pasos) y cuenta con los siguientes hiperparámetros:
+\begin{itemize}
+\item \textbf{regressor:} Una instancia de un regresor compatible con la API de scikit-learn.
+\item \textbf{lags(int, list, 1D np.array, range):} retrasos utilizados como predictores. El índice comienza en 1, por lo que el retraso 1 es igual a t-1. int: incluye retardos de 1 a lags (incluido). List o np.array: incluir solo los retrasos presentes en lags.
+\end{itemize}
 
+El modelo creado utilizo como regressor un RandomForestRegressor (con los mismos parámetros descritos en el modelo anterior esto con el fin de contrastar ambos modelos bajo las mismas condiciones) y lags = 10.
+\\\\
+La descomposición de nuestra serie temporal nos muestra que a lo largo del tiempo no hay una tendencia clara de la tasa de incidencia de covid-19; existe una estacionalidad con picos en enero en todos los años, esto en parte es cierta debido a fenómenos sociales de fin de año y que el incremento de casos de covid se vea reflejado en el mes de enero, pero estos picos no son de la misma magnitud en los eneros de cada año, esto no se evidencia en la estacionalidad de la serie temporal; el residuo o componente aleatorio (que no pudo ser explicado por la tendencia o estacionalidad) es bastante atípico o invariante, esto quiere decir que muy posiblemente nuestro modelo no pueda predecir de forma correcta las tasas de incidencia futuras y que nuestras métricas de evaluación no van a ser las mejores, en el apartado de resultados se observaran estas métricas. Los componentes descritos se muestran a continuación:
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{descomp_series}
+		\textbf{\caption{{\small Descomposición serie temporal ForecasterAutoreg. \label{tb:descomp_series}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
 
+\subsubsubsection{K-MEANS}
+\\
+XXX
+\subsection{RESULTADOS}
+Para cada uno de los modelos descritos anteriormente se mostrará su gráfica de predicción versus los valores reales, así como las mismas métricas de evaluación ($R^2$, MAE y RMSE) para cada modelo y al final mediante un apartado de comparación y contraste se evaluará cual es el modelo que mejor se ajusta a nuestros datos y los beneficios que este aporta.
+\begin{itemize}
+\item \textbf{REGRESIÓN LINEAL MÚLTIPLE}
+\\\\
+Realizando una comparación de los valores reales con los predichos por nuestro modelo, notamos la recta que creo el modelo se encuentra desfasada y desajustada al valor real de los datos, por la naturaleza de los datos se puede crear una mejor recta que explique el comportamiento de nuestra variable dependiente (TASA\_INCIDENCIA) según la siguiente imagen, pero bajo nuestras variables de estudio (climáticas) no se puede generar una mejor recta que explique la TASA\_INCIDENCIA, se debería añadir más variables con una mayor importancia que aporten a nuestro modelo.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.6\textwidth]{real_vs_pred_RL}
+		\textbf{\caption{{\small Valor predicho vs Valor real Modelo Regresión Lineal Múltiple. \label{tb:real_vs_pred_RL}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Las métricas calculadas para la evaluación del modelo son:
+\begin{itemize}
+\item \textbf{$R^2 = 0.15$}
+\item \textbf{$MAE = 756.23$}
+\item \textbf{$RMSE = 1337.30$}
+\end{itemize}
+Se concluye que todas las variables introducidas como predictores tienen un $R^2$ bajo (0.15) es decir es capaz de explicar en un 15.2\% la variabilidad observada de la tasa de incidencia.
+Las predicciones del modelo se alejan en promedio $756.23$ unidades de nuestro valor real esto es explicado por el MAE ya que calcula el error en la misma escala de los datos. Por el contrario, el valor RMSE de $13373.30$ que mide la diferencia promedio al cuadrado entre los valores estimados y el valor real, penaliza valores extremos o valores atípicos es por esta razón que es un valor más alto que el MAE, para ambos casos lo ideal es lo más cercano a cero y saber la naturaleza de los datos, para nuestro caso la variable dependiente TASA\_INCIDENCIA, está entre el rango de $0.0$ hasta $12025.3$, teniendo un promedio de $728.86$.
+\\
+\item \textbf{RANDOM FOREST REGRESIÓN}
+\\\\
+Realizando una comparación de los valores reales con los predichos por nuestro modelo de RandomForestRegressor, notamos que existen unos picos los cuales el modelo no puede predecir, esto es debido a la naturaleza de los datos ya que durante la pandemia hubo picos de infección los cuales hacen que sea distintos a sus homólogos en los mismos meses de diferente año. Estos picos se deben a factores sociales (eventos, movilidad, época decembrina, apertura de establecimientos, etc) los cuales tienen muy poca correlación con los factores climáticos. La comparación se muestra en el siguiente gráfico junto con el n\_estimators utilizado y el resultado del MAE al evaluar el modelo.
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{real_vs_pred_random_forest}
+		\textbf{\caption{{\small Valor predicho vs Valor real Modelo Random Forest regresión. \label{tb:real_vs_pred_random_forest}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+Las métricas calculadas para la evaluación del modelo son:
+\begin{itemize}
+\item \textbf{$R^2 = 0.338$}
+\item \textbf{$MAE = 689.75$}
+\item \textbf{$RMSE = 1169.12$}
+\end{itemize}
+
+Se concluye que todas las variables introducidas como predictores tienen un $R^2$ bajo (0.338) es decir es capaz de explicar en un 33.8\% la variabilidad observada de la tasa de incidencia.
+Las predicciones del modelo se alejan en promedio $689.75$ unidades de nuestro valor real esto es explicado por el MAE ya que calcula el error en la misma escala de los datos. Por el contrario, el valor RMSE de $1169.12$.
+\\\\
+La importancia de las variables que utilizamos en nuestro modelo se muestra en la siguiente tabla:
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Importancia de las variables en el modelo. \label{tb:TableImportVarRF}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Importancia \\
+	\hline        
+    ALTITUD & 0,037044 \\
+	\hline
+    TEMP\_MED & 0,138512 \\
+    \hline
+    PREC & 0,112269 \\
+    \hline
+    DIR & 0,096510 \\
+    \hline
+    VEL\_MEDIA & 0,083530 \\
+	\hline
+	RACHA & 0,102015 \\
+	\hline
+	PRES\_MIN & 0,116705 \\
+	\hline
+	SOL & 0,116503 \\
+	\hline
+	HASH\_0 & 0,018602 \\
+	\hline
+	HASH\_1 & 0,011834 \\
+	\hline
+	HASH\_2 & 0,018971 \\
+	\hline
+	HASH\_3 & 0,029064 \\
+	\hline
+	HASH\_4 & 0,024272 \\
+	\hline
+	HASH\_5 & 0,017449 \\
+	\hline
+	MONTH & 0,076722 \\
+    \hline  
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+Se evidencia que la variable \textit{TEMP\_MED, SOL, PREC, PRES\_MIN} toman mayor importancia a nuestro modelo, es decir a portan mayor información para predecir la tasa de incidencia de covid-19, las variables HASH no toman mayor importancia ya que el conjunto de estas seis toman la representación de cada uno de los valores que tenía la variable \textit{PROVINCIA} anteriormente, por otro lado, las provincias son las encargadas de segmentar el dataset ya que cada una tiene sus propias condiciones climáticas.
+\\
+\item \textbf{SERIE TEMPORAL FORECASTERAUTOREG}
+\\\\
+Luego de entrenar y ajustar nuestro modelo se realiza la comparación de los valores reales con los predichos por nuestro modelo ForecasterAutoreg, notamos que las predicciones están más alejadas con respecto a la real, es decir, esta prediciendo una tasa de incidencia más alta para el periodo 2022-03 en adelante, pero tiene una pequeña similitud con respecto a la tendencia de la gráfica. Las razones de las diferencias son las mismas expuestas en los modelos anteriores.
+\newpage
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.86\textwidth]{real_vs_pred_serie_temp}
+		\textbf{\caption{{\small Valor predicho vs Valor real Modelo ForecasterAutoreg. \label{tb:real_vs_pred_serie_temp}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+Las métricas calculadas para la evaluación del modelo son:
+\begin{itemize}
+\item \textbf{$R^2 = -6.46$}
+\item \textbf{$MAE = 37937.62$}
+\item \textbf{$RMSE = 42756.51$}
+\end{itemize}
+
+El modelo tiene un $R^2$ negativo de -6,46 es decir nuestro modelo no es capaz de explicar la variabilidad observada de la tasa de incidencia. Las predicciones del modelo se alejan en promedio 37937,62 unidades de nuestro valor real esto es explicado por el MAE ya que calcula el error en la misma escala de los datos. Por el contrario, el valor RMSE de 42756,51.
+\\\\
+Mediante el método \textbf{get\_feature\_importances()} nos devuelve la importancia de las características basadas en impurezas del modelo almacenado en el pronosticador. Sólo es válido cuando el pronosticador ha sido entrenado usando como regresor GradientBoostingRegressor o RandomForestRegressor, para nuestro caso este último.
+
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Importancia de las variables ForecasterAutoreg. \label{tb:TableImportForecas}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Importancia \\
+	\hline        
+    lag\_1 & 0,097890 \\
+	\hline
+    lag\_2 & 0,092794 \\
+    \hline
+    lag\_3 & 0,377607 \\
+    \hline
+    lag\_4 & 0,069648 \\
+    \hline
+    lag\_5 & 0,047422 \\
+	\hline
+	lag\_6 & 0,113457 \\
+	\hline
+	lag\_7 & 0,077389 \\
+	\hline
+	lag\_8 & 0,059880 \\
+	\hline
+	lag\_9 & 0,031993 \\
+	\hline
+	lag\_10 & 0,031921 \\
+	\hline
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+Se evidencian en la tabla 8 que los 10 lags que se utilizaron para entrenar el modelo en donde para cada lag devolvió la importancia de todas las características, para el lag\_3 tomo más importancia las características o variables para explicar nuestra variable dependiente, seguido por el lag\_6, lag\_1 y lag\_2 respectivamente; los lags que tomaron menor importancia fueron los lag\_9 y lag\_10.
+\end{itemize}
 
 
 \newpage

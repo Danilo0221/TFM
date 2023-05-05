@@ -3,7 +3,7 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces {\small Visualizaci\'on del algoritmo E-M en k-means.}}}{11}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces {\small Descripci\'on de los pasos que constituyen el proceso KDD}}}{17}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces {\small Headmap variables dataset covid-19.}}}{22}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces {\small Porcentaje de nulos dataset covid-19.}}}{22}{figure.5}%
+\contentsline {figure}{\numberline {5}{\ignorespaces {\small Porcentaje de nulos dataset covid-19.}}}{23}{figure.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces {\small Correlaci\'on variables dataset covid-19. }}}{24}{figure.6}%
 \contentsline {figure}{\numberline {7}{\ignorespaces {\small Headmap variables dataset clima.}}}{25}{figure.7}%
 \contentsline {figure}{\numberline {8}{\ignorespaces {\small Porcentaje de nulos dataset clima.}}}{25}{figure.8}%
@@ -15,3 +15,9 @@
 \contentsline {figure}{\numberline {14}{\ignorespaces {\small Tipos de datos dataset total.}}}{31}{figure.14}%
 \contentsline {figure}{\numberline {15}{\ignorespaces {\small Estadisticos modelo regresi\'on lineal m\'ultiple. }}}{33}{figure.15}%
 \contentsline {figure}{\numberline {16}{\ignorespaces {\small Diagn\'ostico residuos modelo regresi\'on lineal m\'ultiple. }}}{35}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces {\small MAE para cada estimador del modelo Random Forest Regresi\'on. }}}{37}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces {\small Divisi\'on train y test ForecasterAutoreg. }}}{38}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces {\small Descomposici\'on serie temporal ForecasterAutoreg. }}}{39}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces {\small Valor predicho vs Valor real Modelo Regresi\'on Lineal M\'ultiple. }}}{40}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces {\small Valor predicho vs Valor real Modelo Random Forest regresi\'on. }}}{41}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces {\small Valor predicho vs Valor real Modelo ForecasterAutoreg. }}}{43}{figure.22}%
