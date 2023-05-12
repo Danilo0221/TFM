@@ -35,7 +35,7 @@
     basicstyle      = \ttfamily\footnotesize,
     keywordstyle    = \color{blue},
     commentstyle    = \color{gray},
-    stringstyle     = \color{green},
+    stringstyle     = \color{blue},
     showstringspaces= false,
     breaklines      = true
 }
@@ -52,12 +52,16 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
+%%%%%%%%%%% BibTeX %%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{apacite}
+\usepackage{setspace}
+
 %%%%%%%% Coloca una imagen como encabezado %%%%%%%%%%%%%%
 \pagestyle{fancy}
 \fancyhf{}
 %\fancyhead[L]{\includegraphics[width=.2\textwidth]{Logo3}}
 %\fancyhead[R]{\rightmark}
-\lhead{\includegraphics[width=.2\textwidth]{Logo3}}
+\lhead{\includegraphics[width=.2\textwidth]{Logo_VIU}}
 \rhead{\rightmark}
 
 \renewcommand{\sectionmark}[1]{\markright{\textit{\arabic{section}.\ #1}}}
@@ -72,7 +76,7 @@
 %\fancyfoot[LO,CE]{From: K. Grant}
 %\fancyfoot[CO,RE]{To: Dean A. Smith}
 \lfoot[\thepage]{Trabajo Fin de Máster}
-\rfoot[Máster en Big Data y Data Science $\mid$ Edición abril 2022]{\thepage}
+\rfoot[Máster en Big Data y Ciencia de Datos $\mid$ Edición abril 2022]{\thepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -116,8 +120,8 @@ DNI: 1024538287
 \begin{large}
 
 UNIVERSIDAD INTERNACIONAL DE VALENCIA\\
-FACULTAD DE MAESTRÍAS\\
-MÁSTER EN BIG DATA Y DATA SCIENCE \\
+FACULTAD ESCUELA DE CIENCIA Y TECNOLOGÍA\\
+MÁSTER EN BIG DATA Y CIENCIA DE DATOS \\
 BOGOTÁ D.C.\\
 2022\\
 \end{large}
@@ -145,8 +149,8 @@ viudanilo0221p@gmail.com\\
 DNI: 1024538287\\
 \end{large}
 \vspace*{0.86 in}
-Trabajo de grado para optar al titulo de:\\ 
-Magister en Big Data y Data Science\\
+Trabajo de máster para optar al titulo de:\\ 
+Máster en Big Data y Ciencia de Datos\\
 \vspace*{0.86 in}
 \begin{large}
 DIRECTOR:\\
@@ -156,8 +160,8 @@ Docente Universidad Internacional de Valencia\\
 \vspace*{0.87 in}
 \begin{large}
 UNIVERSIDAD INTERNACIONAL DE VALENCIA\\
-FACULTAD DE MAESTRÍAS\\
-MÁSTER EN BIG DATA Y DATA SCIENCE \\
+FACULTAD ESCUELA DE CIENCIA Y TECNOLOGÍA\\
+MÁSTER EN BIG DATA Y CIENCIA DE DATOS\\
 BOGOTÁ D.C.\\
 2022\\
 \end{large}
@@ -218,14 +222,14 @@ BOGOTÁ D.C.\\
 \section*{RESUMEN}
 \addcontentsline{toc}{section}{\protect\numberline{}RESUMEN}
 \end{center}
-Tras la aparición del covid-19 a nivel mundial a comienzos del 2020, han surgido varios estudios para identificar los factores que influyen en la propagación del virus, en donde el contacto cercano con personas infectadas es el principal factor, esto se debe a temas sociales como la movilidad, eventos, recreación, deporte, entre otros. Desafortunadamente no existe muchos estudios acerca de los factores climáticos, para este proyecto de TFM se sigue como hipótesis que las condiciones climáticas influyen en menor medida en la propagación del virus Covid-19.  En este proyecto se seguirá una metodología KDD persiguiendo los pasos habituales para la obtención de conocimiento y entendimiento de los datos.
+Tras la aparición del covid-19 a nivel mundial a comienzos del 2020, han surgido varios estudios para identificar los factores que influyen en la propagación del virus, en donde el contacto cercano con personas infectadas es el principal factor, esto se debe a temas sociales como la movilidad, eventos, recreación, deporte, entre otros. En la actualidad no existen muchos estudios acerca de los factores climáticos, para este proyecto de TFM se sigue como hipótesis que las condiciones climáticas influyen en menor medida en la propagación del virus Covid-19.  En este proyecto se seguirá una metodología KDD persiguiendo los pasos habituales para la obtención de conocimiento y entendimiento de los datos.
 \\\\ 
 Se lleva a cabo un análisis de las bases de datos disponibles, así como la preparación y compresión de los datos y limpieza de los mismos. Los datos utilizados para este TFM han sido recopilados del Centro Nacional de Epidemiología (CNE) para los casos de Covid-19 reportados, los datos climatológicos proporcionados por el portal datos abiertos AEMET, los datos de población proporcionados por el Instituto Nacional de Estadística (INE). Con estos datos se ha generado un único dataset para la realización de los modelos de machine learning (regresión lineal múltiple, RandomForest Regresión, series temporales y K-means) para predecir o encontrar patrones sobre la tasa de incidencia (normalización de los casos de Covid-19) por provincia con relación a los factores climáticos durante la pandemia.
 \\\\
-Los resultados obtenidos con los distintos modelos no fueron los óptimos basado en nuestras métricas definidas ($R^2$, MAE y RMSE), este resultado es el esperado, ya que las condiciones climáticas no son el factor principal en la propagación del virus, las variables no logran explicar nuestra variable a predecir. Sin embargo, el modelo de K-means evidencia una influencia de los factores climáticos sobre la tasa de incidencia, mediante una segmentación de los casos en 3 clusters, en donde los clúster con ciertas características climáticas presentara una tasa de incidencia diferente. Todos los códigos estarán compartidos públicamente en el \href{https://github.com/Danilo0221/TFM}{REPOSITORIO TFM} del autor.
+Los resultados obtenidos con los distintos modelos se contrastaron basado en nuestras métricas definidas ($R^2$, MAE y RMSE), y se obtuvieron valores bajos en estas métricas, este resultado es el esperado, ya que las condiciones climáticas no son el factor principal en la propagación del virus, las variables no logran explicar nuestra variable a predecir. Sin embargo, el modelo de K-means evidencia una influencia de los factores climáticos sobre la tasa de incidencia, mediante una segmentación de los casos en 3 clusters, en donde los clúster con ciertas características climáticas presentara una tasa de incidencia diferente. 
 \\\\
 \\\\
-\textbf{Palabras clave:} KDD, clúster, $R^2$, MAE y RMSE.
+\textbf{Palabras clave:} Covid-19, machine learning, KDD y clúster.
 
 
 
@@ -234,12 +238,12 @@ Los resultados obtenidos con los distintos modelos no fueron los óptimos basado 
 \section{INTRODUCCIÓN}
 \end{center}
 \bigskip
-El COVID-19 es una enfermedad respiratoria causada por el virus SARS-CoV-2. Desde su aparición en Wuhan, China a finales de 2019, ha afectado a millones de personas en todo el mundo. Los gobiernos de todo el mundo han implementado diversas medidas para prevenir la propagación del virus y proteger la salud pública.
+El COVID-19 es una enfermedad respiratoria causada por el virus SARS-CoV-2. Desde su aparición en Wuhan, China a finales de 2019, ha afectado a millones de personas en todo el mundo. Los gobiernos de todo el mundo han implementado diversas medidas para prevenir la propagación del virus y proteger la salud pública. \cite{ciotti2020covid}
 \\\\
-Algunas de las medidas más comunes fueron: cierre de fronteras, distanciamiento social (como el cierre de escuelas, lugares de trabajo y eventos públicos), uso de mascarillas, pruebas y rastreo de contactos (para identificar a las personas infectadas y rastrear a aquellos con los que han tenido contacto cercano), cierre de empresas y restricciones de actividades no esenciales (para reducir la cantidad de personas que se congregan en lugares públicos), campañas de concientización y educación pública. Todas estás medidas ayudan a mitigar la propagación del virus y aunque la transmisión del virus se produce principalmente por contacto cercano con personas infectadas, se ha investigado sobre la posible influencia de las condiciones climáticas en la propagación del virus. 
+Algunas de las medidas más comunes fueron: cierre de fronteras, distanciamiento social (como el cierre de escuelas, lugares de trabajo y eventos públicos), uso de mascarillas, pruebas y rastreo de contactos (para identificar a las personas infectadas y rastrear a aquellos con los que han tenido contacto cercano), cierre de empresas y restricciones de actividades no esenciales (para reducir la cantidad de personas que se congregan en lugares públicos), campañas de concientización y educación pública. Todas estás medidas ayudan a mitigar la propagación del virus y aunque la transmisión del virus se produce principalmente por contacto cercano con personas infectadas, se ha investigado sobre la posible influencia de las condiciones climáticas en la propagación del virus. \cite{wang2020high}
 \\\\
 En general, se cree que el clima cálido y húmedo puede reducir la propagación del virus, ya que el calor y la humedad pueden debilitar la capacidad del virus para sobrevivir en el aire y en las superficies. Sin embargo, los expertos señalan que no hay suficiente evidencia científica para afirmar que las altas temperaturas y la humedad reducen significativamente la transmisión del virus.
-Por otro lado, el invierno y el clima frío pueden aumentar la transmisión del virus, ya que las personas tienden a pasar más tiempo en espacios cerrados y con poca ventilación, lo que facilita la propagación del virus de persona a persona. [1][2]
+Por otro lado, el invierno y el clima frío pueden aumentar la transmisión del virus, ya que las personas tienden a pasar más tiempo en espacios cerrados y con poca ventilación, lo que facilita la propagación del virus de persona a persona. \cite{araujo2020spread}
 \\\\
 En este proyecto se desarrollará un estudio y análisis sobre el impacto de las condiciones climáticas en la propagación del virus covid-19 en España y determinar si existe algún factor relacionado con la transmisión.
 
@@ -252,7 +256,8 @@ En este proyecto se desarrollará un estudio y análisis sobre el impacto de las c
 \subsection{OBJETIVO GENERAL}
 \bigskip
 \begin{itemize}
-\item Identificar las características principales que afectan e influyen el aumento de personas contagiadas del virus de COVID-19 en España.
+%\item Identificar las características principales que afectan e influyen el aumento de personas contagiadas del virus de COVID-19 en España.
+\item Identificar la posible influencia de las condiciones climaticas en la propagación del virus de COVID-19 en España.
 \end{itemize}
 \medskip
 \subsection{OBJETIVOS ESPECÍFICOS}
@@ -261,19 +266,20 @@ En este proyecto se desarrollará un estudio y análisis sobre el impacto de las c
 \item Extraer, transformar y obtener conocimiento de las diferentes fuentes de información o bases de datos de COVID-19 en España, centrándonos en características climáticas.
 \item Crear, comparar y contrastar los diferentes modelos de predicción y/o clustering sobre el COVID-19.
 \item Seleccionar el modelo que predice o explica lo más exacto posible la influencia de las características climáticas en los casos de virus de COVID-19.
-\item Precisar los efectos de otro tipo de características o variables en los modelos utilizados y evaluar sus desempeños.
+%\item Precisar los efectos de otro tipo de características o variables en los modelos utilizados y evaluar sus desempeños.
+\item Automatizar la metodología implementada en el desarrollo del proyecto.
 
 \end{itemize}
 
 
 \newpage
 \begin{center}
-\section{MACHINE LEARNING Y ESTADO DEL ARTE}
+\section{MACHINE LEARNING, ESTUDIOS Y MODELOS ACTUALES DE COVID-19}
 \end{center} 
 \bigskip
 El Machine Learning es una técnica de Inteligencia Artificial que permite a los sistemas informáticos aprender de manera automática a partir de datos y experiencias previas, sin ser programados explícitamente para cada tarea. En lugar de seguir un conjunto fijo de instrucciones, los sistemas de Machine Learning pueden aprender a partir de datos, identificando patrones y tendencias, y utilizando esta información para realizar predicciones o tomar decisiones.\\\\
 El aprendizaje automático se basa en la idea de que los sistemas informáticos pueden aprender de manera similar a como lo hacen los seres humanos, mediante la identificación de patrones y la adaptación a nuevas situaciones. En lugar de requerir que se programen todas las posibles situaciones y resultados, también nos permite que los sistemas aprendan a partir de datos históricos y experiencias previas, y así puedan tomar decisiones informadas y precisas en tiempo real.
-Programar computadoras para aprender de la experiencia eventualmente debería eliminar la necesidad de gran parte de este esfuerzo de programación detallado. Conforme a la definición de ML de Tom M. Mitchell: ``Se dice que un programa de computadora aprende de la experiencia E con respeto a alguna clase de tareas T y medida de rendimiento P, si su rendimiento en tareas en T, medido por P, mejora con la experiencia E'' [3].
+Programar computadoras para aprender de la experiencia eventualmente debería eliminar la necesidad de gran parte de este esfuerzo de programación detallado. Conforme a la definición de ML de Tom M. Mitchell: ``Se dice que un programa de computadora aprende de la experiencia E con respeto a alguna clase de tareas T y medida de rendimiento P, si su rendimiento en tareas en T, medido por P, mejora con la experiencia E''. \cite{awad2015support}
 Existen varios tipos de técnicas de Machine Learning, incluyendo el aprendizaje supervisado, el aprendizaje no supervisado y el aprendizaje por refuerzo. En el aprendizaje supervisado, el sistema aprende a partir de datos etiquetados previamente, mientras que, en el aprendizaje no supervisado, el sistema busca patrones y similitudes en los datos sin etiquetar. En el aprendizaje por refuerzo, el sistema aprende a partir de la retroalimentación del entorno.\\\\
 Se aplica en una variedad de campos, como la detección de fraudes, la clasificación de imágenes, el análisis de sentimientos y la predicción de ventas, entre otros. A medida que los datos se vuelven cada vez más importantes y abundantes, el Machine Learning se está convirtiendo en una herramienta esencial para empresas e investigadores que buscan automatizar tareas y mejorar la toma de decisiones.
 
@@ -300,7 +306,7 @@ Sin embargo, los problemas de regresión pueden presentar algunos desafíos, como:
 \end{itemize}
 
 Para superar estos desafíos, se pueden utilizar técnicas de preprocesamiento de datos, selección de características, validación cruzada y ajuste de hiperparámetros, entre otras.
-Estos modelos pueden ser lineales o no lineales. Los modelos lineales, como la regresión lineal simple o múltiple, buscan establecer una relación lineal entre las variables de entrada y la variable de salida [4]. Por otro lado, los modelos no lineales, como la regresión polinómica, la regresión logística, regresión de árbol de decisión, random forest o redes neuronales, permiten establecer relaciones no lineales entre las variables.
+Estos modelos pueden ser lineales o no lineales. Los modelos lineales, como la regresión lineal simple o múltiple, buscan establecer una relación lineal entre las variables de entrada y la variable de salida. \cite{rativa2020tecnicas} Por otro lado, los modelos no lineales, como la regresión polinómica, la regresión logística, regresión de árbol de decisión, random forest o redes neuronales, permiten establecer relaciones no lineales entre las variables.
 
 
 \subsubsubsection{REGRESIÓN LINEAL MÚLTIPLE}
@@ -316,7 +322,7 @@ $x_1, x_2, ..., x_n:$ \hspace{0.3em} Variables predictoras (variables independie
 $b_0, b_1, b_2, ..., b_n:$ \hspace{0.52em} Coeficientes de regresión que representan la relación entre cada variable predictora y la variable de respuesta.\\
 $e:$ \hspace{1em} Error residual o término de error, que representa la variación de $y$ que no se puede explicar por las variables predictoras.
 \\\\
-El objetivo de un modelo de regresión lineal múltiple es estimar los coeficientes de regresión $(b_0, b_1, b_2, ..., b_n)$ de tal manera que la suma de los errores residuales sea lo más pequeña posible. Esto se logra mediante el método de mínimos cuadrados, que minimiza la suma de los cuadrados de los errores residuales. Para estimar los coeficientes de regresión, se utilizan técnicas como la matriz de diseño, el cálculo de la matriz inversa y la solución de sistemas de ecuaciones lineales. Una vez que se han estimado los coeficientes de regresión, se puede utilizar el modelo para hacer predicciones sobre la variable de respuesta para nuevos valores de las variables predictoras.[10][11]
+El objetivo de un modelo de regresión lineal múltiple es estimar los coeficientes de regresión $(b_0, b_1, b_2, ..., b_n)$ de tal manera que la suma de los errores residuales sea lo más pequeña posible. Esto se logra mediante el método de mínimos cuadrados, que minimiza la suma de los cuadrados de los errores residuales. Para estimar los coeficientes de regresión, se utilizan técnicas como la matriz de diseño, el cálculo de la matriz inversa y la solución de sistemas de ecuaciones lineales. Una vez que se han estimado los coeficientes de regresión, se puede utilizar el modelo para hacer predicciones sobre la variable de respuesta para nuevos valores de las variables predictoras. \cite{vannieuwenhuyze2020inteligencia} \cite{RLM}
 
 Al igual que en el modelo de regresión lineal simple, el modelo de regresión lineal múltiple asume que hay una relación lineal entre las variables predictoras y la variable de respuesta, si la relación no es lineal, puede ser necesario utilizar otro tipo de modelo, por tal motivo es importante evaluar la calidad del modelo mediante técnicas como la validación cruzada y la evaluación de métricas como: 
 \\
@@ -357,7 +363,7 @@ Un valor alto de $R^2$ indica que el modelo ajusta bien los datos y que las vari
 \subsubsubsection{RANDOM FOREST}
 
 El modelo de Random Forest es una extensión del modelo de Bagging (Bootstrap Aggregating) que utiliza múltiples árboles de decisión para mejorar la precisión de la predicción. Bagging es un enfoque de aprendizaje automático que implica la creación de múltiples muestras de entrenamiento a partir del conjunto de datos original, utilizando muestreo con reemplazo. Luego, se entrena un modelo separado para cada muestra y se promedian las predicciones de los modelos para obtener una predicción final, esto ayuda a reducir el sobreajuste y mejorar la precisión de la predicción.\\
-Random Forest utiliza múltiples árboles de decisión para hacer predicciones de valores numéricos, la principal diferencia es que en Random Forest, en cada nodo de decisión se selecciona un subconjunto aleatorio de características para realizar la división en lugar de considerar todas las características disponibles, al seleccionar un subconjunto aleatorio de características, el modelo de Random Forest puede reducir la correlación entre los árboles y aumentar la diversidad de los árboles en el modelo, esto puede mejorar la precisión del modelo y reducir el sobreajuste. [12]
+Random Forest utiliza múltiples árboles de decisión para hacer predicciones de valores numéricos, la principal diferencia es que en Random Forest, en cada nodo de decisión se selecciona un subconjunto aleatorio de características para realizar la división en lugar de considerar todas las características disponibles, al seleccionar un subconjunto aleatorio de características, el modelo de Random Forest puede reducir la correlación entre los árboles y aumentar la diversidad de los árboles en el modelo, esto puede mejorar la precisión del modelo y reducir el sobreajuste. \cite{RFAWE}
 \\\\
 En Random Forest la idea es que cada árbol de decisión tenga una idea ligeramente diferente de cómo se relacionan las características con la variable objetivo.
 Para hacer una predicción se evalúa cada muestra en cada árbol de decisión en el modelo y se toma la media de las predicciones resultantes, se puede expresar matemáticamente como:
@@ -365,7 +371,7 @@ Para hacer una predicción se evalúa cada muestra en cada árbol de decisión en el
 y = \dfrac{1}{N}\sum\limits_{i=1}^{n} y_i
 \end{equation}
 
-donde y es la predicción de la variable objetivo para una muestra dada, $y_i$ es la predicción de la variable objetivo para esa muestra en el i-ésimo árbol de decisión, y $N$ es el número total de árboles en el modelo. [13]\\
+donde y es la predicción de la variable objetivo para una muestra dada, $y_i$ es la predicción de la variable objetivo para esa muestra en el i-ésimo árbol de decisión, y $N$ es el número total de árboles en el modelo. \cite{holmang2021intaktsestimering} \\
 Las predicciones que se apartan demasiado de la media no son deseables, ya que pueden estar basadas en un árbol de decisión que tiene una idea atípica de cómo se relacionan las características con la variable objetivo. A continuación, se muestra el modelo de un random forest:
 
 \begin{figure}[H]
@@ -395,7 +401,7 @@ Las métricas de evaluación comunes para un modelo de Random Forest de regresión 
 \medskip
 Los modelos de clasificación binaria son utilizados cuando se desea predecir una variable de salida que puede tomar únicamente dos valores posibles, como ``sí'' o ``no'', ``verdadero'' o ``falso'', etc. Ejemplos de modelos de clasificación binaria incluyen la regresión logística y la máquina de vectores de soporte.
 Por otro lado, los modelos de clasificación no binaria son utilizados cuando se desea predecir una variable de salida que puede tomar más de dos valores posibles, como la clasificación de imágenes en diferentes categorías o la predicción de resultados deportivos. Ejemplos de modelos de clasificación no binaria incluyen los árboles de decisión, los bosques aleatorios y las redes neuronales.\\\\
-Aunque los modelos de clasificación binaria y no binaria utilizan diferentes técnicas y algoritmos, el proceso general de construcción de modelos es el mismo. Se trata de identificar las variables de entrada más importantes, elegir un modelo adecuado, ajustar sus parámetros y evaluar su rendimiento utilizando medidas de evaluación adecuadas. binaria como no binaria. La elección del modelo adecuado dependerá del tipo de datos y del objetivo de la predicción. [5]
+Aunque los modelos de clasificación binaria y no binaria utilizan diferentes técnicas y algoritmos, el proceso general de construcción de modelos es el mismo. Se trata de identificar las variables de entrada más importantes, elegir un modelo adecuado, ajustar sus parámetros y evaluar su rendimiento utilizando medidas de evaluación adecuadas. binaria como no binaria. La elección del modelo adecuado dependerá del tipo de datos y del objetivo de la predicción. \cite{valenzuela2022aprendizaje}
 
 \bigskip
 
@@ -412,7 +418,7 @@ Existen varios algoritmos de clustering, cada uno con sus propias fortalezas y d
 Otro algoritmo popular de clustering es el clustering jerárquico. Este algoritmo construye una jerarquía de clústeres mediante la combinación iterativa de clústeres en subgrupos más grandes. El resultado es un árbol jerárquico que representa la estructura de agrupamiento de los datos.
 El clustering se utiliza en muchas aplicaciones, como la segmentación de clientes, la clasificación de imágenes y la agrupación de documentos. Por ejemplo, en la segmentación de clientes, el clustering se puede utilizar para agrupar a los clientes en función de sus patrones de compra o preferencias. En la clasificación de imágenes, el clustering se puede utilizar para agrupar imágenes similares para su posterior análisis o clasificación.\\
 
-En la agrupación de documentos, el clustering se puede utilizar para agrupar documentos similares en temas específicos.Sin embargo, es importante tener en cuenta que el clustering no siempre es la mejor opción para todos los conjuntos de datos y situaciones. Algunas limitaciones del clustering incluyen la necesidad de definir el número de clústeres de antemano, la sensibilidad a los valores atípicos y la dificultad de evaluar los resultados. Es importante seleccionar el algoritmo y los parámetros adecuados para obtener resultados precisos y significativos. [6]
+En la agrupación de documentos, el clustering se puede utilizar para agrupar documentos similares en temas específicos.Sin embargo, es importante tener en cuenta que el clustering no siempre es la mejor opción para todos los conjuntos de datos y situaciones. Algunas limitaciones del clustering incluyen la necesidad de definir el número de clústeres de antemano, la sensibilidad a los valores atípicos y la dificultad de evaluar los resultados. Es importante seleccionar el algoritmo y los parámetros adecuados para obtener resultados precisos y significativos. \cite{bobadilla2021machine}
 
 \subsubsubsection{K-MEANS}
 
@@ -449,26 +455,26 @@ Existen varios algoritmos de reducción de dimensionalidad, pero uno de los más p
 Otro algoritmo popular de reducción de la dimensionalidad es el t-distributed stochastic neighbor embedding (t-SNE). t-SNE es una técnica no lineal que se utiliza para visualizar datos en un espacio de menor dimensión. t-SNE es especialmente útil para visualizar datos de alta dimensión en dos o tres dimensiones. La técnica funciona encontrando una representación de los datos en un espacio de menor dimensión que mantiene la estructura de similitud de los datos originales.
 La reducción de la dimensionalidad se utiliza en muchas aplicaciones, como la visualización de datos, la detección de anomalías y la clasificación de datos. Por ejemplo, en la visualización de datos, la reducción de la dimensionalidad se puede utilizar para visualizar datos de alta dimensión en dos o tres dimensiones. En la detección de anomalías, la reducción de la dimensionalidad se puede utilizar para identificar patrones o grupos de datos anómalos. En la clasificación de datos, la reducción de la dimensionalidad se puede utilizar para mejorar la precisión de los modelos al reducir la complejidad del conjunto de datos.
 \\\\
-Sin embargo, es importante tener en cuenta que la reducción de la dimensionalidad también puede tener algunas limitaciones. Por ejemplo, puede perder información importante durante el proceso de reducción de la dimensionalidad. Además, algunos algoritmos pueden ser sensibles a los valores atípicos o pueden ser difíciles de interpretar. [7]
+Sin embargo, es importante tener en cuenta que la reducción de la dimensionalidad también puede tener algunas limitaciones. Por ejemplo, puede perder información importante durante el proceso de reducción de la dimensionalidad. Además, algunos algoritmos pueden ser sensibles a los valores atípicos o pueden ser difíciles de interpretar. \cite{benitez2018inteligencia}
 
-\subsubsection{ASOCIACIÓN}
-\medskip
-La asociación se utiliza para encontrar patrones interesantes en conjuntos de datos grandes y complejos, para descubrir relaciones entre variables en los datos y, a menudo, se utiliza en el análisis de transacciones, como el análisis de cestas de la compra, el análisis de clics de página web y el análisis de registros de transacciones financieras.
-La asociación se basa en el concepto de que los elementos en un conjunto de datos pueden estar relacionados de alguna manera. Por ejemplo, en el análisis de cestas de la compra, es posible que los clientes que compran leche también compren pan y huevos. La asociación se utiliza para encontrar patrones como este en los datos.
-\\\\
-Un algoritmo popular de asociación es el algoritmo Apriori. El algoritmo Apriori se utiliza para encontrar conjuntos de elementos frecuentes en un conjunto de datos. Un conjunto de elementos es frecuente si aparece con frecuencia en el conjunto de datos. El algoritmo Apriori utiliza la propiedad de que cualquier subconjunto de un conjunto frecuente también es frecuente. El algoritmo comienza encontrando los conjuntos de elementos de un solo elemento más frecuentes, luego encuentra los conjuntos de elementos de dos elementos más frecuentes, y así sucesivamente.
-Otro algoritmo popular de asociación es el algoritmo FP-Growth. El algoritmo FP-Growth utiliza una estructura de árbol llamada árbol FP para encontrar conjuntos de elementos frecuentes. El árbol FP almacena los conjuntos de elementos frecuentes y sus frecuencias de manera eficiente, lo que permite que el algoritmo sea mucho más rápido que el algoritmo Apriori para conjuntos de datos grandes.
-\\\\
-La asociación se utiliza en muchas aplicaciones, como la recomendación de productos, la segmentación de clientes y la detección de fraudes. Por ejemplo, en la recomendación de productos, la asociación se puede utilizar para recomendar productos relacionados con los que el cliente ya ha comprado. En la segmentación de clientes, la asociación se puede utilizar para identificar grupos de clientes que tienen patrones de compra similares. En la detección de fraudes, la asociación se puede utilizar para identificar patrones de transacciones sospechosos, como un cliente que compra varios artículos caros en un corto período de tiempo.
-
-\bigskip
-\subsection{APRENDIZAJE POR REFUERZO}
-\bigskip
-El aprendizaje por refuerzo es una técnica de aprendizaje automático que se basa en el concepto de que un agente debe aprender a tomar decisiones óptimas en un entorno determinado para maximizar una recompensa acumulativa. En el aprendizaje por refuerzo, el agente recibe información del entorno en forma de recompensas y castigos y debe aprender a seleccionar acciones que maximicen la recompensa a largo plazo.
-El agente toma una acción en un estado particular y el entorno responde con una recompensa. El objetivo del agente es aprender una política que le permita maximizar la recompensa acumulativa en el largo plazo. La política es una función que mapea estados a acciones y puede ser aprendida utilizando técnicas de aprendizaje por refuerzo.
-\\\\
-Un algoritmo popular de aprendizaje por refuerzo es el algoritmo Q-Learning. En Q-Learning, el agente aprende una función Q que le permite evaluar la calidad de una acción en un estado particular. La función Q se puede utilizar para seleccionar la mejor acción en un estado determinado y el algoritmo Q-Learning utiliza una técnica llamada exploración, explotación para equilibrar el aprendizaje de nuevas acciones y la selección de acciones que se sabe que son buenas.
-El aprendizaje por refuerzo se utiliza en muchas aplicaciones, como los juegos, la robótica y la optimización de procesos. Por ejemplo, en los juegos, el aprendizaje por refuerzo se puede utilizar para crear agentes que aprendan a jugar juegos complejos, como el ajedrez y el Go, en la robótica, el aprendizaje por refuerzo se puede utilizar para crear robots que aprendan a realizar tareas complejas, como caminar y manipular objetos y en la optimización de procesos, el aprendizaje por refuerzo se puede utilizar para crear sistemas que aprendan a optimizar procesos, como la producción de energía y la gestión de inventarios.
+%\subsubsection{ASOCIACIÓN}
+%\medskip
+%La asociación se utiliza para encontrar patrones interesantes en conjuntos de datos grandes y complejos, para descubrir relaciones entre variables en los datos y, a menudo, se utiliza en el análisis de transacciones, como el análisis de cestas de la compra, el análisis de clics de página web y el análisis de registros de transacciones financieras.
+%La asociación se basa en el concepto de que los elementos en un conjunto de datos pueden estar relacionados de alguna manera. Por ejemplo, en el análisis de cestas de la compra, es posible que los clientes que compran leche también compren pan y huevos. La asociación se utiliza para encontrar patrones como este en los datos.
+%\\\\
+%Un algoritmo popular de asociación es el algoritmo Apriori. El algoritmo Apriori se utiliza para encontrar conjuntos de elementos frecuentes en un conjunto de datos. Un conjunto de elementos es frecuente si aparece con frecuencia en el conjunto de datos. El algoritmo Apriori utiliza la propiedad de que cualquier subconjunto de un conjunto frecuente también es frecuente. El algoritmo comienza encontrando los conjuntos de elementos de un solo elemento más frecuentes, luego encuentra los conjuntos de elementos de dos elementos más frecuentes, y así sucesivamente.
+%Otro algoritmo popular de asociación es el algoritmo FP-Growth. El algoritmo FP-Growth utiliza una estructura de árbol llamada árbol FP para encontrar conjuntos de elementos frecuentes. El árbol FP almacena los conjuntos de elementos frecuentes y sus frecuencias de manera eficiente, lo que permite que el algoritmo sea mucho más rápido que el algoritmo Apriori para conjuntos de datos grandes.
+%\\\\
+%La asociación se utiliza en muchas aplicaciones, como la recomendación de productos, la segmentación de clientes y la detección de fraudes. Por ejemplo, en la recomendación de productos, la asociación se puede utilizar para recomendar productos relacionados con los que el cliente ya ha comprado. En la segmentación de clientes, la asociación se puede utilizar para identificar grupos de clientes que tienen patrones de compra similares. En la detección de fraudes, la asociación se puede utilizar para identificar patrones de transacciones sospechosos, como un cliente que compra varios artículos caros en un corto período de tiempo.
+%
+%\bigskip
+%\subsection{APRENDIZAJE POR REFUERZO}
+%\bigskip
+%El aprendizaje por refuerzo es una técnica de aprendizaje automático que se basa en el concepto de que un agente debe aprender a tomar decisiones óptimas en un entorno determinado para maximizar una recompensa acumulativa. En el aprendizaje por refuerzo, el agente recibe información del entorno en forma de recompensas y castigos y debe aprender a seleccionar acciones que maximicen la recompensa a largo plazo.
+%El agente toma una acción en un estado particular y el entorno responde con una recompensa. El objetivo del agente es aprender una política que le permita maximizar la recompensa acumulativa en el largo plazo. La política es una función que mapea estados a acciones y puede ser aprendida utilizando técnicas de aprendizaje por refuerzo.
+%\\\\
+%Un algoritmo popular de aprendizaje por refuerzo es el algoritmo Q-Learning. En Q-Learning, el agente aprende una función Q que le permite evaluar la calidad de una acción en un estado particular. La función Q se puede utilizar para seleccionar la mejor acción en un estado determinado y el algoritmo Q-Learning utiliza una técnica llamada exploración, explotación para equilibrar el aprendizaje de nuevas acciones y la selección de acciones que se sabe que son buenas.
+%El aprendizaje por refuerzo se utiliza en muchas aplicaciones, como los juegos, la robótica y la optimización de procesos. Por ejemplo, en los juegos, el aprendizaje por refuerzo se puede utilizar para crear agentes que aprendan a jugar juegos complejos, como el ajedrez y el Go, en la robótica, el aprendizaje por refuerzo se puede utilizar para crear robots que aprendan a realizar tareas complejas, como caminar y manipular objetos y en la optimización de procesos, el aprendizaje por refuerzo se puede utilizar para crear sistemas que aprendan a optimizar procesos, como la producción de energía y la gestión de inventarios.
 
 %\bigskip
 %\subsection{REDES NEURONALES}
@@ -512,7 +518,7 @@ El aprendizaje por refuerzo se utiliza en muchas aplicaciones, como los juegos, 
 \subsection{SERIES TEMPORALES}
 \bigskip
 Una serie temporal es una colección de datos de una variable recogidas secuencialmente en el tiempo, estos datos de series temporales siguen intervalos de tiempo periódicos que se midieron en intervalos de tiempo regulares o se recopilaron en intervalos de tiempo particulares. Estos datos se suelen recoger en instantes de tiempo equiespaciados, si los datos se recogen en instantes temporales de forma continua, se debe o bien digitalizar la serie, es decir, recoger sólo los valores en instantes de tiempo equiespaciados, o bien acumular los valores sobre intervalos de tiempo.\\ 
-Los datos de series temporales siguen intervalos de tiempo periódicos que se midieron en intervalos de tiempo regulares o se recopilaron en intervalos de tiempo particulares. En decir una serie temporal es simplemente una serie de puntos de datos ordenados en el tiempo, y el análisis de series temporales es el proceso de dar sentido a dichos datos. [16]
+Los datos de series temporales siguen intervalos de tiempo periódicos que se midieron en intervalos de tiempo regulares o se recopilaron en intervalos de tiempo particulares. En decir una serie temporal es simplemente una serie de puntos de datos ordenados en el tiempo, y el análisis de series temporales es el proceso de dar sentido a dichos datos. \cite{seriestemp}
 \\\\
 Las series temporales pueden ser descompuestas en varios componentes, que ayudan a entender mejor la estructura de los datos y a modelarlos de manera adecuada. Los componentes comunes de una serie temporal son los siguientes:
 \begin{itemize}
@@ -527,7 +533,7 @@ La descomposición de una serie temporal en estos componentes se puede hacer util
 \subsubsection{FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}
 \medskip
 Es un modelo de pronóstico de series temporales que utiliza un enfoque recursivo para predecir valores futuros, se basa en la idea de que los valores futuros de una serie temporal están altamente correlacionados con sus valores pasados, y se puede utilizar esta relación para predecir valores futuros de manera recursiva.
-El modelo RAF se compone de dos partes principales: la primera parte es un modelo autorregresivo (AR) que estima la relación entre los valores pasados de la serie temporal y su valor actual, mientras que la segunda parte es una función recursiva que utiliza el modelo AR para predecir valores futuros de manera recursiva. [18]\\ 
+El modelo RAF se compone de dos partes principales: la primera parte es un modelo autorregresivo (AR) que estima la relación entre los valores pasados de la serie temporal y su valor actual, mientras que la segunda parte es una función recursiva que utiliza el modelo AR para predecir valores futuros de manera recursiva. \cite{RFR} \\ 
 El modelo AR se basa en la idea de que el valor actual de la serie temporal está relacionado linealmente con sus valores pasados, y se puede modelar mediante una ecuación matemática. La ecuación AR se puede escribir como:
 \begin{equation}
 y_t = c + \sum\limits_{i=1}^{n} \varphi_i \cdot y_{t-i} + e_t
@@ -592,14 +598,15 @@ El modelo RAF se puede utilizar para pronosticar diferentes horizontes de pronós
 El aprendizaje automático ha experimentado un gran avance en las últimas décadas gracias al aumento de la cantidad y calidad de datos disponibles y a la mejora de los algoritmos uno de los más importante ha sido el desarrollo de algoritmos de aprendizaje semi-supervisado, redes neuronales y de transferencia de aprendizaje, que permiten entrenar modelos con conjuntos de datos más pequeños y reducir el tiempo y los costos de entrenamiento. Estos enfoques son especialmente útiles en áreas donde la recopilación de datos es costosa o difícil, como en la medicina (enfermedades, pandemias, etc.) o la astronomía.
 Desde que el COVID-19 comenzó a propagarse por todo el mundo, se han desarrollado una variedad de modelos de predicción para ayudar a los responsables de la toma de decisiones a entender mejor la propagación del virus y tomar decisiones informadas para proteger a la población. Estos estudios han surgido de diferentes áreas como lo son: Modelos epidemiológicos que se basan en la teoría de la propagación de enfermedades y utilizan datos de casos confirmados, fallecimientos, y otros factores como la edad, el género y las comorbilidades para predecir la propagación futura del virus, los modelos epidemiológicos más comunes son SIR (Susceptible-Infectado-Recuperado) y SEIR (Susceptible-Expuesto-Infectado-Recuperado); modelos de aprendizaje automático que utilizan algoritmos para analizar datos y hacer predicciones basadas en patrones; los modelos basados en la movilidad que utilizan datos de movilidad de los teléfonos móviles y otros dispositivos para predecir la propagación del COVID-19; entre otros. Haciendo un examen más profundo en el área de interés de este trabajo se encuentran investigaciones bastante interesantes detalladas a continuación: 
 \begin{itemize}
-\item \textbf{Modelos basados en series de tiempo:} Estos modelos utilizan datos históricos del COVID-19 para predecir la propagación futura de la enfermedad. Un ejemplo es el modelo ARIMA (Autoregressive Integrated Moving Average) que se ha utilizado para predecir la propagación del COVID-19 en varios países [20].
-\item \textbf{Modelos basados en redes neuronales:} Las redes neuronales son capaces de aprender patrones complejos en los datos y han sido utilizadas para predecir la propagación del COVID-19. Por ejemplo, el modelo LSTM (Long Short-Term Memory) ha sido utilizado para predecir el número de casos confirmados en Canada, Estados Unidos e Italia [21]. \href{https://doi.org/10.1016/j.chaos.2020.109864}{Time series forecasting of COVID-19 using LSTM networks}
-\item \textbf{Modelos basados en análisis de redes:} Estos modelos utilizan técnicas de análisis de redes para modelar la propagación del COVID-19. Un ejemplo es el modelo SEIR (Susceptible-Exposed-Infected-Recovered) que modela la propagación del virus como una red de interacciones entre individuos [22]. Los autores utilizaron datos públicos de COVID-19 en Jordania para calibrar y validar el modelo. Luego, el modelo se utilizó para predecir la propagación del virus bajo diferentes escenarios de intervención, como el cierre de escuelas, el cierre de negocios y la cuarentena de casos sospechosos y confirmados. Los resultados del estudio muestran que el modelo puede predecir con precisión la propagación del COVID-19 en Jordania bajo diferentes escenarios de intervención. Los autores también encontraron que el cierre de escuelas y negocios, junto con la cuarentena de casos sospechosos y confirmados, puede reducir significativamente la propagación del virus en Jordania.
-\item \textbf{Modelos basados en aprendizaje automático:} Los modelos de aprendizaje automático utilizan técnicas de machine learning para predecir la propagación del COVID-19. Un ejemplo es el modelo XGBoost que ha sido utilizado para predecir la propagación del virus en varios países [23]. Este propone un nuevo enfoque híbrido de aprendizaje profundo (DL) para estimar los patrones de transmisión de COVID-19 en Corea del Sur. El marco propuesto combina el aprendizaje profundo con el modelo de meta población susceptible-expuesto-infectado-recuperado (SEIR). Para mostrar su eficacia, el marco híbrido de aprendizaje profundo se comparó con el modelo de memoria a corto plazo (LSTM) y el modelo general de red neuronal profunda (DNN) para pronosticar patrones epidémicos en Corea del Sur en función del mismo conjunto de datos. El análisis numérico demostró que el marco híbrido de aprendizaje profundo que utiliza el modelo de meta población y el modelo LSTM exhibe el mejor rendimiento entre los métodos de prueba. 
+\item \textbf{Modelos basados en series de tiempo:} Estos modelos utilizan datos históricos del COVID-19 para predecir la propagación futura de la enfermedad. Un ejemplo es el modelo ARIMA (Autoregressive Integrated Moving Average) que se ha utilizado para predecir la propagación del COVID-19 en varios países.\\
+En donde los casos infectados, el número de muertes y los casos recuperados se pronostican con la media móvil integrada autorregresiva (ARIMA). Las técnicas se comparan en términos de coeficiente de correlación y error cuadrático medio (MSE), los autores encontraron que el modelo ARIMA tuvo una buena capacidad de predicción en los primeros días de la epidemia en China, pero la precisión disminuyó a medida que se acumularon más datos, esto debido a que se introdujeron diferentes factores que aumentaron la complejidad y la incertidumbre (medidas de control y prevención). \cite{touga2021covid}
+\item \textbf{Modelos basados en redes neuronales:} Las redes neuronales son capaces de aprender patrones complejos en los datos y han sido utilizadas para predecir la propagación del COVID-19. Por ejemplo, el modelo LSTM (Long Short-Term Memory) ha sido utilizado para predecir el número de casos confirmados en Canada, Estados Unidos e Italia. \cite{chimmula2020time}
+\item \textbf{Modelos basados en análisis de redes:} Estos modelos utilizan técnicas de análisis de redes para modelar la propagación del COVID-19. Un ejemplo es el modelo SEIR (Susceptible-Exposed-Infected-Recovered) que modela la propagación del virus como una red de interacciones entre individuos \cite{chen2020covid}. Los autores utilizaron datos públicos de COVID-19 en Jordania para calibrar y validar el modelo. Luego, el modelo se utilizó para predecir la propagación del virus bajo diferentes escenarios de intervención, como el cierre de escuelas, el cierre de negocios y la cuarentena de casos sospechosos y confirmados. Los resultados del estudio muestran que el modelo puede predecir con precisión la propagación del COVID-19 en Jordania bajo diferentes escenarios de intervención. Los autores también encontraron que el cierre de escuelas y negocios, junto con la cuarentena de casos sospechosos y confirmados, puede reducir significativamente la propagación del virus en Jordania.
+\item \textbf{Modelos basados en aprendizaje automático:} Los modelos de aprendizaje automático utilizan técnicas de machine learning para predecir la propagación del COVID-19. Un ejemplo es el modelo XGBoost que ha sido utilizado para predecir la propagación del virus en varios países \cite{sakly2023artificial}. Este propone un nuevo enfoque híbrido de aprendizaje profundo (DL) para estimar los patrones de transmisión de COVID-19 en Corea del Sur. El marco propuesto combina el aprendizaje profundo con el modelo de meta población susceptible-expuesto-infectado-recuperado (SEIR). Para mostrar su eficacia, el marco híbrido de aprendizaje profundo se comparó con el modelo de memoria a corto plazo (LSTM) y el modelo general de red neuronal profunda (DNN) para pronosticar patrones epidémicos en Corea del Sur en función del mismo conjunto de datos. El análisis numérico demostró que el marco híbrido de aprendizaje profundo que utiliza el modelo de meta población y el modelo LSTM exhibe el mejor rendimiento entre los métodos de prueba. 
 \end{itemize}
-Fuera de los ejemplos expuestos anteriormente sobresale el proyecto \textbf{COVID-19 Projections} de Estados Unidos, que utiliza técnicas de aprendizaje automático para predecir la propagación del COVID-19 en línea (\url{https://covid19-projections.com/}) y se actualiza regularmente con nuevos datos. Este proyecto está desarrollado un simulador basado en el modelo \href{https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model}{SEIR} para simular la epidemia de COVID-19 en cada región. Luego, los parámetros/entradas de este simulador se aprenden mediante técnicas de aprendizaje automático que intentan minimizar el error entre las salidas proyectadas y los resultados reales. Utiliza los datos diarios de muertes informados por cada región para pronosticar futuras muertes informadas. Después de algunas técnicas de validación adicionales (para minimizar un fenómeno llamado sobreajuste), se usa los parámetros aprendidos para simular el futuro y hacer proyecciones.
+Fuera de los ejemplos expuestos anteriormente sobresale el proyecto \textbf{COVID-19 Projections} de Estados Unidos, que utiliza técnicas de aprendizaje automático para predecir la propagación del COVID-19 en línea \cite{COVID-19-Projections} y se actualiza regularmente con nuevos datos. Este proyecto está desarrollado un simulador basado en el modelo SEIR \cite{he2020seir}, para simular la epidemia de COVID-19 en cada región. Luego, los parámetros/entradas de este simulador se aprenden mediante técnicas de aprendizaje automático que intentan minimizar el error entre las salidas proyectadas y los resultados reales. Utiliza los datos diarios de muertes informados por cada región para pronosticar futuras muertes informadas. Después de algunas técnicas de validación adicionales (para minimizar un fenómeno llamado sobreajuste), se usa los parámetros aprendidos para simular el futuro y hacer proyecciones.
 \\\\
-Este modelo SEIR es de \href{https://github.com/youyanggu/yyg-seir-simulator}{código abierto} . Las proyecciones se cargan diariamente en \href{https://github.com/youyanggu/covid19_projections/tree/master/projections}{GitHub}. El objetivo de este proyecto es mostrar las fortalezas de la inteligencia artificial para abordar uno de los problemas más difíciles del mundo: predecir la trayectoria de una pandemia. En donde se utiliza un enfoque basado en datos puros al dejar que la máquina aprenda. Actualmente esta haciendo proyecciones para: Estados Unidos, los 50 estados de EE. UU. (más DC, PR, VI, GU, MP) y 70 países (incluidos los 27 países de la UE). Combinados, estos 71 países representan más del 95\% de todas las muertes globales por COVID-19.
+Este modelo SEIR es de código abierto \cite{modeloseir}. Las proyecciones se cargan diariamente en GitHub \cite{proyeciones}. El objetivo de este proyecto es mostrar las fortalezas de la inteligencia artificial para abordar uno de los problemas más difíciles del mundo: predecir la trayectoria de una pandemia. En donde se utiliza un enfoque basado en datos puros al dejar que la máquina aprenda. Actualmente esta haciendo proyecciones para: Estados Unidos, los 50 estados de EE. UU. (más DC, PR, VI, GU, MP) y 70 países (incluidos los 27 países de la UE). Combinados, estos 71 países representan más del 95\% de todas las muertes globales por COVID-19.
 \\\\
 Sin duda hay una gran variedad de estudios, artículos y publicaciones que tratan los factores principales en la propagación del covid-19, pero se ha dejado de lado el estudio sobre otros factores que podrían influir en la propagación, como lo es el factor climático; centro de estudio de este trabajo. 
 
@@ -607,16 +614,16 @@ Sin duda hay una gran variedad de estudios, artículos y publicaciones que tratan
 \begin{center}
 \section{DESARROLLO DEL PROYECTO Y RESULTADOS}
 \end{center}
-Para el desarrollo del proyecto se utilizó la metodología KDD (Knowledge Discovery in Databases) en los distintos orígenes de datos, el objetivo de es crear un set de datos refinado a partir de todos los orígenes y a partir de este extraer conocimiento a través de los modelos creados para darle una solución al planteamiento del problema. Se realizará un análisis sobre los resultados obtenidos y las posibles mejoras en trabajos futuros.
+Para el desarrollo del proyecto se utilizó la metodología KDD (Knowledge Discovery in Databases) ya que proporciona una estructura sistemática para la extracción de conocimiento a partir de los datos para darle una solución al planteamiento del problema. Se realizará un análisis sobre los resultados obtenidos y las posibles mejoras en trabajos futuros.
 \\\\
-Todo el desarrollo del proyecto se realizará en lenguaje Python, a partir de notebooks de Jupyter, en estos se encontrará el desarrollo de todas las etapas del proceso de KDD y el porque se toman ciertas decisiones. Basado en los resultados de los notebooks se crean archivos .py con algunas etapas para realizar una CI/CD. Las fuentes de datos, los notebooks con los análisis de cada etapa y los archivos .py para la automatización de todo el flujo se encuentra en el repositorio personal para este TFM, a su vez se encontrará el código fuente de LaTeX el cual se desarrolló el presente documento: 
-\href{https://github.com/Danilo0221/TFM}{REPOSITORIO TFM}
+Todo el desarrollo del proyecto se realizará en lenguaje de programación Python, a partir de notebooks de Jupyter, en estos se encontrará el desarrollo de todas las etapas del proceso de KDD y el porque se toman ciertas decisiones. Basado en los resultados de los notebooks se crean archivos .py con algunas etapas para realizar una CI/CD. Las fuentes de datos, los notebooks con los análisis de cada etapa y los archivos .py para la automatización de todo el flujo se encuentra en el repositorio personal para este TFM, a su vez se encontrará el código fuente de LaTeX el cual se desarrolló el presente documento: 
+\href{https://github.com/Danilo0221/TFM}{REPOSITORIO TFM.}
 
 
 \bigskip
 \subsection{METODOLOGÍA}
 \medskip
-KDD (Knowledge Discovery in Databases), o Descubrimiento de Conocimiento en Bases de Datos, es un proceso integral que implica la identificación, extracción y transformación de patrones y conocimientos valiosos a partir de grandes conjuntos de datos. Es una disciplina que combina el uso de técnicas de minería de datos, estadísticas, aprendizaje automático y bases de datos para descubrir información útil y conocimientos ocultos en datos no estructurados o estructurados.
+KDD (Knowledge Discovery in Databases), o Descubrimiento de Conocimiento en Bases de Datos, es un proceso integral que implica la identificación, extracción y transformación de patrones y conocimientos valiosos a partir de grandes conjuntos de datos. Es una disciplina que combina el uso de técnicas de minería de datos, estadísticas, aprendizaje automático y bases de datos para descubrir información útil y conocimientos ocultos en datos no estructurados o estructurados. \cite{fayyad1996data}
 \\
 \begin{figure}[H]
 	\begin{center}
@@ -638,9 +645,9 @@ El proceso de KDD consta de varias etapas, que incluyen:
 \bigskip
 \subsection{PLANTEAMIENTO DEL PROBLEMA}
 \medskip
-El COVID-19 es una enfermedad infecciosa altamente contagiosa que ha afectado a millones de personas en todo el mundo y ha causado la muerte de cientos de miles de personas. Si bien se sabe que la propagación del virus se produce principalmente por contacto cercano con personas infectadas, también hay evidencia emergente que sugiere que las condiciones climáticas como la temperatura, la humedad y la luz solar, pueden influir en la propagación del virus.  Un modelo de machine learning puede ser una herramienta útil para evaluar la relación entre las condiciones climáticas y la propagación del COVID-19. El objetivo de este planteamiento del problema es desarrollar un modelo de machine learning que pueda predecir la propagación del virus en función de factores climáticos como la temperatura, la humedad y la luz solar.
+El COVID-19 es una enfermedad infecciosa altamente contagiosa que ha afectado a millones de personas en todo el mundo y ha causado la muerte de cientos de miles de personas. Si bien se sabe que la propagación del virus se produce principalmente por contacto cercano con personas infectadas, también hay evidencia emergente que sugiere que las condiciones climáticas como la temperatura, la humedad y la luz solar, pueden influir en la propagación del virus.  Un modelo de machine learning puede ser una herramienta útil para evaluar la relación entre las condiciones climáticas y la propagación del COVID-19. El objetivo de este planteamiento del problema es obtener valor y conocimiento a través de los datos mediante modelos de machine learning, que pueda mitigar o encontrar patrones de propagación del virus en función de factores climáticos como la temperatura, la humedad y la luz solar.
 \\
-El modelo podría utilizar datos históricos sobre la propagación del virus y las condiciones climáticas para predecir la propagación futura del virus en diferentes condiciones climáticas o más específicamente dependiendo del modelo utilizado a groso modo se podrían utilizar de la siguiente forma:
+El modelo se entrenaría con datos históricos sobre la propagación del virus y las condiciones climáticas para predecir la propagación futura del virus en diferentes condiciones climáticas o más específicamente dependiendo del modelo utilizado una propuesta sería de la siguiente forma:
 \\
 \begin{itemize}
 \item \textbf{Modelo de regresión:} Utilizando datos históricos de propagación del virus y condiciones climáticas para predecir la propagación futura del virus. El modelo puede incluir variables relacionadas con la propagación del virus, como el número de casos confirmados y la tasa de reproducción.
@@ -649,7 +656,7 @@ El modelo podría utilizar datos históricos sobre la propagación del virus y las 
 \item  \textbf{Modelos de aprendizaje profundo:} Si tenemos datos de satélite y mapas climáticos para predecir la propagación del virus. Estos modelos pueden integrar datos climáticos con información sobre la densidad de población y la movilidad humana para predecir cómo se propagará el virus en diferentes áreas geográficas.
 \end{itemize}
 \bigskip
-Lo anterior es solo un bosquejo de un posible uso de cada tipo de modelo, conforme vayamos avanzando en nuestra investigación determinaremos cuál es el modelo que más se ajusta a nuestro requerimiento o que obtenga mejores resultados basado en sus métricas, el resultado de esto podría ayudar a informar la toma de decisiones sobre políticas de salud pública y permitir a las autoridades sanitarias tomar medidas preventivas antes de que se produzca un aumento en los casos de COVID-19.
+Lo anterior es solo un bosquejo de un posible uso de cada tipo de modelo, conforme vayamos avanzando y en base a la investigación realizada determinaremos cuál es el modelo que más se ajusta a nuestro requerimiento o que obtenga mejores resultados basado en sus métricas, el resultado de esto podría ayudar a informar la toma de decisiones sobre políticas de salud pública y permitir a las autoridades sanitarias tomar medidas preventivas antes de que se produzca un aumento en los casos de COVID-19.
 Al responder a esta pregunta, se pueden desarrollar mejores estrategias de prevención y mitigación para el COVID-19, y se pueden aplicar los hallazgos a futuras pandemias y enfermedades infecciosas.
 
 \bigskip
@@ -662,7 +669,7 @@ Para la ejecución del proyecto se utilizaron distintas fuentes de datos las cual
 \begin{itemize}
 \item \textbf{Datos casos COVID-19 por provincias} 
 \\\\
-Los resultados que se presentan se obtienen a partir de la declaración de los casos de COVID-19 a la Red Nacional de Vigilancia Epidemiológica (RENAVE) a través de la plataforma informática vía Web SiViES (Sistema de Vigilancia de España) que gestiona el Centro Nacional de Epidemiología (CNE). Esta información procede de la encuesta epidemiológica de caso que cada Comunidad Autónoma cumplimenta ante la identificación de un caso de COVID-19. Datos oficiales disponibles en el sitio web: \url{https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos}
+Los resultados que se presentan se obtienen a partir de la declaración de los casos de COVID-19 a la Red Nacional de Vigilancia Epidemiológica (RENAVE) a través de la plataforma informática vía Web SiViES (Sistema de Vigilancia de España) que gestiona el Centro Nacional de Epidemiología (CNE). Esta información procede de la encuesta epidemiológica de caso que cada Comunidad Autónoma cumplimenta ante la identificación de un caso de COVID-19. Datos oficiales disponibles en el sitio web. \cite{cnecovid}
 \\
 Se utilizan los siguientes sets de datos:
 \\\\
@@ -696,7 +703,7 @@ Archivo de elaboración propia que contiene el nombre de la provincia y el corres
 
 \item \textbf{Datos climatológicos por provincia}
 \\\\
-Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la \href{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}{Ley 18/2015, de 9 de julio}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data en el siguiente sitio web: \url{https://opendata.aemet.es/centrodedescargas/productosAEMET}. 
+Los datos climatológicos son diarios por provincia, estos datos oficiales fueron extraídos desde el portal datos abiertos de AEMET, que permite la difusión y la reutilización de la información meteorológica y climatológica de la Agencia, en el sentido indicado en la Ley 18/2015, de 9 de julio \cite{Ley18}, por la que se modifica la Ley 37/2007, de 16 de noviembre, sobre reutilización de la información del sector público. Para poder acceder a AEMET OpenData, es necesario solicitar una API Key (https://opendata.aemet.es/centrodedescargas/altaUsuario?). Una API Key es un identificador, mediante el cual se contabilizan e imputan los accesos que un usuario realiza al API. Mediante el API KEY solicitado se obtiene la data. \cite{opendata} 
 %La información viene en un archivo .json por provincia, teniendo así 52 archivos .json con la información climatológica diaria correspondiente. 
 \newpage
 \begin{table}[H]
@@ -755,7 +762,7 @@ Los datos climatológicos son diarios por provincia, estos datos oficiales fueron
 
 \item \textbf{Datos población por provincia}
 \\\\
-Los datos anuales demográficos por provincia fueron extraídos desde el instituto nacional de estadística de España, mediante el sitio web: \url{https://www.ine.es/jaxi/Datos.htm?path=/t20/e245/p08/l0/&file=03003.px#!tabs-tabla}, esta fuente de datos es necesaria para realizar una normalización de los casos de covid-19 por provincia o lo que llamamos la tasa de incidencia.
+Los datos anuales demográficos por provincia fueron extraídos desde el instituto nacional de estadística de España \cite{ine}, esta fuente de datos es necesaria para realizar una normalización de los casos de covid-19 por provincia o lo que llamamos la tasa de incidencia.
 \begin{table}[H]
   \centering
    \textbf{\caption{{\small Población anual desde 1998 por provincia. \label{tb:Tablepoblaprov}}}}       
@@ -789,27 +796,56 @@ Para cada una de las fuentes de datos se realiza el procesamiento de su informac
 \begin{itemize}
 \item \textbf{Datos casos COVID-19 por provincias}
 \\\\
-Ambos sets de datos de covid-19 por provincia cuenta con 8 columnas con los mismos nombres que fueron descritas en el apartado anterior. Se realiza la unión de ambos set de datos (\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv} y \\ \textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv}), ya que la única diferencia entre estos dos es el rango de edad que presenta en una de sus variables. Se realiza un perfilamiento de los datos mediante la librería de \href{https://pypi.org/project/pandas-profiling/}{pandas\_profiling} el cual a partir de un dataframe de pandas genera el perfilamiento de la data en el siguiente archivo \href{https://htmlpreview.github.io/?https://github.com/Danilo0221/TFM/blob/main/DataCleaning/df_covid_prof.html}{df\_covid\_prof.html}.\\
-Realizamos un análisis de la cantidad de nulos en todas sus variables mediante un heatmap.
-
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=1\textwidth]{heatmap_covid}
-		\textbf{\caption{{\small Headmap variables dataset covid-19.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
-
-Del gráfico anterior observamos que no se evidencian nulos, pero es una medida cualitativa ya que por la cantidad de datos pueda que haya muy pocos y no se evidencien, por lo que se procede a hacer una lista de porcentaje de valores nulos:
-
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.3\textwidth]{list_nulos_covid}
-		\textbf{\caption{{\small Porcentaje de nulos dataset covid-19.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
-Los estadísticos obtenidos para el dataset se representan en la siguiente imagen:
+Ambos sets de datos de covid-19 por provincia cuenta con 8 columnas con los mismos nombres que fueron descritas en el apartado anterior. Se realiza la unión de ambos set de datos (\textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres.csv} y \\ \textit{casos\_hosp\_uci\_def\_sexo\_edad\_provres\_60\_mas.csv}), ya que la única diferencia entre estos dos es el rango de edad que presenta en una de sus variables. Se realiza un perfilamiento de los datos mediante la librería de pandas\_profiling el cual a partir de un dataframe de pandas genera el perfilamiento de la data en el siguiente archivo df\_covid\_prof.html. \cite{dfprofilcovid}\\\\
+%Realizamos un análisis de la cantidad de nulos en todas sus variables mediante un heatmap.
+%
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=1\textwidth]{heatmap_covid}
+%		\textbf{\caption{{\small Headmap variables dataset covid-19.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+%
+%Del gráfico anterior observamos que no se evidencian nulos, pero es una medida cualitativa ya que por la cantidad de datos pueda que haya muy pocos y no se evidencien, por lo que se procede a hacer una lista de porcentaje de valores nulos:
+Realizamos un análisis de la cantidad de nulos mediante una lista de porcentaje:
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.3\textwidth]{list_nulos_covid}
+%		\textbf{\caption{{\small Porcentaje de nulos dataset covid-19.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Porcentaje de nulos dataset covid-19. \label{tb:Tablepoblaprov}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Porcentaje de nulos \\
+	\hline    
+    provincia\_iso & $0.0\%$ \\
+    \hline
+    Sexo & $0.0\%$ \\
+    \hline
+    grupo\_edad & $0.0\%$ \\
+    \hline
+    fecha & $0.0\%$ \\
+    \hline
+    num\_casos & $0.0\%$ \\
+    \hline
+    num\_hosp & $0.0\%$ \\
+    \hline
+    num\_uci & $0.0\%$ \\
+    \hline  
+    num\_def & $0.0\%$ \\
+    \hline      
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+Los estadísticos obtenidos para el dataset se representan en la siguiente tabla:
 
 %\begin{figure}[H]
 %	\begin{center}
@@ -819,64 +855,64 @@ Los estadísticos obtenidos para el dataset se representan en la siguiente imagen
 %	\end{center}
 %\end{figure}
 
-%\begin{table}[H]
-%  \centering
-%   \textbf{\caption{{\small Estadísticos dataset covid-19. \label{tb:TableEstadCovid}}}}       
-%	\renewcommand{\arraystretch}{1.2}  
-%  %{\setlength{\arrayrulewidth}{0.3mm}
-%    \begin{tabular}{|c|c|c|c|c|}
-%    \hline
-%    \rowcolor{Peach}  & \textbf{num\_casos} & \textbf{num\_hosp} & \textbf{num\_uci} & \textbf{num\_def} \\
-%	\hline    
-%    \textbf{count} & 1461210.00 & 1461210.00 & 1461210.00 & 1461210.00\\
-%    \hline
-%    \textbf{mean} & 8.74 & 0.43 & 0.04 & 0.08\\
-%    \hline
-%    \textbf{std} & 48.38 & 2.49 & 0.30 & 0.77\\
-%    \hline
-%    \textbf{min} & 0.00 & 0.00 & 0.00 & 0.00\\
-%    \hline
-%    \textbf{25 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
-%    \hline 
-%    \textbf{50 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
-%    \hline 
-%    \textbf{75 \%} & 4.00 & 0.00 & 0.00 & 0.00\\
-%    \hline
-%    \textbf{max} & 3749.00 & 271.00 & 35.00 & 100.00\\
-%    \hline     
-%    \end{tabular}
-%    \label{tab:addlabel}\\
-%  {\scriptsize Fuente: Elaboración Propia}
-%\end{table}
-
 \begin{table}[H]
   \centering
-  \textbf{\caption{{\small Estadísticos dataset covid-19.}}}
-    \begin{tabular}{c c c c c}
-    \midrule[0.7mm]
-     & \makebox[2.2cm][c]{\textbf{num\_casos}} & \makebox[2.2cm][c]{\textbf{num\_hosp}} & \makebox[3cm][c]{\textbf{num\_uci}} &  \makebox[2.2cm][c]{\textbf{num\_def}}\\
-    \midrule
-    \textbf{count} & $1461210.00$ & $1461210.00$     & $1461210.00$ & $1461210.00$\\
-    \textbf{mean} & $8.74$ &  $0.43$    & $0.04$ & $0.08$ \\
-    \textbf{std} & $48.38$ & $2.49$    &  $0.30$ & $0.77$\\
-    \textbf{min} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
-    \textbf{25\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
-    \textbf{50\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
-    \textbf{75\%} & $4.00$ & $0.00$    &  $0.00$ & $0.00$\\
-    \textbf{max} & $3749.00$ & $271.00$    &  $35.00$ & $100.00$\\
-    \bottomrule[0.7mm]
-    \end{tabular}%
-  \label{tab:addlabel}\\
-  \medskip 
-{\scriptsize Fuente: Elaboración Propia}
-\end{table}%
+   \textbf{\caption{{\small Estadísticos dataset covid-19. \label{tb:TableEstadCovid}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \rowcolor{Peach}  & \textbf{num\_casos} & \textbf{num\_hosp} & \textbf{num\_uci} & \textbf{num\_def} \\
+	\hline    
+    \textbf{count} & 1461210.00 & 1461210.00 & 1461210.00 & 1461210.00\\
+    \hline
+    \textbf{mean} & 8.74 & 0.43 & 0.04 & 0.08\\
+    \hline
+    \textbf{std} & 48.38 & 2.49 & 0.30 & 0.77\\
+    \hline
+    \textbf{min} & 0.00 & 0.00 & 0.00 & 0.00\\
+    \hline
+    \textbf{25 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
+    \hline 
+    \textbf{50 \%} & 0.00 & 0.00 & 0.00 & 0.00\\
+    \hline 
+    \textbf{75 \%} & 4.00 & 0.00 & 0.00 & 0.00\\
+    \hline
+    \textbf{max} & 3749.00 & 271.00 & 35.00 & 100.00\\
+    \hline     
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+%\begin{table}[H]
+%  \centering
+%  \textbf{\caption{{\small Estadísticos dataset covid-19.}}}
+%    \begin{tabular}{c c c c c}
+%    \midrule[0.7mm]
+%     & \makebox[2.2cm][c]{\textbf{num\_casos}} & \makebox[2.2cm][c]{\textbf{num\_hosp}} & \makebox[3cm][c]{\textbf{num\_uci}} &  \makebox[2.2cm][c]{\textbf{num\_def}}\\
+%    \midrule
+%    \textbf{count} & $1461210.00$ & $1461210.00$     & $1461210.00$ & $1461210.00$\\
+%    \textbf{mean} & $8.74$ &  $0.43$    & $0.04$ & $0.08$ \\
+%    \textbf{std} & $48.38$ & $2.49$    &  $0.30$ & $0.77$\\
+%    \textbf{min} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+%    \textbf{25\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+%    \textbf{50\%} & $0.00$ & $0.00$    &  $0.00$ & $0.00$\\
+%    \textbf{75\%} & $4.00$ & $0.00$    &  $0.00$ & $0.00$\\
+%    \textbf{max} & $3749.00$ & $271.00$    &  $35.00$ & $100.00$\\
+%    \bottomrule[0.7mm]
+%    \end{tabular}%
+%  \label{tab:addlabel}\\
+%  \medskip 
+%{\scriptsize Fuente: Elaboración Propia}
+%\end{table}%
 
 La media de \textit{num\_casos} es de 8.74 y la mediana es 0 ya que en muchas fechas diarias no se reportaron casos, la media de \textit{num\_hosp} es de 0.43 y la mediana 0, la media de \textit{num\_uci} es 0.04 y la mediana 0, por último, la media de \textit{num\_def} es de 0.08 y la mediana 0. Las variables parecen ser asimétricas a la derecha dado que su media es mayor a su mediana. 
 
 Las desviaciones típicas son bajas, la mayoría de las observaciones se encuentran dispersas a no más de una desviación estándar a cada lado.
 La imagen anterior también muestra los valores máximos y mínimos que toman cada variable objeto de estudio además de los cuartiles calculados. Los datos menores al cuartil 1 (Q1) representan el 25\% de los datos, los que están por debajo del cuartil 2 (Q2) representan el 50\% de los datos y los que están por debajo del cuartil 3 (Q3) representan el 75\% de los datos.
 
-Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{num\_hosp}, \textit{num\_uci} y \textit{num\_def} tiene una correlación positiva y fuerte entre ellas. Es de esperarse este resultado ya por lo general son consecuentes una con la otra, es decir, por ejemplo, si hubo una difusión por covid-19 es muy probable que haya estado en uci y hospitalización previamente.
+Tras realizar un análisis de correlación en la figura \textbf{\ref{tb:correla_covid}} entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{num\_hosp}, \textit{num\_uci} y \textit{num\_def} tiene una correlación positiva y fuerte entre ellas. Es de esperarse este resultado ya por lo general son consecuentes una con la otra, es decir, por ejemplo, si hubo una difusión por covid-19 es muy probable que haya estado en uci y hospitalización previamente.
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.8\textwidth]{correla_covid}
@@ -894,27 +930,81 @@ Esta fuente de datos fue de elaboración propia por lo cual se aseguro que no hub
 \item \textbf{Datos climatológicos por provincia}
 \\\\
 Se realiza la concatenación de cada uno de los archivos con la información climatológica por provincia para poder obtener un dataset completo y su respectivo análisis, comenzando por la cantidad de nulos en todas sus variables mediante un heatmap.
-\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.8\textwidth]{heatmap_clima}
-		\textbf{\caption{{\small Headmap variables dataset clima.}}}
+		\textbf{\caption{{\small Headmap variables dataset clima. \label{tb:heatmap_clima}}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
 \end{figure}
 
-El gráfico anterior muestra los patrones de datos que faltan de todas las columnas, el eje horizontal muestra el nombre del atributo de entrada; el eje vertical muestra el número de observaciones/filas; el color amarillo representa los datos que faltan, mientras que el color azul, en caso contrario. Detallamos que todas las características tienen muy pocos valores perdidos o inclusive no tienen, para tener un valor exacto hacemos una lista de porcentaje de valores nulos:
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.25\textwidth]{list_nulos_clima}
-		\textbf{\caption{{\small Porcentaje de nulos dataset clima.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
-La imputación de los valores faltantes de las variables se estableció mediante \href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html}{fillna} aplicado al dataframe por el método \textit{ffill} como primera opción, como segunda opción el método \textit{bfill}. El primer método usa la anterior observación válida para llenar el valor faltante y el segundo método usa la siguiente observación válida para llenar el valor faltante. La elección de estos métodos es debido a que son variables climatológicas, en donde el clima entre estaciones climáticas y periodos de tiempo corto son similares, la granularidad de este set de datos es diaria por lo que la imputación de valores faltantes se hará sobre el valor del día anterior o el más próximo.
+En la figura \textbf{\ref{tb:heatmap_clima}} muestra los patrones de datos que faltan de todas las columnas, el eje horizontal muestra el nombre del atributo de entrada; el eje vertical muestra el número de observaciones/filas; el color amarillo representa los datos que faltan, mientras que el color azul, en caso contrario. Detallamos que todas las características tienen muy pocos valores perdidos o inclusive no tienen, para tener un valor exacto hacemos una lista de porcentaje de valores nulos:
+\newpage
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.25\textwidth]{list_nulos_clima}
+%		\textbf{\caption{{\small Porcentaje de nulos dataset clima.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Población anual desde 1998 por provincia. \label{tb:Tablepoblaprov}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Porcentaje de nulos \\
+	\hline    
+    fecha & $0.0\%$ \\
+    \hline
+    indicativo & $0.0\%$ \\
+    \hline
+    nombre & $0.0\%$ \\
+    \hline
+    provincia & $0.0\%$ \\
+    \hline
+    altitud & $0.0\%$ \\
+    \hline
+    tmed & $0.32\%$ \\
+    \hline
+    prec & $0.31\%$ \\
+    \hline  
+    tmin & $0.32\%$ \\
+    \hline 
+    horatmin & $0.34\%$ \\
+    \hline
+    tmax & $0.30\%$ \\
+    \hline
+    horatmax & $0.32\%$ \\
+    \hline
+    dir & $1.04\%$ \\
+    \hline
+    velmedia & $0.71\%$ \\
+    \hline
+    racha & $1.04\%$ \\
+    \hline
+    horaracha & $1.05\%$ \\
+    \hline
+    presMax & $0.41\%$ \\
+    \hline
+    horaPresMax & $0.42\%$ \\
+    \hline 
+    presMin & $0.41\%$ \\
+    \hline
+    horaPresMin & $0.43\%$ \\
+    \hline 
+    sol & $2.36\%$ \\
+    \hline 
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+La imputación de los valores faltantes de las variables se estableció mediante fillna aplicado al dataframe por el método \textit{ffill} como primera opción, como segunda opción el método \textit{bfill}. El primer método usa la anterior observación válida para llenar el valor faltante y el segundo método usa la siguiente observación válida para llenar el valor faltante. La elección de estos métodos es debido a que son variables climatológicas, en donde el clima entre estaciones climáticas y periodos de tiempo corto son similares, la granularidad de este set de datos es diaria por lo que la imputación de valores faltantes se hará sobre el valor del día anterior o el más próximo.
 Se elimina las variables indicativo y nombre, ya que estás hacen referencia netamente a la información de la estación meteorológica en donde se obtuvieron los datos, esta información no aporta a nuestro estudio.
 
-Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{PREX\_MAX} y \textit{PREX\_MIN} tiene una correlación positiva y fuerte entre ellas; así como las variables \textit{TEMP\_MIN}, \textit{TEMP\_MAX} y \textit{TEMP\_MED} tienen una correlación positiva alta. 
+Tras realizar un análisis de correlación entre sus variables de estudio del conjunto de datos se evidencia en la siguiente gráfica que las variables \textit{PREX\_MAX} y \textit{PREX\_MIN} tiene una correlación positiva y fuerte entre ellas; así como las variables \textit{TEMP\_MIN}, \textit{TEMP\_MAX} y \textit{TEMP\_MED} tienen una correlación positiva alta.
+\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.85\textwidth]{correla_clima}
@@ -922,10 +1012,10 @@ Tras realizar un análisis de correlación entre sus variables de estudio del conj
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
 \end{figure}
-Se realizo un análisis de outliers por medio de boxplots para cada una de las variables, así como la distribución de los valores de las variables categóricas para identificar valores atípicos, se encontraron valores alejados de la media y poco comunes, pero son valores climatológicos posibles por esta razón para ningún caso se haya evidencia de outliers. Para evitar que existan palabras distintas y que simbolicen el mismo significado solo por el hecho de estar en minúscula o mayúsculas, para todas las variables tipo string las pasaremos a mayúscula, ya que por defecto todas viene así, también eliminaremos los espacios al principio y al final.
+Se realizó un análisis de outliers por medio de boxplots para cada una de las variables, así como la distribución de los valores de las variables categóricas para identificar valores atípicos, se encontraron valores alejados de la media y poco comunes, pero son valores climatológicos posibles por esta razón para ningún caso se haya evidencia de outliers. Para evitar que existan palabras distintas y que simbolicen el mismo significado solo por el hecho de estar en minúscula o mayúsculas, para todas las variables tipo string las pasaremos a mayúscula, ya que por defecto todas viene así, también eliminaremos los espacios al principio y al final.
 \item \textbf{Datos población por provincia}
 \\\\
-Para este set de datos se eliminó las variables Sexo, Edad (año a año) y Españoles/Extranjeros, ya que solo nos interesa la población anual por provincia para poder generar la tasa de incidencia de covid-19 mensual. Como primer paso se crea una columna equivalente a la tasa de crecimiento mensual ya que tenemos la población anual, se utiliza una de las formulas más utilizadas para cálculos poblacionales como lo es el modelo geométrico [14]. A continuación, se describe la fórmula utilizada:
+Para este set de datos se eliminó las variables Sexo, Edad (año a año) y Españoles/Extranjeros, ya que solo nos interesa la población anual por provincia para poder generar la tasa de incidencia de covid-19 mensual. Como primer paso se crea una columna equivalente a la tasa de crecimiento mensual ya que tenemos la población anual, se utiliza una de las formulas más utilizadas para cálculos poblacionales como lo es el modelo geométrico \cite{torres2011tasas}. A continuación, se describe la fórmula utilizada:
 \begin{equation}
 r = \left(\frac{P_f}{P_i}\right)^\frac{1}{t}-1
 \end{equation}
@@ -936,7 +1026,7 @@ $P_f$ \hspace{0.4em} Población final\\
 $P_i$ \hspace{0.52em} Población inicial\\
 $t$ \hspace{1em} Distancia en tiempo entre las dos poblaciones de referencia
 \\\\
-Tomaremos la población inicial del año 2019 y la población actual del año 2022, esto debido a que en los años anteriores en casi todos los casos aumento la población, pero en este periodo de tiempo el comportamiento fue diferente a razón del covid-19, el cálculo de la tasa de crecimiento mensual se utilizará para calcular el aproximado de la población mensual por provincia hasta el primer trimestre del 2023. Se realiza el calculo de la población mensual con proyección en un periodo t, mediante la siguiente ecuación:
+Tomaremos la población inicial del año 2019 y la población actual del año 2022, esto debido a que en los años anteriores en casi todos los casos aumento la población, pero en este periodo de tiempo el comportamiento fue diferente a razón del covid-19, el cálculo de la tasa de crecimiento mensual se utilizará para calcular el aproximado de la población mensual por provincia hasta el primer trimestre del 2023. Se realiza el calculo de la población mensual con proyección en un periodo t, mediante la siguiente ecuación \cite{vandermeer2013population}
 \begin{equation}
 P_f = P_i(1 + r)^t 
 \end{equation}
@@ -971,9 +1061,10 @@ Se crea la variable \textit{TASA\_INCIDENCIA} a partir de la normalización del n
 TASA\_INCIDENCIA = \left(\frac{NUM\_CASOS}{POB\_MEN}\right) \times 100000
 \end{equation}
 En donde \textit{POB\_MEN} (población mensual) se calculó en el ítem anterior para cada año desde el 2020 hasta el primer trimestre del 2023 por provincia. De igual forma se realiza una gráfica de tendencia de la tasa de incidencia de todas las provincias, como se puede observar en la siguiente figura la tasa de incidencia es una muy buena normalización con respecto a los casos covid de la figura \textbf{\ref{tb:tendencia_casos}}.
+\newpage
 \begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=0.80\textwidth]{tendencia_tasa_incidencia}
+	\includegraphics[width=0.7\textwidth]{tendencia_tasa_incidencia}
 		\textbf{\caption{{\small Tendencia tasa de incidencia. \label{tb:tendencia_tasa_incid}}}}
 	{\scriptsize Fuente: [Elaboración propia]}
 	\end{center}
@@ -986,26 +1077,104 @@ Para cada una de las fuentes de datos descrita anteriormente se realiza la trans
 \item \textbf{Datos casos COVID-19 por provincias}
 \\\\
 Se realizo la transformación del nombre de todas las columnas a mayúscula, de esta forma se trabajará en todos los dataset para manejar un estándar de nombramiento, se realiza conversión de la variable de tiempo \textit{fecha} a tipo ``datetime'', las variables que estén tipo float y no tengan ningún valor decimal se convertirán en enteros. Normalización y homologación de los valores en campos categóricos con el fin de agrupar y estandarizar, obteniendo así los siguientes tipos de datos:
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.38\textwidth]{tipo_datos_covid}
-		\textbf{\caption{{\small Tipos de datos dataset covid-19.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.38\textwidth]{tipo_datos_covid}
+%		\textbf{\caption{{\small Tipos de datos dataset covid-19.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Tipos de datos dataset covid-19. \label{tb:tipodatocovid}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Tipo de datos \\
+	\hline    
+    PROVINCIA\_ISO & object \\
+    \hline
+    SEXO & object \\
+    \hline
+    GRUPO\_EDAD & object \\
+    \hline
+    FECHA & datetime64[ns] \\
+    \hline
+    NUM\_CASOS & object \\
+    \hline
+    NUM\_HOSP & object \\
+    \hline
+    NUM\_UCI & object \\
+    \hline  
+    NUM\_DEFU & object \\
+    \hline      
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
 
 \item \textbf{Datos climatológicos por provincia}
 \\\\
 Se realizo la transformación del nombre de todas las columnas a mayúscula, la conversión de la variable de tiempo \textit{fecha} a tipo ``datetime'', las variables que estén tipo float y no tengan ningún valor decimal se convertirán en enteros, así como las variables que son de tipo string y que en realidad todos son datos son numéricos decimales se realizará su correspondiente transformación a tipo float. A la variable prec (Precipitación diaria de 07 a 07) se transformó el valor `Ip' (significa precipitación inapreciable, es decir, cantidad inferior a 0.1 mm) por 0,0.
 
 Para todas las variables de horas se transformo el valor ``24'' por ``00'' ya que hacen referencia a la misma hora, más adelante se explicará porque estas variables de horas no serán tomadas en cuenta para la etapa de minería de datos (creación de modelos). Inicialmente solo dos campos eran numéricos, tras realizar el proceso de transformación obtenemos los siguientes tipos de datos:
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.38\textwidth]{tipo_datos_clima}
-		\textbf{\caption{{\small Tipos de datos dataset clima.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.38\textwidth]{tipo_datos_clima}
+%		\textbf{\caption{{\small Tipos de datos dataset clima.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Tipos de datos dataset clima. \label{tb:tipo_datos_clima}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Porcentaje de nulos \\
+	\hline    
+    FECHA & datetime64[ns] \\
+    \hline
+    PROVINCIA & object \\
+    \hline
+    ALTITUD & int64 \\
+    \hline
+    TEMP\_MED & float64 \\
+    \hline
+    PREC & float64 \\
+    \hline  
+    TEMP\_MIN & float64 \\
+    \hline 
+    HORA\_TEMP\_MIN & object \\
+    \hline
+    TEMP\_MAX & float64 \\
+    \hline
+    HORA\_TEMP\_MAX & object \\
+    \hline
+    DIR & float64 \\
+    \hline
+    VEL\_MEDIA & float64 \\
+    \hline
+    RACHA & float64 \\
+    \hline
+    HORA\_RACHA & object \\
+    \hline
+    PRES\_MAX & float64 \\
+    \hline
+    HORA\_PRES\_MAX & object \\
+    \hline 
+    PRES\_MIN & float64 \\
+    \hline
+    HORA\_PRES\_MIN & object \\
+    \hline 
+    SOL & float64 \\
+    \hline 
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
 
 \item \textbf{Datos población por provincia}
 \\\\
@@ -1014,13 +1183,48 @@ Se transforma la variable \textit{Provincias} y se hace la homologación con los 
 \item \textbf{Dataset total}
 \\\\
 Se realiza la transformación de la variable \textit{FECHA} cambiando su granularidad de diaria a mensual, de esta forma se procede a hacer la agrupación de los datos por \textit{FECHA} y \textit{PROVINCIA} y todas las demás medidas se le hace un promedio excepto la variable \textit{NUM\_CASOS} que será la suma de todos los días para el mes correspondiente. Se eliminan las variables \textit{NUM\_CASOS, POB\_MEN} tras el calculo de la tasa de incidencia de covid-19 en el ítem anterior, obteniendo así el dataset final con los siguientes tipos de datos:
-\begin{figure}[H]
-	\begin{center}
-	\includegraphics[width=0.38\textwidth]{tipo_datos_final}
-		\textbf{\caption{{\small Tipos de datos dataset total.}}}
-	{\scriptsize Fuente: [Elaboración propia]}
-	\end{center}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{center}
+%	\includegraphics[width=0.38\textwidth]{tipo_datos_final}
+%		\textbf{\caption{{\small Tipos de datos dataset total.}}}
+%	{\scriptsize Fuente: [Elaboración propia]}
+%	\end{center}
+%\end{figure}
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Tipos de datos dataset total. \label{tb:tipo_datos_final}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|}
+    \hline
+    \rowcolor{Peach} Variable & Porcentaje de nulos \\
+	\hline    
+    FECHA & period[M] \\
+    \hline
+    PROVINCIA & object \\
+    \hline
+    ALTITUD & float64 \\
+    \hline
+    TEMP\_MED & float64 \\
+    \hline
+    PREC & float64 \\
+    \hline
+    DIR & float64 \\
+    \hline
+    VEL\_MEDIA & float64 \\
+    \hline
+    RACHA & float64 \\
+    \hline
+    PRES\_MIN & float64 \\
+    \hline
+    SOL & float64 \\
+    \hline
+    TASA\_INCIDENCIA & float64 \\
+    \hline
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
 %Realizando un análisis descriptivo de nuestro dataset final, se observa que las desviaciones típicas son bajas a excepción de la \textit{ALTITUD} y \textit{TASA\_INCIDENCIA}
 Este dataset final será exportado como archivo data\_refined.csv y será tomado como partida de referencia para la construcción de los modelos en nuestra etapa de minería de datos.
 
@@ -1040,7 +1244,7 @@ TASA\_INCIDENCIA = b_o + b_1 MONTH + b_2 ALTITUD + b_3 TEMP_MED \\
 + b_{10} HASH_0 + b_{11} HASH_1 + b_{12} HASH_2 + b_{13} HASH_3 + b_{14} HASH_4 + b_{15} HASH_5
 \end{align*}
 
-Dividimos nuestro dataset total en train y test de forma aleatoria en una relación de 70\% a 30\% respectivamente, esta división se realiza de forma aleatoria ya que existe un pico de casos en el mes de enero del 2021 y mediante pruebas se evidencia que al tomar el test a partir de una fecha fija el modelo no es tan preciso ya que se entrena con un comportamiento totalmente diferente (comienzos de covid) contra el test (finales de covid).  Creamos el modelo a partir de linear\_model.LinearRegression(), al realizar el entrenamiento, obtenemos los siguientes coeficientes y estadísticos para la ecuación del modelo:
+Dividimos nuestro dataset total en train y test en una relación de 70\% a 30\% respectivamente. Creamos el modelo a partir de linear\_model.LinearRegression(), al realizar el entrenamiento, obtenemos los siguientes coeficientes y estadísticos para la ecuación del modelo:
 \newpage
 \begin{figure}[H]
 	\begin{center}
@@ -1058,7 +1262,7 @@ TASA\_INCIDENCIA = -102000 + 18.88 \cdot MONTH + 11.21 \cdot ALTITUD \\
 + 0.91 \cdot HASH\_1 + 6.95 \cdot HASH\_2 + 6.59 \cdot HASH\_3 + 10.94 \cdot HASH\_4 \\
 - 26.81 \cdot HASH\_5
 \end{align*}
-La constante $b_o$ es -10200 es decir nuestra intercepción, los demás coeficientes $b_i$ son los valores numéricos que acompañan a cada una de las variables independientes de nuestro modelo, la interpretación del coeficiente $b_1$ es que por cada unidad que se incrementa el \textit{MES} el incremento de la tasa de incidencia será de $18.88$ unidades; el coeficiente $b_2$ por cada unidad que se incremente la \textit{ALTITUD} el incremento de la tasa de incidencia será de $11.21$ unidades; el coeficiente $b_3$ por cada unidad que se incremente la \textit{TEMP\_MED} hay un decrecimiento de la tasa de incidencia de $-87.23$ unidades; de igual forma sucesivamente es la interpretación de los demás coeficientes.\\\\
+La constante $b_o$ es -10200 es decir nuestra intercepto, los demás coeficientes $b_i$ son los valores numéricos que acompañan a cada una de las variables independientes de nuestro modelo, la interpretación del coeficiente $b_1$ es que por cada unidad que se incrementa el \textit{MES} el incremento de la tasa de incidencia será de $18.88$ unidades; el coeficiente $b_2$ por cada unidad que se incremente la \textit{ALTITUD} el incremento de la tasa de incidencia será de $11.21$ unidades; el coeficiente $b_3$ por cada unidad que se incremente la \textit{TEMP\_MED} hay un decrecimiento de la tasa de incidencia de $-87.23$ unidades; de igual forma sucesivamente es la interpretación de los demás coeficientes.\\\\
 De la \textbf{figura \ref{tb:summary_RL}} concluimos que todas las variables introducidas como predictores tienen un $R^2$ bajo (0.152) es decir es capaz de explicar en un 15.2\% la variabilidad observada de la tasa de incidencia, acorde al p-value obtenido para el coeficiente parcial de regresión para algunas variables de HASH, VEL\_MEDIA, DIR y PREC, estas variables no contribuyen de forma significativa el modelo. Se realizo el entrenamiento sin estás variables y se obtuvieron resultados muy similares, se dejo este modelo para evidenciar el impacto de estas variables en los resultados.
 Los intervalos de confianza obtenidos son:
 \begin{table}[H]
@@ -1204,7 +1408,7 @@ La descomposición de nuestra serie temporal nos muestra que a lo largo del tiemp
 
 \subsubsubsection{K-MEANS}
 \\
-Este es un tipo de modelo no supervisado, es decir, no vamos a tener una etiqueta para predecir y aunque la tenemos no la vamos a utilizar, es decir, la tasa de incidencia no será una etiqueta a predecir, por el contrario, será una variable más en nuestro modelo, esto para generar clúster o una clasificación de los datos, con el fin de encontrar patrones de comportamiento. La variable \textit{FECHA} será eliminada ya que como patrón no nos interesa, y la variable \textit{PROVINCIA} será transformada como index en nuestro dataset.
+Este es un tipo de modelo no supervisado, es decir, no vamos a tener una etiqueta para predecir y aunque la tenemos no la vamos a utilizar, es decir, la tasa de incidencia no será una etiqueta a predecir, por el contrario, será una variable más en nuestro modelo, esto para generar clúster o una clasificación de los datos, con el fin de encontrar patrones de comportamiento o características que diferencien cada uno de los cluster, el k-means se pudo haber utilizado en un comienzo para agrupar los datos en grupos más específicos y realizar el entrenamiento de nuestros modelos anteriores, es decir agrupar las 52 provincias en grupos con características similares. No se optó por este camino ya que se quiso evidenciar el comportamiento de los factores climáticos por provincia, comenzando por una granularidad más baja, se planteará un trabajo futuro comenzando con una clusterización de los datos. La variable \textit{FECHA} será eliminada ya que como patrón no nos interesa, y la variable \textit{PROVINCIA} será transformada como index en nuestro dataset.
 \\\\
 Para la creación de este modelo se utilizó KMeans de la librería sklearn clúster, los hiperparámetros por defecto son:
 
@@ -1220,7 +1424,6 @@ Para la creación de este modelo se utilizó KMeans de la librería sklearn clúster
 \item \textbf{algorithm:} Algoritmo K-medias a utilizar. El algoritmo clásico de estilo EM es ``lloyd''. La ``elkan'' variación puede ser más eficiente en algunos conjuntos de datos con grupos bien definidos, mediante el uso de la desigualdad triangular. Sin embargo, requiere más memoria debido a la asignación de una matriz adicional de forma. {``lloyd'', ``elkan'', ``automático'', ``full''}, predeterminado = ``lloyd''.
 \end{itemize}
 El modelo creado utilizo los parámetros anteriores por defecto a excepción de n\_clusters y random\_state, para n\_cluster se utilizo un rango de valores de 1 a 10 para realizar la gráfica del codo y validar su inercia respecto al modelo, con respecto a random\_state se tomo un valor de 42, se utilizó un valor int para que la aleatoriedad sea determinista y evitar distintos valores en cada iteración de nuestro valor de n\_cluster. La representación de la gráfica del codo se muestra a continuación:
-\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.8\textwidth]{codo_kmeans}
@@ -1237,7 +1440,6 @@ Para cada uno de los modelos descritos anteriormente se mostrará su gráfica de p
 \item \textbf{REGRESIÓN LINEAL MÚLTIPLE}
 \\\\
 Realizando una comparación de los valores reales con los predichos por nuestro modelo, notamos la recta que creo el modelo se encuentra desfasada y desajustada al valor real de los datos, por la naturaleza de los datos se puede crear una mejor recta que explique el comportamiento de nuestra variable dependiente (TASA\_INCIDENCIA) según la siguiente imagen, pero bajo nuestras variables de estudio (climáticas) no se puede generar una mejor recta que explique la TASA\_INCIDENCIA, se debería añadir más variables con una mayor importancia que aporten a nuestro modelo.
-\newpage
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.9\textwidth]{real_vs_pred_RL}
@@ -1384,7 +1586,7 @@ Se evidencian en la tabla 8 que los 10 lags que se utilizaron para entrenar el m
 \\
 \item \textbf{K-MEANS}
 \\\\
-Luego de entrenar y ajustar nuestro modelo y de asignar el clúster correspondiente a cada data, se agrupa el datataset por medio del clúster y las demás variables como medida se tomo la media, el resultado fue el siguiente:
+Luego de entrenar y ajustar nuestro modelo y de asignar el clúster correspondiente a cada registro, se agrupa el datataset por medio del clúster y las demás variables como medida se tomo la media, el resultado fue el siguiente:
 \begin{figure}[H]
 	\begin{center}
 	\includegraphics[width=0.9\textwidth]{cluster_df_kmeans}
@@ -1410,7 +1612,62 @@ La representación gráfica del PCA con los clúster se muestra a continuación, en 
 En la figura anterior se muestra en total 1976 puntos, que equivalen a los 38 meses de cada uno de las 52 provincias. Se realizó el estudio agrupando estos datos por clúster y por provincia, llegando a una cantidad de 144 registros, y aquí el fenómeno claro e interesante es que por lo general casi todas las provincias hacen parte de los tres clúster ya que sus condiciones climáticas varían a lo largo del año, pero por regla general cuando cada provincia perteneció al clúster 0 tenía menor tasa de incidencia, por el contrario, cuando estaba en el clúster 1 tenía mayor tasa de incidencia.	
 \end{itemize}
 
-\subsubsection{CONTRASTE ENTRE MODELOS}
+\subsubsection{COMPARACIÓN ENTRE MODELOS}
+Realizando la comparación entre modelos basado en las métricas seleccionadas, la siguiente tabla muestra los resultados obtenidos:
+
+\begin{table}[H]
+  \centering
+   \textbf{\caption{{\small Métricas de error de los modelos. \label{tb:metrimodel}}}}       
+	\renewcommand{\arraystretch}{1.2}  
+  %{\setlength{\arrayrulewidth}{0.3mm}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \rowcolor{Peach} Modelo & $R^2$ & MAE & RMSE \\
+	\hline       
+    Regresión Lineal Múltiple & $0,15$ & $756,23$ & $1337,30$\\
+    \hline
+    Random Forest Regresión & $0,33$ & $689,75$ & $1169,12$ \\
+    \hline
+    Seri Temporal Forecasterautoreg & $-6,46$ & $37937,62$ & $42756,51$ \\
+	\hline
+    \end{tabular}
+    \label{tab:addlabel}\\
+  {\scriptsize Fuente: Elaboración Propia}
+\end{table}
+
+En general el modelo que tiene una mayor explicabilidad sobre nuestra variable dependiente es el modelo Random Forest Regresión, este modelo explica el 33 \% de la variabilidad, seguido por la regresión Lineal múltiple con un 15 \% y de últimas Forecasterautoreg con un -6 \%, es posible que el valor de $R^2$ sea negativo en algunos casos, como en modelos de ajuste no lineal o en modelos con un número insuficiente de observaciones, en el contexto de un modelo Forecasterautoreg, un valor de $R^2$ negativo sugiere que el modelo no es adecuado para predecir los valores futuros de la variable dependiente a partir de sus valores pasados. En este caso, se debe considerar la revisión del modelo o la inclusión de otras variables predictoras que puedan mejorar su capacidad de predicción. 
+\\\\
+Así mismo para el modelo Random Forest las predicciones se alejan en promedio $689,75$ unidades de nuestro valor real, seguido por la regresión lineal con $756,23$ y para Forecasterautoreg con $37937,62$. Debemos tener en cuenta que el MAE calcula el error en la misma escala de los datos es decir un MAE alto no necesariamente significa un modelo impreciso, ya que dependerá de la naturaleza y la escala de nuestros datos para nuestro caso la variable dependiente TASA\_INCIDENCIA, está entre el rango de $0,0$ hasta $12025,3$, teniendo un promedio de $728,86$; de igual forma el modelo que presento un menor valor de RMSE fue Random Forest con $1169,12$, seguido por la regresión lineal con $1337,30$ y por último $42756,51$. El RMSE penaliza valores extremos o valores atípicos es por esta razón es un valor más alto que el MAE.
+\\\\
+Con respecto a muestro modelo de regresión lineal múltiple las variables que más tuvieron importancia fueron SOL, PRES\_MIN , TEMP\_MED y PREC respectivamente, cada una con una gran influencia en el modelo; con respecto a muestro modelo de Random Forest regresión las variables que más tuvieron importancia fueron  TEMP\_MED, PRES\_MIN , SOL y PREC respectivamente, es decir a portan mayor información para predecir la tasa de incidencia de covid-19; con respecto a muestro modelo Forecasterautoreg al ser una serie temporal no toma como importancia las variables de forma independiente, por el contrario toma los lags, es decir los retrasos utilizados en el predictor $(t-1)$, de los 10 lags que tomamos para entrenar el modelo los que tuvieron una mayor importancia o aportaron mayor información fueron lag\_3, lag\_6, lag\_1 y lag\_2 respectivamente
+
+
+\subsubsection{FLUJO DE AUTOMATIZACIÓN PIPELINE}
+Se creó un proceso de automatización, el cual será un pipeline que tendrá cada una de las etapas del proceso KDD, esto con el fin de tener un CI/CD que nos permite tener mayor rapidez y eficiencia en la entrega de software mediante la automatización del proceso; mayor calidad del software al automatizar permite a los equipos de desarrollo detectar y corregir errores más rápidamente, lo que reduce la posibilidad de que se introduzcan errores en el software; mayor colaboración y comunicación; mayor flexibilidad y escalabilidad, puede manejar grandes cantidades de código y usuarios sin problemas; mayor seguridad se puede implementar fácilmente un conjunto de políticas de seguridad para garantizar que el software se entregue de manera segura y confiable.
+
+Nuestro pipeline se construyó todo sobre GitHub y la arquitectura se muestran en las siguientes dos figuras:
+\newpage
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=1\textwidth]{arquitectura_1}
+		\textbf{\caption{{\small Arquitectura creación modelos ML en GitHub. \label{tb:arquitectura_1}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	\includegraphics[width=0.8\textwidth]{pipeline}
+		\textbf{\caption{{\small Pipeline de automatización en GitHub. \label{tb:pipeline}}}}
+	{\scriptsize Fuente: [Elaboración propia]}
+	\end{center}
+\end{figure}
+
+En la figura \textbf{\ref{tb:arquitectura_1}} se muestra cada una de las etapas de nuestro proceso KDD con su ruta correspondiente en GitHub, junto con sus archivos correspondientes que servirán de insumos en la siguiente etapa del proceso. Algunas etapas cuentan con unos archivos de jupyter notebook que sirvieron para el análisis exploratorio para la toma de decisiones, basados en los resultados de los notebooks se construyeron unos archivos Python para realizar la ejecución del pipeline de forma automática, como se muestra en la figura \textbf{\ref{tb:pipeline}}.
+
+La finalidad de la automatización en este trabajo es que cualquier persona con tan solo clonar el repositorio puede realizar la ejecución de todo el proceso por medio de un archivo que orquesta las etapas (main.py), así como la ejecución de los notebooks de análisis exploratorios y poder obtener valor y conocimiento a partir de los resultados. El pipeline esta adaptado para una futura actualización en la base de datos (covid, clima, etc) y obtener nuevos resultados de forma automatiza, cumpliendo así la esencia del CI/CD. Hay que tener en cuenta la limitante de almacenamiento de GitHub, para este caso se alcanzo a almacenar todos los insumos y archivos intermedios, razón por la cual algunos están en formato parquet ya que tiene un formato de compresión mucho mayor.
+
 
 \newpage
 \begin{center}
@@ -1419,110 +1676,26 @@ En la figura anterior se muestra en total 1976 puntos, que equivalen a los 38 me
 XXXXXX
 
 \newpage
+
 %\begin{center}
 %\section{REFERENCIAS}
 %\end{center}
 \clearpage
 \renewcommand{\refname}{}
-\begin{thebibliography}{90}
-\vspace{-\baselineskip}
-\vspace{-\baselineskip}
+
+\bibliographystyle {apacite}
+\setstretch{1.5}
 \section{REFERENCIAS}
-%\addcontentsline{toc}{section}{REFERENCIAS}
+\bibliography{REFERENCIAS}
 
-\bibitem[1]{constrainedClimate}
 
-Araujo, M. B., \& Naimi, B. (2020). Spread of SARS-CoV-2 Coronavirus likely to be constrained by climate. MedRxiv, 2020.03.12.20034728. https://doi.org/10.1101/2020.03.12.20034728
 
-\bibitem[2]{HighTemperatue}
-Wang, J., Tang, K., Feng, K., \& Lv, W. (2020). High Temperature and High Humidity Reduce the Transmission of COVID-19. Available at SSRN 3551767. https://ssrn.com/abstract=3551767
 
-\bibitem[3]{MachineLearning}
-Mariette Award \& Rahul Khanna. (2015). Efficient Learning Machines, Theories, Concepts, and Applications for Engineers and System Hesigners. https://link.springer.com/book/10.1007/978-1-4302-5990-9
-
-\bibitem[4]{RevistaTIA}
-Ingry Nathaly Salamanca Rativa \& Edgar Junior Castro Escorcia. (2019). Técnicas de aprendizaje automático aplicadas en los sistemas de predicción. https://revistas.udistrital.edu.co/index.php/tia/article/download/17325/17214/104552
-
-\bibitem[5]{Uma}
-Valenzuela González, Gema. (2022). Aprendizaje Supervisado: Métodos, Propiedades y Aplicaciones. https://riuma.uma.es/xmlui/handle/10630/25147
-
-\bibitem[6]{Clustering}
-Jesús Bobadilla Sancho. (2020). Machine Learning y Deep Learning Usando Python, Scikit y Keras. https://www.perlego.com/book/2165268/machine-learning-y-deep-learning-pdf
-
-\bibitem[7]{PCA}
-Raúl Benítez, Andrés Cencerrado Barraqué, Gerard Escudero \& Samir Kanaan. (2020). https://openaccess.uoc.edu/bitstream/10609/140427/8/Inteligencia%20artificial%20avanzada_M%C3%B3dulo%201_Inteligencia%20artificial%20avanzada.pdf
-
-\bibitem[8]{CNN}
-Aston Zhang, Zachary Lipton, Mu Li \& Alexander J. Smola. (2021). Dive into Deep Learning, Convolutional Neural Networks. https://www.d2l.ai/chapter\_convolutional-neural-networks/index.html
-
-\bibitem[9]{RNN}
-Simeon Kostadinov. (2020). Recurrent Neural Networks With Python Quick Start Guide: Sequential Learning and Lenguage modeling
-%URL: $https://www.buscalibre.com.co/libro-recurrent-neural-networks-with-python-quick-start-guide-sequential-learning-and-language-modeling-with-tensorflow-libro-en-ingles/9781789132335/p/54514893$
-
-%\bibitem[10]{nvidia}
-%Edgar Zepeda Urzua. (2021). Aprendizaje Federado con FLARE: NVIDIA Lleva la Inteligencia Artificial Colaborativa a el Área de la Salud y más allá. https://hardwareviews.com/aprendizaje-federado-con-flare-nvidia-lleva-la-inteligencia-artificial-colaborativa-a-el-area-de-la-salud-y-mas-alla/
-
-\bibitem[10]{regresion lineal}
-Aurélien Vannieuwenhuyze. (2020). Inteligencia Artificial Fácil - Machine Learning y Deep Learning Prácticos. https://www.buscalibre.com.co/libro-inteligencia-artificial-facil-machine-learning-y-deep-learning-practicos-libro-en-castilian-aurelien-vannieuwenhuyze-eni/9782409025327/p/52851824
-
-\bibitem[11]{regresion lineal 2}
-Joaquín Amat Rodrigo. (2016). Introducción a la Regresión Lineal Múltiple.
-URL: $https://www.cienciadedatos.net/documentos/25_regresion_lineal_multiple$
-
-%\bibitem[12]{DALL-E}
-%Alex Hughes. (2022). Dall-E 2: Why the AI image generator is a revolutionary invention
-%URL: $https://www.sciencefocus.com/future-technology/dall-e-2-why-the-ai-image-generator-is-a-revolutionary-invention/$
-
-%\bibitem[13]{StyleGAN2}
-%SYNCED. (2020). MIT CSAIL Uses Deep Generative Model StyleGAN2 to Deliver SOTA Image Reconstruction Results
-%URL: $https://syncedreview.com/2020/12/10/mit-csail-uses-deep-generative-model-stylegan2-to-deliver-sota-image-reconstruction-results/$
-
-\bibitem[12]{random forest}
-Sruthi E R. (2023). Understand Random Forest Algorithms With Examples (Updated 2023).
-URL: $https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/$
-
-\bibitem[13]{random forest 2}
-VLADIMIR LYASHENKO. (2020). How to use random forest for regression: notebook, examples and documentation.
-URL: $https://cnvrg.io/random-forest-regression/$
-
-\bibitem[14]{ModeloGeometrico}
-Arnaldo Torres-Degró. (2011). Tasas de crecimiento poblacional (r): Una mirada desde el modelo matemático lineal, geométrico y exponencial. https://revistas.upr.edu/index.php/cidedigital/article/download/11774/9736/11342
-
-\bibitem[15]{skcilearn}
-scikit-learn. (2023). scikit-learn Machine Learning in Python. https://scikit-learn.org/stable/index.html
-
-\bibitem[16]{series temporales}
-Santiago de la Fuente Fernández. (2020). series temporales. https://www.estadistica.net/PAU2/series-temporales.pdf
-
-\bibitem[17]{series temporales 2}
-José Alberto Mauricio. (2005). Introducción al análisis de series temporales. https://www.ucm.es/data/cont/docs/518-2013-11-11-JAM-IAST-Libro.pdf
-
-\bibitem[18]{forescasting}
-Joaquín Amat Rodrigo, Javier Escobar Ortiz. (2023). Skforecast: forecasting series temporales con Python y Scikit-learn. https://www.cienciadedatos.net/documentos/py27-forecasting-series-temporales-python-scikitlearn.html
-
-\bibitem[19]{series temp 3}
-Francisco Parra. (2019). Estadística y Machine Learning con R. https://bookdown.org/content/2274/series-temporales.html
-
-\bibitem[20]{series temp estado arte}
-Khasawneh, A. I., Humeidan, A. A., Alsulaiman, J. W., \& Bloukh, S. H. (2020). Modeling and prediction COVID-19 in Jordan under different intervention scenarios. Informatics in Medicine Unlocked, 19, 100345.
-
-\bibitem[21]{LSTM est arte}
-Chimmula, V. K. R., \& Zhang, L. (2020). Time series forecasting of COVID-19 transmission in Canada using LSTM networks. Chaos, Solitons \& Fractals, 135, 109864.
-
-\bibitem[22]{redes est arte}
-Chen, S., Yang, J., Yang, W., Wang, C., \& Bärnighausen, T. (2020). COVID-19 control in China during mass population movements at New Year. The Lancet, 395(10226), 764-766.
-
-\bibitem[23]{aprend auto est arte}
-Yoo, S., Lee, S., Lee, D., Lee, C. K., \& Kim, Y. K. (2020). Effective prediction of COVID-19 using deep learning models: A case study of South Korea. Chaos, Solitons \& Fractals, 140, 110153.
-
-\end{thebibliography}
 \newpage
 %\begin{center}
 \section*{APÉNDICE I}
 \addcontentsline{toc}{section}{\protect\numberline{}APÉNDICE I}
 %\end{center}
-
-
 
 \newpage
 \begin{center}
