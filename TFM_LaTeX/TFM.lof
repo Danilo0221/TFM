@@ -3,20 +3,19 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces {\small Visualizaci\'on del algoritmo E-M en k-means.}}}{11}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces {\small Descripci\'on de los pasos que constituyen el proceso KDD}}}{16}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces {\small Correlaci\'on variables dataset covid-19. }}}{22}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces {\small Headmap variables dataset clima. }}}{23}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces {\small Correlaci\'on variables dataset clima. }}}{25}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces {\small Tendencia de casos covid. }}}{27}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces {\small Tendencia tasa de incidencia. }}}{28}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces {\small Estadisticos modelo regresi\'on lineal m\'ultiple. }}}{32}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces {\small Diagn\'ostico residuos modelo regresi\'on lineal m\'ultiple. }}}{34}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces {\small MAE para cada estimador del modelo Random Forest Regresi\'on. }}}{36}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces {\small Divisi\'on train y test ForecasterAutoreg. }}}{37}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces {\small Descomposici\'on serie temporal ForecasterAutoreg. }}}{38}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces {\small M\'etodo del codo K-means. }}}{40}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces {\small Valor predicho vs Valor real Modelo Regresi\'on Lineal M\'ultiple. }}}{41}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces {\small Valor predicho vs Valor real Modelo Random Forest regresi\'on. }}}{42}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces {\small Valor predicho vs Valor real Modelo ForecasterAutoreg. }}}{44}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces {\small Caracter\IeC {\'\i }sticas climatol\'ogicas por cl\'uster. }}}{45}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces {\small PCA K-means. }}}{46}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces {\small Arquitectura creaci\'on modelos ML en GitHub. }}}{48}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces {\small Pipeline de automatizaci\'on en GitHub. }}}{48}{figure.21}%
+\contentsline {figure}{\numberline {5}{\ignorespaces {\small Headmap variables dataset meteorol\'ogico. }}}{23}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces {\small Correlaci\'on variables dataset meteorol\'ogico. }}}{25}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces {\small Tendencia tasa de incidencia. }}}{27}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces {\small Estadisticos modelo regresi\'on lineal m\'ultiple. }}}{31}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces {\small Diagn\'ostico residuos modelo regresi\'on lineal m\'ultiple. }}}{34}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces {\small MAE para cada estimador del modelo Random Forest Regresi\'on. }}}{36}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces {\small Divisi\'on train y test ForecasterAutoreg. }}}{36}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces {\small Descomposici\'on serie temporal ForecasterAutoreg. }}}{37}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces {\small M\'etodo del codo K-means. }}}{38}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces {\small Valor predicho vs Valor real Modelo Regresi\'on Lineal M\'ultiple. }}}{39}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces {\small Valor predicho vs Valor real Modelo Random Forest regresi\'on. }}}{40}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces {\small Valor predicho vs Valor real Modelo ForecasterAutoreg. }}}{42}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces {\small Caracter\IeC {\'\i }sticas meteorol\'ogicasol\'ogicas por cl\'uster. }}}{43}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces {\small PCA K-means. }}}{44}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces {\small Arquitectura creaci\'on modelos ML en GitHub. }}}{46}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces {\small Pipeline de automatizaci\'on en GitHub. }}}{46}{figure.20}%

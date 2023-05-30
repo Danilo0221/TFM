@@ -2,14 +2,15 @@ import time
 import click
 from DataCleaning.DataCleaning import datacleaning
 from DataTransformed.Transformed import datatransformed
-
+from DataMining.DataMining import datamining
 '''
 Para la ejecución de del pipeline se tiene las siguientes opciones:
 
 1. Para ejecutar todo el pipeline, se ejecuta por terminal: python .\main.py
 2. Para ejecutar alguna etapa en especifico, se ejecuta por terminal, por ejemplo: 
     python .\main.py --job=datacleaning
-    python .\main.py --job=transformed 
+    python .\main.py --job=transformed
+    python .\main.py --job=datamining
     
 '''
 
@@ -33,10 +34,20 @@ def run_job_transformed():
         print(e)
         
         
+def run_job_datamining():
+    """
+    Run job Datacleaning
+    """
+    try:
+        datamining()
+    except Exception as e:
+        print(e)
+        
+        
 @click.command()
 @click.option(
     "--job",
-    help="datacleaning, transformed",
+    help="datacleaning, transformed, datamining",
     required=False,
 )
 
@@ -45,10 +56,12 @@ def main(job):
     if job is None:
         run_job_datacleaning()
         run_job_transformed()
+        run_job_datamining()
     else:
         function_dict = {
             "datacleaning": run_job_datacleaning,
-            "transformed": run_job_transformed
+            "transformed": run_job_transformed,
+            "datamining": run_job_datamining
         }    
         job_function = function_dict.get(job)
         job_function()

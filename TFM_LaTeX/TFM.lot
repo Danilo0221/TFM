@@ -1,16 +1,16 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces {\small C\'odigo ISO y nombre de provincia. }}}{19}{table.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces {\small Variables climatol\'ogicas de provincia. }}}{20}{table.2}%
+\contentsline {table}{\numberline {2}{\ignorespaces {\small Variables meteorol\'ogicas de provincia. }}}{20}{table.2}%
 \contentsline {table}{\numberline {3}{\ignorespaces {\small Poblaci\'on anual desde 1998 por provincia. }}}{20}{table.3}%
 \contentsline {table}{\numberline {4}{\ignorespaces {\small Porcentaje de nulos dataset covid-19. }}}{21}{table.4}%
 \contentsline {table}{\numberline {5}{\ignorespaces {\small Estad\IeC {\'\i }sticos dataset covid-19. }}}{21}{table.5}%
 \contentsline {table}{\numberline {6}{\ignorespaces {\small Poblaci\'on anual desde 1998 por provincia. }}}{24}{table.6}%
-\contentsline {table}{\numberline {7}{\ignorespaces {\small Tipos de datos dataset covid-19. }}}{28}{table.7}%
-\contentsline {table}{\numberline {8}{\ignorespaces {\small Tipos de datos dataset clima. }}}{29}{table.8}%
-\contentsline {table}{\numberline {9}{\ignorespaces {\small Tipos de datos dataset total. }}}{30}{table.9}%
+\contentsline {table}{\numberline {7}{\ignorespaces {\small Tipos de datos dataset covid-19. }}}{27}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces {\small Tipos de datos dataset meteorol\'ogico. }}}{28}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces {\small Tipos de datos dataset total. }}}{29}{table.9}%
 \contentsline {table}{\numberline {10}{\ignorespaces {\small Intervalos de confianza. }}}{33}{table.10}%
 \contentsline {table}{\numberline {11}{\ignorespaces {\small Test estad\IeC {\'\i }sticos para normalidad. }}}{34}{table.11}%
-\contentsline {table}{\numberline {12}{\ignorespaces {\small Importancia de las variables en el modelo. }}}{43}{table.12}%
-\contentsline {table}{\numberline {13}{\ignorespaces {\small Importancia de las variables ForecasterAutoreg. }}}{44}{table.13}%
-\contentsline {table}{\numberline {14}{\ignorespaces {\small M\'etricas de error de los modelos. }}}{46}{table.14}%
-\contentsline {table}{\numberline {15}{\ignorespaces {\small Variables y descripci\'on del set de datos de COVID-19 por provincias. }}}{54}{table.15}%
+\contentsline {table}{\numberline {12}{\ignorespaces {\small Importancia de las variables en el modelo. }}}{41}{table.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces {\small Importancia de las variables ForecasterAutoreg. }}}{42}{table.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces {\small M\'etricas de error de los modelos. }}}{44}{table.14}%
+\contentsline {table}{\numberline {15}{\ignorespaces {\small Variables y descripci\'on del set de datos de COVID-19 por provincias. }}}{52}{table.15}%

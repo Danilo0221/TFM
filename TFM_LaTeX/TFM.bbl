@@ -199,6 +199,30 @@ Ciotti, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ciria~Mayordomo%
+}{%
+Ciria~Mayordomo%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+ciria2021covid}
+\APACinsertmetastar {%
+ciria2021covid}%
+\begin{APACrefauthors}%
+Ciria~Mayordomo, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {COVID Sent: Identificaci{\'o}n de sentimientos en
+  titulares de noticias del COVID-19} {Covid sent: Identificaci{\'o}n de
+  sentimientos en titulares de noticias del covid-19}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 cnecovid%
 }{%
 cnecovid%
@@ -347,6 +371,38 @@ Gu, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hao%
+\ \protect \BOthers {.}}{%
+Hao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+hao2022development}
+\APACinsertmetastar {%
+hao2022development}%
+\begin{APACrefauthors}%
+Hao, B.%
+, Hu, Y.%
+, Sotudian, S.%
+, Zad, Z.%
+, Adams, W\BPBI G.%
+, Assoumou, S\BPBI A.%
+\BDBL {}Paschalidis, I\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development and validation of predictive models for
+  COVID-19 outcomes in a safety-net hospital population} {Development and
+  validation of predictive models for covid-19 outcomes in a safety-net
+  hospital population}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Medical Informatics
+  Association}{29}{7}{1253--1262}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 He%
 , Peng%
 \BCBL {}\ \BBA {} Sun%
@@ -371,6 +427,36 @@ He, S.%
   modeling of the covid-19 and its dynamics}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nonlinear dynamics}{101}{}{1667--1680}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hernandez-Matamoros%
+, Fujita%
+, Hayashi%
+\BCBL {}\ \BBA {} Perez-Meana%
+}{%
+Hernandez-Matamoros%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+hernandez2020forecasting}
+\APACinsertmetastar {%
+hernandez2020forecasting}%
+\begin{APACrefauthors}%
+Hernandez-Matamoros, A.%
+, Fujita, H.%
+, Hayashi, T.%
+\BCBL {}\ \BBA {} Perez-Meana, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Forecasting of COVID19 per regions using ARIMA models
+  and polynomial functions} {Forecasting of covid19 per regions using arima
+  models and polynomial functions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied soft computing}{96}{}{106610}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

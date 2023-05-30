@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  11 MAY 2023 20:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.12.13)  22 MAY 2023 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,9 +644,6 @@ LaTeX Warning: Label `tab:addlabel' multiply defined.
 LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
-LaTeX Warning: Label `tb:TableintervaRL' multiply defined.
-
-
 LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
@@ -729,7 +726,7 @@ File: spanish.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 )
-<Logo_VIU.png, id=152, 87.6876pt x 36.8577pt>
+<Logo_VIU.png, id=153, 87.6876pt x 36.8577pt>
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
 Package pdftex.def Info: Logo_VIU.png  used on input line 105.
@@ -1052,7 +1049,7 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [7]
-<random_forest.png, id=350, 357.7365pt x 203.5605pt>
+<random_forest.png, id=349, 357.7365pt x 203.5605pt>
 File: random_forest.png Graphic file (type png)
 <use random_forest.png>
 Package pdftex.def Info: random_forest.png  used on input line 379.
@@ -1126,7 +1123,7 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [10]
-<kmeans.png, id=372, 736.55174pt x 186.6975pt>
+<kmeans.png, id=371, 736.55174pt x 186.6975pt>
 File: kmeans.png Graphic file (type png)
 <use kmeans.png>
 Package pdftex.def Info: kmeans.png  used on input line 443.
@@ -1259,7 +1256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 617--621
 
  []
 
-<KDD2.png, id=436, 398.6895pt x 82.50826pt>
+<KDD2.png, id=435, 398.6895pt x 82.50826pt>
 File: KDD2.png Graphic file (type png)
 <use KDD2.png>
 Package pdftex.def Info: KDD2.png  used on input line 630.
@@ -1445,7 +1442,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
                                                   \__shipout_drop_firstpage_...
 l.911 
       ]
-<correla_covid.png, id=481, 534.798pt x 396.88275pt>
+<correla_covid.png, id=480, 534.798pt x 396.88275pt>
 File: correla_covid.png Graphic file (type png)
 <use correla_covid.png>
 Package pdftex.def Info: correla_covid.png  used on input line 918.
@@ -1476,7 +1473,7 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.929 
        <./correla_covid.png>]
-<heatmap_clima.png, id=486, 549.252pt x 439.04025pt>
+<heatmap_clima.png, id=485, 549.252pt x 439.04025pt>
 File: heatmap_clima.png Graphic file (type png)
 <use heatmap_clima.png>
 Package pdftex.def Info: heatmap_clima.png  used on input line 935.
@@ -1529,7 +1526,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
                                                   \__shipout_drop_firstpage_...
 l.1007 \newpage
                ]
-<correla_clima.png, id=496, 585.98924pt x 436.63126pt>
+<correla_clima.png, id=495, 585.98924pt x 436.63126pt>
 File: correla_clima.png Graphic file (type png)
 <use correla_clima.png>
 Package pdftex.def Info: correla_clima.png  used on input line 1010.
@@ -1591,27 +1588,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1041--1045
 
  []
 
-<tendencia_casos_covid.png, id=511, 328.8285pt x 276.43275pt>
-File: tendencia_casos_covid.png Graphic file (type png)
-<use tendencia_casos_covid.png>
-Package pdftex.def Info: tendencia_casos_covid.png  used on input line 1054.
-(pdftex.def)             Requested size: 341.43436pt x 287.04037pt.
 
-Overfull \hbox (4.81026pt too wide) in paragraph at lines 1051--1058
+Overfull \hbox (4.81026pt too wide) in paragraph at lines 1051--1061
 \OT1/cmr/m/it/10.95 RA[]TEMP[]MAX, HO-RA[]RACHA, HO-RA[]PRES[]MAX, HO-RA[]PRES[
 ]MIN\OT1/cmr/m/n/10.95 ) ya que
  []
 
 
-Underfull \vbox (badness 3514) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1061
+
+ []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1059.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1065.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1059.
-LaTeX Info: Redefining \% on input line 1059.
-
+LaTeX Info: Redefining \. on input line 1065.
+LaTeX Info: Redefining \% on input line 1065.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1621,13 +1614,27 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [26]
+<fig_union.png, id=525, 507.0945pt x 237.2865pt>
+File: fig_union.png Graphic file (type png)
+<use fig_union.png>
+Package pdftex.def Info: fig_union.png  used on input line 1068.
+(pdftex.def)             Requested size: 298.75262pt x 139.80229pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1121
+
+ []
+
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1064.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1121.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1064.
-LaTeX Info: Redefining \% on input line 1064.
-
+LaTeX Info: Redefining \. on input line 1121.
+LaTeX Info: Redefining \% on input line 1121.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1641,30 +1648,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1064 \newpage
-                <./tendencia_casos_covid.png>]
-<tendencia_tasa_incidencia.png, id=530, 341.47575pt x 261.97874pt>
-File: tendencia_tasa_incidencia.png Graphic file (type png)
-<use tendencia_tasa_incidencia.png>
-Package pdftex.def Info: tendencia_tasa_incidencia.png  used on input line 1067
-.
-(pdftex.def)             Requested size: 298.75262pt x 229.20285pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1077--1115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1117--1120
+l.1121 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1121 
+        <./fig_union.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1183
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1120.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1183.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1120.
-LaTeX Info: Redefining \% on input line 1120.
+LaTeX Info: Redefining \. on input line 1183.
+LaTeX Info: Redefining \% on input line 1183.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1674,28 +1675,37 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [28
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1120 
-       
-pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1120 
-        <./tendencia_tasa_incidencia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1182
+l.1183 
+       ]
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1242
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1182.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1242.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1182.
-LaTeX Info: Redefining \% on input line 1182.
+LaTeX Info: Redefining \. on input line 1242.
+LaTeX Info: Redefining \% on input line 1242.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1705,85 +1715,27 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [29
-pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1182 
-       ]
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1227
-
- []
-
-
-Overfull \hbox (18.03961pt too wide) in paragraph at lines 1234--1235
-[]\OT1/cmr/m/n/10.95 En es-ta eta-pa de nues-tro pro-ce-so de KDD par-ti-re-mos
- de nues-tro da-ta-set fi-nal (da-ta[]refined.csv)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1236--1241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1236--1241
-
- []
-
-File: Logo_VIU.png Graphic file (type png)
-<use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1241.
-(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1241.
-LaTeX Info: Redefining \% on input line 1241.
-
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.96072pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.96072pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
-
-[30
 pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1241 \begin{align*}
-                     ]
-File: Logo_VIU.png Graphic file (type png)
-<use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1248.
-(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1248.
-LaTeX Info: Redefining \% on input line 1248.
+l.1242 
+       ]
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1249
+
+ []
 
 
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.96072pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.96072pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
-
-[31]
-<summary_RL.png, id=547, 425.79076pt x 420.3705pt>
-File: summary_RL.png Graphic file (type png)
-<use summary_RL.png>
-Package pdftex.def Info: summary_RL.png  used on input line 1251.
-(pdftex.def)             Requested size: 426.79134pt x 421.3637pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1312
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1249
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1312.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1249.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1312.
-LaTeX Info: Redefining \% on input line 1312.
+LaTeX Info: Redefining \. on input line 1249.
+LaTeX Info: Redefining \% on input line 1249.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1792,19 +1744,59 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[32
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+[30]
+<summary_RL.png, id=552, 425.79076pt x 420.3705pt>
+File: summary_RL.png Graphic file (type png)
+<use summary_RL.png>
+Package pdftex.def Info: summary_RL.png  used on input line 1259.
+(pdftex.def)             Requested size: 405.45045pt x 400.29262pt.
+File: Logo_VIU.png Graphic file (type png)
+<use Logo_VIU.png>
+Package pdftex.def Info: Logo_VIU.png  used on input line 1264.
+(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
+LaTeX Info: Redefining \. on input line 1264.
+LaTeX Info: Redefining \% on input line 1264.
+
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.96072pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.96072pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1312 \end{table}
-                   <./summary_RL.png>]
+l.1264 \newpage
+                <./summary_RL.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1277
+
+ []
+
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1316.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1277.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1316.
-LaTeX Info: Redefining \% on input line 1316.
+LaTeX Info: Redefining \. on input line 1277.
+LaTeX Info: Redefining \% on input line 1277.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.96072pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.96072pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
+
+[32]
+File: Logo_VIU.png Graphic file (type png)
+<use Logo_VIU.png>
+Package pdftex.def Info: Logo_VIU.png  used on input line 1326.
+(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
+LaTeX Info: Redefining \. on input line 1326.
+LaTeX Info: Redefining \% on input line 1326.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -1819,19 +1811,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1316 \newpage
+l.1326 \newpage
                ]
-<residuos_RL.png, id=558, 525.162pt x 463.13025pt>
+<residuos_RL.png, id=568, 525.162pt x 463.13025pt>
 File: residuos_RL.png Graphic file (type png)
 <use residuos_RL.png>
-Package pdftex.def Info: residuos_RL.png  used on input line 1319.
+Package pdftex.def Info: residuos_RL.png  used on input line 1329.
 (pdftex.def)             Requested size: 426.79134pt x 376.3772pt.
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1345.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1355.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1345.
-LaTeX Info: Redefining \% on input line 1345.
+LaTeX Info: Redefining \. on input line 1355.
+LaTeX Info: Redefining \% on input line 1355.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -1842,33 +1834,33 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [34
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1345 
+l.1355 
        
 pdfTeX warning (ext4): destination with the same identifier (name{table.11}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1345 
+l.1355 
         <./residuos_RL.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1361
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1360.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1368.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1360.
-LaTeX Info: Redefining \% on input line 1360.
+LaTeX Info: Redefining \. on input line 1368.
+LaTeX Info: Redefining \% on input line 1368.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1878,18 +1870,27 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [35]
-<mae_random_forest.png, id=567, 336.65775pt x 239.09325pt>
+<mae_random_forest.png, id=577, 336.65775pt x 239.09325pt>
 File: mae_random_forest.png Graphic file (type png)
 <use mae_random_forest.png>
-Package pdftex.def Info: mae_random_forest.png  used on input line 1373.
-(pdftex.def)             Requested size: 256.0774pt x 181.86232pt.
+Package pdftex.def Info: mae_random_forest.png  used on input line 1371.
+(pdftex.def)             Requested size: 213.39566pt x 151.55254pt.
+<train_test_series.png, id=578, 431.211pt x 224.037pt>
+File: train_test_series.png Graphic file (type png)
+<use train_test_series.png>
+Package pdftex.def Info: train_test_series.png  used on input line 1384.
+(pdftex.def)             Requested size: 384.10959pt x 199.57347pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1388
+
+ []
+
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1380.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1391.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1380.
-LaTeX Info: Redefining \% on input line 1380.
-
+LaTeX Info: Redefining \. on input line 1391.
+LaTeX Info: Redefining \% on input line 1391.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1899,38 +1900,44 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1391 \begin{itemize}
+                      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1380 
-        <./mae_random_forest.png>]
-<train_test_series.png, id=572, 431.211pt x 224.037pt>
-File: train_test_series.png Graphic file (type png)
-<use train_test_series.png>
-Package pdftex.def Info: train_test_series.png  used on input line 1386.
-(pdftex.def)             Requested size: 426.79134pt x 221.74944pt.
+l.1391 \begin{itemize}
+                       <./mae_random_forest.png> <./train_test_series.png>]
+<descomp_series.png, id=583, 592.614pt x 464.937pt>
+File: descomp_series.png Graphic file (type png)
+<use descomp_series.png>
+Package pdftex.def Info: descomp_series.png  used on input line 1402.
+(pdftex.def)             Requested size: 379.84402pt x 298.0127pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1381--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1406
 
  []
 
-<descomp_series.png, id=573, 592.614pt x 464.937pt>
-File: descomp_series.png Graphic file (type png)
-<use descomp_series.png>
-Package pdftex.def Info: descomp_series.png  used on input line 1403.
-(pdftex.def)             Requested size: 426.79134pt x 334.8466pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1407
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1413
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1407.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1413.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1407.
-LaTeX Info: Redefining \% on input line 1407.
+LaTeX Info: Redefining \. on input line 1413.
+LaTeX Info: Redefining \% on input line 1413.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1944,23 +1951,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1407 \end{figure}
-                    <./train_test_series.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1409--1414
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1409--1414
-
- []
-
+l.1413 
+        <./descomp_series.png>]
+<codo_kmeans.png, id=588, 407.121pt x 330.033pt>
+File: codo_kmeans.png Graphic file (type png)
+<use codo_kmeans.png>
+Package pdftex.def Info: codo_kmeans.png  used on input line 1421.
+(pdftex.def)             Requested size: 213.39566pt x 172.99294pt.
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1414.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1428.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1414.
-LaTeX Info: Redefining \% on input line 1414.
+LaTeX Info: Redefining \. on input line 1428.
+LaTeX Info: Redefining \% on input line 1428.
+
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1974,20 +1978,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1414 
-        <./descomp_series.png>]
-<codo_kmeans.png, id=583, 407.121pt x 330.033pt>
-File: codo_kmeans.png Graphic file (type png)
-<use codo_kmeans.png>
-Package pdftex.def Info: codo_kmeans.png  used on input line 1429.
-(pdftex.def)             Requested size: 341.43436pt x 276.79776pt.
+l.1428 
+        <./codo_kmeans.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1435
+
+ []
+
+<real_vs_pred_RL.png, id=594, 255.95625pt x 143.93774pt>
+File: real_vs_pred_RL.png Graphic file (type png)
+<use real_vs_pred_RL.png>
+Package pdftex.def Info: real_vs_pred_RL.png  used on input line 1438.
+(pdftex.def)             Requested size: 384.10959pt x 216.02026pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1450--1453
+
+ []
+
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1433.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1453.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1433.
-LaTeX Info: Redefining \% on input line 1433.
-
+LaTeX Info: Redefining \. on input line 1453.
+LaTeX Info: Redefining \% on input line 1453.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -1996,23 +2008,35 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[39]
-<real_vs_pred_RL.png, id=588, 255.95625pt x 143.93774pt>
-File: real_vs_pred_RL.png Graphic file (type png)
-<use real_vs_pred_RL.png>
-Package pdftex.def Info: real_vs_pred_RL.png  used on input line 1445.
-(pdftex.def)             Requested size: 384.10959pt x 216.02026pt.
+[39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1453 \item \textbf
+                    {RANDOM FOREST REGRESIÓN} <./real_vs_pred_RL.png>]
+<real_vs_pred_random_forest.png, id=600, 339.669pt x 251.7405pt>
+File: real_vs_pred_random_forest.png Graphic file (type png)
+<use real_vs_pred_random_forest.png>
+Package pdftex.def Info: real_vs_pred_random_forest.png  used on input line 145
+8.
+(pdftex.def)             Requested size: 320.09349pt x 237.23915pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1440--1449
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1475
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1449.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1475.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1449.
-LaTeX Info: Redefining \% on input line 1449.
+LaTeX Info: Redefining \. on input line 1475.
+LaTeX Info: Redefining \% on input line 1475.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2022,33 +2046,32 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [40
-pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1449 \end{figure}
-                    <./codo_kmeans.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1460
+l.1475 
+        <./real_vs_pred_random_forest.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1522
 
  []
 
-<real_vs_pred_random_forest.png, id=593, 339.669pt x 251.7405pt>
-File: real_vs_pred_random_forest.png Graphic file (type png)
-<use real_vs_pred_random_forest.png>
-Package pdftex.def Info: real_vs_pred_random_forest.png  used on input line 146
-5.
-(pdftex.def)             Requested size: 384.10959pt x 284.68622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1460--1469
+Underfull \hbox (badness 10000) in paragraph at lines 1522--1525
 
  []
 
+<real_vs_pred_serie_temp.png, id=605, 424.58624pt x 194.52675pt>
+File: real_vs_pred_serie_temp.png Graphic file (type png)
+<use real_vs_pred_serie_temp.png>
+Package pdftex.def Info: real_vs_pred_serie_temp.png  used on input line 1528.
+(pdftex.def)             Requested size: 367.0408pt x 168.16832pt.
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1469.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1533.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1469.
-LaTeX Info: Redefining \% on input line 1469.
+LaTeX Info: Redefining \. on input line 1533.
+LaTeX Info: Redefining \% on input line 1533.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2058,22 +2081,27 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [41
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
-as been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.12}) ha
+s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1469 \end{figure}
-                    <./real_vs_pred_RL.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1478--1482
+l.1533 L
+        as métricas calculadas para la evaluación del modelo son:]
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1578--1580
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1482.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1580.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1482.
-LaTeX Info: Redefining \% on input line 1482.
+LaTeX Info: Redefining \. on input line 1580.
+LaTeX Info: Redefining \% on input line 1580.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2087,23 +2115,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1482 \newpage
-                <./real_vs_pred_random_forest.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1527--1529
+l.1580 \item \textbf
+                    {K-MEANS}
+pdfTeX warning (ext4): destination with the same identifier (name{table.13}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1580 \item \textbf
+                    {K-MEANS} <./real_vs_pred_serie_temp.png>]
+<cluster_df_kmeans.png, id=614, 673.91776pt x 93.34875pt>
+File: cluster_df_kmeans.png Graphic file (type png)
+<use cluster_df_kmeans.png>
+Package pdftex.def Info: cluster_df_kmeans.png  used on input line 1585.
+(pdftex.def)             Requested size: 384.10959pt x 53.20505pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1580--1589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1529--1532
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1595
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1532.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1595.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1532.
-LaTeX Info: Redefining \% on input line 1532.
+LaTeX Info: Redefining \. on input line 1595.
+LaTeX Info: Redefining \% on input line 1595.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2113,33 +2158,33 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [43
-pdfTeX warning (ext4): destination with the same identifier (name{table.12}) ha
-s been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1532 \newpage
-               ]
-<real_vs_pred_serie_temp.png, id=607, 424.58624pt x 194.52675pt>
-File: real_vs_pred_serie_temp.png Graphic file (type png)
-<use real_vs_pred_serie_temp.png>
-Package pdftex.def Info: real_vs_pred_serie_temp.png  used on input line 1535.
-(pdftex.def)             Requested size: 367.0408pt x 168.16832pt.
+l.1595 \newpage
+                <./cluster_df_kmeans.png>]
+<pca_kmeans.png, id=620, 655.248pt x 327.624pt>
+File: pca_kmeans.png Graphic file (type png)
+<use pca_kmeans.png>
+Package pdftex.def Info: pca_kmeans.png  used on input line 1599.
+(pdftex.def)             Requested size: 426.79134pt x 213.40298pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1547--1550
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1585--1587
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1636
 
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1587.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1636.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1587.
-LaTeX Info: Redefining \% on input line 1587.
+LaTeX Info: Redefining \. on input line 1636.
+LaTeX Info: Redefining \% on input line 1636.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2149,44 +2194,25 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
 [44
-pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1587 \item \textbf
-                    {K-MEANS}
-pdfTeX warning (ext4): destination with the same identifier (name{table.13}) ha
+l.1636 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.14}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1587 \item \textbf
-                    {K-MEANS} <./real_vs_pred_serie_temp.png>]
-<cluster_df_kmeans.png, id=613, 673.91776pt x 93.34875pt>
-File: cluster_df_kmeans.png Graphic file (type png)
-<use cluster_df_kmeans.png>
-Package pdftex.def Info: cluster_df_kmeans.png  used on input line 1592.
-(pdftex.def)             Requested size: 384.10959pt x 53.20505pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1587--1596
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1597--1602
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1597--1602
-
- []
-
+l.1636 
+        <./pca_kmeans.png>]
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1602.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1642.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1602.
-LaTeX Info: Redefining \% on input line 1602.
+LaTeX Info: Redefining \. on input line 1642.
+LaTeX Info: Redefining \% on input line 1642.
+
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2195,34 +2221,24 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[45
-pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1602 \newpage
-                <./cluster_df_kmeans.png>]
-<pca_kmeans.png, id=619, 655.248pt x 327.624pt>
-File: pca_kmeans.png Graphic file (type png)
-<use pca_kmeans.png>
-Package pdftex.def Info: pca_kmeans.png  used on input line 1606.
-(pdftex.def)             Requested size: 426.79134pt x 213.40298pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1638--1643
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1638--1643
-
- []
-
+[45]
+<arquitectura_1.png, id=630, 1040.08575pt x 298.11375pt>
+File: arquitectura_1.png Graphic file (type png)
+<use arquitectura_1.png>
+Package pdftex.def Info: arquitectura_1.png  used on input line 1646.
+(pdftex.def)             Requested size: 426.79134pt x 122.3275pt.
+<pipeline.png, id=631, 356.532pt x 101.78024pt>
+File: pipeline.png Graphic file (type png)
+<use pipeline.png>
+Package pdftex.def Info: pipeline.png  used on input line 1654.
+(pdftex.def)             Requested size: 341.43436pt x 97.47804pt.
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1643.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1665.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1643.
-LaTeX Info: Redefining \% on input line 1643.
+LaTeX Info: Redefining \. on input line 1665.
+LaTeX Info: Redefining \% on input line 1665.
+
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2236,70 +2252,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1643 
-       
-pdfTeX warning (ext4): destination with the same identifier (name{table.14}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1643 
-        <./pca_kmeans.png>]
-File: Logo_VIU.png Graphic file (type png)
-<use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1649.
-(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1649.
-LaTeX Info: Redefining \% on input line 1649.
-
-
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.96072pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.96072pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
-
-[47]
-<arquitectura_1.png, id=628, 1040.08575pt x 298.11375pt>
-File: arquitectura_1.png Graphic file (type png)
-<use arquitectura_1.png>
-Package pdftex.def Info: arquitectura_1.png  used on input line 1653.
-(pdftex.def)             Requested size: 426.79134pt x 122.3275pt.
-<pipeline.png, id=629, 356.532pt x 101.78024pt>
-File: pipeline.png Graphic file (type png)
-<use pipeline.png>
-Package pdftex.def Info: pipeline.png  used on input line 1661.
-(pdftex.def)             Requested size: 341.43436pt x 97.47804pt.
-File: Logo_VIU.png Graphic file (type png)
-<use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1672.
-(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1672.
-LaTeX Info: Redefining \% on input line 1672.
-
-
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.96072pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.96072pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
-
-[48
+l.1665 \newpage
+               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1672 \newpage
-               
-pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1672 \newpage
+l.1665 \newpage
                 <./arquitectura_1.png> <./pipeline.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1674--1674
-[][]\OT1/cmr/bx/n/14.4 CONCLUSI[]ON Y TRA-BA-JOS FU-TU-ROS|
+Underfull \hbox (badness 10000) in paragraph at lines 1667--1667
+[][]\OT1/cmr/bx/n/14.4 CONCLUSI[]ON|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1669--1678
+
  []
 
 File: Logo_VIU.png Graphic file (type png)
@@ -2316,18 +2298,17 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[49] (TFM.bbl
-Underfull \hbox (badness 1496) in paragraph at lines 237--249
-[]\OT1/cmr/m/n/10.95 de la Fuen-te Fern^^Sandez, S.  (2013).  \OT1/cmr/m/it/10.
-95 Se-ries tem-po-ra-les.  \OT1/cmr/m/n/10.95 Des-car-ga-do 2023-03-
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1682--1684
+
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 358.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1686.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 358.
-LaTeX Info: Redefining \% on input line 358.
+LaTeX Info: Redefining \. on input line 1686.
+LaTeX Info: Redefining \% on input line 1686.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2336,22 +2317,42 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[50
+[48] (TFM.bbl
+Underfull \hbox (badness 1496) in paragraph at lines 261--273
+[]\OT1/cmr/m/n/10.95 de la Fuen-te Fern^^Sandez, S.  (2013).  \OT1/cmr/m/it/10.
+95 Se-ries tem-po-ra-les.  \OT1/cmr/m/n/10.95 Des-car-ga-do 2023-03-
+ []
+
+File: Logo_VIU.png Graphic file (type png)
+<use Logo_VIU.png>
+Package pdftex.def Info: Logo_VIU.png  used on input line 356.
+(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
+LaTeX Info: Redefining \. on input line 356.
+LaTeX Info: Redefining \% on input line 356.
+
+Package fancyhdr Warning: \headheight is too small (9.0pt): 
+(fancyhdr)                Make it at least 39.96072pt, for example:
+(fancyhdr)                \setlength{\headheight}{39.96072pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
+
+[49
 
 ]
-Underfull \hbox (badness 1953) in paragraph at lines 512--524
+Underfull \hbox (badness 1953) in paragraph at lines 598--610
 []\OT1/cmr/m/n/10.95 Plazas, D.  (2023).  \OT1/cmr/m/it/10.95 Per-fi-la-mien-to
  da-ta covid-19.  \OT1/cmr/m/n/10.95 Des-car-ga-do 2023-01-07, de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--524
+Underfull \hbox (badness 10000) in paragraph at lines 598--610
 [][]$\OT1/cmtt/m/n/10.95 https :// htmlpreview [] .github [] .io / []?https ://
  github [] .com / Danilo0221 / TFM /
  []
 
 
-Underfull \hbox (badness 6758) in paragraph at lines 536--549
+Underfull \hbox (badness 6758) in paragraph at lines 622--635
 []\OT1/cmr/m/n/10.95 R, S. E.  (2023).  \OT1/cmr/m/it/10.95 Un-ders-tand ran-do
 m fo-rest al-go-rithms with exam-ples.
  []
@@ -2361,10 +2362,10 @@ Underfull \vbox (badness 2495) has occurred while \output is active []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 688.
+Package pdftex.def Info: Logo_VIU.png  used on input line 685.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 688.
-LaTeX Info: Redefining \% on input line 688.
+LaTeX Info: Redefining \. on input line 685.
+LaTeX Info: Redefining \% on input line 685.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -2374,13 +2375,13 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[51])
+[50])
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1694.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1709.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1694.
-LaTeX Info: Redefining \% on input line 1694.
+LaTeX Info: Redefining \. on input line 1709.
+LaTeX Info: Redefining \% on input line 1709.
 
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
@@ -2390,39 +2391,23 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[52]
-File: Logo_VIU.png Graphic file (type png)
-<use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1700.
-(pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1700.
-LaTeX Info: Redefining \% on input line 1700.
-
-
-Package fancyhdr Warning: \headheight is too small (9.0pt): 
-(fancyhdr)                Make it at least 39.96072pt, for example:
-(fancyhdr)                \setlength{\headheight}{39.96072pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
-
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 1702--1702
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
 []\OT1/cmr/bx/n/14.4 ANEXOS I|
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 1723--1724
+Underfull \hbox (badness 2753) in paragraph at lines 1732--1733
 []|\OT1/cmr/m/n/10.95 N^^Sume-ro de ca-sos no-ti-fi-ca-dos con-fir-ma-dos con u
 na prue-ba
  []
 
 File: Logo_VIU.png Graphic file (type png)
 <use Logo_VIU.png>
-Package pdftex.def Info: Logo_VIU.png  used on input line 1742.
+Package pdftex.def Info: Logo_VIU.png  used on input line 1751.
 (pdftex.def)             Requested size: 85.35696pt x 35.88069pt.
-LaTeX Info: Redefining \. on input line 1742.
-LaTeX Info: Redefining \% on input line 1742.
+LaTeX Info: Redefining \. on input line 1751.
+LaTeX Info: Redefining \% on input line 1751.
 
 Package fancyhdr Warning: \headheight is too small (9.0pt): 
 (fancyhdr)                Make it at least 39.96072pt, for example:
@@ -2431,12 +2416,12 @@ Package fancyhdr Warning: \headheight is too small (9.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-30.96072pt}.
 
-[54
+[52
 pdfTeX warning (ext4): destination with the same identifier (name{table.15}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1742 \end{document}
+l.1751 \end{document}
                      ] (TFM.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
@@ -2445,16 +2430,16 @@ LaTeX Info: Redefining \% on input line 22.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `TFM.out' has not changed.
-(rerunfilecheck)             Checksum: 89E6E2AA675746E8995784B4E88D2B59;6320.
+(rerunfilecheck)             Checksum: 7DFB96DDFBF8DE53538B901E6ADC5558;6257.
  ) 
 Here is how much of TeX's memory you used:
- 17623 strings out of 475385
- 296234 string characters out of 2777378
- 870359 words of memory out of 3000000
- 38574 multiletter control sequences out of 15000+600000
+ 17626 strings out of 475385
+ 296080 string characters out of 2777378
+ 872769 words of memory out of 3000000
+ 38576 multiletter control sequences out of 15000+600000
  477450 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,16n,79p,1265b,1449s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,16n,79p,1338b,1449s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Asus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
 095.pk><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -2474,9 +2459,9 @@ ic/amsfonts/cm/cmsy8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on TFM.pdf (59 pages, 1707358 bytes).
+Output written on TFM.pdf (57 pages, 1703100 bytes).
 PDF statistics:
- 796 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 410 words of extra memory for PDF output out of 10000 (max. 10000000)
 

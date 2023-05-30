@@ -82,4 +82,5 @@ def datatransformed():
     print("Guardando archivo data_refined")
     df.to_csv(path_est + 'data_refined.csv', index=False)
     print("Etapa Transformed Finalizada")
+    print("")
 
