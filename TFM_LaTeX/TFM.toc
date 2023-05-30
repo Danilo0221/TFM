@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {2}OBJETIVOS}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}OBJETIVO GENERAL}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}OBJETIVOS ESPEC\'IFICOS}{3}{subsection.2.2}%
-\contentsline {section}{\numberline {3}MACHINE LEARNING Y ESTADO DEL ARTE}{4}{section.3}%
+\contentsline {section}{\numberline {3}MACHINE LEARNING, ESTUDIOS Y MODELOS ACTUALES DE COVID-19}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}APRENDIZAJE SUPERVISADO}{4}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}REGRESI\'ON}{5}{subsubsection.3.1.1}%
 \contentsline {paragraph}{\numberline {3.1.1.1}REGRESI\'ON LINEAL M\'ULTIPLE}{5}{paragraph.3.1.1.1}%
@@ -14,26 +14,26 @@
 \contentsline {subsubsection}{\numberline {3.2.1}CLUSTERING}{9}{subsubsection.3.2.1}%
 \contentsline {paragraph}{\numberline {3.2.1.1}K-MEANS}{10}{paragraph.3.2.1.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}REDUCCI\'ON DE LA DIMENSIONALIDAD}{11}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}ASOCIACI\'ON}{12}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}APRENDIZAJE POR REFUERZO}{12}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}SERIES TEMPORALES}{13}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}{14}{subsubsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.5}ESTUDIOS Y MODELOS ACTUALES DE COVID-19}{15}{subsection.3.5}%
-\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{17}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{18}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{19}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{19}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{22}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{29}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{31}{subsubsection.4.3.4}%
-\contentsline {paragraph}{\numberline {4.3.4.1}REGRESI\'ON LINEAL M\'ULTIPLE}{31}{paragraph.4.3.4.1}%
-\contentsline {paragraph}{\numberline {4.3.4.2}RANDOM FOREST REGRESI\'ON}{36}{paragraph.4.3.4.2}%
-\contentsline {paragraph}{\numberline {4.3.4.3}SERIE TEMPORAL FORECASTERAUTOREG}{38}{paragraph.4.3.4.3}%
-\contentsline {paragraph}{\numberline {4.3.4.4}K-MEANS}{39}{paragraph.4.3.4.4}%
-\contentsline {subsection}{\numberline {4.4}RESULTADOS}{41}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}CONTRASTE ENTRE MODELOS}{47}{subsubsection.4.4.1}%
-\contentsline {section}{\numberline {5}CONCLUSI\'ON Y TRABAJOS FUTUROS}{48}{section.5}%
+\contentsline {subsection}{\numberline {3.3}SERIES TEMPORALES}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}FORECASTING AUTORREGRESIVO RECURSIVO (RAF)}{13}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}ESTUDIOS Y MODELOS ACTUALES DE COVID-19}{14}{subsection.3.4}%
+\contentsline {section}{\numberline {4}DESARROLLO DEL PROYECTO Y RESULTADOS}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}METODOLOG\'IA}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}PLANTEAMIENTO DEL PROBLEMA}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}DESARROLLO DEL PROYECTO}{18}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}SELECCI\'ON DE DATOS}{18}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}PREPROCESAMIENTO DE DATOS}{21}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}TRANSFORMACI\'ON DE DATOS}{27}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}MINER\'IA DE DATOS}{29}{subsubsection.4.3.4}%
+\contentsline {paragraph}{\numberline {4.3.4.1}REGRESI\'ON LINEAL M\'ULTIPLE}{30}{paragraph.4.3.4.1}%
+\contentsline {paragraph}{\numberline {4.3.4.2}RANDOM FOREST REGRESI\'ON}{35}{paragraph.4.3.4.2}%
+\contentsline {paragraph}{\numberline {4.3.4.3}SERIE TEMPORAL FORECASTERAUTOREG}{36}{paragraph.4.3.4.3}%
+\contentsline {paragraph}{\numberline {4.3.4.4}K-MEANS}{38}{paragraph.4.3.4.4}%
+\contentsline {subsection}{\numberline {4.4}RESULTADOS}{39}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}COMPARACI\'ON ENTRE MODELOS}{44}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}FLUJO DE AUTOMATIZACI\'ON PIPELINE}{45}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}CONCLUSI\'ON}{47}{section.5}%
+\contentsline {subsection}{\numberline {5.1}TRABAJOS FUTUROS}{48}{subsection.5.1}%
 \contentsline {section}{\numberline {6}REFERENCIAS}{49}{section.6}%
-\contentsline {section}{\numberline {}AP\'ENDICE I}{51}{section.6}%
+\contentsline {section}{}{49}{section.6}%
 \contentsline {section}{\numberline {}ANEXOS I}{52}{section.6}%

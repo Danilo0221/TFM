@@ -1,0 +1,881 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Araujo%
+\ \BBA {} Naimi%
+}{%
+Araujo%
+\ \BBA {} Naimi%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+araujo2020spread}
+\APACinsertmetastar {%
+araujo2020spread}%
+\begin{APACrefauthors}%
+Araujo, M\BPBI B.%
+\BCBT {}\ \BBA {} Naimi, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Spread of SARS-CoV-2 Coronavirus likely to be
+  constrained by climate} {Spread of sars-cov-2 coronavirus likely to be
+  constrained by climate}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{MedRxiv}{}{}{2020--03}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Awad%
+, Khanna%
+, Awad%
+\BCBL {}\ \BBA {} Khanna%
+}{%
+Awad%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+awad2015support}
+\APACinsertmetastar {%
+awad2015support}%
+\begin{APACrefauthors}%
+Awad, M.%
+, Khanna, R.%
+, Awad, M.%
+\BCBL {}\ \BBA {} Khanna, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Support vector regression} {Support vector
+  regression}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Efficient learning machines: Theories, concepts, and
+  applications for engineers and system designers}{}{}{67--80}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ben{\'\i}tez~Iglesias%
+, Escudero~Bakx%
+, Kanaan~Izquierdo%
+, Masip~Rod{\'o}%
+\BCBL {}\ \BBA {} Cencerrado~Barraqu{\'e}%
+}{%
+Ben{\'\i}tez~Iglesias%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+benitez2018inteligencia}
+\APACinsertmetastar {%
+benitez2018inteligencia}%
+\begin{APACrefauthors}%
+Ben{\'\i}tez~Iglesias, R.%
+, Escudero~Bakx, G.%
+, Kanaan~Izquierdo, S.%
+, Masip~Rod{\'o}, D.%
+\BCBL {}\ \BBA {} Cencerrado~Barraqu{\'e}, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Inteligencia artificial, febrero 2018} {Inteligencia
+  artificial, febrero 2018}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bobadilla%
+}{%
+Bobadilla%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+bobadilla2021machine}
+\APACinsertmetastar {%
+bobadilla2021machine}%
+\begin{APACrefauthors}%
+Bobadilla, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {Machine learning y deep learning: usando Python, Scikit y
+  Keras} {Machine learning y deep learning: usando python, scikit y keras}.
+\newblock
+\APACaddressPublisher{}{Ediciones de la U}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Yang%
+, Yang%
+, Wang%
+\BCBL {}\ \BBA {} B{\"a}rnighausen%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+chen2020covid}
+\APACinsertmetastar {%
+chen2020covid}%
+\begin{APACrefauthors}%
+Chen, S.%
+, Yang, J.%
+, Yang, W.%
+, Wang, C.%
+\BCBL {}\ \BBA {} B{\"a}rnighausen, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {COVID-19 control in China during mass population
+  movements at New Year} {Covid-19 control in china during mass population
+  movements at new year}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Lancet}{395}{10226}{764--766}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chimmula%
+\ \BBA {} Zhang%
+}{%
+Chimmula%
+\ \BBA {} Zhang%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+chimmula2020time}
+\APACinsertmetastar {%
+chimmula2020time}%
+\begin{APACrefauthors}%
+Chimmula, V\BPBI K\BPBI R.%
+\BCBT {}\ \BBA {} Zhang, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Time series forecasting of COVID-19 transmission in
+  Canada using LSTM networks} {Time series forecasting of covid-19 transmission
+  in canada using lstm networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chaos, Solitons \& Fractals}{135}{}{109864}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ciotti%
+\ \protect \BOthers {.}}{%
+Ciotti%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+ciotti2020covid}
+\APACinsertmetastar {%
+ciotti2020covid}%
+\begin{APACrefauthors}%
+Ciotti, M.%
+, Ciccozzi, M.%
+, Terrinoni, A.%
+, Jiang, W\BHBI C.%
+, Wang, C\BHBI B.%
+\BCBL {}\ \BBA {} Bernardini, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The COVID-19 pandemic} {The covid-19 pandemic}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Critical reviews in clinical laboratory
+  sciences}{57}{6}{365--388}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ciria~Mayordomo%
+}{%
+Ciria~Mayordomo%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+ciria2021covid}
+\APACinsertmetastar {%
+ciria2021covid}%
+\begin{APACrefauthors}%
+Ciria~Mayordomo, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {COVID Sent: Identificaci{\'o}n de sentimientos en
+  titulares de noticias del COVID-19} {Covid sent: Identificaci{\'o}n de
+  sentimientos en titulares de noticias del covid-19}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+cnecovid%
+}{%
+cnecovid%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+cnecovid}
+\APACinsertmetastar {%
+cnecovid}%
+\begin{APACrefauthors}%
+cnecovid.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Datos oficiales COVID-19, tipo {@ONLINE}.} {Datos oficiales
+  covid-19, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2022-12-11}]\url{https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+de~la Fuente~Fern{\'a}ndez%
+}{%
+de~la Fuente~Fern{\'a}ndez%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+seriestemp}
+\APACinsertmetastar {%
+seriestemp}%
+\begin{APACrefauthors}%
+de~la Fuente~Fern{\'a}ndez, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {SERIES TEMPORALES.} {Series temporales.}
+\newblock
+\begin{APACrefURL}
+  [{2023-03-27}]\url{chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.estadistica.net/PAU2/series-temporales.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fayyad%
+, Piatetsky-Shapiro%
+\BCBL {}\ \BBA {} Smyth%
+}{%
+Fayyad%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+fayyad1996data}
+\APACinsertmetastar {%
+fayyad1996data}%
+\begin{APACrefauthors}%
+Fayyad, U.%
+, Piatetsky-Shapiro, G.%
+\BCBL {}\ \BBA {} Smyth, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {From data mining to knowledge discovery in databases}
+  {From data mining to knowledge discovery in databases}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{AI magazine}{17}{3}{37--37}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gu%
+}{%
+Gu%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+COVID-19-Projections}
+\APACinsertmetastar {%
+COVID-19-Projections}%
+\begin{APACrefauthors}%
+Gu, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {COVID-19 Projections Using Machine Learning, tipo {@ONLINE}.}
+  {Covid-19 projections using machine learning, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL} [{2021-03-24}]\url{https://covid19-projections.com/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gu%
+}{%
+Gu%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+modeloseir}
+\APACinsertmetastar {%
+modeloseir}%
+\begin{APACrefauthors}%
+Gu, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {Modelo SEIR, tipo {@ONLINE}.} {Modelo seir, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2021-03-24}]\url{https://github.com/youyanggu/yyg-seir-simulator}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gu%
+}{%
+Gu%
+}{%
+{\protect \APACyear {2021}}%
+{\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
+proyeciones}
+\APACinsertmetastar {%
+proyeciones}%
+\begin{APACrefauthors}%
+Gu, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021{\protect \BCnt {3}}}{}{}.
+\newblock
+\APACrefbtitle {proyecciones, tipo {@ONLINE}.} {proyecciones, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2021-03-24}]\url{https://github.com/youyanggu/covid19_projections/tree/master/projections}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hao%
+\ \protect \BOthers {.}}{%
+Hao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+hao2022development}
+\APACinsertmetastar {%
+hao2022development}%
+\begin{APACrefauthors}%
+Hao, B.%
+, Hu, Y.%
+, Sotudian, S.%
+, Zad, Z.%
+, Adams, W\BPBI G.%
+, Assoumou, S\BPBI A.%
+\BDBL {}Paschalidis, I\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development and validation of predictive models for
+  COVID-19 outcomes in a safety-net hospital population} {Development and
+  validation of predictive models for covid-19 outcomes in a safety-net
+  hospital population}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Medical Informatics
+  Association}{29}{7}{1253--1262}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+He%
+, Peng%
+\BCBL {}\ \BBA {} Sun%
+}{%
+He%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+he2020seir}
+\APACinsertmetastar {%
+he2020seir}%
+\begin{APACrefauthors}%
+He, S.%
+, Peng, Y.%
+\BCBL {}\ \BBA {} Sun, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SEIR modeling of the COVID-19 and its dynamics} {Seir
+  modeling of the covid-19 and its dynamics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nonlinear dynamics}{101}{}{1667--1680}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hernandez-Matamoros%
+, Fujita%
+, Hayashi%
+\BCBL {}\ \BBA {} Perez-Meana%
+}{%
+Hernandez-Matamoros%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+hernandez2020forecasting}
+\APACinsertmetastar {%
+hernandez2020forecasting}%
+\begin{APACrefauthors}%
+Hernandez-Matamoros, A.%
+, Fujita, H.%
+, Hayashi, T.%
+\BCBL {}\ \BBA {} Perez-Meana, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Forecasting of COVID19 per regions using ARIMA models
+  and polynomial functions} {Forecasting of covid19 per regions using arima
+  models and polynomial functions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied soft computing}{96}{}{106610}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Holm{\"a}ng%
+\ \BBA {} von Grothusen%
+}{%
+Holm{\"a}ng%
+\ \BBA {} von Grothusen%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+holmang2021intaktsestimering}
+\APACinsertmetastar {%
+holmang2021intaktsestimering}%
+\begin{APACrefauthors}%
+Holm{\"a}ng, A.%
+\BCBT {}\ \BBA {} von Grothusen, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Int{\"a}ktsestimering med hj{\"a}lp av Maskininl{\"a}rning.}
+  {Int{\"a}ktsestimering med hj{\"a}lp av maskininl{\"a}rning.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+INE%
+}{%
+INE%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+ine}
+\APACinsertmetastar {%
+ine}%
+\begin{APACrefauthors}%
+INE.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Poblaci\'on por provincias, tipo {@ONLINE}.} {Poblaci\'on por
+  provincias, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2023-02-15}]\url{https://www.ine.es/jaxi/Datos.htm?path=/t20/e245/p08/l0/&file=03003.px#!tabs-tabla}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Joaqu{\'i}n Amat~Rodrigo%
+}{%
+Joaqu{\'i}n Amat~Rodrigo%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+RFR}
+\APACinsertmetastar {%
+RFR}%
+\begin{APACrefauthors}%
+Joaqu{\'i}n Amat~Rodrigo, J\BPBI E\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {Skforecast: forecasting series temporales con Python y
+  Scikit-learn.} {Skforecast: forecasting series temporales con python y
+  scikit-learn.}
+\newblock
+\begin{APACrefURL}
+  [{2023-03-10}]\url{https://www.cienciadedatos.net/documentos/25_regresion_lineal_multiple#Bibliograf%C3%ADa}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+oficial~del estado%
+}{%
+oficial~del estado%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Ley18}
+\APACinsertmetastar {%
+Ley18}%
+\begin{APACrefauthors}%
+oficial~del estado, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Ley 18/2015, de 9 de julio, tipo {@ONLINE}.} {Ley 18/2015, de 9
+  de julio, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2022-12-13}]\url{https://www.boe.es/boe/dias/2015/07/10/pdfs/BOE-A-2015-7731.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+opendata%
+}{%
+opendata%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+opendata}
+\APACinsertmetastar {%
+opendata}%
+\begin{APACrefauthors}%
+opendata.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Datos climaticos por provincia, tipo {@ONLINE}.} {Datos
+  climaticos por provincia, tipo {@ONLINE}.}
+\newblock
+\begin{APACrefURL}
+  [{2022-12-14}]\url{https://opendata.aemet.es/centrodedescargas/productosAEMET}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Plazas%
+}{%
+Plazas%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+dfprofilcovid}
+\APACinsertmetastar {%
+dfprofilcovid}%
+\begin{APACrefauthors}%
+Plazas, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Perfilamiento data Covid-19.} {Perfilamiento data covid-19.}
+\newblock
+\begin{APACrefURL}
+  [{2023-01-07}]\url{https://htmlpreview.github.io/?https://github.com/Danilo0221/TFM/blob/main/DataCleaning/df_covid_prof.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+R%
+}{%
+R%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+RFAWE}
+\APACinsertmetastar {%
+RFAWE}%
+\begin{APACrefauthors}%
+R, S\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Understand Random Forest Algorithms With Examples.} {Understand
+  random forest algorithms with examples.}
+\newblock
+\begin{APACrefURL}
+  [{2023-03-20}]\url{https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rativa%
+}{%
+Rativa%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+rativa2020tecnicas}
+\APACinsertmetastar {%
+rativa2020tecnicas}%
+\begin{APACrefauthors}%
+Rativa, I\BPBI N\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {T{\'e}cnicas de aprendizaje autom{\'a}tico aplicadas en
+  los sistemas de predicci{\'o}n} {T{\'e}cnicas de aprendizaje autom{\'a}tico
+  aplicadas en los sistemas de predicci{\'o}n}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Tecnolog{\'\i}a Investigaci{\'o}n y
+  Academia}{8}{1}{37--53}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodrigo%
+}{%
+Rodrigo%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+RLM}
+\APACinsertmetastar {%
+RLM}%
+\begin{APACrefauthors}%
+Rodrigo, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Introducci{\'o}n a la Regresi{\'o}n Lineal M{\'u}ltiple.}
+  {Introducci{\'o}n a la regresi{\'o}n lineal m{\'u}ltiple.}
+\newblock
+\begin{APACrefURL}
+  [{2023-03-02}]\url{https://www.cienciadedatos.net/documentos/25_regresion_lineal_multiple#Bibliograf%C3%ADa}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sakly%
+\ \protect \BOthers {.}}{%
+Sakly%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+sakly2023artificial}
+\APACinsertmetastar {%
+sakly2023artificial}%
+\begin{APACrefauthors}%
+Sakly, H.%
+, Al-Sayed, A\BPBI A.%
+, Said, M.%
+, Loussaief, C.%
+, Seekins, J.%
+\BCBL {}\ \BBA {} Sakly, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Artificial Intelligence and Big Data for COVID-19
+  Diagnosis} {Artificial intelligence and big data for covid-19
+  diagnosis}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Trends of Artificial Intelligence and Big Data for
+  E-Health} {Trends of artificial intelligence and big data for e-health}\
+  (\BPGS\ 83--119).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+To{\u{g}}a%
+, Atalay%
+\BCBL {}\ \BBA {} Toksari%
+}{%
+To{\u{g}}a%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+touga2021covid}
+\APACinsertmetastar {%
+touga2021covid}%
+\begin{APACrefauthors}%
+To{\u{g}}a, G.%
+, Atalay, B.%
+\BCBL {}\ \BBA {} Toksari, M\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {COVID-19 prevalence forecasting using autoregressive
+  integrated moving average (ARIMA) and artificial neural networks (ANN): case
+  of Turkey} {Covid-19 prevalence forecasting using autoregressive integrated
+  moving average (arima) and artificial neural networks (ann): case of
+  turkey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of infection and public
+  health}{14}{7}{811--816}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Torres-Degr{\'o}%
+}{%
+Torres-Degr{\'o}%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+torres2011tasas}
+\APACinsertmetastar {%
+torres2011tasas}%
+\begin{APACrefauthors}%
+Torres-Degr{\'o}, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Tasas de crecimiento poblacional (r): Una mirada desde
+  el modelo matem{\'a}tico lineal, geom{\'e}trico y exponencial} {Tasas de
+  crecimiento poblacional (r): Una mirada desde el modelo matem{\'a}tico
+  lineal, geom{\'e}trico y exponencial}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{CIDE digital}{}{}{143--162}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Valenzuela~Gonz{\'a}lez%
+\ \protect \BOthers {.}}{%
+Valenzuela~Gonz{\'a}lez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+valenzuela2022aprendizaje}
+\APACinsertmetastar {%
+valenzuela2022aprendizaje}%
+\begin{APACrefauthors}%
+Valenzuela~Gonz{\'a}lez, G.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Aprendizaje Supervisado: M{\'e}todos, Propiedades y
+  Aplicaciones} {Aprendizaje supervisado: M{\'e}todos, propiedades y
+  aplicaciones}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vandermeer%
+\ \BBA {} Goldberg%
+}{%
+Vandermeer%
+\ \BBA {} Goldberg%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+vandermeer2013population}
+\APACinsertmetastar {%
+vandermeer2013population}%
+\begin{APACrefauthors}%
+Vandermeer, J\BPBI H.%
+\BCBT {}\ \BBA {} Goldberg, D\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Population ecology: first principles} {Population ecology:
+  first principles}.
+\newblock
+\APACaddressPublisher{}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vannieuwenhuyze%
+}{%
+Vannieuwenhuyze%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+vannieuwenhuyze2020inteligencia}
+\APACinsertmetastar {%
+vannieuwenhuyze2020inteligencia}%
+\begin{APACrefauthors}%
+Vannieuwenhuyze, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Inteligencia artificial f{\'a}cil} {Inteligencia
+  artificial f{\'a}cil}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine learning y Deep learning pr{\'a}cticos,
+  traducido por GOYANES ARNEDO, B., ediciones ENI, Cornell{\`a} de
+  Llobregat}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wang%
+, Tang%
+, Feng%
+, Lv%
+\BCBL {}\ \protect \BOthers {.}}{%
+Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+wang2020high}
+\APACinsertmetastar {%
+wang2020high}%
+\begin{APACrefauthors}%
+Wang, J.%
+, Tang, K.%
+, Feng, K.%
+, Lv, W.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {High temperature and high humidity reduce the
+  transmission of COVID-19} {High temperature and high humidity reduce the
+  transmission of covid-19}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Available at SSRN}{3551767}{}{2020b}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
